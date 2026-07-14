@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="junit-platform-launcher-1.10.1">
+    <container name="/home/leo/repos/junit5-r5.10.1/junit-platform-launcher/build/libs/junit-platform-launcher-1.10.1.jar" classification="osgi-bundle">
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherSessionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.PostDiscoveryFilter" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.UniqueIdTrackingListener" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.platform.launcher">
+        <type name="org.junit.platform.launcher.EngineDiscoveryResult$Status" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.EngineDiscoveryResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.EngineDiscoveryResult" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.EngineDiscoveryResult$Status" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.EngineFilter$Type" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.EngineFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.EngineFilter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.EngineFilter$Type" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.Launcher" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryRequest" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.LauncherConstants" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.LauncherDiscoveryListener$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.EngineDiscoveryResult" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.LauncherDiscoveryRequest" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.launcher.EngineFilter" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.PostDiscoveryFilter" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.LauncherInterceptor$Invocation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.LauncherInterceptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.LauncherInterceptor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.LauncherInterceptor$Invocation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.LauncherSession" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.Launcher" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.LauncherSessionListener$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.LauncherSessionListener" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.LauncherSessionListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.LauncherSession" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherSessionListener$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.PostDiscoveryFilter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.TagFilter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.launcher.PostDiscoveryFilter" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.ParseResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.TestExecutionListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.TestIdentifier$SerializedForm" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.TestIdentifier" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.TestIdentifier$SerializedForm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.TestPlan$Visitor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.TestPlan" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestPlan$Visitor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.platform.launcher.core">
+        <type name="org.junit.platform.launcher.core.CompositeEngineExecutionListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.core.IterationOrder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.CompositeTestExecutionListener$EagerTestExecutionListener" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="extends" />
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.CompositeTestExecutionListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.CompositeTestExecutionListener" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.core.CompositeTestExecutionListener$EagerTestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.IterationOrder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.DefaultDiscoveryRequest" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryRequest" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.EngineFilter" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.PostDiscoveryFilter" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.DefaultLauncher" classification="class" visibility="default">
+          <dependencies count="13">
+            <depends-on name="org.junit.platform.launcher.Launcher" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherListenerRegistry" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.EngineExecutionOrchestrator" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.EngineDiscoveryOrchestrator" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.PostDiscoveryFilter" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherDiscoveryResult" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.EngineDiscoveryOrchestrator$Phase" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.InternalTestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.ListenerRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.DefaultLauncherConfig" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfig" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.LauncherSessionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.PostDiscoveryFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.DefaultLauncherSession$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.launcher.LauncherInterceptor" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.LauncherInterceptor$Invocation" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.DefaultLauncherSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.DefaultLauncherSession$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.launcher.LauncherInterceptor" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.LauncherInterceptor$Invocation" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.DefaultLauncherSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.DefaultLauncherSession$ClosedLauncher" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.junit.platform.launcher.Launcher" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.DefaultLauncherSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.DefaultLauncherSession" classification="class" visibility="default">
+          <dependencies count="10">
+            <depends-on name="org.junit.platform.launcher.LauncherSession" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.LauncherInterceptor" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherSessionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.DelegatingLauncher" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.Launcher" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherInterceptor$Invocation" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.InterceptingLauncher" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.DefaultLauncherSession$ClosedLauncher" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.DefaultLauncherSession$2" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.DefaultLauncherSession$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.DelegatingEngineExecutionListener" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.DelegatingLauncher" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.launcher.Launcher" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryRequest" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.EngineDiscoveryErrorDescriptor" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.EngineDiscoveryOrchestrator$Phase" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.core.EngineDiscoveryOrchestrator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.EngineDiscoveryOrchestrator" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.junit.platform.launcher.core.EngineDiscoveryResultValidator" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.PostDiscoveryFilter" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.ListenerRegistry" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherDiscoveryResult" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.EngineDiscoveryOrchestrator$Phase" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.EngineFilterer" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.EngineIdValidator" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.EngineDiscoveryResult" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.EngineDiscoveryErrorDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.EngineDiscoveryResultValidator" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.EngineExecutionOrchestrator$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.launcher.TestPlan$Visitor" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.EngineExecutionOrchestrator" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.EngineExecutionOrchestrator" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.junit.platform.launcher.core.ListenerRegistry" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.InternalTestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherDiscoveryResult" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.StreamInterceptingTestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.OutcomeDelayingEngineExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherConstants" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.EngineExecutionOrchestrator$1" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestPlan$Visitor" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.ExecutionListenerAdapter" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.EngineDiscoveryErrorDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.StackTracePruningEngineExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.EngineFilterer" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.EngineFilter" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.TestEngineFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.EngineIdValidator" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.ExecutionListenerAdapter" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.InterceptingLauncher" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="org.junit.platform.launcher.core.DelegatingLauncher" classification="extends" />
+            <depends-on name="org.junit.platform.launcher.LauncherInterceptor" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.Launcher" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherInterceptor$Invocation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.InternalTestPlan" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="extends" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherDiscoveryResult" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.IterationOrder$1" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.core.IterationOrder" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.IterationOrder$2" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.core.IterationOrder" classification="extends" />
+            <depends-on name="org.junit.platform.launcher.core.IterationOrder$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.IterationOrder" classification="enum" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.core.IterationOrder$1" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.IterationOrder$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.LauncherConfig$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.LauncherConfig$Builder" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.junit.platform.launcher.LauncherSessionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.PostDiscoveryFilter" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfig" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfig$1" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.DefaultLauncherConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.LauncherConfig" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.junit.platform.launcher.LauncherSessionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.PostDiscoveryFilter" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfig$Builder" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfig$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.LauncherConfigurationParameters$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.LauncherConfigurationParameters$Builder" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters$ParameterProvider" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.LauncherConfigurationParameters$ParameterProvider$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters$ParameterProvider" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.LauncherConfigurationParameters$ParameterProvider$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters$ParameterProvider" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.LauncherConfigurationParameters$ParameterProvider$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters$ParameterProvider" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.LauncherConfigurationParameters$ParameterProvider$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters$ParameterProvider" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.LauncherConfigurationParameters$ParameterProvider" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters$ParameterProvider$1" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters$ParameterProvider$2" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters$ParameterProvider$3" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters$ParameterProvider$4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.LauncherConfigurationParameters" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters$ParameterProvider" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters$Builder" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.junit.platform.launcher.EngineFilter" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.PostDiscoveryFilter" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters$Builder" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.DefaultDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.discovery.LauncherDiscoveryListeners" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.LauncherDiscoveryResult" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.LauncherFactory" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="org.junit.platform.launcher.LauncherSession" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfig" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.Launcher" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.DefaultLauncher" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.PostDiscoveryFilter" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherInterceptor" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherSessionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.ListenerRegistry" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherConstants" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherConfigurationParameters$Builder" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.DefaultLauncherSession" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.SessionPerRequestLauncher" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.ServiceLoaderRegistry" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.ServiceLoaderTestEngineRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.LauncherListenerRegistry" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.launcher.core.ListenerRegistry" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.ListenerRegistry" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="org.junit.platform.launcher.LauncherSessionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.session.LauncherSessionListeners" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.discovery.LauncherDiscoveryListeners" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.CompositeTestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.CompositeEngineExecutionListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.OutcomeDelayingEngineExecutionListener$Outcome" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.core.OutcomeDelayingEngineExecutionListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.OutcomeDelayingEngineExecutionListener" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.core.DelegatingEngineExecutionListener" classification="extends" />
+            <depends-on name="org.junit.platform.launcher.core.OutcomeDelayingEngineExecutionListener$Outcome" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.ServiceLoaderRegistry" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.ServiceLoaderTestEngineRegistry" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.core.TestEngineFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.SessionPerRequestLauncher" classification="class" visibility="default">
+          <dependencies count="11">
+            <depends-on name="org.junit.platform.launcher.Launcher" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.core.LauncherListenerRegistry" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherSessionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherInterceptor" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherSession" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.ListenerRegistry" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.DefaultLauncherSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.StackTracePruningEngineExecutionListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.core.DelegatingEngineExecutionListener" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.StreamInterceptingTestExecutionListener" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.launcher.core.CompositeTestExecutionListener$EagerTestExecutionListener" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.core.StreamInterceptor" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.LauncherConstants" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.core.CompositeTestExecutionListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.StreamInterceptor$RewindableByteArrayOutputStream" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.core.StreamInterceptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.StreamInterceptor" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.core.StreamInterceptor$RewindableByteArrayOutputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.core.TestEngineFormatter" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.platform.launcher.listeners">
+        <type name="org.junit.platform.launcher.listeners.LegacyReportingUtils" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.listeners.LoggingListener" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.listeners.MutableTestExecutionSummary$DefaultFailure" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.launcher.listeners.TestExecutionSummary$Failure" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.MutableTestExecutionSummary" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.TestExecutionSummary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.listeners.MutableTestExecutionSummary" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.launcher.listeners.TestExecutionSummary" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.TestExecutionSummary$Failure" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.MutableTestExecutionSummary$DefaultFailure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.listeners.OutputDir" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.listeners.SummaryGeneratingListener$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.listeners.SummaryGeneratingListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.listeners.SummaryGeneratingListener" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.MutableTestExecutionSummary" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.TestExecutionSummary" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.SummaryGeneratingListener$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.listeners.TestExecutionSummary$Failure" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.TestExecutionSummary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.listeners.TestExecutionSummary" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.listeners.TestExecutionSummary$Failure" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.listeners.UniqueIdTrackingListener" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.launcher.TestExecutionListener" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.TestPlan" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.TestIdentifier" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.OutputDir" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.platform.launcher.listeners.discovery">
+        <type name="org.junit.platform.launcher.listeners.discovery.AbortOnFailureLauncherDiscoveryListener" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.EngineDiscoveryResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.listeners.discovery.CompositeLauncherDiscoveryListener" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.EngineDiscoveryResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.listeners.discovery.LauncherDiscoveryListeners$LauncherDiscoveryListenerType" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.discovery.LauncherDiscoveryListeners" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.listeners.discovery.LauncherDiscoveryListeners" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.discovery.LauncherDiscoveryListeners$LauncherDiscoveryListenerType" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.discovery.AbortOnFailureLauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.discovery.LoggingLauncherDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.discovery.CompositeLauncherDiscoveryListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.listeners.discovery.LoggingLauncherDiscoveryListener$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.listeners.discovery.LoggingLauncherDiscoveryListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.listeners.discovery.LoggingLauncherDiscoveryListener" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryListener" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.LauncherDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.EngineDiscoveryResult" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.EngineDiscoveryResult$Status" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.discovery.LoggingLauncherDiscoveryListener$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.platform.launcher.listeners.session">
+        <type name="org.junit.platform.launcher.listeners.session.CompositeLauncherSessionListener" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.LauncherSessionListener" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.LauncherSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.listeners.session.LauncherSessionListeners" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.LauncherSessionListener" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.listeners.session.CompositeLauncherSessionListener" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.platform.launcher.tagexpression">
+        <type name="org.junit.platform.launcher.tagexpression.DequeStack" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.tagexpression.Stack" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.Operator$Associativity" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.tagexpression.Operator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.Operator$TagExpressionCreator" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.junit.platform.launcher.tagexpression.ParseStatus" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.Stack" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TokenWith" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.Token" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.Operator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.Operator" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="org.junit.platform.launcher.tagexpression.Operator$Associativity" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.Operator$TagExpressionCreator" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.ParseStatus" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.Stack" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TokenWith" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.Operators" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.launcher.tagexpression.Operator" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.Operator$Associativity" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpressions" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.ParseResult" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.ParseResults$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.launcher.tagexpression.ParseResult" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.ParseResults" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.ParseResults$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.tagexpression.ParseResult" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.ParseResults" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.ParseResults" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.launcher.tagexpression.ParseResult" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.ParseResults$1" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.ParseResults$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.ParseStatus" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.launcher.tagexpression.Token" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TokenWith" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.Parser" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.launcher.tagexpression.Tokenizer" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.ParseResult" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.Token" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.ShuntingYard" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.ShuntingYard" classification="class" visibility="default">
+          <dependencies count="11">
+            <depends-on name="org.junit.platform.launcher.tagexpression.Operator" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.Token" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.Operators" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.Stack" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TokenWith" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.ParseResult" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.ParseStatus" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.DequeStack" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.ParseResults" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpressions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.Stack" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.TagExpression" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.tagexpression.ParseResult" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.Parser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.TagExpressions$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpressions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.TagExpressions$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpressions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.TagExpressions$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpressions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.TagExpressions$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpressions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.TagExpressions$5" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpressions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.TagExpressions$6" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="implements" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpressions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.TagExpressions" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpression" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpressions$1" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpressions$2" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpressions$3" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpressions$4" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpressions$5" classification="uses" />
+            <depends-on name="org.junit.platform.launcher.tagexpression.TagExpressions$6" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.Token" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.TokenWith" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.tagexpression.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.launcher.tagexpression.Tokenizer" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.launcher.tagexpression.Token" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

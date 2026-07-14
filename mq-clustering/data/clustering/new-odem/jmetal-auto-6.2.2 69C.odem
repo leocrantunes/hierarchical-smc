@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jMetal-auto-6.2.2">
+    <container name="/home/leo/repos/jMetal-6.2.2/jmetal-auto/target/jmetal-auto-6.2.2.jar" classification="jar">
+      <namespace name="org.uma.jmetal.auto.autoconfigurablealgorithm">
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOEAD$1EvolutionaryAlgorithmWithArchive" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOEAD" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO$1ParticleSwarmOptimizationAlgorithmWithArchive" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoConfigurableAlgorithm" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoConfigurableAlgorithm" classification="implements" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.StringParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.PositiveIntegerValue" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.ExternalArchiveParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.IntegerParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalIntegerParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.CreateInitialSolutionsParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.SelectionParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.VariationParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.CrossoverParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.ProbabilityParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.RepairDoubleSolutionStrategyParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.RealParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.MutationParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII$1EvolutionaryAlgorithmWithArchive" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOEAD" classification="class" visibility="public">
+          <dependencies count="20">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoConfigurableAlgorithm" classification="implements" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.StringParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.PositiveIntegerValue" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.ExternalArchiveParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.CreateInitialSolutionsParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.SelectionParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.VariationParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.ProbabilityParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.IntegerParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.AggregationFunctionParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.BooleanParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.SequenceGeneratorParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.RealParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.CrossoverParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.RepairDoubleSolutionStrategyParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.MutationParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.DifferentialEvolutionCrossoverParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOEAD$1EvolutionaryAlgorithmWithArchive" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII$1EvolutionaryAlgorithmWithArchive" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO" classification="class" visibility="public">
+          <dependencies count="22">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoConfigurableAlgorithm" classification="implements" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.StringParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.ExternalArchiveParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.VelocityInitializationParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.PositiveIntegerValue" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.IntegerParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.CreateInitialSolutionsParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.LocalBestInitializationParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.GlobalBestInitializationParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.GlobalBestSelectionParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.PerturbationParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.PositionUpdateParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.GlobalBestUpdateParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.LocalBestUpdateParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.VelocityUpdateParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.RealParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.MutationParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.InertiaWeightComputingParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.RepairDoubleSolutionStrategyParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO$1ParticleSwarmOptimizationAlgorithmWithArchive" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.auto.autoconfigurablealgorithm.examples">
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.examples.MOEADConfiguredFromAParameterString" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.examples.SMPSOWithUnboundedArchiveConfiguredFromAParameterString" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.examples.MOEADConfiguredToSolveProblemZDT110F2" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.examples.SMPSOConfiguredFromAParameterString" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.examples.NSGAIIConfiguredFromAParameterString" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.examples.MOEADWithUnboundedArchiveConfiguredFromAParameterString" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.examples.MOEADDEConfiguredForDTLZ1" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.examples.MOEADDEConfiguredFromAParameterString" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.autoconfigurablealgorithm.examples.NSGAIIWithExternalUnboundedArchiveConfiguredFromAParameterString" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.auto.irace">
+        <type name="org.uma.jmetal.auto.irace.AutoMOPSOIraceNHVIGDPlus" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.StringParameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.irace.AutoNSGAIIIraceHV" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.StringParameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.irace.AutoMOPSOIraceIGDPlus" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.StringParameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.irace.AutoMOEADIraceHV" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.StringParameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.irace.AutoMOPSOIraceHV" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.StringParameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.irace.AutoNSGAIIIraceNHV" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.StringParameter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.auto.irace.parameterfilegeneration">
+        <type name="org.uma.jmetal.auto.irace.parameterfilegeneration.AutoMOPSOIraceFileGenerator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.auto.irace.parameterfilegeneration.IraceParameterFileGenerator" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoConfigurableAlgorithm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.irace.parameterfilegeneration.IraceParameterFileGenerator" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoConfigurableAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalIntegerParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.BooleanParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.OrdinalParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.IntegerParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.RealParameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.irace.parameterfilegeneration.AutoNSGAIIIraceParameterFileGenerator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.auto.irace.parameterfilegeneration.IraceParameterFileGenerator" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoConfigurableAlgorithm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.irace.parameterfilegeneration.AutoMOEADIraceParameterFileGenerator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.auto.irace.parameterfilegeneration.IraceParameterFileGenerator" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoConfigurableAlgorithm" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.auto.parameter">
+        <type name="org.uma.jmetal.auto.parameter.RealParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.IntegerParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.BooleanParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.PositiveDoubleValue" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.PositiveIntegerValue" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.OrdinalParameter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.CategoricalIntegerParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.StringParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.Parameter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.auto.parameter.catalogue">
+        <type name="org.uma.jmetal.auto.parameter.catalogue.DensityEstimatorParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.RankingParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.VelocityUpdateParameter" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.VelocityUpdateParameter$1" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.VelocityUpdateParameter$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.PerturbationParameter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.MutationParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.SequenceGeneratorParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.RepairDoubleSolutionStrategyParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.GlobalBestUpdateParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.MutationParameter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.RepairDoubleSolutionStrategyParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.VelocityInitializationParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.GlobalBestInitializationParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.LocalBestUpdateParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.ProbabilityParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.RealParameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.LocalBestInitializationParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.VelocityUpdateParameter$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.VelocityUpdateParameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.CreateInitialSolutionsParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.SelectionParameter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.VelocityUpdateParameter$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.VelocityUpdateParameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.VariationParameter" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.CrossoverParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.MutationParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.DifferentialEvolutionCrossoverParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.ReplacementParameter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.InertiaWeightComputingParameter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.GlobalBestSelectionParameter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.DifferentialEvolutionCrossoverParameter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.PositionUpdateParameter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.AggregationFunctionParameter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+            <depends-on name="org.uma.jmetal.auto.parameter.BooleanParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.ExternalArchiveParameter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.parameter.catalogue.CrossoverParameter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.auto.parameter.CategoricalParameter" classification="extends" />
+            <depends-on name="org.uma.jmetal.auto.parameter.catalogue.RepairDoubleSolutionStrategyParameter" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.parameter.Parameter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.auto.experiment">
+        <type name="org.uma.jmetal.auto.experiment.SwarmIntelligenceStudy10000FinalR1" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.experiment.SwarmIntelligenceStudy10000" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.experiment.SwarmIntelligenceStudyR1" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.experiment.SwarmIntelligenceStudy10000FinalWith5000" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.experiment.SwarmIntelligenceStudy10000FinalIGDPlus" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.experiment.SwarmIntelligenceStudy10000Final" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.auto.experiment.SwarmIntelligenceStudy5000" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoNSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.auto.autoconfigurablealgorithm.AutoMOPSO" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

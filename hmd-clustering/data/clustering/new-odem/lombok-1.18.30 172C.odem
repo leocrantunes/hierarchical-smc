@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="lombok-1.18.30">
+    <container name="/home/leo/repos/lombok-1.18.30/dist/lombok-1.18.30.jar" classification="jar">
+      <namespace name="lombok">
+        <type name="lombok.AccessLevel" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.AllArgsConstructor$AnyAnnotation" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.AllArgsConstructor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.AllArgsConstructor" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="lombok.AllArgsConstructor$AnyAnnotation" classification="uses" />
+            <depends-on name="lombok.AccessLevel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.Builder$Default" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.Builder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.Builder$ObtainVia" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.Builder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.Builder" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="lombok.AccessLevel" classification="uses" />
+            <depends-on name="lombok.Builder$Default" classification="uses" />
+            <depends-on name="lombok.Builder$ObtainVia" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.Cleanup" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$10" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$11" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$12" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$13" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$14" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$15" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$16" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$17" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$18" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$19" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$20" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$21" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$22" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$23" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.CallSuperType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$24" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$25" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$26" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.CallSuperType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$27" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$28" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$29" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$30" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$31" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$32" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$33" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$34" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$35" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$36" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.NullCheckExceptionType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$37" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$38" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$39" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$40" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$41" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$42" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$43" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$44" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$45" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$46" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$47" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$48" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$49" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$5" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$50" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$51" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$52" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.IdentifierName" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$53" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$54" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$55" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.LogDeclaration" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$56" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$57" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$58" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$59" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$6" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$60" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$61" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$62" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.CapitalizationStrategy" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$63" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$64" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$65" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$66" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$67" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$68" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$69" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$7" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$70" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$71" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.IdentifierName" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$72" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$73" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$74" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$75" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$76" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$77" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.TypeName" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$78" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.CheckerFrameworkVersion" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$79" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$8" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.NullAnnotationLibrary" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys$9" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="extends" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ConfigurationKeys" classification="class" visibility="public">
+          <dependencies count="89">
+            <depends-on name="lombok.core.configuration.ConfigurationKey" classification="uses" />
+            <depends-on name="lombok.core.configuration.NullAnnotationLibrary" classification="uses" />
+            <depends-on name="lombok.core.configuration.FlagUsageType" classification="uses" />
+            <depends-on name="lombok.core.configuration.CallSuperType" classification="uses" />
+            <depends-on name="lombok.core.configuration.NullCheckExceptionType" classification="uses" />
+            <depends-on name="lombok.core.configuration.IdentifierName" classification="uses" />
+            <depends-on name="lombok.core.configuration.LogDeclaration" classification="uses" />
+            <depends-on name="lombok.core.configuration.CapitalizationStrategy" classification="uses" />
+            <depends-on name="lombok.core.configuration.TypeName" classification="uses" />
+            <depends-on name="lombok.core.configuration.CheckerFrameworkVersion" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$1" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$2" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$3" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$4" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$5" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$6" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$7" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$8" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$9" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$10" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$11" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$12" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$13" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$14" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$15" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$16" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$17" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$18" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$19" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$20" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$21" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$22" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$23" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$24" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$25" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$26" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$27" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$28" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$29" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$30" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$31" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$32" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$33" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$34" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$35" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$36" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$37" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$38" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$39" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$40" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$41" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$42" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$43" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$44" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$45" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$46" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$47" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$48" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$49" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$50" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$51" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$52" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$53" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$54" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$55" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$56" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$57" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$58" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$59" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$60" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$61" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$62" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$63" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$64" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$65" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$66" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$67" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$68" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$69" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$70" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$71" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$72" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$73" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$74" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$75" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$76" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$77" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$78" classification="uses" />
+            <depends-on name="lombok.ConfigurationKeys$79" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.CustomLog" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.Data" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.Delegate" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.EqualsAndHashCode$AnyAnnotation" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.EqualsAndHashCode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.EqualsAndHashCode$CacheStrategy" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.EqualsAndHashCode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.EqualsAndHashCode$Exclude" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.EqualsAndHashCode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.EqualsAndHashCode$Include" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.EqualsAndHashCode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.EqualsAndHashCode" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="lombok.EqualsAndHashCode$CacheStrategy" classification="uses" />
+            <depends-on name="lombok.EqualsAndHashCode$AnyAnnotation" classification="uses" />
+            <depends-on name="lombok.EqualsAndHashCode$Exclude" classification="uses" />
+            <depends-on name="lombok.EqualsAndHashCode$Include" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.Generated" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.Getter$AnyAnnotation" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.Getter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.Getter" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="lombok.AccessLevel" classification="uses" />
+            <depends-on name="lombok.Getter$AnyAnnotation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.Lombok" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.NoArgsConstructor$AnyAnnotation" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.NoArgsConstructor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.NoArgsConstructor" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="lombok.NoArgsConstructor$AnyAnnotation" classification="uses" />
+            <depends-on name="lombok.AccessLevel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.NonNull" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.RequiredArgsConstructor$AnyAnnotation" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.RequiredArgsConstructor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.RequiredArgsConstructor" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="lombok.RequiredArgsConstructor$AnyAnnotation" classification="uses" />
+            <depends-on name="lombok.AccessLevel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.Setter$AnyAnnotation" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.Setter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.Setter" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="lombok.AccessLevel" classification="uses" />
+            <depends-on name="lombok.Setter$AnyAnnotation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.Singular" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.SneakyThrows" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.Synchronized" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.ToString$Exclude" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.ToString" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ToString$Include" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.ToString" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.ToString" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="lombok.ToString$Exclude" classification="uses" />
+            <depends-on name="lombok.ToString$Include" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.Value" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.With$AnyAnnotation" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.With" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.With" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="lombok.AccessLevel" classification="uses" />
+            <depends-on name="lombok.With$AnyAnnotation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.val" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.var" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="lombok.delombok.ant">
+        <type name="lombok.delombok.ant.Tasks$Delombok" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="org.apache.tools.ant.Task" classification="extends" />
+            <depends-on name="org.apache.tools.ant.types.Path" classification="uses" />
+            <depends-on name="lombok.delombok.ant.Tasks$Format" classification="uses" />
+            <depends-on name="org.apache.tools.ant.types.Reference" classification="uses" />
+            <depends-on name="org.apache.tools.ant.types.FileSet" classification="uses" />
+            <depends-on name="lombok.core.LombokNode" classification="uses" />
+            <depends-on name="lombok.launch.Main" classification="uses" />
+            <depends-on name="org.apache.tools.ant.Location" classification="uses" />
+            <depends-on name="org.apache.tools.ant.Project" classification="uses" />
+            <depends-on name="org.apache.tools.ant.types.ResourceCollection" classification="uses" />
+            <depends-on name="org.apache.tools.ant.BuildException" classification="uses" />
+            <depends-on name="lombok.delombok.ant.Tasks" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.delombok.ant.Tasks$Format" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="lombok.delombok.ant.Tasks" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.delombok.ant.Tasks" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.delombok.ant.Tasks$Delombok" classification="uses" />
+            <depends-on name="lombok.delombok.ant.Tasks$Format" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="lombok.experimental">
+        <type name="lombok.experimental.Accessors" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.Delegate" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.ExtensionMethod" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.FieldDefaults" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.AccessLevel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.FieldNameConstants$Exclude" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.experimental.FieldNameConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.FieldNameConstants$Include" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.experimental.FieldNameConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.FieldNameConstants" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="lombok.AccessLevel" classification="uses" />
+            <depends-on name="lombok.experimental.FieldNameConstants$Exclude" classification="uses" />
+            <depends-on name="lombok.experimental.FieldNameConstants$Include" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.Helper" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.NonFinal" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.PackagePrivate" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.StandardException" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.AccessLevel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.SuperBuilder" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.Tolerate" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.UtilityClass" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.WithBy$AnyAnnotation" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.experimental.WithBy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.WithBy" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="lombok.AccessLevel" classification="uses" />
+            <depends-on name="lombok.experimental.WithBy$AnyAnnotation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.Wither$AnyAnnotation" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.experimental.Wither" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.Wither" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="lombok.AccessLevel" classification="uses" />
+            <depends-on name="lombok.experimental.Wither$AnyAnnotation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.experimental.var" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="lombok.extern.apachecommons">
+        <type name="lombok.extern.apachecommons.CommonsLog" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="lombok.extern.flogger">
+        <type name="lombok.extern.flogger.Flogger" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="lombok.extern.jackson">
+        <type name="lombok.extern.jackson.Jacksonized" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="lombok.extern.java">
+        <type name="lombok.extern.java.Log" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="lombok.extern.jbosslog">
+        <type name="lombok.extern.jbosslog.JBossLog" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="lombok.extern.log4j">
+        <type name="lombok.extern.log4j.Log4j" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.extern.log4j.Log4j2" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="lombok.extern.slf4j">
+        <type name="lombok.extern.slf4j.Slf4j" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.extern.slf4j.XSlf4j" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="lombok.javac.apt">
+        <type name="lombok.javac.apt.Processor" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="lombok.permit.Permit" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="lombok.launch">
+        <type name="lombok.launch.Agent" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="lombok.launch.Main" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.AnnotationProcessorHider$AnnotationProcessor" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="sun.misc.Unsafe" classification="uses" />
+            <depends-on name="jdk.internal.module.IllegalAccessLogger" classification="uses" />
+            <depends-on name="lombok.launch.AnnotationProcessorHider$AstModificationNotifierData" classification="uses" />
+            <depends-on name="lombok.launch.Main" classification="uses" />
+            <depends-on name="lombok.launch.AnnotationProcessorHider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.AnnotationProcessorHider$AstModificationNotifierData" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="lombok.launch.AnnotationProcessorHider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.AnnotationProcessorHider$ClaimingProcessor" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="lombok.launch.AnnotationProcessorHider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.AnnotationProcessorHider" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="lombok.launch.AnnotationProcessorHider$AnnotationProcessor" classification="uses" />
+            <depends-on name="lombok.launch.AnnotationProcessorHider$AstModificationNotifierData" classification="uses" />
+            <depends-on name="lombok.launch.AnnotationProcessorHider$ClaimingProcessor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.ClassFileMetaData" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="lombok.launch.Main" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="lombok.launch.ShadowClassLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.PackageShader" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="lombok.launch.ClassFileMetaData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.PatchFixesHider$Delegate" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="lombok.launch.PatchFixesHider$Util" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.PatchFixesHider$ExtensionMethod" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="lombok.launch.PatchFixesHider$Util" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.PatchFixesHider$Javadoc" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jdt.core.IJavaElement" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.compiler.ast.TypeDeclaration" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider$Util" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.PatchFixesHider$LombokDeps" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="lombok.launch.PatchFixesHider$Util" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.PatchFixesHider$PatchFixes" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="43">
+            <depends-on name="org.eclipse.jdt.core.dom.ASTNode" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.compiler.ast.ASTNode" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.IMember" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.dom.ASTVisitor" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.dom.rewrite.ListRewrite" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.dom.MethodDeclaration" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.dom.Annotation" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.dom.SingleMemberAnnotation" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.dom.NormalAnnotation" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.IMethod" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.dom.CompilationUnit" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.IType" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.dom.AbstractTypeDeclaration" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.dom.SingleVariableDeclaration" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.compiler.ast.FieldDeclaration" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.dom.Type" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.dom.Name" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.core.dom.rewrite.RewriteEvent" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.core.dom.rewrite.TokenScanner" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.search.SearchMatch" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.IField" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.IAnnotation" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.corext.refactoring.SearchResultGroup" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.core.SourceField" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.dom.SimpleName" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.compiler.ast.Annotation" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.IAnnotatable" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.corext.refactoring.structure.MemberVisibilityAdjustor$IncomingMemberVisibilityAdjustment" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.dom.QualifiedName" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.ISourceRange" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.JavaModelException" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.dom.ITypeBinding" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.dom.Expression" classification="uses" />
+            <depends-on name="org.eclipse.jdt.core.Signature" classification="uses" />
+            <depends-on name="lombok.eclipse.EcjAugments" classification="uses" />
+            <depends-on name="lombok.core.FieldAugment" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.core.dom.rewrite.NodeRewriteEvent" classification="uses" />
+            <depends-on name="org.eclipse.core.runtime.CoreException" classification="uses" />
+            <depends-on name="org.eclipse.core.resources.IResource" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.compiler.ast.TypeReference" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.corext.refactoring.structure.MemberVisibilityAdjustor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.PatchFixesHider$Tests" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.osgi.framework.Bundle" classification="uses" />
+            <depends-on name="org.eclipse.core.runtime.adaptor.EclipseStarter" classification="uses" />
+            <depends-on name="org.osgi.framework.BundleContext" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.PatchFixesHider$Transform" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="lombok.launch.PatchFixesHider$Util" classification="uses" />
+            <depends-on name="lombok.launch.Main" classification="uses" />
+            <depends-on name="lombok.permit.Permit" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.PatchFixesHider$Util" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="lombok.core.LombokNode" classification="uses" />
+            <depends-on name="lombok.launch.Main" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.PatchFixesHider$Val" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.eclipse.jdt.internal.compiler.lookup.TypeBinding" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.compiler.ast.Expression" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.compiler.lookup.BlockScope" classification="uses" />
+            <depends-on name="org.eclipse.jdt.internal.compiler.ast.LocalDeclaration" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider$Util" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.PatchFixesHider$ValPortal" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="lombok.launch.PatchFixesHider$Util" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.PatchFixesHider" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="10">
+            <depends-on name="lombok.launch.PatchFixesHider$Delegate" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider$ExtensionMethod" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider$Javadoc" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider$LombokDeps" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider$PatchFixes" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider$Tests" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider$Transform" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider$Util" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider$Val" classification="uses" />
+            <depends-on name="lombok.launch.PatchFixesHider$ValPortal" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="lombok.launch.ShadowClassLoader" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="lombok.launch.PackageShader" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="lombok.launch.AnnotationProcessorHider$AnnotationProcessor" classification="uses" />
+            <depends-on name="lombok.launch.AnnotationProcessorHider" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="lucene-highlighter-11.0.0">
+    <container name="/home/leo/github/lucene/lucene/luke/build/lucene-luke-11.0.0-SNAPSHOT/lucene-highlighter-11.0.0-SNAPSHOT.jar" classification="jar">
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.search.highlight">
+        <type name="org.apache.lucene.search.highlight.DefaultEncoder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.highlight.Encoder" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.Encoder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.Formatter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.highlight.TokenGroup" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.Fragmenter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.GradientFormatter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.highlight.Formatter" classification="implements" />
+            <depends-on name="org.apache.lucene.search.highlight.TokenGroup" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.Highlighter$FragmentQueue" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.highlight.TextFragment" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.Highlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.Highlighter" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="org.apache.lucene.search.highlight.Formatter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.Encoder" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.Scorer" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.Fragmenter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.TextFragment" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.TokenGroup" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.Highlighter$FragmentQueue" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.SimpleHTMLFormatter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.DefaultEncoder" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.SimpleFragmenter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.QueryScorer" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.InvalidTokenOffsetsException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.InvalidTokenOffsetsException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.LimitTokenOffsetFilter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.NullFragmenter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.highlight.Fragmenter" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.OffsetLimitTokenFilter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.PositionSpan" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.QueryScorer" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.highlight.Scorer" classification="implements" />
+            <depends-on name="org.apache.lucene.search.highlight.WeightedSpanTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.WeightedSpanTermExtractor" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.TextFragment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.QueryTermExtractor$BoostedTermExtractor" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.highlight.WeightedTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.QueryTermExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.QueryTermExtractor" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.highlight.WeightedTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.QueryTermExtractor$BoostedTermExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.QueryTermScorer" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.highlight.Scorer" classification="implements" />
+            <depends-on name="org.apache.lucene.search.highlight.TextFragment" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.WeightedTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.QueryTermExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.Scorer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.highlight.TextFragment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.SimpleFragmenter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.highlight.Fragmenter" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.SimpleHTMLEncoder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.highlight.Encoder" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.SimpleHTMLFormatter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.highlight.Formatter" classification="implements" />
+            <depends-on name="org.apache.lucene.search.highlight.TokenGroup" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.SimpleSpanFragmenter" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.highlight.Fragmenter" classification="implements" />
+            <depends-on name="org.apache.lucene.search.highlight.QueryScorer" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.PositionSpan" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.WeightedSpanTerm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.SpanGradientFormatter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.highlight.GradientFormatter" classification="extends" />
+            <depends-on name="org.apache.lucene.search.highlight.TokenGroup" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.TermVectorLeafReader$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.highlight.TermVectorLeafReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.TermVectorLeafReader$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.highlight.TermVectorLeafReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.TermVectorLeafReader$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.highlight.TermVectorLeafReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.TermVectorLeafReader" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.highlight.TermVectorLeafReader$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.TermVectorLeafReader$2" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.TermVectorLeafReader$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.TextFragment" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.TokenGroup" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.TokenSources" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.highlight.LimitTokenOffsetFilter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.TokenStreamFromTermVector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.TokenStreamFromTermVector$TokenLL" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.highlight.TokenStreamFromTermVector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.TokenStreamFromTermVector" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.highlight.TokenStreamFromTermVector$TokenLL" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.WeightedSpanTerm" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.highlight.WeightedTerm" classification="extends" />
+            <depends-on name="org.apache.lucene.search.highlight.PositionSpan" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.WeightedSpanTermExtractor$DelegatingLeafReader" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.highlight.WeightedSpanTermExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.WeightedSpanTermExtractor$PositionCheckingMap" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.highlight.WeightedSpanTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.WeightedSpanTermExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.WeightedSpanTermExtractor" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.search.highlight.WeightedSpanTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.PositionSpan" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.TokenStreamFromTermVector" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.TermVectorLeafReader" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.WeightedSpanTermExtractor$DelegatingLeafReader" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.OffsetLimitTokenFilter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.WeightedSpanTermExtractor$PositionCheckingMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.highlight.WeightedTerm" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.search.matchhighlight">
+        <type name="org.apache.lucene.search.matchhighlight.BreakIteratorShrinkingAdjuster" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageAdjuster" classification="implements" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.Passage" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.CharSequenceIterator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.CharSequenceIterator" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters$1" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters$AbstractFieldValueHighlighter" classification="extends" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageSelector" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageFormatter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$QueryOffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.Passage" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$FieldValueHighlighter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters$2" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters$AbstractFieldValueHighlighter" classification="extends" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageSelector" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageFormatter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$QueryOffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.Passage" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$FieldValueHighlighter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters$3" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters$AbstractFieldValueHighlighter" classification="extends" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$QueryOffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$FieldValueHighlighter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters$4" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters$AbstractFieldValueHighlighter" classification="extends" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$QueryOffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$FieldValueHighlighter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters$AbstractFieldValueHighlighter" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$FieldValueHighlighter" classification="implements" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="11">
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$FieldValueHighlighter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageSelector" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageFormatter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.BreakIteratorShrinkingAdjuster" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageAdjuster" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters$2" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters$3" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters$4" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.FieldValueHighlighters$AbstractFieldValueHighlighter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.MatchHighlighter$DocHighlights" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.MatchHighlighter$DocHit" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$QueryOffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$FieldValueProvider" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.MatchHighlighter$FieldValueHighlighter$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$FieldValueHighlighter" classification="implements" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$QueryOffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.MatchHighlighter$FieldValueHighlighter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$QueryOffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$FieldValueHighlighter$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.MatchHighlighter$QueryOffsetRange" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="extends" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.MatchHighlighter" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsRetrievalStrategySupplier" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$FieldValueHighlighter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$DocHighlights" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$DocHit" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$QueryOffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$FieldValueProvider" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$MatchOffsetsConsumer" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchHighlighter$FieldValueHighlighter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsRetrievalStrategySupplier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$DocHighlightData" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$FieldValueProvider" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$FieldValueProvider" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$MatchOffsetsConsumer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$FieldValueProvider" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$MatchesIteratorWithLimit" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$StoredFieldsVisitor" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$FieldValueProvider" classification="implements" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsRetrievalStrategy" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsRetrievalStrategySupplier" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$MatchOffsetsConsumer" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$DocHighlightData" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$StoredFieldsVisitor" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$FieldValueProvider" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$2" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsFromMatchIterator" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsFromPositions" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsFromTokens" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$MatchesIteratorWithLimit" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.OffsetsFromMatchIterator" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsRetrievalStrategy" classification="implements" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsFromPositions" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$FieldValueProvider" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.OffsetsFromPositions$1PositionSpan" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="extends" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsFromPositions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.OffsetsFromPositions" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsRetrievalStrategy" classification="implements" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$FieldValueProvider" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsFromPositions$1PositionSpan" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.OffsetsFromTokens$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsFromTokens" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$FieldValueProvider" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.OffsetsFromTokens" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsRetrievalStrategy" classification="implements" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$FieldValueProvider" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsFromTokens$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.OffsetsFromValues" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsRetrievalStrategy" classification="implements" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$FieldValueProvider" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.OffsetsRetrievalStrategy" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever$FieldValueProvider" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.MatchRegionRetriever" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.OffsetsRetrievalStrategySupplier" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetsRetrievalStrategy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.Passage" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.PassageAdjuster" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.Passage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.PassageFormatter$SlicePoint$Type" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageFormatter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageFormatter$SlicePoint" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.PassageFormatter$SlicePoint" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageFormatter$SlicePoint$Type" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.PassageFormatter" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.Passage" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageFormatter$SlicePoint" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageSelector" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageFormatter$SlicePoint$Type" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.PassageSelector$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageSelector" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.Passage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.matchhighlight.PassageSelector" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.matchhighlight.Passage" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageAdjuster" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.OffsetRange" classification="uses" />
+            <depends-on name="org.apache.lucene.search.matchhighlight.PassageSelector$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.search.uhighlight">
+        <type name="org.apache.lucene.search.uhighlight.AnalysisOffsetStrategy$MultiValueTokenStream" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.uhighlight.AnalysisOffsetStrategy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.AnalysisOffsetStrategy" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.search.uhighlight.FieldOffsetStrategy" classification="extends" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UHComponents" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$OffsetSource" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.AnalysisOffsetStrategy$MultiValueTokenStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.CharArrayMatcher" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.CustomSeparatorBreakIterator" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.DefaultPassageFormatter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.PassageFormatter" classification="extends" />
+            <depends-on name="org.apache.lucene.search.uhighlight.Passage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.FieldHighlighter" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.search.uhighlight.FieldOffsetStrategy" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PassageScorer" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PassageFormatter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.Passage" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$OffsetSource" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.FieldOffsetStrategy$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.FieldOffsetStrategy" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UHComponents" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.FieldOffsetStrategy" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="12">
+            <depends-on name="org.apache.lucene.search.uhighlight.UHComponents" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$OffsetSource" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.CharArrayMatcher" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.LabelledCharArrayMatcher" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$HighlightFlag" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$MultiOffsetsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.FieldOffsetStrategy$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfMatchesIteratorWithSubs" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfPostings" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.LabelledCharArrayMatcher$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.LabelledCharArrayMatcher" classification="implements" />
+            <depends-on name="org.apache.lucene.search.uhighlight.CharArrayMatcher" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.LabelledCharArrayMatcher" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.CharArrayMatcher" classification="extends" />
+            <depends-on name="org.apache.lucene.search.uhighlight.LabelledCharArrayMatcher$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.LengthGoalBreakIterator" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.MemoryIndexOffsetStrategy$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.CharArrayMatcher" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.MemoryIndexOffsetStrategy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.MemoryIndexOffsetStrategy" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.apache.lucene.search.uhighlight.AnalysisOffsetStrategy" classification="extends" />
+            <depends-on name="org.apache.lucene.search.uhighlight.CharArrayMatcher" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UHComponents" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.LabelledCharArrayMatcher" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.MultiTermHighlighting" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.MemoryIndexOffsetStrategy$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.MultiFieldsOffsetStrategy" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.search.uhighlight.FieldOffsetStrategy" classification="extends" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$OffsetSource" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UHComponents" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$MultiOffsetsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.MultiTermHighlighting$AutomataCollector" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.LabelledCharArrayMatcher" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.MultiTermHighlighting" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.MultiTermHighlighting" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.LabelledCharArrayMatcher" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.MultiTermHighlighting$AutomataCollector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.NoOpOffsetStrategy" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.search.uhighlight.FieldOffsetStrategy" classification="extends" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$OffsetSource" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UHComponents" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.LabelledCharArrayMatcher" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.OffsetsEnum$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.OffsetsEnum$MultiOffsetsEnum" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfMatchesIterator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfMatchesIteratorWithSubs$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfMatchesIteratorWithSubs" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfMatchesIteratorWithSubs$CachedOE" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="extends" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfMatchesIteratorWithSubs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfMatchesIteratorWithSubs" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="extends" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfMatchesIterator" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfMatchesIteratorWithSubs$CachedOE" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfMatchesIteratorWithSubs$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfPostings" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$MultiOffsetsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfMatchesIterator" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfMatchesIteratorWithSubs" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfMatchesIteratorWithSubs$CachedOE" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfMatchesIteratorWithSubs$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum$OfPostings" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader$1$1$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader$1$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader$1$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader$1$1$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader$1$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader$1$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader$1$1$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.Passage" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.PassageFormatter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.uhighlight.Passage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.PassageScorer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.uhighlight.Passage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.PhraseHelper$1$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.PhraseHelper$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.highlight.WeightedSpanTermExtractor" classification="extends" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.WeightedSpanTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$1$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.PhraseHelper$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.PhraseHelper$OffsetSpanCollector" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$SpanCollectedOffsetsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.PhraseHelper$SingleFieldWithOffsetsFilterLeafReader$1$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$SingleFieldWithOffsetsFilterLeafReader$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$SingleFieldWithOffsetsFilterLeafReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.PhraseHelper$SingleFieldWithOffsetsFilterLeafReader$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$SingleFieldWithOffsetsFilterLeafReader" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$SingleFieldWithOffsetsFilterLeafReader$1$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.PhraseHelper$SingleFieldWithOffsetsFilterLeafReader" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$SingleFieldWithOffsetsFilterLeafReader$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.PhraseHelper$SpanCollectedOffsetsEnum" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="extends" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.PhraseHelper" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$OffsetSpanCollector" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$SingleFieldWithOffsetsFilterLeafReader" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$2" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$SpanCollectedOffsetsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$SingleFieldWithOffsetsFilterLeafReader$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$SingleFieldWithOffsetsFilterLeafReader$1$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper$1$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.PostingsOffsetStrategy" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.search.uhighlight.FieldOffsetStrategy" classification="extends" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UHComponents" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$OffsetSource" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.PostingsWithTermVectorsOffsetStrategy" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.search.uhighlight.FieldOffsetStrategy" classification="extends" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UHComponents" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$OffsetSource" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.TermVectorFilteredLeafReader" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.SplittingBreakIterator" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.TermVectorFilteredLeafReader$TermVectorFilteredTermsEnum" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.uhighlight.TermVectorFilteredLeafReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.TermVectorFilteredLeafReader$TermsFilteredTerms" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.TermVectorFilteredLeafReader$TermVectorFilteredTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.TermVectorFilteredLeafReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.TermVectorFilteredLeafReader" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.TermVectorFilteredLeafReader$TermsFilteredTerms" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.TermVectorFilteredLeafReader$TermVectorFilteredTermsEnum" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.TermVectorOffsetStrategy" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.search.uhighlight.FieldOffsetStrategy" classification="extends" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UHComponents" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$OffsetSource" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.TermVectorLeafReader" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OverlaySingleDocTermsLeafReader" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.TokenStreamOffsetStrategy$TokenStreamOffsetsEnum" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="extends" />
+            <depends-on name="org.apache.lucene.search.uhighlight.CharArrayMatcher" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.TokenStreamOffsetStrategy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.TokenStreamOffsetStrategy" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.search.uhighlight.AnalysisOffsetStrategy" classification="extends" />
+            <depends-on name="org.apache.lucene.search.uhighlight.CharArrayMatcher" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UHComponents" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.OffsetsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.LabelledCharArrayMatcher" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.TokenStreamOffsetStrategy$TokenStreamOffsetsEnum" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.UHComponents" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.LabelledCharArrayMatcher" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$HighlightFlag" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.MultiTermHighlighting" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$4" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$Builder" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$HighlightFlag" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PassageScorer" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PassageFormatter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.Passage" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$HighlightFlag" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$LimitedStoredFieldVisitor" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$OffsetSource" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$TermVectorReusingLeafReader$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$TermVectorReusingLeafReader" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$TermVectorReusingLeafReader$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$TermVectorReusingLeafReader" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$TermVectorReusingLeafReader" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$TermVectorReusingLeafReader$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$TermVectorReusingLeafReader$2" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.UnifiedHighlighter" classification="class" visibility="public">
+          <dependencies count="29">
+            <depends-on name="org.apache.lucene.search.uhighlight.LabelledCharArrayMatcher" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PassageScorer" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PassageFormatter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.Passage" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$HighlightFlag" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$Builder" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$OffsetSource" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.FieldHighlighter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UHComponents" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.FieldOffsetStrategy" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PhraseHelper" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$LimitedStoredFieldVisitor" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$TermVectorReusingLeafReader" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$2" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.MultiFieldsOffsetStrategy" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.SplittingBreakIterator" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$3" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.MultiTermHighlighting" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.TokenStreamOffsetStrategy" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.MemoryIndexOffsetStrategy" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.NoOpOffsetStrategy" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.TermVectorOffsetStrategy" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PostingsOffsetStrategy" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.PostingsWithTermVectorsOffsetStrategy" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$4" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.DefaultPassageFormatter" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$TermVectorReusingLeafReader$2" classification="uses" />
+            <depends-on name="org.apache.lucene.search.uhighlight.UnifiedHighlighter$TermVectorReusingLeafReader$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.uhighlight.WholeBreakIterator" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.search.vectorhighlight">
+        <type name="org.apache.lucene.search.vectorhighlight.BaseFragListBuilder$IteratorQueue" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.BaseFragListBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.BaseFragListBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FragListBuilder" classification="implements" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.BaseFragListBuilder$IteratorQueue" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList$WeightedPhraseInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.BaseFragmentsBuilder$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.BaseFragmentsBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.BaseFragmentsBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="12">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FragmentsBuilder" classification="implements" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.BoundaryScanner" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.Encoder" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList$WeightedFragInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList$WeightedPhraseInfo$Toffs" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList$WeightedFragInfo$SubInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.SimpleBoundaryScanner" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.BaseFragmentsBuilder$1" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.DefaultEncoder" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList$WeightedPhraseInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.BoundaryScanner" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.BreakIteratorBoundaryScanner" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.BoundaryScanner" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.FastVectorHighlighter" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FragListBuilder" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FragmentsBuilder" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldQuery" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.Encoder" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldTermStack" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.SimpleFragListBuilder" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.ScoreOrderFragmentsBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.FieldFragList$WeightedFragInfo$SubInfo" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList$WeightedPhraseInfo$Toffs" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList$WeightedFragInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList$WeightedPhraseInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.FieldFragList$WeightedFragInfo" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList$WeightedFragInfo$SubInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList$WeightedFragInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList$WeightedPhraseInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList$WeightedFragInfo$SubInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.FieldPhraseList$WeightedPhraseInfo$Toffs" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList$WeightedPhraseInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.FieldPhraseList$WeightedPhraseInfo" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList$WeightedPhraseInfo$Toffs" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldTermStack$TermInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldTermStack" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.FieldPhraseList" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList$WeightedPhraseInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldTermStack" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldQuery" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldTermStack$TermInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldQuery$QueryPhraseMap" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList$WeightedPhraseInfo$Toffs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.FieldQuery$QueryPhraseMap" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldQuery" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldTermStack$TermInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldTermStack" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.FieldQuery" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldQuery$QueryPhraseMap" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldTermStack$TermInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldTermStack" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.FieldTermStack$TermInfo" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldTermStack" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.FieldTermStack" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldTermStack$TermInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldQuery" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.FragListBuilder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.FragmentsBuilder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.highlight.Encoder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.ScoreOrderFragmentsBuilder$ScoreComparator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList$WeightedFragInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.ScoreOrderFragmentsBuilder" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.ScoreOrderFragmentsBuilder" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.BaseFragmentsBuilder" classification="extends" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.BoundaryScanner" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList$WeightedFragInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.ScoreOrderFragmentsBuilder$ScoreComparator" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.SimpleBoundaryScanner" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.BoundaryScanner" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.SimpleFieldFragList" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="extends" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList$WeightedPhraseInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList$WeightedFragInfo$SubInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList$WeightedFragInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.SimpleFragListBuilder" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.BaseFragListBuilder" classification="extends" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.SimpleFieldFragList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.SimpleFragmentsBuilder" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.BaseFragmentsBuilder" classification="extends" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.BoundaryScanner" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList$WeightedFragInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.SingleFragListBuilder" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FragListBuilder" classification="implements" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList$WeightedPhraseInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.SimpleFieldFragList" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.WeightedFieldFragList" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="extends" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList$WeightedPhraseInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldTermStack$TermInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList$WeightedFragInfo$SubInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList$WeightedFragInfo" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldTermStack" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.search.vectorhighlight.WeightedFragListBuilder" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.search.vectorhighlight.BaseFragListBuilder" classification="extends" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldFragList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.FieldPhraseList" classification="uses" />
+            <depends-on name="org.apache.lucene.search.vectorhighlight.WeightedFieldFragList" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

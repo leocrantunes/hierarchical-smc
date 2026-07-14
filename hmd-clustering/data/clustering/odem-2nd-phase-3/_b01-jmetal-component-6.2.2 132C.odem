@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jMetal-component-6.2.2">
+    <container name="/home/leo/repos/jMetal-6.2.2/jmetal-component/target/jmetal-component-6.2.2.jar" classification="jar">
+      <namespace name="org.uma.jmetal.component.util">
+        <type name="org.uma.jmetal.component.util.RankingAndDensityEstimatorPreference" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.common.evaluation.impl">
+        <type name="org.uma.jmetal.component.catalogue.common.evaluation.impl.MultiThreadedEvaluation" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluationWithArchive" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.common.evaluation">
+        <type name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.common.solutionscreation.impl">
+        <type name="org.uma.jmetal.component.catalogue.common.solutionscreation.impl.RandomSolutionsCreation" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.common.solutionscreation.impl.LatinHypercubeSamplingSolutionsCreation" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.common.solutionscreation.impl.ScatterSearchSolutionsCreation" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.common.solutionscreation">
+        <type name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.common.termination.impl">
+        <type name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByKeyboard$KeyboardReader" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByKeyboard" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByComputingTime" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByQualityIndicator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByKeyboard" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="implements" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByKeyboard$KeyboardReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.common.termination">
+        <type name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.localbestinitialization">
+        <type name="org.uma.jmetal.component.catalogue.pso.localbestinitialization.LocalBestInitialization" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.localbestinitialization.impl">
+        <type name="org.uma.jmetal.component.catalogue.pso.localbestinitialization.impl.DefaultLocalBestInitialization" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.localbestinitialization.LocalBestInitialization" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.positionupdate">
+        <type name="org.uma.jmetal.component.catalogue.pso.positionupdate.PositionUpdate" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.positionupdate.impl">
+        <type name="org.uma.jmetal.component.catalogue.pso.positionupdate.impl.DefaultPositionUpdate" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.positionupdate.PositionUpdate" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.velocityinitialization.impl">
+        <type name="org.uma.jmetal.component.catalogue.pso.velocityinitialization.impl.SPSO2007VelocityInitialization" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.velocityinitialization.VelocityInitialization" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.pso.velocityinitialization.impl.SPSO2011VelocityInitialization" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.velocityinitialization.VelocityInitialization" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.pso.velocityinitialization.impl.DefaultVelocityInitialization" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.velocityinitialization.VelocityInitialization" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.velocityinitialization">
+        <type name="org.uma.jmetal.component.catalogue.pso.velocityinitialization.VelocityInitialization" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.globalbestupdate">
+        <type name="org.uma.jmetal.component.catalogue.pso.globalbestupdate.GlobalBestUpdate" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.globalbestupdate.impl">
+        <type name="org.uma.jmetal.component.catalogue.pso.globalbestupdate.impl.DefaultGlobalBestUpdate" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestupdate.GlobalBestUpdate" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.globalbestselection">
+        <type name="org.uma.jmetal.component.catalogue.pso.globalbestselection.GlobalBestSelection" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.globalbestselection.impl">
+        <type name="org.uma.jmetal.component.catalogue.pso.globalbestselection.impl.NaryTournamentGlobalBestSelection" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestselection.GlobalBestSelection" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.pso.globalbestselection.impl.RandomGlobalBestSelection" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestselection.GlobalBestSelection" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.pso.globalbestselection.impl.BinaryTournamentGlobalBestSelection" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestselection.GlobalBestSelection" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.globalbestinitialization.impl">
+        <type name="org.uma.jmetal.component.catalogue.pso.globalbestinitialization.impl.DefaultGlobalBestInitialization" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestinitialization.GlobalBestInitialization" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.globalbestinitialization">
+        <type name="org.uma.jmetal.component.catalogue.pso.globalbestinitialization.GlobalBestInitialization" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.impl">
+        <type name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.impl.InertiaWeightRangeBasedComputingStrategy" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.InertiaWeightComputingStrategy" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.impl.LinearIncreasingStrategy" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.impl.InertiaWeightRangeBasedComputingStrategy" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.impl.ConstantValueStrategy" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.InertiaWeightComputingStrategy" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.impl.LinearDecreasingStrategy" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.impl.InertiaWeightRangeBasedComputingStrategy" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.impl.RandomSelectedValueStrategy" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.InertiaWeightComputingStrategy" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy">
+        <type name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.InertiaWeightComputingStrategy" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.perturbation.impl">
+        <type name="org.uma.jmetal.component.catalogue.pso.perturbation.impl.FrequencySelectionMutationBasedPerturbation" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.perturbation.Perturbation" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.perturbation">
+        <type name="org.uma.jmetal.component.catalogue.pso.perturbation.Perturbation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.localbestupdate">
+        <type name="org.uma.jmetal.component.catalogue.pso.localbestupdate.LocalBestUpdate" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.localbestupdate.impl">
+        <type name="org.uma.jmetal.component.catalogue.pso.localbestupdate.impl.DefaultLocalBestUpdate" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.localbestupdate.LocalBestUpdate" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.velocityupdate">
+        <type name="org.uma.jmetal.component.catalogue.pso.velocityupdate.VelocityUpdate" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestselection.GlobalBestSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.InertiaWeightComputingStrategy" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.pso.velocityupdate.impl">
+        <type name="org.uma.jmetal.component.catalogue.pso.velocityupdate.impl.DefaultVelocityUpdate" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.velocityupdate.VelocityUpdate" classification="implements" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestselection.GlobalBestSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.InertiaWeightComputingStrategy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.pso.velocityupdate.impl.SPS2011VelocityUpdate" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.velocityupdate.VelocityUpdate" classification="implements" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestselection.GlobalBestSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.InertiaWeightComputingStrategy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.pso.velocityupdate.impl.ConstrainedVelocityUpdate" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.velocityupdate.VelocityUpdate" classification="implements" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestselection.GlobalBestSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.InertiaWeightComputingStrategy" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.ea.variation.impl">
+        <type name="org.uma.jmetal.component.catalogue.ea.variation.impl.CrossoverAndMutationVariation" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.ea.variation.impl.DifferentialEvolutionCrossoverVariation" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.ea.variation">
+        <type name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.ea.replacement">
+        <type name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement$RemovalPolicy" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement$RemovalPolicy" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.ea.replacement.impl">
+        <type name="org.uma.jmetal.component.catalogue.ea.replacement.impl.MuCommaLambdaReplacement" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.ea.replacement.impl.MuPlusLambdaReplacement" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.ea.replacement.impl.SingleSolutionReplacement" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.ea.replacement.impl.SMSEMOAReplacement" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.ea.replacement.impl.MOEADReplacement" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="implements" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.impl.PopulationAndNeighborhoodSelection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.ea.replacement.impl.PairwiseReplacement" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.ea.replacement.impl.RankingAndDensityEstimatorReplacement" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="implements" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement$RemovalPolicy" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.util.RankingAndDensityEstimatorPreference" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.ea.selection.impl">
+        <type name="org.uma.jmetal.component.catalogue.ea.selection.impl.PopulationAndNeighborhoodSelection" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.ea.selection.impl.DifferentialEvolutionSelection" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.ea.selection.impl.NeighborhoodSelection" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.ea.selection.impl.NaryTournamentSelection" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="implements" />
+            <depends-on name="org.uma.jmetal.component.util.RankingAndDensityEstimatorPreference" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.catalogue.ea.selection.impl.RandomSelection" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.catalogue.ea.selection">
+        <type name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.examples.singleobjective.geneticalgorithm">
+        <type name="org.uma.jmetal.component.examples.singleobjective.geneticalgorithm.GenerationalGeneticAlgorithmExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.singleobjective.GeneticAlgorithmBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.singleobjective.geneticalgorithm.SteadyStateGeneticAlgorithmDefaultConfigurationExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.singleobjective.GeneticAlgorithmBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.singleobjective.geneticalgorithm.GeneticAlgorithmTSPExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.singleobjective.GeneticAlgorithmBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.singleobjective.geneticalgorithm.GeneticAlgorithmTSPWithConstraintsExample$2" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="extends" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.examples.singleobjective.geneticalgorithm.GeneticAlgorithmTSPWithConstraintsExample" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.singleobjective.geneticalgorithm.GenerationalGeneticAlgorithmWithRuntimeChartExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.singleobjective.GeneticAlgorithmBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.singleobjective.geneticalgorithm.GenerationalGeneticAlgorithmWithFitnessObserverExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.singleobjective.GeneticAlgorithmBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.singleobjective.geneticalgorithm.GenerationalGeneticAlgorithmBinaryExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.singleobjective.GeneticAlgorithmBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.singleobjective.geneticalgorithm.GeneticAlgorithmTSPWithConstraintsExample" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.impl.RandomSolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.impl.MuPlusLambdaReplacement" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.impl.CrossoverAndMutationVariation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.impl.NaryTournamentSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.examples.singleobjective.geneticalgorithm.GeneticAlgorithmTSPWithConstraintsExample$1" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.examples.singleobjective.geneticalgorithm.GeneticAlgorithmTSPWithConstraintsExample$2" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.singleobjective.geneticalgorithm.GenerationalGeneticAlgorithmWithMultiThreadedEvaluatorExample" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.MultiThreadedEvaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.singleobjective.GeneticAlgorithmBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.singleobjective.geneticalgorithm.GeneticAlgorithmTSPWithConstraintsExample$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.examples.singleobjective.geneticalgorithm.GeneticAlgorithmTSPWithConstraintsExample" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.examples.singleobjective.randomsearch">
+        <type name="org.uma.jmetal.component.examples.singleobjective.randomsearch.RandomSearchSingleObjectiveBinaryEncodingExample" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.RandomSearchAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.impl.RandomSolutionsCreation" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.examples.singleobjective.cellulargeneticalgorithm">
+        <type name="org.uma.jmetal.component.examples.singleobjective.cellulargeneticalgorithm.AsynchronousCellularGeneticAlgorithmBinaryExample" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.impl.CrossoverAndMutationVariation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.impl.NeighborhoodSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.singleobjective.GeneticAlgorithmBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.singleobjective.cellulargeneticalgorithm.AsynchronousCellularGeneticAlgorithmExample" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.impl.CrossoverAndMutationVariation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.impl.NeighborhoodSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.singleobjective.GeneticAlgorithmBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.singleobjective.cellulargeneticalgorithm.AsynchronousCellularGeneticAlgorithmUsingAPermutationSequenceGeneratorExample" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.impl.CrossoverAndMutationVariation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.impl.NeighborhoodSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.singleobjective.GeneticAlgorithmBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.singleobjective.cellulargeneticalgorithm.SynchronousCellularGeneticAlgorithmExample" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.impl.CrossoverAndMutationVariation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.impl.NeighborhoodSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.singleobjective.GeneticAlgorithmBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.examples.multiobjective.smsemoa">
+        <type name="org.uma.jmetal.component.examples.multiobjective.smsemoa.SMSEMOAWithRealTimeChartExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.SMSEMOABuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.smsemoa.SMSEMOADefaultConfigurationExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.SMSEMOABuilder" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.examples.multiobjective.smpso">
+        <type name="org.uma.jmetal.component.examples.multiobjective.smpso.SMPSOWithUnboundedArchiveExample" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.ParticleSwarmOptimizationAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluationWithArchive" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.smpso.SMPSOWithRealTimeChartExample" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.ParticleSwarmOptimizationAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.smpso.SMPSODefaultConfigurationExample" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.ParticleSwarmOptimizationAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.smpso.SMPSOSolvingConstrainedProblemExample" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.ParticleSwarmOptimizationAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.localbestupdate.impl.DefaultLocalBestUpdate" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.localbestupdate.LocalBestUpdate" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.smpso.SMPSOStoppingByKeyboardExample" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.ParticleSwarmOptimizationAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByKeyboard" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.smpso.SMPSOWithPlotliyChartExample" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.ParticleSwarmOptimizationAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.smpso.SMPSOSolvingEbes" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.ParticleSwarmOptimizationAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.smpso.SMPSOSolvingProblemEbes" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.ParticleSwarmOptimizationAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.localbestupdate.impl.DefaultLocalBestUpdate" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.localbestupdate.LocalBestUpdate" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.examples.multiobjective.moead">
+        <type name="org.uma.jmetal.component.examples.multiobjective.moead.MOEADDefaultConfigurationExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.MOEADBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.moead.MOEADSolvingProblemZDT110F2Example" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.MOEADBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.moead.MOEADWithRealTimeChartExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.MOEADBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.moead.MOEADDEDefaultConfigurationExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.MOEADDEBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.moead.MOEADWithUnboundedArchiveExample" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.MOEADBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluationWithArchive" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.examples.multiobjective.nsgaii">
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.ParallelNSGAIIExample" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.examples.multiobjective.nsgaii.ParallelNSGAIIExample$1" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.MultiThreadedEvaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIWithIndicatorChartExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIWithSmile3DChartExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIISteadyStateExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIPlottingEstimationsOfNadirAndIdealPointsExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIDEWithRealTimeChartExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIDEBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIWithMixedSolutionEncodingExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIDefaultConfigurationExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.ParallelNSGAIIExample$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.component.examples.multiobjective.nsgaii.ParallelNSGAIIExample" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIWithRealTimeChartExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIWithSmile2DChartExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIWithPlotly3DChartExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.GNSGAIIExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.GNSGAIIWithRealTimeChartExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIPlottingNadirlPointsExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIEbesExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIWithTwoIndicatorsChartExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIISteadyStateWithRealTimeChartExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIWithUnboundedArchiveExample" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluationWithArchive" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIStoppingByHypervolume" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByQualityIndicator" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIWithMNDSRankingExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIWithCrowdingDistanceArchiveExample" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluationWithArchive" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIWithPlotly2DChartExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIITSPExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIISolvingConstrainedProblemExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIStoppingByTimeExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByComputingTime" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIStoppingByKeyboardExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByKeyboard" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.examples.multiobjective.nsgaii.NSGAIIBinaryProblemExample" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.algorithm.singleobjective">
+        <type name="org.uma.jmetal.component.algorithm.singleobjective.GeneticAlgorithmBuilder$1" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="extends" />
+            <depends-on name="org.uma.jmetal.component.algorithm.singleobjective.GeneticAlgorithmBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.algorithm.singleobjective.GeneticAlgorithmBuilder" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.impl.RandomSolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.impl.MuPlusLambdaReplacement" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.impl.CrossoverAndMutationVariation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.impl.NaryTournamentSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.singleobjective.GeneticAlgorithmBuilder$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.algorithm">
+        <type name="org.uma.jmetal.component.algorithm.RandomSearchAlgorithm" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.algorithm.ParticleSwarmOptimizationAlgorithm" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.velocityinitialization.VelocityInitialization" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.localbestinitialization.LocalBestInitialization" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestinitialization.GlobalBestInitialization" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.velocityupdate.VelocityUpdate" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.positionupdate.PositionUpdate" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.perturbation.Perturbation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestupdate.GlobalBestUpdate" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.localbestupdate.LocalBestUpdate" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.InertiaWeightComputingStrategy" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestselection.GlobalBestSelection" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.component.algorithm.multiobjective">
+        <type name="org.uma.jmetal.component.algorithm.multiobjective.SMPSOBuilder" classification="class" visibility="public">
+          <dependencies count="27">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.velocityinitialization.VelocityInitialization" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.localbestinitialization.LocalBestInitialization" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestinitialization.GlobalBestInitialization" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.InertiaWeightComputingStrategy" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.velocityupdate.VelocityUpdate" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.positionupdate.PositionUpdate" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.perturbation.Perturbation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestupdate.GlobalBestUpdate" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.localbestupdate.LocalBestUpdate" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestselection.GlobalBestSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.ParticleSwarmOptimizationAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.impl.RandomSolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.velocityinitialization.impl.DefaultVelocityInitialization" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.localbestinitialization.impl.DefaultLocalBestInitialization" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestinitialization.impl.DefaultGlobalBestInitialization" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestselection.impl.BinaryTournamentGlobalBestSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.inertiaweightcomputingstrategy.impl.ConstantValueStrategy" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.velocityupdate.impl.ConstrainedVelocityUpdate" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.positionupdate.impl.DefaultPositionUpdate" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.perturbation.impl.FrequencySelectionMutationBasedPerturbation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.globalbestupdate.impl.DefaultGlobalBestUpdate" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.pso.localbestupdate.impl.DefaultLocalBestUpdate" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.algorithm.multiobjective.SMSEMOABuilder" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.impl.RandomSolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.impl.SMSEMOAReplacement" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.impl.CrossoverAndMutationVariation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.impl.RandomSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIBuilder" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.impl.RandomSolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.impl.RankingAndDensityEstimatorReplacement" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement$RemovalPolicy" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.impl.CrossoverAndMutationVariation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.impl.NaryTournamentSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.algorithm.multiobjective.MOEADBuilder" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.impl.RandomSolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.impl.CrossoverAndMutationVariation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.impl.PopulationAndNeighborhoodSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.impl.MOEADReplacement" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.algorithm.multiobjective.MOEADDEBuilder" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.impl.RandomSolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.impl.DifferentialEvolutionCrossoverVariation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.impl.PopulationAndNeighborhoodSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.impl.MOEADReplacement" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.component.algorithm.multiobjective.NSGAIIDEBuilder" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.Evaluation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.SolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.Termination" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.Selection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.Variation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.algorithm.EvolutionaryAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.solutionscreation.impl.RandomSolutionsCreation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.impl.RankingAndDensityEstimatorReplacement" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.replacement.Replacement$RemovalPolicy" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.variation.impl.DifferentialEvolutionCrossoverVariation" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.ea.selection.impl.DifferentialEvolutionSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.termination.impl.TerminationByEvaluations" classification="uses" />
+            <depends-on name="org.uma.jmetal.component.catalogue.common.evaluation.impl.SequentialEvaluation" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="elasticsearch-core-9.1.0">
+    <container name="/home/leo/github/elasticsearch/build/distribution/local/elasticsearch-9.1.0-SNAPSHOT/lib/elasticsearch-core-9.1.0-SNAPSHOT.jar" classification="jar">
+      <namespace name="org.elasticsearch.core">
+        <type name="org.elasticsearch.core.Glob" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.ESSloppyMath" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.FastMath" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.UpdateForV10$Owner" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.UpdateForV10" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.CheckedSupplier" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Predicates$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.Predicates" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.TimeValue" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.core.Nullable" classification="uses" />
+            <depends-on name="org.elasticsearch.core.TimeValue$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.AbstractRefCounted$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.AbstractRefCounted" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.PathUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.SuppressForbidden" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.IOUtils$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.IOUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.AbstractRefCounted" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.core.RefCounted" classification="implements" />
+            <depends-on name="org.elasticsearch.core.AbstractRefCounted$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Booleans" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.TimeValue$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.TimeValue" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.IOUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.core.Nullable" classification="uses" />
+            <depends-on name="org.elasticsearch.core.IOUtils$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.RestApiVersion" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.ReleasableIterator$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.core.ReleasableIterator" classification="implements" />
+            <depends-on name="org.elasticsearch.core.Releasable" classification="uses" />
+            <depends-on name="org.elasticsearch.core.Releasables" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Releasables$ReleaseOnce" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.core.Releasable" classification="implements" />
+            <depends-on name="org.elasticsearch.core.Releasables" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Releasables$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.core.Releasable" classification="implements" />
+            <depends-on name="org.elasticsearch.core.Releasables" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Assertions" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Types" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Releasables$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.core.Releasable" classification="uses" />
+            <depends-on name="org.elasticsearch.core.Releasables" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Releasables$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.core.Releasable" classification="implements" />
+            <depends-on name="org.elasticsearch.core.Releasables" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.SuppressForbidden" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.FastMath" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.RefCounted$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.RefCounted" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Releasables$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.core.Releasable" classification="implements" />
+            <depends-on name="org.elasticsearch.core.Releasables" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Releasables" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.elasticsearch.core.Releasable" classification="uses" />
+            <depends-on name="org.elasticsearch.core.Nullable" classification="uses" />
+            <depends-on name="org.elasticsearch.core.Releasables$1" classification="uses" />
+            <depends-on name="org.elasticsearch.core.Releasables$2" classification="uses" />
+            <depends-on name="org.elasticsearch.core.Releasables$3" classification="uses" />
+            <depends-on name="org.elasticsearch.core.Releasables$ReleaseOnce" classification="uses" />
+            <depends-on name="org.elasticsearch.core.Assertions" classification="uses" />
+            <depends-on name="org.elasticsearch.core.Releasables$4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Nullable" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Strings" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Streams$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.Streams" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Tuple" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.CheckedFunction" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.CheckedConsumer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.CheckedRunnable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Streams" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.core.IOUtils" classification="uses" />
+            <depends-on name="org.elasticsearch.core.Streams$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Predicates$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.Predicates" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.ReleasableIterator$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.core.ReleasableIterator" classification="implements" />
+            <depends-on name="org.elasticsearch.core.Releasable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Releasable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.FixForMultiProject" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.Predicates" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.core.Predicates$1" classification="uses" />
+            <depends-on name="org.elasticsearch.core.Predicates$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.UpdateForV10" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.UpdateForV10$Owner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.RefCounted$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.RefCounted" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.SimpleRefCounted" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.AbstractRefCounted" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.CharArrays" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.ReleasableIterator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.core.Releasable" classification="extends" />
+            <depends-on name="org.elasticsearch.core.ReleasableIterator$1" classification="uses" />
+            <depends-on name="org.elasticsearch.core.ReleasableIterator$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.RefCounted" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.core.RefCounted$2" classification="uses" />
+            <depends-on name="org.elasticsearch.core.AbstractRefCounted" classification="uses" />
+            <depends-on name="org.elasticsearch.core.RefCounted$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.elasticsearch.core.internal.provider">
+        <type name="org.elasticsearch.core.internal.provider.InMemoryModuleFinder$InMemoryModuleReference" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.internal.provider.InMemoryModuleFinder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.internal.provider.InMemoryModuleFinder" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.core.internal.provider.InMemoryModuleFinder$InMemoryModuleReference" classification="uses" />
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedModulePath" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader$JarMeta" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader$Resource" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.internal.provider.ProviderLocator" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader" classification="uses" />
+            <depends-on name="org.elasticsearch.core.internal.provider.InMemoryModuleFinder" classification="uses" />
+            <depends-on name="org.elasticsearch.jdk.ModuleQualifiedExportsService" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader$JarMeta" classification="uses" />
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader$Resource" classification="uses" />
+            <depends-on name="org.elasticsearch.core.internal.provider.InMemoryModuleFinder" classification="uses" />
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader$ScanResult" classification="uses" />
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader$1" classification="uses" />
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader$CompoundEnumeration" classification="uses" />
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedModulePath" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.internal.provider.EmbeddedModulePath" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedModulePath$ScanResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.internal.provider.EmbeddedModulePath$ScanResult" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedModulePath" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader$ScanResult" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader" classification="uses" />
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader$JarMeta" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader$CompoundEnumeration" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.core.internal.provider.EmbeddedImplClassLoader" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.elasticsearch.jdk">
+        <type name="org.elasticsearch.jdk.RuntimeVersionFeature" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.jdk.ModuleQualifiedExportsService$Holder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.jdk.ModuleQualifiedExportsService" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.jdk.JdkJarHellCheck$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.jdk.JdkJarHellCheck" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.jdk.JdkJarHellCheck" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.core.SuppressForbidden" classification="uses" />
+            <depends-on name="org.elasticsearch.jdk.JdkJarHellCheck$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.jdk.JarHell" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.core.SuppressForbidden" classification="uses" />
+            <depends-on name="org.elasticsearch.core.PathUtils" classification="uses" />
+            <depends-on name="org.elasticsearch.jdk.JarHell$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.jdk.JarHell$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.jdk.JarHell" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.jdk.ModuleQualifiedExportsService" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.jdk.ModuleQualifiedExportsService$Holder" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.jdk.ModuleQualifiedExportsService" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

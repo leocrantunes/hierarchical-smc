@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="junit-jupiter-engine-5.10.1">
+    <container name="/home/leo/repos/junit5-r5.10.1/junit-jupiter-engine/build/libs/junit-jupiter-engine-5.10.1.jar" classification="osgi-bundle">
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.JupiterTestEngine" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.jupiter.engine">
+        <type name="org.junit.jupiter.engine.Constants" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.JupiterTestEngine" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterEngineDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.CachingJupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.DefaultJupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.DiscoverySelectorResolver" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.Constants" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.support.JupiterThrowableCollectorFactory" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.jupiter.engine.config">
+        <type name="org.junit.jupiter.engine.config.CachingJupiterConfiguration" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.config.DefaultJupiterConfiguration" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="implements" />
+            <depends-on name="org.junit.jupiter.engine.config.EnumConfigurationParameterConverter" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.InstantiatingConfigurationParameterConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.config.EnumConfigurationParameterConverter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.config.InstantiatingConfigurationParameterConverter" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.jupiter.engine.descriptor">
+        <type name="org.junit.jupiter.engine.descriptor.AbstractExtensionContext$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.descriptor.AbstractExtensionContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.AbstractExtensionContext" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.NamespaceAwareStore" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.AbstractExtensionContext$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="22">
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.ClassExtensionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.TestInstancesProvider" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistrar" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.BeforeEachMethodAdapter" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.AfterEachMethodAdapter" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall$VoidMethodInterceptorCall" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.DefaultTestInstances" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestInstanceLifecycleUtils" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.ExtensionUtils" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.LifecycleMethodUtils" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.support.JupiterThrowableCollectorFactory" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.DefaultExecutableInvoker" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext$Builder" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DefaultTestInstanceFactoryContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor$ExceptionHandlerInvoker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.ClassExtensionContext" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.descriptor.AbstractExtensionContext" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.ClassTestDescriptor" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistrar" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DisplayNameUtils" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.DefaultDynamicTestInvocationContext" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.DefaultTestInstanceFactoryContext" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.DisplayNameUtils" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicNodeTestDescriptor" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter$Mode" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter$WithoutIndexFiltering" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter$Mode" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter$WithoutIndexFiltering" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.DynamicExtensionContext" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.descriptor.AbstractExtensionContext" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicNodeTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.DynamicNodeTestDescriptor" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicExtensionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.DefaultExecutableInvoker" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext$Builder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicNodeTestDescriptor" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.execution.InvocationInterceptorChain" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DefaultDynamicTestInvocationContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InvocationInterceptorChain$VoidInterceptorCall" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptorCall" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.ExtensionUtils" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistrar" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.Filterable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.JupiterEngineDescriptor" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.DefaultExecutableInvoker" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterEngineExtensionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext$Builder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.JupiterEngineExtensionContext" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.descriptor.AbstractExtensionContext" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterEngineDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor$ExceptionHandlerInvoker" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="org.junit.jupiter.engine.execution.ConditionEvaluator" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor$ExceptionHandlerInvoker" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DisplayNameUtils" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor$1" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.LifecycleMethodUtils" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.MethodBasedTestDescriptor" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DisplayNameUtils" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.MethodExtensionContext" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.descriptor.AbstractExtensionContext" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.MethodSourceSupport" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.NestedClassTestDescriptor" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistrar" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DisplayNameUtils" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.TestInstancesProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.Filterable" classification="implements" />
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.MethodSourceSupport" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.TestInstanceLifecycleUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$CallbackInvoker" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="org.junit.jupiter.engine.descriptor.MethodBasedTestDescriptor" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.MethodExtensionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$CallbackInvoker" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.AfterEachMethodAdapter" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.BeforeEachMethodAdapter" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.support.JupiterThrowableCollectorFactory" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.DefaultExecutableInvoker" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext$Builder" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.ExtensionUtils" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistrar" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor$ExceptionHandlerInvoker" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$1" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.TestInstancesProvider" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall$VoidMethodInterceptorCall" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.TestTemplateExtensionContext" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.descriptor.AbstractExtensionContext" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.TestTemplateInvocationTestDescriptor" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall$VoidMethodInterceptorCall" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="org.junit.jupiter.engine.descriptor.MethodBasedTestDescriptor" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.Filterable" classification="implements" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.ExtensionUtils" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.DefaultExecutableInvoker" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestTemplateExtensionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext$Builder" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestTemplateInvocationTestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.jupiter.engine.discovery">
+        <type name="org.junit.jupiter.engine.discovery.AbstractAnnotatedDescriptorWrapper" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.AbstractOrderingVisitor$DescriptorWrapperOrderer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.junit.jupiter.engine.discovery.AbstractOrderingVisitor$MessageGenerator" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.AbstractOrderingVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.AbstractOrderingVisitor$MessageGenerator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.discovery.AbstractOrderingVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.AbstractOrderingVisitor" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.junit.jupiter.engine.discovery.AbstractOrderingVisitor$DescriptorWrapperOrderer" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.AbstractAnnotatedDescriptorWrapper" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.AbstractOrderingVisitor$MessageGenerator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.ClassOrderingVisitor" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="org.junit.jupiter.engine.discovery.AbstractOrderingVisitor" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterEngineDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.AbstractOrderingVisitor$DescriptorWrapperOrderer" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.DefaultClassDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.AbstractAnnotatedDescriptorWrapper" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.AbstractOrderingVisitor$MessageGenerator" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.DefaultClassOrdererContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.ClassSelectorResolver" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsTestClassWithTests" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsNestedTestClass" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.ClassTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.NestedClassTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.DefaultClassDescriptor" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.jupiter.engine.discovery.AbstractAnnotatedDescriptorWrapper" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.DefaultClassOrdererContext" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.DefaultMethodDescriptor" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.jupiter.engine.discovery.AbstractAnnotatedDescriptorWrapper" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.MethodBasedTestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.DefaultMethodOrdererContext" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.DiscoverySelectorResolver" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterEngineDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodOrderingVisitor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.ClassOrderingVisitor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.ClassSelectorResolver" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsTestClassWithTests" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.MethodFinder" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.MethodOrderingVisitor" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="org.junit.jupiter.engine.discovery.AbstractOrderingVisitor" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.AbstractOrderingVisitor$MessageGenerator" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.AbstractOrderingVisitor$DescriptorWrapperOrderer" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.DefaultMethodDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.MethodBasedTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.DefaultMethodOrdererContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.JupiterTestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$MethodType$1" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$MethodType" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$1" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$MethodType$2" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$MethodType" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$1" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$MethodType$3" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$MethodType" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$1" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$MethodType" classification="enum" visibility="default" isAbstract="yes">
+          <dependencies count="15">
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$1" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodFinder" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$MethodType$1" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsTestMethod" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$MethodType$2" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsTestFactoryMethod" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$MethodType$3" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsTestTemplateMethod" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.TestTemplateInvocationTestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.MethodSelectorResolver" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodFinder" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.Filterable" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$MethodType" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.descriptor.DynamicDescendantFilter" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsTestClassWithTests" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsNestedTestClass" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.MethodSelectorResolver$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.jupiter.engine.discovery.predicates">
+        <type name="org.junit.jupiter.engine.discovery.predicates.IsInnerClass" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.predicates.IsNestedTestClass" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsInnerClass" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.predicates.IsPotentialTestContainer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.predicates.IsTestClassWithTests" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsTestMethod" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsTestFactoryMethod" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsTestTemplateMethod" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsPotentialTestContainer" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsNestedTestClass" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.predicates.IsTestFactoryMethod" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsTestableMethod" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.predicates.IsTestMethod" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsTestableMethod" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.predicates.IsTestTemplateMethod" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.discovery.predicates.IsTestableMethod" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.discovery.predicates.IsTestableMethod" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.jupiter.engine.execution">
+        <type name="org.junit.jupiter.engine.execution.AfterEachMethodAdapter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.BeforeEachMethodAdapter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.ConditionEvaluationException" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.ConditionEvaluator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.ConditionEvaluationException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.ConstructorInvocation" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.DefaultExecutableInvoker" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.ParameterResolutionUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.DefaultParameterContext" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.DefaultTestInstances" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall$VoidMethodInterceptorCall" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall$VoidMethodInterceptorCall" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.junit.jupiter.engine.execution.InvocationInterceptorChain" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.ConstructorInvocation" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.MethodInvocation" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.ParameterResolutionUtils" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptorCall" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptorCall" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InvocationInterceptorChain" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptorCall" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.jupiter.engine.execution.InvocationInterceptorChain$VoidInterceptorCall" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InvocationInterceptorChain" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.execution.InvocationInterceptorChain" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.InvocationInterceptorChain$VoidInterceptorCall" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.execution.InvocationInterceptorChain" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.InvocationInterceptorChain" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptorCall" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.InvocationInterceptorChain$VoidInterceptorCall" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext$Builder" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext$State" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.TestInstancesProvider" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext$State" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.TestInstancesProvider" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext$State" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.TestInstancesProvider" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext$Builder" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.JupiterEngineExecutionContext$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.MethodInvocation" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.NamespaceAwareStore" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.ParameterResolutionUtils" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.execution.DefaultParameterContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.execution.TestInstancesProvider" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistrar" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.jupiter.engine.extension">
+        <type name="org.junit.jupiter.engine.extension.DefaultRepetitionInfo" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.DisabledCondition" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.ExtensionRegistrar" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.MutableExtensionRegistry" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistry" classification="implements" />
+            <depends-on name="org.junit.jupiter.engine.extension.ExtensionRegistrar" classification="implements" />
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.DisabledCondition" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutExtension" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.RepeatedTestExtension" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TestInfoParameterResolver" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TestReporterParameterResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.RepeatedTestDisplayNameFormatter" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.RepeatedTestExtension" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.extension.RepeatedTestDisplayNameFormatter" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.DefaultRepetitionInfo" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.RepeatedTestInvocationContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.RepeatedTestInvocationContext" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.extension.DefaultRepetitionInfo" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.RepeatedTestDisplayNameFormatter" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.RepetitionExtension" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.RepetitionExtension" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.extension.DefaultRepetitionInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.SameThreadTimeoutInvocation$InterruptTask" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.extension.SameThreadTimeoutInvocation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.SameThreadTimeoutInvocation" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutDuration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.SameThreadTimeoutInvocation$InterruptTask" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutExceptionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.SeparateThreadTimeoutInvocation" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutDuration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutExceptionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TempDirectory$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TempDirectory$CloseablePath$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory$FileOperations" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory$CloseablePath" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TempDirectory$CloseablePath" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory$FileOperations" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory$CloseablePath$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TempDirectory$FieldContext" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory$1" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TempDirectory$FileOperations" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TempDirectory$Scope" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TempDirectory" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="org.junit.jupiter.engine.config.JupiterConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory$Scope" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory$CloseablePath" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.config.EnumConfigurationParameterConverter" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory$FieldContext" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory$1" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TempDirectory$FileOperations" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TestInfoParameterResolver$DefaultTestInfo" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.extension.TestInfoParameterResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TestInfoParameterResolver" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.extension.TestInfoParameterResolver$DefaultTestInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TestReporterParameterResolver" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TimeoutConfiguration" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutDurationParser" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutDuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TimeoutDuration$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutDuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TimeoutDuration" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutDuration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TimeoutDurationParser" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutDuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TimeoutExceptionFactory" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutDuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TimeoutExtension$TimeoutProvider" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutDuration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutExtension" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TimeoutExtension" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutExtension$TimeoutProvider" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutDuration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutConfiguration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutInvocationFactory" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutInvocationFactory$TimeoutInvocationParameters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TimeoutInvocationFactory$ExecutorResource" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutInvocationFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TimeoutInvocationFactory$SingleThreadExecutorResource" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutInvocationFactory$ExecutorResource" classification="extends" />
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutInvocationFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TimeoutInvocationFactory$TimeoutInvocationParameters" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutDuration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutInvocationFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.extension.TimeoutInvocationFactory" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutInvocationFactory$TimeoutInvocationParameters" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.SeparateThreadTimeoutInvocation" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutDuration" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.SameThreadTimeoutInvocation" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutInvocationFactory$SingleThreadExecutorResource" classification="uses" />
+            <depends-on name="org.junit.jupiter.engine.extension.TimeoutInvocationFactory$ExecutorResource" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.jupiter.engine.support">
+        <type name="org.junit.jupiter.engine.support.JupiterThrowableCollectorFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.jupiter.engine.support.OpenTest4JAndJUnit4AwareThrowableCollector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.jupiter.engine.support.OpenTest4JAndJUnit4AwareThrowableCollector" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

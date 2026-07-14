@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jgit-http-6.8.0">
+    <container name="/home/leo/repos/jgit-6.8.0/org.eclipse.jgit.http.server/target/org.eclipse.jgit.http.server-6.8.0.202310031045-m1.jar" classification="osgi-bundle">
+      <namespace name="org.eclipse.jgit.http.server">
+        <type name="org.eclipse.jgit.http.server.ReceivePackServlet$InfoRefs" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.SmartServiceInfoRefs" classification="extends" />
+            <depends-on name="org.eclipse.jgit.http.server.ReceivePackServlet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.SmartServiceInfoRefs" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.http.server.SmartOutputStream" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ServletUtils" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.GitSmartHttpTools" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.SmartServiceInfoRefs$Chain" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.UploadPackServlet$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.SmartOutputStream" classification="extends" />
+            <depends-on name="org.eclipse.jgit.http.server.UploadPackServlet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.ReceivePackErrorHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.ReceivePackErrorHandler$ReceivePackRunnable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.AsIsFileFilter" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.resolver.AsIsFileService" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ServletUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.ObjectFileServlet$Pack" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.ObjectFileServlet$PackData" classification="extends" />
+            <depends-on name="org.eclipse.jgit.http.server.ObjectFileServlet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.InfoRefsServlet" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.http.server.ServletUtils" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.SmartOutputStream" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.InfoRefsServlet$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.UploadPackServlet" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="org.eclipse.jgit.http.server.UploadPackErrorHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.UploadPackErrorHandler$UploadPackRunnable" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.SmartOutputStream" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.UploadPackServlet$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ServletUtils" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.GitSmartHttpTools" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.HttpServerText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.UploadPackServlet$Factory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.UploadPackServlet$InfoRefs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.SmartServiceInfoRefs$Chain" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.SmartServiceInfoRefs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.GitFilter" classification="class" visibility="public">
+          <dependencies count="27">
+            <depends-on name="org.eclipse.jgit.http.server.glue.MetaFilter" classification="extends" />
+            <depends-on name="org.eclipse.jgit.http.server.resolver.AsIsFileService" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.UploadPackErrorHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ReceivePackErrorHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.ServletBinder" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.IsLocalFilter" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.AsIsFileFilter" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.resolver.DefaultUploadPackFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.resolver.DefaultReceivePackFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.HttpServerText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.UploadPackServlet$Factory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.UploadPackServlet" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ReceivePackServlet$Factory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ReceivePackServlet" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.UploadPackServlet$InfoRefs" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ReceivePackServlet$InfoRefs" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.InfoRefsServlet" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.ErrorServlet" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.TextFileServlet" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.InfoPacksServlet" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.RegexGroupFilter" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ObjectFileServlet$Loose" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ObjectFileServlet$Pack" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ObjectFileServlet$PackIdx" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.NoCacheFilter" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.RepositoryFilter" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ObjectFileServlet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.ReceivePackServlet$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.SmartOutputStream" classification="extends" />
+            <depends-on name="org.eclipse.jgit.http.server.ReceivePackServlet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.UploadPackServlet$Factory" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.http.server.ServletUtils" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.GitSmartHttpTools" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.UploadPackServlet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.FileSender" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.HttpServerText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.UploadPackErrorHandler$UploadPackRunnable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.UploadPackErrorHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.ReceivePackServlet" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="org.eclipse.jgit.http.server.ReceivePackErrorHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.SmartOutputStream" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ReceivePackServlet$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ReceivePackErrorHandler$ReceivePackRunnable" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ServletUtils" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.HttpServerText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.GitSmartHttpTools" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ReceivePackServlet$Factory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ReceivePackServlet$InfoRefs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.ObjectFileServlet$PackData" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.ObjectFileServlet" classification="extends" />
+            <depends-on name="org.eclipse.jgit.http.server.FileSender" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.NoCacheFilter" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.InfoRefsServlet$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.InfoRefsServlet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.ReceivePackServlet$Factory" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.http.server.ServletUtils" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.GitSmartHttpTools" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ReceivePackServlet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.TextFileServlet" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.ServletUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.ServletUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.HttpServerText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.IsLocalFilter" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.ServletUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.UploadPackServlet$InfoRefs" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.SmartServiceInfoRefs" classification="extends" />
+            <depends-on name="org.eclipse.jgit.http.server.UploadPackServlet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.GitServlet" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.eclipse.jgit.http.server.glue.MetaServlet" classification="extends" />
+            <depends-on name="org.eclipse.jgit.http.server.GitFilter" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.resolver.AsIsFileService" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.UploadPackErrorHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ReceivePackErrorHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.MetaFilter" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.GitServlet$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.GitServlet$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.GitServlet" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.GitFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.ClientVersionUtil" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.SmartOutputStream" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.ServletUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.GitSmartHttpTools" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.HttpServerText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ServletUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.ObjectFileServlet$Loose" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.ObjectFileServlet" classification="extends" />
+            <depends-on name="org.eclipse.jgit.http.server.FileSender" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.HttpServerText" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.ObjectFileServlet$PackIdx" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.ObjectFileServlet$PackData" classification="extends" />
+            <depends-on name="org.eclipse.jgit.http.server.ObjectFileServlet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.UploadPackErrorHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.UploadPackErrorHandler$UploadPackRunnable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.RepositoryFilter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.HttpServerText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.GitSmartHttpTools" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.ReceivePackErrorHandler$ReceivePackRunnable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.ReceivePackErrorHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.InfoPacksServlet" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.ServletUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.ObjectFileServlet" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.eclipse.jgit.http.server.FileSender" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ServletUtils" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ObjectFileServlet$Loose" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ObjectFileServlet$Pack" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ObjectFileServlet$PackData" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.ObjectFileServlet$PackIdx" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.eclipse.jgit.http.server.resolver">
+        <type name="org.eclipse.jgit.http.server.resolver.AsIsFileService$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.resolver.AsIsFileService" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.resolver.DefaultReceivePackFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.resolver.DefaultReceivePackFactory$ServiceConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.resolver.DefaultUploadPackFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.resolver.DefaultUploadPackFactory$ServiceConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.resolver.AsIsFileService$ServiceConfig" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.resolver.AsIsFileService" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.resolver.DefaultUploadPackFactory$ServiceConfig" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.resolver.DefaultUploadPackFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.resolver.DefaultReceivePackFactory$ServiceConfig" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.resolver.DefaultReceivePackFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.resolver.AsIsFileService" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.resolver.AsIsFileService$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.resolver.AsIsFileService$ServiceConfig" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.eclipse.jgit.http.server.glue">
+        <type name="org.eclipse.jgit.http.server.glue.MetaServlet" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.http.server.glue.MetaFilter" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.ServletBinder" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.NoParameterFilterConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.SuffixPipeline" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.http.server.glue.UrlPipeline" classification="extends" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.WrappedRequest" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.SuffixPipeline$Binder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.UrlPipeline$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.glue.UrlPipeline$1$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.UrlPipeline" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.ServletBinderImpl" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.http.server.glue.ServletBinder" classification="implements" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.UrlPipeline" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.HttpServerText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.ErrorServlet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.NoParameterFilterConfig" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.glue.NoParameterFilterConfig$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.RegexGroupFilter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.glue.WrappedRequest" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.HttpServerText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.UrlPipeline$Chain" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.glue.UrlPipeline" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.RegexPipeline$Binder" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.http.server.glue.ServletBinderImpl" classification="extends" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.UrlPipeline" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.RegexPipeline" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.UrlPipeline" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.http.server.glue.NoParameterFilterConfig" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.UrlPipeline$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.UrlPipeline$Chain" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.UrlPipeline$1$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.SuffixPipeline$Binder" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.http.server.glue.ServletBinderImpl" classification="extends" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.UrlPipeline" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.SuffixPipeline" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.ServletBinder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.WrappedRequest" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.NoParameterFilterConfig$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.glue.NoParameterFilterConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.MetaFilter" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.eclipse.jgit.http.server.glue.ServletBinderImpl" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.UrlPipeline" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.ServletBinder" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.SuffixPipeline$Binder" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.HttpServerText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.RegexPipeline$Binder" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.MetaFilter$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.RegexPipeline" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.SuffixPipeline" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.UrlPipeline$1$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.http.server.glue.UrlPipeline$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.UrlPipeline" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.ErrorServlet" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.MetaFilter$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.http.server.glue.MetaFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.http.server.glue.RegexPipeline" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.http.server.glue.UrlPipeline" classification="extends" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.WrappedRequest" classification="uses" />
+            <depends-on name="org.eclipse.jgit.http.server.glue.RegexPipeline$Binder" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

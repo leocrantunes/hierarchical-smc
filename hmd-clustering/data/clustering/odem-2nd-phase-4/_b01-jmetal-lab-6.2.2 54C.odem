@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jMetal-lab-6.2.2">
+    <container name="/home/leo/repos/jMetal-6.2.2/jmetal-lab/target/jmetal-lab-6.2.2.jar" classification="jar">
+      <namespace name="org.uma.jmetal.lab.operator">
+        <type name="org.uma.jmetal.lab.operator.BLXAlphaCrossoverExample" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.lab.visualization.plot.PlotFront" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.plot.impl.PlotSmile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.operator.IntegerPolynomialMutationExample" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.lab.visualization.plot.PlotFront" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.plot.impl.PlotSmile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.operator.SBXCrossoverExample" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.lab.visualization.plot.PlotFront" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.plot.impl.PlotSmile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.operator.PolynomialMutationExample" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.lab.visualization.plot.PlotFront" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.plot.impl.PlotSmile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.operator.IntegerSBXCrossoverExample" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.lab.visualization.plot.PlotFront" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.plot.impl.PlotSmile" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.lab.visualization.html">
+        <type name="org.uma.jmetal.lab.visualization.html.HtmlComponent" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.visualization.html.Html" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.lab.visualization.html.HtmlComponent" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.lab.visualization.html.impl">
+        <type name="org.uma.jmetal.lab.visualization.html.impl.HtmlGridView" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.lab.visualization.html.HtmlComponent" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.visualization.html.impl.HtmlFigure" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.lab.visualization.html.HtmlComponent" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.impl">
+        <type name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.impl.FriedmanTestTable" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.HtmlTable" classification="extends" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.FriedmanTest" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.impl.MedianValuesTable$Objective" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.impl.MedianValuesTable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.impl.WilcoxonTestTable" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.HtmlTable" classification="extends" />
+            <depends-on name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.impl.WilcoxonTestTable$Difference" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.impl.WilcoxonTestTable$Difference" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.impl.WilcoxonTestTable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.impl.MedianValuesTable" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.HtmlTable" classification="extends" />
+            <depends-on name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.impl.MedianValuesTable$Objective" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.lab.visualization.html.impl.htmlTable">
+        <type name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.HtmlTable" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.lab.visualization.html.HtmlComponent" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.lab.visualization.plot">
+        <type name="org.uma.jmetal.lab.visualization.plot.PlotFront" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.lab.visualization.plot.impl">
+        <type name="org.uma.jmetal.lab.visualization.plot.impl.Plot2D" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.lab.visualization.plot.PlotFront" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.visualization.plot.impl.Plot3D" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.lab.visualization.plot.PlotFront" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.visualization.plot.impl.BoxPlot" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.visualization.plot.impl.PlotSmile" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.lab.visualization.plot.PlotFront" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.lab.visualization">
+        <type name="org.uma.jmetal.lab.visualization.StudyVisualizer" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.uma.jmetal.lab.visualization.StudyVisualizer$TYPE_OF_FRONT_TO_SHOW" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.html.Html" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.html.impl.HtmlFigure" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.html.impl.HtmlGridView" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.impl.MedianValuesTable" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.impl.WilcoxonTestTable" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.html.impl.htmlTable.impl.FriedmanTestTable" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.html.HtmlComponent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.visualization.StudyVisualizer$TYPE_OF_FRONT_TO_SHOW" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.lab.visualization.StudyVisualizer" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.lab.experiment.util">
+        <type name="org.uma.jmetal.lab.experiment.util.CDFNormal" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.util.FriedmanTest" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.lab.experiment.util.Pareja" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.CDFNormal" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.util.AlgorithmReturningASubSetOfSolutions" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.util.Pareja" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.lab.experiment.studies">
+        <type name="org.uma.jmetal.lab.experiment.studies.DTLZStudy" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.ExperimentBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ExecuteAlgorithms" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateLatexTablesWithStatistics" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateWilcoxonTestTablesWithR" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateFriedmanTestTables" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateBoxplotsWithR" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.studies.WFGStudy" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.ExperimentBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ExecuteAlgorithms" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateLatexTablesWithStatistics" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateWilcoxonTestTablesWithR" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateFriedmanTestTables" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateBoxplotsWithR" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.studies.ZDTScalabilityComputingReferenceParetoFrontsStudy" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.ExperimentBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ExecuteAlgorithms" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateReferenceParetoSetAndFrontFromDoubleSolutions" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateLatexTablesWithStatistics" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateWilcoxonTestTablesWithR" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateFriedmanTestTables" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateBoxplotsWithR" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateHtmlPages" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.StudyVisualizer$TYPE_OF_FRONT_TO_SHOW" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.StudyVisualizer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.studies.NSGAIIComputingReferenceParetoFrontsStudy" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.ExperimentBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ExecuteAlgorithms" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateReferenceParetoSetAndFrontFromDoubleSolutions" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateLatexTablesWithStatistics" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateFriedmanHolmTestTables" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateWilcoxonTestTablesWithR" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateBoxplotsWithR" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateHtmlPages" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.studies.ZDTScalabilityStudy" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.ExperimentBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ExecuteAlgorithms" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateLatexTablesWithStatistics" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateWilcoxonTestTablesWithR" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateFriedmanTestTables" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateBoxplotsWithR" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.studies.ConstraintProblemsStudy" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.ExperimentBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ExecuteAlgorithms" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateReferenceParetoSetAndFrontFromDoubleSolutions" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateLatexTablesWithStatistics" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateWilcoxonTestTablesWithR" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateFriedmanTestTables" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateBoxplotsWithR" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.studies.NSGAIIStudy" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.ExperimentBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ExecuteAlgorithms" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateLatexTablesWithStatistics" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateWilcoxonTestTablesWithR" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateFriedmanTestTables" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateBoxplotsWithR" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateHtmlPages" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.studies.ZDTStudy" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.ExperimentBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ExecuteAlgorithms" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateLatexTablesWithStatistics" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateFriedmanHolmTestTables" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateWilcoxonTestTablesWithR" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateBoxplotsWithR" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateHtmlPages" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.StudyVisualizer$TYPE_OF_FRONT_TO_SHOW" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.StudyVisualizer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.studies.BinaryProblemsStudy" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.ExperimentBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ExecuteAlgorithms" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateReferenceParetoFront" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateLatexTablesWithStatistics" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateWilcoxonTestTablesWithR" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateFriedmanTestTables" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateBoxplotsWithR" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.studies.ZDTComputingReferenceParetoFrontsStudy" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.uma.jmetal.lab.experiment.ExperimentBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ExecuteAlgorithms" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateReferenceParetoSetAndFrontFromDoubleSolutions" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateLatexTablesWithStatistics" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateWilcoxonTestTablesWithR" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateFriedmanTestTables" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateBoxplotsWithR" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.lab.experiment.component">
+        <type name="org.uma.jmetal.lab.experiment.component.ExperimentComponent" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.lab.experiment.component.impl">
+        <type name="org.uma.jmetal.lab.experiment.component.impl.GenerateLatexTablesWithStatistics" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.lab.experiment.component.ExperimentComponent" classification="implements" />
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.component.impl.GenerateReferenceParetoSetAndFrontFromIntegerSolutions" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.lab.experiment.component.ExperimentComponent" classification="implements" />
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateReferenceParetoSetAndFrontFromIntegerSolutions$DummyIntegerSolution" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.component.impl.ComputeQualityIndicators" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.lab.experiment.component.ExperimentComponent" classification="implements" />
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.component.impl.GenerateReferenceParetoSetAndFrontFromDoubleSolutions$DummyDoubleSolution" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateReferenceParetoSetAndFrontFromDoubleSolutions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.component.impl.GenerateReferenceParetoSetAndFrontFromIntegerSolutions$DummyIntegerSolution" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateReferenceParetoSetAndFrontFromIntegerSolutions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.component.impl.GenerateReferenceParetoFront" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.lab.experiment.component.ExperimentComponent" classification="implements" />
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.component.impl.GenerateWilcoxonTestTablesWithR" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.lab.experiment.component.ExperimentComponent" classification="implements" />
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.component.impl.GenerateFriedmanHolmTestTables" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.lab.experiment.component.ExperimentComponent" classification="implements" />
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.FriedmanTest" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.component.impl.GenerateBoxplotsWithR" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.lab.experiment.component.ExperimentComponent" classification="implements" />
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.component.impl.GenerateFriedmanTestTables" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.lab.experiment.component.ExperimentComponent" classification="implements" />
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.component.impl.ExecuteAlgorithms" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.lab.experiment.component.ExperimentComponent" classification="implements" />
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.component.impl.GenerateReferenceParetoSetAndFrontFromDoubleSolutions" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.lab.experiment.component.ExperimentComponent" classification="implements" />
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.component.impl.GenerateReferenceParetoSetAndFrontFromDoubleSolutions$DummyDoubleSolution" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.component.impl.GenerateHtmlPages" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.lab.experiment.component.ExperimentComponent" classification="implements" />
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.StudyVisualizer$TYPE_OF_FRONT_TO_SHOW" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.visualization.StudyVisualizer" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.lab.experiment">
+        <type name="org.uma.jmetal.lab.experiment.Experiment" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.ExperimentBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.lab.experiment.ExperimentBuilder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.util.ExperimentProblem" classification="uses" />
+            <depends-on name="org.uma.jmetal.lab.experiment.Experiment" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

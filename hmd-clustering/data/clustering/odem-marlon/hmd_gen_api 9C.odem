@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="hmd_gen_api">
+    <description>HMD Gen API
+    </description>
+    <container name="/home/leo/github/hmd-gen-api/bin/main" classification="dir">
+      <namespace name="br.unirio.edu.hmdgenapi">
+        <type name="br.unirio.edu.hmdgenapi.HmdGenApiApplication" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="br.unirio.edu.hmdgenapi.controllers">
+        <type name="br.unirio.edu.hmdgenapi.controllers.GraphController$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="br.unirio.edu.hmdgenapi.controllers.GraphController" classification="uses" />
+            <depends-on name="br.unirio.edu.hmdgenapi.models.Element" classification="uses" />
+            <depends-on name="br.unirio.edu.hmdgenapi.models.ElementData" classification="uses" />
+            <depends-on name="br.unirio.edu.hmdgenapi.models.Graph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="br.unirio.edu.hmdgenapi.controllers.GraphController" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="br.unirio.edu.hmdgenapi.repositories.GraphRepository" classification="uses" />
+            <depends-on name="br.unirio.edu.hmdgenapi.models.Graph" classification="uses" />
+            <depends-on name="br.unirio.edu.hmdgenapi.models.Element" classification="uses" />
+            <depends-on name="br.unirio.edu.hmdgenapi.models.GraphMetrics" classification="uses" />
+            <depends-on name="br.unirio.edu.hmdgenapi.models.GraphRequest" classification="uses" />
+            <depends-on name="br.unirio.edu.hmdgenapi.controllers.GraphController$1" classification="uses" />
+            <depends-on name="br.unirio.edu.hmdgenapi.models.ElementData" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="br.unirio.edu.hmdgenapi.repositories">
+        <type name="br.unirio.edu.hmdgenapi.repositories.GraphRepository" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="br.unirio.edu.hmdgenapi.models.Graph" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="br.unirio.edu.hmdgenapi.models">
+        <type name="br.unirio.edu.hmdgenapi.models.ElementData" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="br.unirio.edu.hmdgenapi.models.GraphMetrics" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="br.unirio.edu.hmdgenapi.models.GraphRequest" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="br.unirio.edu.hmdgenapi.models.Graph" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="br.unirio.edu.hmdgenapi.models.GraphMetrics" classification="uses" />
+            <depends-on name="br.unirio.edu.hmdgenapi.models.GraphRequest" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="br.unirio.edu.hmdgenapi.models.GraphRequest" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="br.unirio.edu.hmdgenapi.models.Element" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="br.unirio.edu.hmdgenapi.models.Element" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="br.unirio.edu.hmdgenapi.models.ElementData" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

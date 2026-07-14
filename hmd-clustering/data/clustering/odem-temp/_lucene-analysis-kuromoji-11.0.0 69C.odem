@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="lucene-kuromoji-11.0.0">
+    <container name="/home/leo/github/lucene/lucene/luke/build/lucene-luke-11.0.0-SNAPSHOT/lucene-analysis-kuromoji-11.0.0-SNAPSHOT.jar" classification="jar">
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="10">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseIterationMarkCharFilterFactory" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseTokenizerFactory" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseBaseFormFilterFactory" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseCompletionFilterFactory" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseKatakanaStemFilterFactory" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseNumberFilterFactory" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapanesePartOfSpeechStopFilterFactory" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseReadingFormFilterFactory" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseHiraganaUppercaseFilterFactory" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseKatakanaUppercaseFilterFactory" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.analysis.ja">
+        <type name="org.apache.lucene.analysis.ja.JapaneseAnalyzer$DefaultSetHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseAnalyzer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseAnalyzer" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseTokenizer$Mode" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UserDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseTokenizer" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseAnalyzer$DefaultSetHolder" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseBaseFormFilter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapanesePartOfSpeechStopFilter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseKatakanaStemFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseBaseFormFilter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.tokenattributes.BaseFormAttribute" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseBaseFormFilterFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseBaseFormFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseCompletionAnalyzer" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter$Mode" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UserDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseTokenizer" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseTokenizer$Mode" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter$CompletionToken" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter$CompletionTokenGenerator" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter$Mode" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter$CompletionToken" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.completion.CharSequenceUtils" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.completion.KatakanaRomanizer" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter$Mode" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter$Mode" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.tokenattributes.ReadingAttribute" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter$CompletionTokenGenerator" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter$CompletionToken" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.completion.CharSequenceUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseCompletionFilterFactory" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter$Mode" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseCompletionFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseFilterUtil" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseHiraganaUppercaseFilter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseFilterUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseHiraganaUppercaseFilterFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseHiraganaUppercaseFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseIterationMarkCharFilter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseIterationMarkCharFilterFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseIterationMarkCharFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseKatakanaStemFilter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseKatakanaStemFilterFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseKatakanaStemFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseKatakanaUppercaseFilter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseFilterUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseKatakanaUppercaseFilterFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseKatakanaUppercaseFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseNumberFilter$NumberBuffer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseNumberFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseNumberFilter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseNumberFilter$NumberBuffer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseNumberFilterFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseNumberFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapanesePartOfSpeechStopFilter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.tokenattributes.PartOfSpeechAttribute" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapanesePartOfSpeechStopFilterFactory" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseAnalyzer" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapanesePartOfSpeechStopFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseReadingFormFilter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.analysis.ja.tokenattributes.ReadingAttribute" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.ToStringUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseReadingFormFilterFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseReadingFormFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseTokenizer$Mode" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseTokenizer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseTokenizer" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="14">
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseTokenizer$Mode" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.ViterbiNBest" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.tokenattributes.BaseFormAttribute" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.tokenattributes.PartOfSpeechAttribute" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.tokenattributes.ReadingAttribute" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.tokenattributes.InflectionAttribute" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UserDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UnknownDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.ConnectionCosts" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoFST" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.CharacterDefinition" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.JaMorphData" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.JapaneseTokenizerFactory" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UserDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseTokenizer$Mode" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.JapaneseTokenizer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.Token" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.JaMorphData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.ViterbiNBest" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UnknownDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.CharacterDefinition" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UserDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.JaMorphData" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.Token" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UnknownMorphData" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UserMorphData" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.analysis.ja.completion">
+        <type name="org.apache.lucene.analysis.ja.completion.CharSequenceUtils" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.completion.KatakanaRomanizer$MatchedKeystroke" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.completion.KatakanaRomanizer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.completion.KatakanaRomanizer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.analysis.ja.completion.KatakanaRomanizer$MatchedKeystroke" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.completion.CharSequenceUtils" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.analysis.ja.dict">
+        <type name="org.apache.lucene.analysis.ja.dict.CharacterDefinition$CharacterClass" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.CharacterDefinition" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.CharacterDefinition$SingletonHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.CharacterDefinition" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.CharacterDefinition" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.DictionaryConstants" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.CharacterDefinition$CharacterClass" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.CharacterDefinition$SingletonHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.ConnectionCosts$SingletonHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.ConnectionCosts" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.ConnectionCosts" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.DictionaryConstants" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.ConnectionCosts$SingletonHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.ConnectionCostsBuilder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.ConnectionCosts" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.DictionaryBuilder$DictionaryFormat" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.DictionaryBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.DictionaryBuilder" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.DictionaryBuilder$DictionaryFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoDictionaryBuilder" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoDictionaryWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UnknownDictionaryBuilder" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UnknownDictionaryWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.ConnectionCostsBuilder" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.DictionaryConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.DictionaryConstants" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.JaMorphData" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.ToStringUtil" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.TokenInfoDictionary$SingletonHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.TokenInfoDictionary" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoFST" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoMorphData" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.DictionaryConstants" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoDictionary$SingletonHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.TokenInfoDictionaryBuilder" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.DictionaryBuilder$DictionaryFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoDictionaryWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.DictionaryBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.TokenInfoDictionaryEntryWriter" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoMorphData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.TokenInfoDictionaryWriter" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoDictionaryEntryWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.DictionaryConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.TokenInfoFST" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.TokenInfoMorphData" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.JaMorphData" classification="implements" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.DictionaryConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.UnknownDictionary$SingletonHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UnknownDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.UnknownDictionary" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.CharacterDefinition" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UnknownMorphData" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.DictionaryConstants" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UnknownDictionary$SingletonHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.UnknownDictionaryBuilder" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UnknownDictionaryWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.CharacterDefinition" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.UnknownDictionaryWriter" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.CharacterDefinition" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UnknownDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoDictionaryEntryWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.DictionaryConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.UnknownMorphData" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoMorphData" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.UserDictionary$Match" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UserDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.UserDictionary" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.TokenInfoFST" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UserMorphData" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UserDictionary$Match" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.dict.UserMorphData" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.analysis.ja.dict.JaMorphData" classification="implements" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.UserDictionary" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.analysis.ja.tokenattributes">
+        <type name="org.apache.lucene.analysis.ja.tokenattributes.BaseFormAttribute" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.tokenattributes.BaseFormAttributeImpl" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.analysis.ja.tokenattributes.BaseFormAttribute" classification="implements" />
+            <depends-on name="org.apache.lucene.analysis.ja.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.tokenattributes.InflectionAttribute" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.tokenattributes.InflectionAttributeImpl" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ja.tokenattributes.InflectionAttribute" classification="implements" />
+            <depends-on name="org.apache.lucene.analysis.ja.Token" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.ToStringUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.tokenattributes.PartOfSpeechAttribute" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.tokenattributes.PartOfSpeechAttributeImpl" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ja.tokenattributes.PartOfSpeechAttribute" classification="implements" />
+            <depends-on name="org.apache.lucene.analysis.ja.Token" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.ToStringUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.tokenattributes.ReadingAttribute" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ja.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ja.tokenattributes.ReadingAttributeImpl" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ja.tokenattributes.ReadingAttribute" classification="implements" />
+            <depends-on name="org.apache.lucene.analysis.ja.Token" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ja.dict.ToStringUtil" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="elasticsearch-native-9.1.0">
+    <container name="/home/leo/github/elasticsearch/build/distribution/local/elasticsearch-9.1.0-SNAPSHOT/lib/elasticsearch-native-9.1.0-SNAPSHOT.jar" classification="jar">
+      <namespace name="org.elasticsearch.nativeaccess">
+        <type name="org.elasticsearch.nativeaccess.WindowsFunctions" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.WindowsFunctions$ConsoleCtrlHandler" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.Systemd" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.Systemd" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.CloseableByteBuffer" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$SockAddr" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.LinuxNativeAccess" classification="class" visibility="default">
+          <dependencies count="13">
+            <depends-on name="org.elasticsearch.nativeaccess.PosixNativeAccess" classification="extends" />
+            <depends-on name="org.elasticsearch.nativeaccess.LinuxNativeAccess$Arch" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.Systemd" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary$SockFilter" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibraryProvider" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.CloseableByteBuffer" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary$SockFProg" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.PosixConstants" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.NativeAccess$ExecSandboxState" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.NativeAccess" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.PosixNativeAccess" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="10">
+            <depends-on name="org.elasticsearch.nativeaccess.AbstractNativeAccess" classification="extends" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.VectorSimilarityFunctions" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.PosixConstants" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.ProcessLimits" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibraryProvider" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$RLimit" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$Stat64" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.VectorLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.NativeAccess" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="org.elasticsearch.nativeaccess.ProcessLimits" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.NativeAccess$ExecSandboxState" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.Systemd" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.Zstd" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.WindowsFunctions" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.VectorSimilarityFunctions" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.CloseableByteBuffer" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.NativeAccessHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.NativeAccessHolder" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="org.elasticsearch.nativeaccess.NativeAccess" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibraryProvider" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.AbstractNativeAccess" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.LinuxNativeAccess" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.MacNativeAccess" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.WindowsNativeAccess" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.NoopNativeAccess" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.Zstd" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.ZstdLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.CloseableByteBuffer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.AbstractNativeAccess" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="9">
+            <depends-on name="org.elasticsearch.nativeaccess.NativeAccess" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.JavaLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.Zstd" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.NativeAccess$ExecSandboxState" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibraryProvider" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.Systemd" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.CloseableByteBuffer" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.ZstdLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.MacNativeAccess" classification="class" visibility="default">
+          <dependencies count="12">
+            <depends-on name="org.elasticsearch.nativeaccess.PosixNativeAccess" classification="extends" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.MacCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibraryProvider" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$FStore" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.MacCLibrary$ErrorReference" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$RLimit" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.PosixConstants" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.ProcessLimits" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.NativeAccess$ExecSandboxState" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.NativeAccess" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.WindowsNativeAccess" classification="class" visibility="default">
+          <dependencies count="13">
+            <depends-on name="org.elasticsearch.nativeaccess.AbstractNativeAccess" classification="extends" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.WindowsFunctions" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibraryProvider" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$MemoryBasicInformation" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$Address" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$Handle" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$JobObjectBasicLimitInformation" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.ProcessLimits" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.VectorSimilarityFunctions" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.NativeAccess$ExecSandboxState" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.NativeAccess" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.WindowsFunctions$ConsoleCtrlHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.nativeaccess.WindowsFunctions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.PosixConstants" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.VectorSimilarityFunctions" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.NoopNativeAccess" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="org.elasticsearch.nativeaccess.NativeAccess" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.ProcessLimits" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.NativeAccess$ExecSandboxState" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.Systemd" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.Zstd" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.CloseableByteBuffer" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.VectorSimilarityFunctions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.NativeAccess$ExecSandboxState" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.nativeaccess.NativeAccess" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.NativeAccessUtil" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.CloseableByteBuffer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.ProcessLimits" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.LinuxNativeAccess$Arch" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.nativeaccess.LinuxNativeAccess" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.elasticsearch.nativeaccess.exports">
+        <type name="org.elasticsearch.nativeaccess.exports.NativeAccessModuleExportsService" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.elasticsearch.nativeaccess.lib">
+        <type name="org.elasticsearch.nativeaccess.lib.Kernel32Library$JobObjectBasicLimitInformation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.MacCLibrary" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibrary" classification="extends" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.MacCLibrary$ErrorReference" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.NativeLibrary" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.JavaLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.MacCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.VectorLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.ZstdLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$FStore" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.JavaLibrary" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibrary" classification="extends" />
+            <depends-on name="org.elasticsearch.nativeaccess.CloseableByteBuffer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.NativeLibraryProvider$Holder" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibraryProvider" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkNativeLibraryProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.ZstdLibrary" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibrary" classification="extends" />
+            <depends-on name="org.elasticsearch.nativeaccess.CloseableByteBuffer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.Kernel32Library" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibrary" classification="extends" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$Handle" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$MemoryBasicInformation" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$Address" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.WindowsFunctions$ConsoleCtrlHandler" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$JobObjectBasicLimitInformation" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.WindowsFunctions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.Kernel32Library$MemoryBasicInformation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$Address" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$RLimit" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary$SockFilter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary$SockFProg" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibrary" classification="extends" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$RLimit" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$Stat64" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$FStore" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$SockAddr" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.CloseableByteBuffer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.LoaderHelper" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.MacCLibrary$ErrorReference" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.MacCLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$Stat64" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$SockAddr" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.Kernel32Library$Address" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.Kernel32Library$Handle" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.VectorLibrary" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibrary" classification="extends" />
+            <depends-on name="org.elasticsearch.nativeaccess.VectorSimilarityFunctions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibrary" classification="extends" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary$SockFProg" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary$SockFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.lib.NativeLibraryProvider" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibraryProvider$Holder" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.elasticsearch.nativeaccess.jdk">
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkPosixCLibrary" classification="class" visibility="default">
+          <dependencies count="13">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$RLimit" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$Stat64" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$FStore" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkPosixCLibrary$JdkRLimit" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkPosixCLibrary$JdkFStore" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkPosixCLibrary$JdkStat64" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$SockAddr" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkPosixCLibrary$JdkSockAddr" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.CloseableByteBuffer" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkCloseableByteBuffer" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.LinkerHelper" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.MemorySegmentUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkMacCLibrary$JdkErrorReference" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.MacCLibrary$ErrorReference" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkMacCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.MacCLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkKernel32Library" classification="class" visibility="default">
+          <dependencies count="14">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$Handle" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkKernel32Library$JdkHandle" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$MemoryBasicInformation" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$Address" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkKernel32Library$JdkAddress" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkKernel32Library$JdkMemoryBasicInformation" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.WindowsFunctions$ConsoleCtrlHandler" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$JobObjectBasicLimitInformation" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkKernel32Library$JdkJobObjectBasicLimitInformation" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.WindowsFunctions" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.LinkerHelper" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.ArenaUtil" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.MemorySegmentUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkVectorLibrary$JdkVectorSimilarityFunctions" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.nativeaccess.VectorSimilarityFunctions" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkVectorLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.LinkerHelper" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkMacCLibrary" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.MacCLibrary" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.MacCLibrary$ErrorReference" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkMacCLibrary$JdkErrorReference" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.MemorySegmentUtil" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.LinkerHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.LinkerHelperUtil" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkVectorLibrary" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.VectorLibrary" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.VectorSimilarityFunctions" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkVectorLibrary$JdkVectorSimilarityFunctions" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LoaderHelper" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.LinkerHelper" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.LinkerHelperUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkNativeLibraryProvider" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibraryProvider" classification="extends" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.JavaLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.MacCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.ZstdLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.VectorLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkJavaLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkPosixCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkLinuxCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkMacCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkKernel32Library" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkZstdLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkVectorLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkPosixCLibrary$JdkRLimit" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$RLimit" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkPosixCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.MemorySegmentUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkCloseableByteBuffer" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.nativeaccess.CloseableByteBuffer" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkLinuxCLibrary" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary$SockFProg" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary$SockFilter" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkLinuxCLibrary$JdkSockFProg" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkPosixCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.LinkerHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkJavaLibrary" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.JavaLibrary" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.CloseableByteBuffer" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkCloseableByteBuffer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkPosixCLibrary$JdkStat64" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$Stat64" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkPosixCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkKernel32Library$JdkHandle" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$Handle" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkKernel32Library" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.MemorySegmentUtil" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkPosixCLibrary$JdkFStore" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$FStore" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkPosixCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.MemorySegmentUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkKernel32Library$JdkAddress" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$Address" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkKernel32Library" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkPosixCLibrary$JdkSockAddr" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary$SockAddr" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkPosixCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.PosixCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.MemorySegmentUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkKernel32Library$JdkJobObjectBasicLimitInformation" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$JobObjectBasicLimitInformation" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkKernel32Library" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.MemorySegmentUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkLinuxCLibrary$JdkSockFProg" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary$SockFProg" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary$SockFilter" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkLinuxCLibrary" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LinuxCLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkZstdLibrary" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.ZstdLibrary" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.CloseableByteBuffer" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkCloseableByteBuffer" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.MemorySegmentUtil" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.LoaderHelper" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.LinkerHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.JdkKernel32Library$JdkMemoryBasicInformation" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$MemoryBasicInformation" classification="implements" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library$Address" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkKernel32Library" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.JdkKernel32Library$JdkAddress" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.lib.Kernel32Library" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.jdk.MemorySegmentUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.nativeaccess.jdk.ArenaUtil" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.nativeaccess.lib.NativeLibraryProvider" classification="uses" />
+            <depends-on name="org.elasticsearch.nativeaccess.exports.NativeAccessModuleExportsService" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

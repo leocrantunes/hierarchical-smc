@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="scribejava-8.3.4">
+    <container name="/home/leo/github/scribejava/scribejava-apis/target/scribejava-apis-8.3.4-SNAPSHOT.jar" classification="osgi-bundle">
+      <namespace name="com.github.scribejava.apis">
+        <type name="com.github.scribejava.apis.StackExchangeApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.StackExchangeApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.MeetupApi20$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.MeetupApi20" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.InstagramApi" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.github.scribejava.apis.instagram.InstagramService" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.InstagramApi$InstanceHolder" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.instagram.InstagramAccessTokenJsonExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.SinaWeiboApi20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.SinaWeiboApi20$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.BoxApi20$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.BoxApi20" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.YahooApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.YahooApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.AWeberApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.AWeberApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.GitHubApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.GitHubApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.FreelancerApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.FreelancerApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.MailruApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.MailruApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.LiveApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.LiveApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.GoogleApi20$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.GoogleApi20" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.TrelloApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.TrelloApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.DataportenApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.DataportenApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.FoursquareApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.FoursquareApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.SkyrockApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.SkyrockApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.FacebookApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.FacebookApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.TutByApi" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.TutByApi$InstanceHolder" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.tutby.TutByBearerSignature" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.FrappeApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.openid.OpenIdJsonTokenExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.VkontakteApi" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.VkontakteApi$InstanceHolder" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.vk.VKJsonTokenExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.TrelloApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.TrelloApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.SalesforceApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.SalesforceApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.XingApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.XingApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.MailruApi" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.mailru.MailruOAuthService" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.MailruApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.GeniusApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.GeniusApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.NaverApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.NaverApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.Asana20Api$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.Asana20Api" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.OdnoklassnikiApi" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.odnoklassniki.OdnoklassnikiOAuthService" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.OdnoklassnikiApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.TumblrApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.TumblrApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.WunderlistAPI$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.WunderlistAPI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.LinkedInApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.LinkedInApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.GoogleApi20" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.github.scribejava.apis.GoogleApi20$InstanceHolder" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.openid.OpenIdJsonTokenExtractor" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.google.GoogleDeviceAuthorizationJsonExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.FitbitApi20$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.FitbitApi20" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.AutomaticAPI" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.AutomaticAPI$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.FreelancerApi$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.FreelancerApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.TutByApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.TutByApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.TwitterApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.TwitterApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.LinkedInApi20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.LinkedInApi20$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.Px500Api" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.Px500Api$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.RenrenApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.RenrenApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.YahooApi20$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.YahooApi20" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.MeetupApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.MeetupApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.SinaWeiboApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.SinaWeiboApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.KaixinApi20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.KaixinApi20$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.UcozApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.UcozApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.MeetupApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.MeetupApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.DropboxApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.DropboxApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.FreelancerApi" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.github.scribejava.apis.FreelancerApi$InstanceHolder" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.FreelancerApi$1" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.FreelancerApi$Sandbox" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.DiggApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.DiggApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.DiscordApi" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.DiscordApi$1" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.DiscordApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.SlackApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.SlackApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.MicrosoftAzureActiveDirectoryApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.MicrosoftAzureActiveDirectoryApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.XeroApi20$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.XeroApi20" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.XingApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.XingApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.SlackApi" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.slack.SlackJsonTokenExtractor" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.SlackApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.MediaWikiApi$BetaInstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.MediaWikiApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.PolarAPI" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.github.scribejava.apis.polar.PolarOAuthService" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.PolarAPI$InstanceHolder" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.polar.PolarJsonTokenExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.FreelancerApi$Sandbox$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.github.scribejava.apis.FreelancerApi$Sandbox" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.FreelancerApi$1" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.FreelancerApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.VkontakteApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.VkontakteApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.ImgurApi" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.imgur.ImgurOAuthService" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.ImgurApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.TwitterApi$Authenticate$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.github.scribejava.apis.TwitterApi$Authenticate" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.TwitterApi$1" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.TwitterApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.GitHubApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.GitHubApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.KakaoApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.KakaoApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.GeniusApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.GeniusApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.MicrosoftAzureActiveDirectory20Api" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.github.scribejava.apis.microsoftazureactivedirectory.BaseMicrosoftAzureActiveDirectoryApi" classification="extends" />
+            <depends-on name="com.github.scribejava.apis.MicrosoftAzureActiveDirectory20Api$InstanceHolder" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.microsoftazureactivedirectory.MicrosoftAzureActiveDirectory20BearerSignature" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.DataportenApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.DataportenApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.HHApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.HHApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.TheThingsNetworkV2PreviewApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.TheThingsNetworkV2PreviewApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.StackExchangeApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.StackExchangeApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.WunderlistAPI" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.wunderlist.WunderlistOAuthService" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.WunderlistAPI$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.FlickrApi" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.FlickrApi$FlickrPerm" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.FlickrApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.HiOrgServerApi20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.HiOrgServerApi20$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.SkyrockApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.SkyrockApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.TwitterApi$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.TwitterApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.MediaWikiApi" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.MediaWikiApi$InstanceHolder" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.MediaWikiApi$BetaInstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.FacebookApi" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.github.scribejava.apis.facebook.FacebookService" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.FacebookApi$InstanceHolder" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.facebook.FacebookAccessTokenJsonExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.TheThingsNetworkV1StagingApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.TheThingsNetworkV1StagingApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.SinaWeiboApi20$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.SinaWeiboApi20" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.InstagramApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.InstagramApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.DoktornaraboteApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.DoktornaraboteApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.PinterestApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.PinterestApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.LinkedInApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.LinkedInApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.YahooApi20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.YahooApi20$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.DropboxApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.DropboxApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.MisfitApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.MisfitApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.YahooApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.YahooApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.FlickrApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.FlickrApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.ImgurApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.ImgurApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.FreelancerApi$Sandbox" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.github.scribejava.apis.FreelancerApi" classification="extends" />
+            <depends-on name="com.github.scribejava.apis.FreelancerApi$1" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.FreelancerApi$Sandbox$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.DiscordApi$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.DiscordApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.BoxApi20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.BoxApi20$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.UcozApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.UcozApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.SinaWeiboApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.SinaWeiboApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.XeroApi20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.XeroApi20$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.HiOrgServerApi20$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.HiOrgServerApi20" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.DoktornaraboteApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.DoktornaraboteApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.ViadeoApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.ViadeoApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.MisfitApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.MisfitApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.FoursquareApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.FoursquareApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.AutomaticAPI$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.AutomaticAPI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.MeetupApi20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.MeetupApi20$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.DiggApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.DiggApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.PinterestApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.PinterestApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.Foursquare2Api" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.Foursquare2Api$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.FitbitApi20" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.fitbit.FitBitJsonTokenExtractor" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.FitbitApi20$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.MicrosoftAzureActiveDirectoryApi" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.github.scribejava.apis.microsoftazureactivedirectory.BaseMicrosoftAzureActiveDirectoryApi" classification="extends" />
+            <depends-on name="com.github.scribejava.apis.MicrosoftAzureActiveDirectoryApi$InstanceHolder" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.microsoftazureactivedirectory.MicrosoftAzureActiveDirectoryBearerSignature" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.NaverApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.NaverApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.LiveApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.LiveApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.Asana20Api" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.Asana20Api$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.Foursquare2Api$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.Foursquare2Api" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.EtsyApi" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.EtsyApi$1" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.EtsyApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.TheThingsNetworkV2PreviewApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.TheThingsNetworkV2PreviewApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.Px500Api$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.Px500Api" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.OdnoklassnikiApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.OdnoklassnikiApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.SalesforceApi" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.SalesforceApi$InstanceHolder" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.salesforce.SalesforceJsonTokenExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.HHApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.HHApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.DiscordApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.DiscordApi" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.DiscordApi$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.KakaoApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.KakaoApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.KaixinApi20$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.KaixinApi20" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.ViadeoApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.ViadeoApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.MicrosoftAzureActiveDirectory20Api$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.MicrosoftAzureActiveDirectory20Api" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.EtsyApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.EtsyApi" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.EtsyApi$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.TumblrApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.TumblrApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.TwitterApi" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.github.scribejava.apis.TwitterApi$InstanceHolder" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.TwitterApi$1" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.TwitterApi$Authenticate" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.AWeberApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.AWeberApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.FlickrApi$FlickrPerm" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.FlickrApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.RenrenApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.RenrenApi$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.TheThingsNetworkV1StagingApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.TheThingsNetworkV1StagingApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.MediaWikiApi$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.MediaWikiApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.PolarAPI$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.PolarAPI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.KeycloakApi" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.openid.OpenIdJsonTokenExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.TwitterApi$Authenticate" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.github.scribejava.apis.TwitterApi" classification="extends" />
+            <depends-on name="com.github.scribejava.apis.TwitterApi$1" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.TwitterApi$Authenticate$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.EtsyApi$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.EtsyApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.LinkedInApi20$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.LinkedInApi20" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.github.scribejava.apis.polar">
+        <type name="com.github.scribejava.apis.polar.PolarJsonTokenExtractor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.polar.PolarOAuth2AccessToken" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.polar.PolarJsonTokenExtractor$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.polar.PolarJsonTokenExtractor$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.polar.PolarJsonTokenExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.polar.PolarOAuthService" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.PolarAPI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.polar.PolarOAuth2AccessToken" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.github.scribejava.apis.slack">
+        <type name="com.github.scribejava.apis.slack.SlackOAuth2AccessToken" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.slack.SlackJsonTokenExtractor$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.slack.SlackJsonTokenExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.slack.SlackJsonTokenExtractor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.slack.SlackOAuth2AccessToken" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.slack.SlackJsonTokenExtractor$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.github.scribejava.apis.instagram">
+        <type name="com.github.scribejava.apis.instagram.InstagramService" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.InstagramApi" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.instagram.InstagramAccessTokenJsonExtractor" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.github.scribejava.apis.instagram.InstagramAccessTokenJsonExtractor$InstanceHolder" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.facebook.FacebookAccessTokenJsonExtractor" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.instagram.InstagramAccessTokenErrorResponse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.instagram.InstagramAccessTokenJsonExtractor$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.instagram.InstagramAccessTokenJsonExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.instagram.InstagramAccessTokenErrorResponse" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.github.scribejava.apis.fitbit">
+        <type name="com.github.scribejava.apis.fitbit.FitBitJsonTokenExtractor$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.fitbit.FitBitJsonTokenExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.fitbit.FitBitJsonTokenExtractor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.fitbit.FitBitOAuth2AccessToken" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.fitbit.FitBitJsonTokenExtractor$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.fitbit.FitBitOAuth2AccessToken" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.github.scribejava.apis.wunderlist">
+        <type name="com.github.scribejava.apis.wunderlist.WunderlistOAuthService" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.WunderlistAPI" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.github.scribejava.apis.facebook">
+        <type name="com.github.scribejava.apis.facebook.FacebookAccessTokenErrorResponse" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.facebook.FacebookAccessTokenJsonExtractor$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.facebook.FacebookAccessTokenJsonExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.facebook.FacebookAccessTokenJsonExtractor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.facebook.FacebookAccessTokenJsonExtractor$InstanceHolder" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.facebook.FacebookAccessTokenErrorResponse" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.facebook.FacebookService" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.FacebookApi" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.github.scribejava.apis.openid">
+        <type name="com.github.scribejava.apis.openid.OpenIdOAuth2AccessToken" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.openid.OpenIdJsonTokenExtractor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.openid.OpenIdOAuth2AccessToken" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.openid.OpenIdJsonTokenExtractor$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.openid.OpenIdJsonTokenExtractor$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.openid.OpenIdJsonTokenExtractor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.github.scribejava.apis.salesforce">
+        <type name="com.github.scribejava.apis.salesforce.SalesforceJsonTokenExtractor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.salesforce.SalesforceToken" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.salesforce.SalesforceJsonTokenExtractor$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.salesforce.SalesforceJsonTokenExtractor$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.salesforce.SalesforceJsonTokenExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.salesforce.SalesforceToken" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.github.scribejava.apis.google">
+        <type name="com.github.scribejava.apis.google.GoogleDeviceAuthorizationJsonExtractor$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.google.GoogleDeviceAuthorizationJsonExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.google.GoogleDeviceAuthorizationJsonExtractor" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.google.GoogleDeviceAuthorizationJsonExtractor$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.github.scribejava.apis.tutby">
+        <type name="com.github.scribejava.apis.tutby.TutByBearerSignature$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.tutby.TutByBearerSignature" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.tutby.TutByBearerSignature" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.tutby.TutByBearerSignature$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.github.scribejava.apis.vk">
+        <type name="com.github.scribejava.apis.vk.VKJsonTokenExtractor$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.vk.VKJsonTokenExtractor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.vk.VKOAuth2AccessToken" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.vk.VKJsonTokenExtractor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.vk.VKOAuth2AccessToken" classification="uses" />
+            <depends-on name="com.github.scribejava.apis.vk.VKJsonTokenExtractor$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.github.scribejava.apis.mailru">
+        <type name="com.github.scribejava.apis.mailru.MailruOAuthService" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.MailruApi" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.github.scribejava.apis.odnoklassniki">
+        <type name="com.github.scribejava.apis.odnoklassniki.OdnoklassnikiOAuthService" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.OdnoklassnikiApi" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.github.scribejava.apis.microsoftazureactivedirectory">
+        <type name="com.github.scribejava.apis.microsoftazureactivedirectory.MicrosoftAzureActiveDirectoryBearerSignature" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.microsoftazureactivedirectory.BaseMicrosoftAzureActiveDirectoryBearerSignature" classification="extends" />
+            <depends-on name="com.github.scribejava.apis.microsoftazureactivedirectory.MicrosoftAzureActiveDirectoryBearerSignature$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.microsoftazureactivedirectory.MicrosoftAzureActiveDirectory20BearerSignature$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.microsoftazureactivedirectory.MicrosoftAzureActiveDirectory20BearerSignature" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.microsoftazureactivedirectory.MicrosoftAzureActiveDirectory20BearerSignature" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.github.scribejava.apis.microsoftazureactivedirectory.BaseMicrosoftAzureActiveDirectoryBearerSignature" classification="extends" />
+            <depends-on name="com.github.scribejava.apis.microsoftazureactivedirectory.MicrosoftAzureActiveDirectory20BearerSignature$InstanceHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.microsoftazureactivedirectory.BaseMicrosoftAzureActiveDirectoryApi" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.microsoftazureactivedirectory.BaseMicrosoftAzureActiveDirectoryBearerSignature" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.github.scribejava.apis.microsoftazureactivedirectory.MicrosoftAzureActiveDirectoryBearerSignature$InstanceHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.microsoftazureactivedirectory.MicrosoftAzureActiveDirectoryBearerSignature" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.github.scribejava.apis.imgur">
+        <type name="com.github.scribejava.apis.imgur.ImgurOAuthService" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.github.scribejava.apis.ImgurApi" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

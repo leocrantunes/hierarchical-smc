@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="log4j-iostreams-2.21.1">
+    <container name="/home/leo/repos/logging-log4j2-rel-2.21.1/log4j-iostreams/target/log4j-iostreams-2.21.1.jar" classification="osgi-bundle">
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.logging.log4j.io">
+        <type name="org.apache.logging.log4j.io.ByteStreamLogger$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.ByteStreamLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.ByteStreamLogger$ByteBufferInputStream" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.io.ByteStreamLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.io.ByteStreamLogger$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.ByteStreamLogger" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.io.ByteStreamLogger$ByteBufferInputStream" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.io.ByteStreamLogger$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.CharStreamLogger" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.IoBuilder" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.logging.log4j.io.LoggerBufferedReader" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.io.LoggerReader" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.io.LoggerWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.io.LoggerFilterWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.io.LoggerPrintWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.io.LoggerBufferedInputStream" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.io.LoggerInputStream" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.io.LoggerOutputStream" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.io.LoggerFilterOutputStream" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.io.LoggerPrintStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.LoggerBufferedInputStream" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalBufferedInputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.LoggerBufferedReader" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalBufferedReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.LoggerFilterOutputStream" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalFilterOutputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.LoggerFilterWriter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalFilterWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.LoggerInputStream" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalInputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.LoggerOutputStream" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalOutputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.LoggerPrintStream" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalPrintStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.LoggerPrintWriter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalPrintWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.LoggerReader" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.LoggerWriter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.osgi.annotation.bundle.Export" classification="uses" />
+            <depends-on name="org.osgi.annotation.versioning.Version" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.logging.log4j.io.internal">
+        <type name="org.apache.logging.log4j.io.internal.InternalBufferedInputStream" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalInputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.internal.InternalBufferedReader" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalLoggerReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.internal.InternalFilterOutputStream" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.ByteStreamLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.internal.InternalFilterWriter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.CharStreamLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.internal.InternalInputStream" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.ByteStreamLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.internal.InternalLoggerReader" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.CharStreamLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.internal.InternalOutputStream" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.ByteStreamLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.internal.InternalPrintStream" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalOutputStream" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalFilterOutputStream" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.internal.InternalPrintWriter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.io.internal.InternalFilterWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.internal.InternalReader" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.CharStreamLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.internal.InternalWriter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.io.CharStreamLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.io.internal.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

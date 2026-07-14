@@ -1,0 +1,1609 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="lucene-codecs-11.0.0">
+    <container name="/home/leo/github/lucene/lucene/luke/build/lucene-luke-11.0.0-SNAPSHOT/lucene-codecs-11.0.0-SNAPSHOT.jar" classification="jar">
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.apache.lucene.codecs.bitvectors.HnswBitVectorsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.BlockTreeOrdsPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.UniformSplitPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextCodec" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.codecs.bitvectors">
+        <type name="org.apache.lucene.codecs.bitvectors.FlatBitVectorsScorer$BitRandomVectorScorer" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.bitvectors.FlatBitVectorsScorer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.bitvectors.FlatBitVectorsScorer$BitRandomVectorScorerSupplier" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.bitvectors.FlatBitVectorsScorer$BitRandomVectorScorer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bitvectors.FlatBitVectorsScorer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.bitvectors.FlatBitVectorsScorer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.bitvectors.FlatBitVectorsScorer$BitRandomVectorScorerSupplier" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bitvectors.FlatBitVectorsScorer$BitRandomVectorScorer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.bitvectors.HnswBitVectorsFormat$FlatBitVectorsWriter" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.bitvectors.HnswBitVectorsFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.bitvectors.HnswBitVectorsFormat" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.bitvectors.FlatBitVectorsScorer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bitvectors.HnswBitVectorsFormat$FlatBitVectorsWriter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.codecs.blockterms">
+        <type name="org.apache.lucene.codecs.blockterms.BlockTermsReader$FieldAndTerm" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.BlockTermsReader$FieldReader$SegmentTermsEnum" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsReader$FieldAndTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexReaderBase$FieldIndexEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsReader$FieldReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexReaderBase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.BlockTermsReader$FieldReader" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsReader$FieldReader$SegmentTermsEnum" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.BlockTermsReader" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsReader$FieldReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexReaderBase" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsReader$FieldReader$SegmentTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsReader$FieldAndTerm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.BlockTermsWriter$FieldMetaData" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.BlockTermsWriter$TermEntry" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.BlockTermsWriter$TermsWriter" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase$FieldWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsWriter$TermEntry" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsWriter$FieldMetaData" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.BlockTermsWriter" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsWriter$FieldMetaData" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsWriter$TermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase$FieldWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.BlockTermsWriter$TermEntry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.FixedGapTermsIndexReader$FieldIndexData" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.blockterms.FixedGapTermsIndexReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.FixedGapTermsIndexReader$IndexEnum" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexReaderBase$FieldIndexEnum" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.FixedGapTermsIndexReader$FieldIndexData" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.FixedGapTermsIndexReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexReaderBase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.FixedGapTermsIndexReader" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexReaderBase" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.FixedGapTermsIndexReader$FieldIndexData" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexReaderBase$FieldIndexEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.FixedGapTermsIndexWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.FixedGapTermsIndexReader$IndexEnum" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.FixedGapTermsIndexWriter$SimpleFieldWriter" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase$FieldWriter" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.FixedGapTermsIndexWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.FixedGapTermsIndexWriter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.FixedGapTermsIndexWriter$SimpleFieldWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase$FieldWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.TermsIndexReaderBase$FieldIndexEnum" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexReaderBase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.TermsIndexReaderBase" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexReaderBase$FieldIndexEnum" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase$FieldWriter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase$FieldWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexReader$IndexEnum" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexReaderBase$FieldIndexEnum" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexReaderBase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexReader" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexReaderBase" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexReaderBase$FieldIndexEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexReader$IndexEnum" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter$EveryNOrDocFreqTermSelector" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter$IndexTermSelector" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter$EveryNTermSelector" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter$IndexTermSelector" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter$FSTFieldWriter" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase$FieldWriter" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter$IndexTermSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter$IndexTermSelector" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter$IndexTermSelector" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.TermsIndexWriterBase$FieldWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter$FSTFieldWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter$EveryNOrDocFreqTermSelector" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blockterms.VariableGapTermsIndexWriter$EveryNTermSelector" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.codecs.blocktreeords">
+        <type name="org.apache.lucene.codecs.blocktreeords.BlockTreeOrdsPostingsFormat" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs$Output" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs$Output" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsReader" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsFieldReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs$Output" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$FieldMetaData" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs$Output" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$PendingBlock" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$PendingEntry" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs$Output" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$SubIndex" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$PendingEntry" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$PendingTerm" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$PendingEntry" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$SubIndex" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs$Output" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$TermsWriter" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$PendingEntry" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$PendingBlock" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$PendingTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$SubIndex" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$FieldMetaData" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs$Output" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs$Output" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$FieldMetaData" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$TermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$PendingBlock" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$SubIndex" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$PendingTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter$PendingEntry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.OrdsFieldReader" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs$Output" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsSegmentTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsIntersectTermsEnum" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.OrdsIntersectTermsEnum" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsIntersectTermsEnumFrame" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs$Output" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsFieldReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.OrdsIntersectTermsEnumFrame" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs$Output" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsIntersectTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsFieldReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.OrdsSegmentTermsEnum$InputOutput" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs$Output" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsSegmentTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.OrdsSegmentTermsEnum" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsSegmentTermsEnumFrame" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsFieldReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs$Output" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsSegmentTermsEnum$InputOutput" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.blocktreeords.OrdsSegmentTermsEnumFrame" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs$Output" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsSegmentTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsFieldReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.OrdsBlockTreeTermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.blocktreeords.FSTOrdsOutputs" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.codecs.bloom">
+        <type name="org.apache.lucene.codecs.bloom.BloomFilterFactory" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.bloom.FuzzySet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat$BloomFilteredFieldsConsumer" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.bloom.FuzzySet" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilterFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat$BloomFilteredFieldsProducer$BloomFilteredTerms" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.bloom.FuzzySet" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat$BloomFilteredFieldsProducer$BloomFilteredTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat$BloomFilteredFieldsProducer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat$BloomFilteredFieldsProducer$BloomFilteredTermsEnum" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.bloom.FuzzySet" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.FuzzySet$ContainsResult" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat$BloomFilteredFieldsProducer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat$BloomFilteredFieldsProducer" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.bloom.FuzzySet" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat$BloomFilteredFieldsProducer$BloomFilteredTerms" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat$BloomFilteredFieldsProducer$BloomFilteredTermsEnum" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilterFactory" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.DefaultBloomFilterFactory" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat$BloomFilteredFieldsConsumer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat$BloomFilteredFieldsProducer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat$BloomFilteredFieldsProducer$BloomFilteredTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat$BloomFilteredFieldsProducer$BloomFilteredTerms" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.bloom.DefaultBloomFilterFactory" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.bloom.BloomFilterFactory" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.bloom.FuzzySet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.bloom.FuzzySet$ContainsResult" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.bloom.FuzzySet" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.bloom.FuzzySet" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.bloom.FuzzySet$ContainsResult" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.codecs.memory">
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$DirectIntersectTermsEnum$State" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$DirectIntersectTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$DirectIntersectTermsEnum" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="12">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$DirectIntersectTermsEnum$State" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$LowFreqTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$HighFreqTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$TermAndSkip" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqPostingsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$HighFreqPostingsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqDocsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqDocsEnumNoPos" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqDocsEnumNoTF" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$HighFreqDocsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$DirectTermsEnum" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="11">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqDocsEnumNoTF" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqDocsEnumNoPos" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$LowFreqTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$HighFreqTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqDocsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$HighFreqDocsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$TermAndSkip" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqPostingsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$HighFreqPostingsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$HighFreqTerm" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$TermAndSkip" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$IntArrayWriter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$LowFreqTerm" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$TermAndSkip" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$HighFreqTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$TermAndSkip" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$TermAndSkip" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$IntArrayWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$LowFreqTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$HighFreqTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$DirectTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$DirectIntersectTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectFields" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat$HighFreqDocsEnum" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat$HighFreqPostingsEnum" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqDocsEnum" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqDocsEnumNoPos" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqDocsEnumNoTF" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqPostingsEnum" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.DirectPostingsFormat" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="15">
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectFields" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$HighFreqPostingsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$HighFreqDocsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqPostingsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqDocsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqDocsEnumNoPos" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$LowFreqDocsEnumNoTF" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$DirectIntersectTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$DirectIntersectTermsEnum$State" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$DirectTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$IntArrayWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$HighFreqTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$LowFreqTerm" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.DirectPostingsFormat$DirectField$TermAndSkip" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.FSTPostingsFormat" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.FSTTermOutputs$TermData" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.FSTTermOutputs" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs$TermData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader$BaseTermsEnum" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs$TermData" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader$IntersectTermsEnum$Frame" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs$TermData" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader$IntersectTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader$IntersectTermsEnum" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader$BaseTermsEnum" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader$IntersectTermsEnum$Frame" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs$TermData" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader$SegmentTermsEnum" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader$BaseTermsEnum" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs$TermData" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs$TermData" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader$SegmentTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader$IntersectTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader$BaseTermsEnum" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.FSTTermsReader" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader$IntersectTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader$IntersectTermsEnum$Frame" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader$SegmentTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsReader$TermsReader$BaseTermsEnum" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.FSTTermsWriter$FieldMetaData" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs$TermData" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.FSTTermsWriter$TermsWriter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs$TermData" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermOutputs" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsWriter$FieldMetaData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.memory.FSTTermsWriter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsWriter$FieldMetaData" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.memory.FSTTermsWriter$TermsWriter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.codecs.simpletext">
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextBKDReader$SimpleTextPointTree" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextPointsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextBKDReader" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDReader$SimpleTextPointTree" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter$OneDimensionBKDWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter$OneDimensionBKDWriter$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter$OneDimensionBKDWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter$OneDimensionBKDWriter" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter$OneDimensionBKDWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter$OneDimensionBKDWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter$1" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextPointsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter$2" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter$3" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter$OneDimensionBKDWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextCodec" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="11">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextStoredFieldsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextSegmentInfoFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldInfosFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextNormsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextLiveDocsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextCompoundFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextPointsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextCompoundFormat$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextCompoundFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextCompoundFormat" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextCompoundFormat$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesFormat" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$DocValuesIterator" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$10" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$OneField" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$OneField" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$3" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$DocValuesIterator" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$OneField" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$4" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$OneField" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$5" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$DocValuesIterator" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$6" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$DocValuesIterator" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$OneField" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$7" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$OneField" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$8" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$9" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$OneField" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$DocValuesIterator" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$OneField" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader" classification="class" visibility="default">
+          <dependencies count="14">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$OneField" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$DocValuesIterator" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$1" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$2" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$3" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$4" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$5" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$6" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$7" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$8" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$9" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader$10" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter$1$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter$1" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter$1$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter$1" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter$1$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextFieldInfosFormat" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader$SimpleTextDocsEnum" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextSkipReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextSkipWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader$SimpleTextPostingsEnum" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextSkipReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextSkipWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader$SimpleTextTerms" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextSkipWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader$SimpleTextTermsEnum" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader$SimpleTextTermsEnum" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader$SimpleTextPostingsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader$SimpleTextDocsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextSkipWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader$SimpleTextTerms" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader$SimpleTextPostingsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader$SimpleTextDocsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader$SimpleTextTermsEnum" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsWriter" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextSkipWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsFormat" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$FieldEntry" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$SimpleTextByteVectorValues$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$SimpleTextByteVectorValues" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$FieldEntry" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$SimpleTextByteVectorValues" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$FieldEntry" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$SimpleTextByteVectorValues$1" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$SimpleTextFloatVectorValues$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$SimpleTextFloatVectorValues" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$FieldEntry" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$SimpleTextFloatVectorValues" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$FieldEntry" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$SimpleTextFloatVectorValues$1" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$FieldEntry" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$SimpleTextFloatVectorValues" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$SimpleTextByteVectorValues" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$SimpleTextByteVectorValues$1" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsReader$SimpleTextFloatVectorValues$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsWriter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextKnnVectorsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextLiveDocsFormat$SimpleTextBits" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextLiveDocsFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextLiveDocsFormat" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextLiveDocsFormat$SimpleTextBits" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextNormsFormat$SimpleTextNormsConsumer$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextNormsFormat$SimpleTextNormsConsumer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextNormsFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextNormsFormat$SimpleTextNormsConsumer" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextNormsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextNormsFormat$SimpleTextNormsConsumer$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextNormsFormat$SimpleTextNormsProducer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextDocValuesReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextNormsFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextNormsFormat" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextNormsFormat$SimpleTextNormsConsumer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextNormsFormat$SimpleTextNormsProducer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextNormsFormat$SimpleTextNormsConsumer$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextPointsFormat" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextPointsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextPointsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextPointsReader" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextPointsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextPointsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextPointsWriter$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextPointsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextPointsWriter" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextBKDWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextPointsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextPointsWriter$1" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextPostingsFormat" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextSegmentInfoFormat$BytesRefOutput" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextSegmentInfoFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextSegmentInfoFormat" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextSegmentInfoFormat$BytesRefOutput" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextSkipReader$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextSkipReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextSkipReader" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextSkipWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextSkipReader$1" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextFieldsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextSkipWriter" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextStoredFieldsFormat" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextStoredFieldsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextStoredFieldsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextStoredFieldsReader$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextStoredFieldsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextStoredFieldsReader" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextStoredFieldsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextStoredFieldsReader$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextStoredFieldsWriter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsFormat" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVDocsEnum" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVFields" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVTerms" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVPostings" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVPostingsEnum" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVTerms" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVPostings" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVTermsEnum" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVPostings" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVPostingsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVDocsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVPostings" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVTerms" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVFields" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVPostingsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVDocsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsReader$SimpleTVTermsEnum" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextTermVectorsWriter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.simpletext.SimpleTextUtil" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.codecs.uniformsplit">
+        <type name="org.apache.lucene.codecs.uniformsplit.BlockDecoder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.BlockEncoder$WritableBytes" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockEncoder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.BlockEncoder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockEncoder$WritableBytes" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.BlockHeader$Serializer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockHeader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.UniformSplitTermsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.BlockHeader" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockHeader$Serializer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.BlockLine$Serializer" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.DeltaBaseTermStateSerializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.TermBytes" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.RamUsageUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.BlockLine" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.TermBytes" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.RamUsageUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine$Serializer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.BlockReader" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockDecoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockHeader$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.DeltaBaseTermStateSerializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$BrowserSupplier" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Browser" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockHeader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.TermBytes" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.RamUsageUtil" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.BlockWriter" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockHeader$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.DeltaBaseTermStateSerializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockEncoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockHeader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Builder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.TermBytes" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockEncoder$WritableBytes" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.DeltaBaseTermStateSerializer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.FSTDictionary$Browser" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Browser" classification="implements" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FSTDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.FSTDictionary$BrowserSupplier" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$BrowserSupplier" classification="implements" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockDecoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Browser" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FSTDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.FSTDictionary$Builder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Builder" classification="implements" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FSTDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.FSTDictionary" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="implements" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockEncoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockEncoder$WritableBytes" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockDecoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FSTDictionary$Browser" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Browser" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FSTDictionary$Builder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FSTDictionary$BrowserSupplier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.FieldMetadata$Serializer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata$Serializer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Browser" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$BrowserSupplier" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Browser" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Builder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockEncoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Browser" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$BrowserSupplier" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Builder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.IntersectBlockReader$AutomatonNextTermCalculator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IntersectBlockReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.IntersectBlockReader$BlockIteration" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IntersectBlockReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.IntersectBlockReader" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockReader" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IntersectBlockReader$AutomatonNextTermCalculator" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IntersectBlockReader$BlockIteration" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$BrowserSupplier" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockDecoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.TermBytes" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockHeader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Browser" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.RamUsageUtil" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.DeltaBaseTermStateSerializer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.TermBytes" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.RamUsageUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.UniformSplitPostingsFormat" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockEncoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockDecoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.UniformSplitTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.UniformSplitTermsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.UniformSplitTerms" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockDecoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$BrowserSupplier" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IntersectBlockReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.UniformSplitTermsReader" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.UniformSplitTerms" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockDecoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$BrowserSupplier" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.UniformSplitPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FSTDictionary$BrowserSupplier" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FSTDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.UniformSplitTermsWriter" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockEncoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockEncoder$WritableBytes" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Builder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.UniformSplitPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FSTDictionary$Builder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FSTDictionary" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.codecs.uniformsplit.sharedterms">
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.FieldMetadataTermState" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockLine$Serializer" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine$Serializer" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockLine" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.DeltaBaseTermStateSerializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.FieldMetadataTermState" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockHeader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockLine" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.FieldMetadataTermState" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.TermBytes" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockLine$Serializer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockReader" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockReader" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$BrowserSupplier" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockDecoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockLine$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockHeader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.DeltaBaseTermStateSerializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockLine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockWriter" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockWriter" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockEncoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.FieldMetadataTermState" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Builder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.TermBytes" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockLine" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockLine$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.DeltaBaseTermStateSerializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STIntersectBlockReader" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IntersectBlockReader" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$BrowserSupplier" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockDecoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockLine$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockHeader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.DeltaBaseTermStateSerializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockLine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STMergingBlockReader" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockReader" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$BrowserSupplier" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockDecoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockHeader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockLine$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockLine$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.DeltaBaseTermStateSerializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockLine" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STMergingTermsEnum$MultiSegmentsPostingsEnum" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$SegmentPostings" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STMergingTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STMergingTermsEnum" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STMergingTermsEnum$MultiSegmentsPostingsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$SegmentPostings" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitPostingsFormat" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.UniformSplitPostingsFormat" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockEncoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockDecoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.UniformSplitTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTerms" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.UniformSplitTerms" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockDecoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$BrowserSupplier" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STMergingBlockReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STIntersectBlockReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsReader" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.UniformSplitTermsReader" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockDecoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$BrowserSupplier" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.UnionFieldMetadataBuilder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.UniformSplitPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTerms" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$FieldTerms" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$TermIterator" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$FieldsIterator" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$MergingFieldTerms" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$FieldTerms" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STMergingTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$SegmentPostings" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$SegmentPostings" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STMergingBlockReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$SegmentTerms" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$TermIterator" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STMergingBlockReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$SharedTermsWriter" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Builder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$TermIterator" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$TermIteratorQueue" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$TermIterator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter" classification="class" visibility="public">
+          <dependencies count="22">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.UniformSplitTermsWriter" classification="extends" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.BlockEncoder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata$Serializer" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$SharedTermsWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STBlockWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary$Builder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$TermIterator" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$TermIteratorQueue" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$FieldTerms" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.FieldMetadataTermState" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTerms" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$SegmentTerms" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$MergingFieldTerms" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$SegmentPostings" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitPostingsFormat" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FSTDictionary$Builder" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STUniformSplitTermsWriter$FieldsIterator" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STMergingBlockReader" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.sharedterms.STMergingTermsEnum" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FSTDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.IndexDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.codecs.uniformsplit.sharedterms.UnionFieldMetadataBuilder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.codecs.uniformsplit.FieldMetadata" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

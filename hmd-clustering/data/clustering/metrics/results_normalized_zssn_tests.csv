@@ -1,0 +1,2 @@
+metric,method,statistic,parameter,p_value,significant_0_05
+normalized_zssn_distance,Friedman rank sum test,61.407,4,0,TRUE

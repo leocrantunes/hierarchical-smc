@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="log4j-layout-template-json-2.21.1">
+    <container name="/home/leo/repos/logging-log4j2-rel-2.21.1/log4j-layout-template-json/target/log4j-layout-template-json-2.21.1.jar" classification="osgi-bundle">
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.logging.log4j.layout.template.json">
+        <type name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$Builder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$EventTemplateAdditionalField" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayoutDefaults" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$Context" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$EventTemplateAdditionalField$Builder" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$EventTemplateAdditionalField$Format" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$EventTemplateAdditionalField" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$EventTemplateAdditionalField$Format" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$EventTemplateAdditionalField" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$EventTemplateAdditionalField" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$EventTemplateAdditionalField$Format" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$EventTemplateAdditionalField$Builder" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$StringBuilderEncoder" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout" classification="class" visibility="public">
+          <dependencies count="20">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.Recycler" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$Context" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$Builder" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverStringSubstitutor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$EventTemplateAdditionalField" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverInterceptor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$StringBuilderEncoder" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter$Builder" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactories" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverInterceptors" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext$Builder" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.Uris" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayoutDefaults" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactories" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.osgi.annotation.bundle.Export" classification="uses" />
+            <depends-on name="aQute.bnd.annotation.jpms.Open" classification="uses" />
+            <depends-on name="org.osgi.annotation.versioning.Version" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.logging.log4j.layout.template.json.resolver">
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.CaseConverterResolver$ErrorHandlingStrategy" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.CaseConverterResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.CaseConverterResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="9">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.CaseConverterResolver$ErrorHandlingStrategy" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.CaseConverterResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.CaseConverterResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.CounterResolver$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.CounterResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.CounterResolver$AtomicBigInteger" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.CounterResolver$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.CounterResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.CounterResolver" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.Recycler" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.CounterResolver$AtomicBigInteger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.CounterResolver$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.CounterResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.CounterResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.EndOfBatchResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.EndOfBatchResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EndOfBatchResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.EventAdditionalFieldInterceptor" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverInterceptor" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$EventTemplateAdditionalField$Format" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$EventTemplateAdditionalField" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonReader" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext$Builder" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverInterceptor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverStringSubstitutor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$EventTemplateAdditionalField" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="11">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverInterceptor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverStringSubstitutor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout$EventTemplateAdditionalField" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext$Builder" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverStringSubstitutor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactories" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverFactories" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverFactory" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverInterceptor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverInterceptor" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverInterceptors" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverInterceptor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverInterceptors" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverStringSubstitutor" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverStringSubstitutor" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.EventRootObjectKeyInterceptor" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverInterceptor" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.ExceptionResolver" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceStringResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceObjectResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverStringSubstitutor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverStringSubstitutor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverContext$Builder" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.ExceptionResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ExceptionResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.ExceptionRootCauseResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ExceptionResolver" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.ExceptionRootCauseResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ExceptionRootCauseResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.LevelResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.LevelResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.LevelResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.LoggerResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.LoggerResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.LoggerResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.MainMapResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.MainMapResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.MainMapResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.MapResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.MapResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.MapResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.MarkerResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.MarkerResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.MarkerResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.MessageParameterResolver$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.MessageParameterResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.MessageParameterResolver$ParameterConsumerState" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.MessageParameterResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.MessageParameterResolver$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.MessageParameterResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.Recycler" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.MessageParameterResolver$ParameterConsumerState" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.MessageParameterResolver$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.MessageParameterResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.MessageParameterResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.MessageResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.MessageResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.MessageResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.PatternResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.PatternResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.PatternResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver$2" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.Recycler" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver$LoopContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver$LoopMethod" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver$LoopContext" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver$LoopMethod" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver$LoopContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver" classification="class" visibility="default">
+          <dependencies count="10">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.Recycler" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver$LoopContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver$2" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver$LoopMethod" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.SourceResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.SourceResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.SourceResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolver" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverContext$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverContext$Builder" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverStringSubstitutor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverContext$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverContext" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverStringSubstitutor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverContext$Builder" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverInterceptor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverStringSubstitutor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverContext$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverFactory" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceElementResolverStringSubstitutor" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverStringSubstitutor" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceObjectResolver" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceResolver" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceStringResolver" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.StackTraceResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.Recycler" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.TruncatingBufferedPrintWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.CharSequencePointer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.MapAccessor" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayoutDefaults" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverInterceptor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverStringSubstitutor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverFactories" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverInterceptor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverInterceptors" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverInterceptor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverStringSubstitutor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$ArrayResolver" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$BooleanResolver" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$EmptyArrayResolver" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$UnresolvableTemplateResolver" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$EmptyObjectResolver" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$UnresolvableTemplateResolver" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$FieldResolverContext" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$FieldResolverMethod" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$FieldResolverMethod" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$FlatteningFieldResolverMethod" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$FieldResolverMethod" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$MapResolver" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$FieldResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$FieldResolverMethod" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$NullResolver" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$UnresolvableTemplateResolver" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$NumberResolver" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$PrefixedFieldResolverMethod" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$FieldResolverMethod" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$RawStringResolver" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$SubstitutingStringResolver" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverStringSubstitutor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$UnresolvableTemplateResolver" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="23">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverInterceptor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$FieldResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverStringSubstitutor" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$FieldResolverMethod" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$ArrayResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$MapResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$RawStringResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$SubstitutingStringResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$NumberResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$BooleanResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$FlatteningFieldResolverMethod" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$PrefixedFieldResolverMethod" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$EmptyArrayResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$EmptyObjectResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$NullResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolvers$UnresolvableTemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.ThreadContextDataResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ReadOnlyStringMapResolver" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.ThreadContextDataResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ThreadContextDataResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.ThreadContextStackResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.ThreadContextStackResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ThreadContextStackResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.ThreadResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.ThreadResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.ThreadResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$EpochResolver" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$2" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$EpochResolver" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$3" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$EpochResolver" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$4" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$EpochResolver" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$5" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$EpochResolver" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$6" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$EpochResolver" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$7" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$EpochResolver" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$EpochResolutionRecord" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$EpochResolver" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$EpochResolutionRecord" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$PatternResolver" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$PatternResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$PatternResolverContext" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Builder" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.JsonTemplateLayoutDefaults" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="14">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolver" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$PatternResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$PatternResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$2" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$3" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$4" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$5" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$6" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$7" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$EpochResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver$EpochResolutionRecord" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolverFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TimestampResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.EventResolverContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverConfig" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolver" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.resolver.TemplateResolverContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.resolver.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.osgi.annotation.bundle.Export" classification="uses" />
+            <depends-on name="aQute.bnd.annotation.jpms.Open" classification="uses" />
+            <depends-on name="org.osgi.annotation.versioning.Version" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.logging.log4j.layout.template.json.util">
+        <type name="org.apache.logging.log4j.layout.template.json.util.CharSequencePointer" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.DummyRecycler" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.Recycler" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.DummyRecyclerFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.Recycler" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.DummyRecycler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Builder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Formatter" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$FormatterFactory" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Formatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$JavaDateTimeFormatter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Formatter" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$JavaDateTimeFormatterFactory" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$FormatterFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Formatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$JavaDateTimeFormatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Log4jFastFormatter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Formatter" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Log4jFastFormatterFactory" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$FormatterFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Formatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Log4jFastFormatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Log4jFixedFormatter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Formatter" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Log4jFixedFormatterFactory" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$FormatterFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Formatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Log4jFixedFormatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="10">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$FormatterFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Formatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Builder" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Log4jFixedFormatterFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Log4jFastFormatterFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$JavaDateTimeFormatterFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Log4jFixedFormatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$Log4jFastFormatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.InstantFormatter$JavaDateTimeFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.JsonReader$Delimiter" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.JsonReader" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonReader$Delimiter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.JsonWriter$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.JsonWriter$Builder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.JsonWriter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter$Builder" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.JsonWriter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.MapAccessor" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.QueueingRecycler" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.Recycler" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.QueueingRecyclerFactory" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.Recycler" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.QueueingRecycler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.Recycler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactories" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$Value" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.QueueingRecyclerFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$NullValue" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.ThreadLocalRecyclerFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.DummyRecyclerFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.Recycler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactoryConverter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactories" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$State" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$DoubleQuotedStringValue" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$Value" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$NullValue" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$Value" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$Parser" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$Value" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$State" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$Values" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$NullValue" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$DoubleQuotedStringValue" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$StringValue" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$State" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$StringValue" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$Value" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$Value" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$Values" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$NullValue" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$StringValue" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$DoubleQuotedStringValue" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$Value" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$Parser" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$State" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$DoubleQuotedStringValue" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$StringValue" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$NullValue" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.StringParameterParser$Values" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.ThreadLocalRecycler" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.Recycler" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.ThreadLocalRecyclerFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.RecyclerFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.Recycler" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.ThreadLocalRecycler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.TruncatingBufferedPrintWriter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.layout.template.json.util.TruncatingBufferedWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.TruncatingBufferedWriter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.Uris" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.layout.template.json.util.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

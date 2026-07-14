@@ -1,0 +1,2271 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="dubbo-cluster-3.2.8">
+    <container name="/home/leo/repos/dubbo-dubbo-3.2.8/dubbo-cluster/target/dubbo-cluster-3.2.8.jar" classification="jar">
+      <namespace name="org.apache.dubbo.registry">
+        <type name="org.apache.dubbo.registry.AddressListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionScope" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster">
+        <type name="org.apache.dubbo.rpc.cluster.CacheableRouterFactory" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.rpc.cluster.RouterFactory" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Router" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.ConcurrentHashMapUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.Cluster" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="10">
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Adaptive" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModelUtil" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.ClusterScopeModelInitializer" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModelInitializer" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.FrameworkModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.beans.factory.ScopeBeanFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotSwitcher" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.merger.MergerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.ClusterUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.AdaptiveMetrics" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshRuleManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.Configurator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.ConfiguratorFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.RegistryConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.ConfiguratorFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Configurator" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Adaptive" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.Constants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.Directory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="org.apache.dubbo.common.Node" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.RouterChain" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Adaptive" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.Merger" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.ProviderURLMergeProcessor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.Router" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterResult" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.RouterChain" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.SingleRouterChain" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotSwitcher" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.RouterFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Router" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouterFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.ConfigurationUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModelUtil" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.FrameworkModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.beans.factory.ScopeBeanFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.RouterFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Router" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Adaptive" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.RuleConverter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.SingleRouterChain" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Router" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotSwitcher" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterResult" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.Holder" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.TailStateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcServiceContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.NetUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.Version" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.configurator">
+        <type name="org.apache.dubbo.rpc.cluster.configurator.AbstractConfigurator" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="12">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Configurator" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.logger.Logger" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.configurator.parser.model.ConditionMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.RegistryConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.configurator.parser.model.ConfiguratorConfig" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.NetUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.remoting.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.configurator.absent">
+        <type name="org.apache.dubbo.rpc.cluster.configurator.absent.AbsentConfigurator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.configurator.AbstractConfigurator" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.configurator.absent.AbsentConfiguratorFactory" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.rpc.cluster.ConfiguratorFactory" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Configurator" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.configurator.absent.AbsentConfigurator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.configurator.override">
+        <type name="org.apache.dubbo.rpc.cluster.configurator.override.OverrideConfigurator" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.rpc.cluster.configurator.AbstractConfigurator" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.logger.Logger" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.configurator.override.OverrideConfiguratorFactory" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.rpc.cluster.ConfiguratorFactory" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Configurator" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.configurator.override.OverrideConfigurator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.configurator.parser">
+        <type name="org.apache.dubbo.rpc.cluster.configurator.parser.ConfigParser" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.configurator.parser.model.ConfiguratorConfig" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.configurator.parser.model.ConfigItem" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.Yaml" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.RegistryConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.JsonUtils" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.constructor.SafeConstructor" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.LoaderOptions" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.constructor.BaseConstructor" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.configurator.parser.model.ConditionMatch" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.configurator.parser.model">
+        <type name="org.apache.dubbo.rpc.cluster.configurator.parser.model.ConditionMatch" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.AddressMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.ListStringMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.configurator.parser.model.ParamMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.configurator.parser.model.ConfigItem" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.configurator.parser.model.ConditionMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.PojoUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.configurator.parser.model.ConfiguratorConfig" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.rpc.cluster.configurator.parser.model.ConfigItem" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.configurator.parser.model.ParamMatch" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.StringMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.directory">
+        <type name="org.apache.dubbo.rpc.cluster.directory.AbstractDirectory" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="34">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.RouterChain" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.Configuration" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.SingleRouterChain" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Router" classification="uses" />
+            <depends-on name="org.apache.dubbo.metrics.model.key.MetricsKey" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.ConcurrentHashSet" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.beans.factory.ScopeBeanFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.ClusterUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.FrameworkModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.threadpool.manager.FrameworkExecutorRepository" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.ConfigurationUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.NetUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.Version" classification="uses" />
+            <depends-on name="org.apache.dubbo.metrics.registry.event.RegistryEvent" classification="uses" />
+            <depends-on name="org.apache.dubbo.metrics.event.MetricsEventBus" classification="uses" />
+            <depends-on name="org.apache.dubbo.metrics.event.MetricsEvent" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcServiceContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.directory.StaticDirectory" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.apache.dubbo.rpc.cluster.directory.AbstractDirectory" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.RouterChain" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.SingleRouterChain" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.RegistryConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.filter">
+        <type name="org.apache.dubbo.rpc.cluster.filter.ClusterFilter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionScope" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.filter.DefaultFilterChainBuilder" classification="class" visibility="public">
+          <dependencies count="20">
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Filter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionDirector" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.ClusterFilter" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModelUtil" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CallbackRegistrationInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfClusterFilterChainNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$ClusterCallbackRegistrationInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.support.ActivateComparator" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CallbackRegistrationInvoker" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.ListenableFilter" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter$Listener" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.InvocationProfilerUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$ClusterCallbackRegistrationInvoker" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CallbackRegistrationInvoker" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$ClusterFilterChainNode" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$FilterChainNode" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfClusterFilterChainNode" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.Experimental" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter$Listener" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.ListenableFilter" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.Experimental" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.InvocationProfilerUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.AsyncRpcResult" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$FilterChainNode" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter$Listener" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.ListenableFilter" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.InvocationProfilerUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="10">
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionScope" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfClusterFilterChainNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$ClusterCallbackRegistrationInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CallbackRegistrationInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$ClusterFilterChainNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$FilterChainNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.filter.InvocationInterceptorBuilder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.filter.ProtocolFilterWrapper" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.apache.dubbo.rpc.Protocol" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Exporter" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.ProtocolServer" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.UrlUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModelUtil" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.filter.support">
+        <type name="org.apache.dubbo.rpc.cluster.filter.support.ConsumerClassLoaderFilter" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.ClusterFilter" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ServiceModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.filter.support.ConsumerContextFilter" classification="class" visibility="public">
+          <dependencies count="23">
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.ClusterFilter" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter$Listener" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.PenetrateAttachmentSelector" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.TimeoutCountDown" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcInvocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcServiceContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.NetUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContextAttachment" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.AsyncRpcResult" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.InvokeMode" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.filter.support.MetricsClusterFilter" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.ClusterFilter" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter$Listener" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModelAware" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.metrics.collector.DefaultMetricsCollector" classification="uses" />
+            <depends-on name="org.apache.dubbo.metrics.event.MetricsDispatcher" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.beans.factory.ScopeBeanFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.metrics.model.MethodMetric" classification="uses" />
+            <depends-on name="org.apache.dubbo.metrics.event.RequestEvent" classification="uses" />
+            <depends-on name="org.apache.dubbo.metrics.event.MetricsEventBus" classification="uses" />
+            <depends-on name="org.apache.dubbo.metrics.event.MetricsEvent" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.filter.support.MetricsConsumerFilter" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.apache.dubbo.metrics.filter.MetricsFilter" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.ClusterFilter" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter$Listener" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.filter.support.ObservationSenderFilter" classification="class" visibility="public">
+          <dependencies count="20">
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.ClusterFilter" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter$Listener" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModelAware" classification="uses" />
+            <depends-on name="io.micrometer.observation.ObservationRegistry" classification="uses" />
+            <depends-on name="org.apache.dubbo.metrics.observation.DubboClientObservationConvention" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.metrics.observation.DubboClientContext" classification="uses" />
+            <depends-on name="io.micrometer.observation.Observation" classification="uses" />
+            <depends-on name="org.apache.dubbo.config.TracingConfig" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.config.context.ConfigManager" classification="uses" />
+            <depends-on name="org.apache.dubbo.metrics.observation.DubboObservationDocumentation" classification="uses" />
+            <depends-on name="org.apache.dubbo.metrics.observation.DefaultDubboClientObservationConvention" classification="uses" />
+            <depends-on name="io.micrometer.observation.ObservationConvention" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.beans.factory.ScopeBeanFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.governance">
+        <type name="org.apache.dubbo.rpc.cluster.governance.DefaultGovernanceRuleRepositoryImpl" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.governance.GovernanceRuleRepository" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigurationListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.DynamicConfiguration" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.ModuleEnvironment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.governance.GovernanceRuleRepository" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigurationListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionScope" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.interceptor">
+        <type name="org.apache.dubbo.rpc.cluster.interceptor.ClusterInterceptor$Listener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.interceptor.ClusterInterceptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.interceptor.ClusterInterceptor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.interceptor.ClusterInterceptor$Listener" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.loadbalance">
+        <type name="org.apache.dubbo.rpc.cluster.loadbalance.AbstractLoadBalance" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="10">
+            <depends-on name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.RegistryConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.loadbalance.AdaptiveLoadBalance" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="org.apache.dubbo.rpc.cluster.loadbalance.AbstractLoadBalance" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.AdaptiveMetrics" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.beans.factory.ScopeBeanFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoadbalanceRules" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContextAttachment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.loadbalance.ConsistentHashLoadBalance$ConsistentHashSelector" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.loadbalance.ConsistentHashLoadBalance" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.io.Bytes" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.loadbalance.ConsistentHashLoadBalance" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.dubbo.rpc.cluster.loadbalance.AbstractLoadBalance" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.loadbalance.ConsistentHashLoadBalance$ConsistentHashSelector" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.loadbalance.LeastActiveLoadBalance" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.dubbo.rpc.cluster.loadbalance.AbstractLoadBalance" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcStatus" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.loadbalance.RandomLoadBalance" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.dubbo.rpc.cluster.loadbalance.AbstractLoadBalance" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.RegistryConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.loadbalance.RoundRobinLoadBalance$WeightedRoundRobin" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.rpc.cluster.loadbalance.RoundRobinLoadBalance" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.loadbalance.RoundRobinLoadBalance" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.dubbo.rpc.cluster.loadbalance.AbstractLoadBalance" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.loadbalance.RoundRobinLoadBalance$WeightedRoundRobin" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.ConcurrentHashMapUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.loadbalance.ShortestResponseLoadBalance$SlideWindowData" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.RpcStatus" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.loadbalance.ShortestResponseLoadBalance" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.loadbalance.ShortestResponseLoadBalance" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="org.apache.dubbo.rpc.cluster.loadbalance.AbstractLoadBalance" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModelAware" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcStatus" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.loadbalance.ShortestResponseLoadBalance$SlideWindowData" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.Environment" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.CompositeConfiguration" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.FrameworkModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.beans.factory.ScopeBeanFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.threadpool.manager.FrameworkExecutorRepository" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.ConcurrentHashMapUtils" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.merger">
+        <type name="org.apache.dubbo.rpc.cluster.merger.ArrayMerger" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Merger" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.utils.ArrayUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.merger.BooleanArrayMerger" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Merger" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.utils.ArrayUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.merger.ByteArrayMerger" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Merger" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.utils.ArrayUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.merger.CharArrayMerger" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Merger" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.utils.ArrayUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.merger.DoubleArrayMerger" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Merger" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.utils.ArrayUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.merger.FloatArrayMerger" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Merger" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.utils.ArrayUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.merger.IntArrayMerger" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Merger" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.utils.ArrayUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.merger.ListMerger" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Merger" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.utils.ArrayUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.merger.LongArrayMerger" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Merger" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.utils.ArrayUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.merger.MapMerger" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Merger" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.utils.ArrayUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.merger.MergerFactory" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModelAware" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Merger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.merger.ArrayMerger" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.TypeUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.merger.SetMerger" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Merger" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.utils.ArrayUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.merger.ShortArrayMerger" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Merger" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.utils.ArrayUtils" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router">
+        <type name="org.apache.dubbo.rpc.cluster.router.AbstractRouter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Router" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.governance.GovernanceRuleRepository" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.AbstractRouterRule" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.RouterResult" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotFilter" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.ClusterFilter" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter$Listener" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotSwitcher" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.Logger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.FrameworkModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.beans.factory.ScopeBeanFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ServiceModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcServiceContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.BaseFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotNode" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.Node" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotSwitcher" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.common.utils.ConcurrentHashSet" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.condition">
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.ConditionStateRouter" classification="class" visibility="public">
+          <dependencies count="20">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.AbstractStateRouter" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.ConditionMatcher" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.ConditionMatcherFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.Holder" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.NetUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.ConditionStateRouterFactory" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.CacheableStateRouterFactory" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.ConditionStateRouter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.condition.config">
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.config.AppStateRouter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.config.ListenableStateRouter" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.config.AppStateRouterFactory" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouterFactory" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.config.AppStateRouter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.config.ListenableStateRouter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="23">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.AbstractStateRouter" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigurationListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.config.model.ConditionRouterRule" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.ConditionStateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigChangedEvent" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.Holder" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigChangeType" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.config.model.ConditionRuleParser" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.TailStateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.governance.GovernanceRuleRepository" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.DynamicConfiguration" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.config.ProviderAppStateRouter" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.config.ListenableStateRouter" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.governance.GovernanceRuleRepository" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigurationListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.DynamicConfiguration" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigChangedEvent" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.config.ProviderAppStateRouterFactory" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.CacheableStateRouterFactory" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.config.ProviderAppStateRouter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.config.ServiceStateRouter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.config.ListenableStateRouter" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.DynamicConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.config.ServiceStateRouterFactory" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.CacheableStateRouterFactory" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.config.ServiceStateRouter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.condition.config.model">
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.config.model.ConditionRouterRule" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.AbstractRouterRule" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.config.model.ConditionRuleParser" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.config.model.ConditionRouterRule" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.Yaml" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.constructor.SafeConstructor" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.LoaderOptions" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.constructor.BaseConstructor" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.condition.matcher">
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.matcher.AbstractConditionMatcher" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="11">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.ConditionMatcher" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.pattern.ValuePattern" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.matcher.ConditionMatcher" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.matcher.ConditionMatcherFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.ConditionMatcher" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.condition.matcher.argument">
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.matcher.argument.ArgumentConditionMatcher" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.AbstractConditionMatcher" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.matcher.argument.ArgumentConditionMatcherFactory" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.ConditionMatcherFactory" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.ConditionMatcher" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.argument.ArgumentConditionMatcher" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.condition.matcher.attachment">
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.matcher.attachment.AttachmentConditionMatcher" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.AbstractConditionMatcher" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.matcher.attachment.AttachmentConditionMatcherFactory" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.ConditionMatcherFactory" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.ConditionMatcher" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.attachment.AttachmentConditionMatcher" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.condition.matcher.param">
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.matcher.param.UrlParamConditionMatcher" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.AbstractConditionMatcher" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.matcher.param.UrlParamConditionMatcherFactory" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.ConditionMatcherFactory" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.ConditionMatcher" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.param.UrlParamConditionMatcher" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.condition.matcher.pattern">
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.matcher.pattern.ValuePattern" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.condition.matcher.pattern.range">
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.matcher.pattern.range.RangeValuePattern" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.pattern.ValuePattern" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.condition.matcher.pattern.wildcard">
+        <type name="org.apache.dubbo.rpc.cluster.router.condition.matcher.pattern.wildcard.WildcardValuePattern" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.condition.matcher.pattern.ValuePattern" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.UrlUtils" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.file">
+        <type name="org.apache.dubbo.rpc.cluster.router.file.FileStateRouterFactory" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouterFactory" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.script.ScriptStateRouterFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.IOUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URLBuilder" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.url.component.ServiceConfigURL" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.mesh.route">
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshAppRuleListener" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigurationListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.util.MeshRuleDispatcher" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.representer.Representer" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.Yaml" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.util.MeshRuleListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigChangedEvent" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshRuleConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.DumperOptions" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.introspector.PropertyUtils" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.constructor.SafeConstructor" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.LoaderOptions" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.constructor.BaseConstructor" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigChangeType" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshEnvListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshAppRuleListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshEnvListenerFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshEnvListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshRuleCache" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.VsDestinationGroup" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.Subset" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.DestinationRuleSpec" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.DestinationRule" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshRuleConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshRuleConstants" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshRuleManager" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshAppRuleListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.governance.GovernanceRuleRepository" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshEnvListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshEnvListenerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.util.MeshRuleListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshRuleConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.DynamicConfiguration" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigurationListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshRuleRouter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="32">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.AbstractStateRouter" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.util.MeshRuleListener" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshRuleManager" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.util.TracingContextProvider" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshRuleCache" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.Holder" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.destination.DubboRouteDestination" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.VsDestinationGroup" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.DubboRoute" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.VirtualServiceRule" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.StringMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.VirtualServiceSpec" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.DubboRouteDetail" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.DubboMatchRequest" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.destination.DubboDestination" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.DestinationRule" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshRuleConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.beans.factory.ScopeBeanFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.PojoUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.route.StandardMeshRuleRouter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshRuleRouter" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.route.MeshRuleConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.route.StandardMeshRuleRouterFactory" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouterFactory" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.route.StandardMeshRuleRouter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.mesh.rule">
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.BaseRule" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.VsDestinationGroup" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.VirtualServiceRule" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.DestinationRule" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination">
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.ConnectionPoolSettings" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.DestinationRule" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.BaseRule" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.DestinationRuleSpec" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.DestinationRuleSpec" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.Subset" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.TrafficPolicy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.Subset" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.TCPSettings" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.TcpKeepalive" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.TcpKeepalive" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.TrafficPolicy" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.loadbalance.LoadBalancerSettings" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.loadbalance">
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.loadbalance.ConsistentHashLB" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.loadbalance.LoadBalancerSettings" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.loadbalance.SimpleLB" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.loadbalance.ConsistentHashLB" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.destination.loadbalance.SimpleLB" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice">
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.DubboMatchRequest" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.DubboMethodMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.DubboAttachmentMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.StringMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.util.TracingContextProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.DubboRoute" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.StringMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.DubboRouteDetail" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.DubboRouteDetail" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.DubboMatchRequest" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.destination.DubboRouteDestination" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.VirtualServiceRule" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.BaseRule" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.VirtualServiceSpec" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.VirtualServiceSpec" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.DubboRoute" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.destination">
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.destination.DubboDestination" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.destination.DubboRouteDestination" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.destination.DubboRouteDestination" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.destination.DubboDestination" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match">
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.AddressMatch" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.NetUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.UrlUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.BoolMatch" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.DoubleMatch" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.DoubleRangeMatch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.DoubleRangeMatch" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.DubboAttachmentMatch" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.StringMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.util.TracingContextProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.DubboMethodArg" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.ListStringMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.ListDoubleMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.BoolMatch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.DubboMethodMatch" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.StringMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.DubboMethodArg" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.ListBoolMatch" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.BoolMatch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.ListDoubleMatch" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.DoubleMatch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.ListStringMatch" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.StringMatch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.StringMatch" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.mesh.util">
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.util.MeshRuleDispatcher" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.util.MeshRuleListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.ConcurrentHashMapUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.ConcurrentHashSet" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.util.MeshRuleListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mesh.util.TracingContextProvider" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionScope" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.mock">
+        <type name="org.apache.dubbo.rpc.cluster.router.mock.MockInvokersSelector" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.AbstractStateRouter" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.Holder" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.RouterGroupingState" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.mock.MockStateRouterFactory" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouterFactory" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mock.MockInvokersSelector" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.script">
+        <type name="org.apache.dubbo.rpc.cluster.router.script.ScriptStateRouter" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.AbstractStateRouter" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.Holder" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcServiceContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.ConcurrentHashMapUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContextAttachment" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.script.ScriptStateRouterFactory" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouterFactory" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.script.ScriptStateRouter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.script.config">
+        <type name="org.apache.dubbo.rpc.cluster.router.script.config.AppScriptRouterFactory" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.CacheableStateRouterFactory" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.script.config.AppScriptStateRouter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.script.config.AppScriptStateRouter" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.AbstractStateRouter" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigurationListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.script.config.model.ScriptRule" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.script.ScriptStateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.Holder" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigChangedEvent" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigChangeType" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.governance.GovernanceRuleRepository" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.DynamicConfiguration" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.script.config.model">
+        <type name="org.apache.dubbo.rpc.cluster.router.script.config.model.ScriptRule" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.AbstractRouterRule" classification="extends" />
+            <depends-on name="org.yaml.snakeyaml.Yaml" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.constructor.SafeConstructor" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.LoaderOptions" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.constructor.BaseConstructor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.state">
+        <type name="org.apache.dubbo.rpc.cluster.router.state.AbstractStateRouter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="14">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.governance.GovernanceRuleRepository" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.Holder" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.ConfigurationUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.state.BitList$BitListIterator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList$BitListIterator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.state.CacheableStateRouterFactory" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouterFactory" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.ConcurrentHashMapUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.state.RouterGroupingState" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.Node" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.Holder" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.state.StateRouterFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Adaptive" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.SPI" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.state.TailStateRouter" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.Holder" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.tag">
+        <type name="org.apache.dubbo.rpc.cluster.router.tag.TagStateRouter" classification="class" visibility="public">
+          <dependencies count="23">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.AbstractStateRouter" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigurationListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.tag.model.TagRouterRule" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigChangedEvent" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.Holder" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.RouterSnapshotNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.ConfigChangeType" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.tag.model.TagRuleParser" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.NetUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.governance.GovernanceRuleRepository" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.configcenter.DynamicConfiguration" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.tag.TagStateRouterFactory" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.CacheableStateRouterFactory" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.StateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Activate" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.tag.TagStateRouter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.router.tag.model">
+        <type name="org.apache.dubbo.rpc.cluster.router.tag.model.ParamMatch" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.mesh.rule.virtualservice.match.StringMatch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.tag.model.Tag" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.tag.model.ParamMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.PojoUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.tag.model.TagRouterRule" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.AbstractRouterRule" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.tag.model.Tag" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.tag.TagStateRouter" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.state.BitList" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.tag.model.ParamMatch" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.router.tag.model.TagRuleParser" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.dubbo.rpc.cluster.router.tag.model.TagRouterRule" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.Yaml" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.constructor.SafeConstructor" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.LoaderOptions" classification="uses" />
+            <depends-on name="org.yaml.snakeyaml.constructor.BaseConstructor" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.support">
+        <type name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="29">
+            <depends-on name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.Configuration" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcServiceContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.ConfigurationUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.InvocationProfilerUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.NetUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.Version" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.profiler.ProfilerSwitch" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModelUtil" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.AvailableCluster" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AvailableClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.AvailableClusterInvoker" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.BroadcastCluster" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.BroadcastClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.BroadcastClusterInvoker" classification="class" visibility="public">
+          <dependencies count="17">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcInvocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContext$RestoreContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcServiceContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ServiceModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.InvokeMode" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.ClusterUtils" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModelAware" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.ProviderURLMergeProcessor" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.FailbackCluster" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.FailbackClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.FailbackClusterInvoker$RetryTimerTask" classification="class" visibility="default">
+          <dependencies count="12">
+            <depends-on name="org.apache.dubbo.common.timer.TimerTask" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.FailbackClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.timer.Timeout" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.timer.Timer" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.FailbackClusterInvoker" classification="class" visibility="public">
+          <dependencies count="23">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.timer.Timer" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.FailbackClusterInvoker$RetryTimerTask" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.timer.HashedWheelTimer" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.NamedThreadFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.timer.TimerTask" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.timer.Timeout" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcServiceContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.AsyncRpcResult" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.FailfastCluster" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.FailfastClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.FailfastClusterInvoker" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.NetUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.Version" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.FailoverCluster" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.FailoverClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.FailoverClusterInvoker" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcServiceContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.NetUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.Version" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContextAttachment" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.FailsafeCluster" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.FailsafeClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.FailsafeClusterInvoker" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.AsyncRpcResult" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.ForkingCluster" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.ForkingClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.ForkingClusterInvoker" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.FrameworkModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.beans.factory.ScopeBeanFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.threadpool.manager.FrameworkExecutorRepository" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcServiceContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContextAttachment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.MergeableCluster" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.MergeableClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.MergeableClusterInvoker" classification="class" visibility="public">
+          <dependencies count="23">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcInvocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Merger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.ConfigUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.AsyncRpcResult" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ModuleModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModelUtil" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.beans.factory.ScopeBeanFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.merger.MergerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.support.merger">
+        <type name="org.apache.dubbo.rpc.cluster.support.merger.DefaultProviderURLMergeProcessor" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.dubbo.rpc.cluster.ProviderURLMergeProcessor" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.remoting.Constants" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.support.registry">
+        <type name="org.apache.dubbo.rpc.cluster.support.registry.ZoneAwareCluster" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.registry.ZoneAwareClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.registry.ZoneAwareClusterInvoker" classification="class" visibility="public">
+          <dependencies count="19">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="extends" />
+            <depends-on name="org.apache.dubbo.common.logger.Logger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.ZoneDetector" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.RegistryConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContextAttachment" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.dubbo.rpc.cluster.support.wrapper">
+        <type name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster$ClusterFilterInvoker" classification="class" visibility="default">
+          <dependencies count="17">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModelUtil" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster$InterceptorInvokerNode" classification="class" visibility="default">
+          <dependencies count="10">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.interceptor.ClusterInterceptor" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.interceptor.ClusterInterceptor$Listener" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster$InvocationInterceptorInvoker" classification="class" visibility="default">
+          <dependencies count="12">
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="extends" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.InvocationInterceptorBuilder" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.LoadBalance" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="19">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Cluster" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.filter.InvocationInterceptorBuilder" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.interceptor.ClusterInterceptor" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster$ClusterFilterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.config.ConfigurationUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModelUtil" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster$InvocationInterceptorInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster$InterceptorInvokerNode" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker" classification="class" visibility="public">
+          <dependencies count="24">
+            <depends-on name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="implements" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcInvocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.LoggerCodeConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.ConfigUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.InvokeMode" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.CollectionUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.MockInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.AsyncRpcResult" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcServiceContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.protocol.dubbo.FutureAdapter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.StringUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.wrapper.MockClusterWrapper" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Cluster" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.wrapper.ScopeClusterInvoker" classification="class" visibility="public">
+          <dependencies count="32">
+            <depends-on name="org.apache.dubbo.rpc.cluster.ClusterInvoker" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.listener.ExporterChangeListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.ErrorTypeAwareLogger" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Protocol" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.listener.InjvmExporterListener" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.URL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Result" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Invocation" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Exporter" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.url.component.DubboServiceAddressURL" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Constants" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.constants.CommonConstants" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.support.RpcUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ApplicationModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.ExtensionLoader" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.FrameworkModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.beans.factory.ScopeBeanFactory" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcServiceContext" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.url.component.ServiceConfigURL" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.utils.NetUtils" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ScopeModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.model.ServiceModel" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.url.component.URLAddress" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.url.component.URLParam" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Cluster" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.directory.StaticDirectory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.logger.LoggerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.dubbo.rpc.cluster.support.wrapper.ScopeClusterWrapper" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.dubbo.rpc.cluster.Cluster" classification="implements" />
+            <depends-on name="org.apache.dubbo.rpc.Invoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.Directory" classification="uses" />
+            <depends-on name="org.apache.dubbo.common.extension.Wrapper" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.cluster.support.wrapper.ScopeClusterInvoker" classification="uses" />
+            <depends-on name="org.apache.dubbo.rpc.RpcException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

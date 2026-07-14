@@ -1,0 +1,36 @@
+0,tree_a,tree_b
+<Operation Match: cls:AmountPrinterParser to cls:AmountPrinterParser>,autores,otimizacao-CRG25
+<Operation Match: cls:LiteralPrinterParser to cls:LiteralPrinterParser>,autores,otimizacao-CRG25
+<Operation Match: cls:MoneyAmountStyle to cls:MoneyAmountStyle>,autores,otimizacao-CRG25
+<Operation Remove: cls:MoneyFormatException>,autores,otimizacao-CRG25
+<Operation Remove: cls:MoneyFormatter>,autores,otimizacao-CRG25
+<Operation Match: cls:MoneyFormatterBuilder to cls:MoneyFormatterBuilder>,autores,otimizacao-CRG25
+<Operation Remove: cls:MoneyParseContext>,autores,otimizacao-CRG25
+<Operation Remove: cls:MoneyParser>,autores,otimizacao-CRG25
+<Operation Match: cls:MoneyPrintContext to cls:MoneyPrintContext>,autores,otimizacao-CRG25
+<Operation Match: cls:MoneyPrinter to cls:MoneyPrinter>,autores,otimizacao-CRG25
+<Operation Update: pkg:1.1 to pkg:1>,autores,otimizacao-CRG25
+<Operation Remove: cls:BigMoney>,autores,otimizacao-CRG25
+<Operation Remove: cls:BigMoneyProvider>,autores,otimizacao-CRG25
+<Operation Remove: cls:CurrencyMismatchException>,autores,otimizacao-CRG25
+<Operation Match: cls:CurrencyUnit to cls:CurrencyUnit>,autores,otimizacao-CRG25
+<Operation Match: cls:CurrencyUnitDataProvider to cls:CurrencyUnitDataProvider>,autores,otimizacao-CRG25
+<Operation Match: cls:DefaultCurrencyUnitDataProvider to cls:DefaultCurrencyUnitDataProvider>,autores,otimizacao-CRG25
+<Operation Match: cls:IllegalCurrencyException to cls:IllegalCurrencyException>,autores,otimizacao-CRG25
+<Operation Insert: pkg:2.1>,autores,otimizacao-CRG25
+<Operation Insert: cls:BigMoney>,autores,otimizacao-CRG25
+<Operation Insert: cls:BigMoneyProvider>,autores,otimizacao-CRG25
+<Operation Insert: cls:CurrencyMismatchException>,autores,otimizacao-CRG25
+<Operation Match: cls:Money to cls:Money>,autores,otimizacao-CRG25
+<Operation Match: cls:MoneyUtils to cls:MoneyUtils>,autores,otimizacao-CRG25
+<Operation Match: cls:Ser to cls:Ser>,autores,otimizacao-CRG25
+<Operation Insert: pkg:2.2.1>,autores,otimizacao-CRG25
+<Operation Insert: cls:MoneyFormatException>,autores,otimizacao-CRG25
+<Operation Insert: cls:MoneyFormatter>,autores,otimizacao-CRG25
+<Operation Insert: cls:MoneyParseContext>,autores,otimizacao-CRG25
+<Operation Insert: cls:MoneyParser>,autores,otimizacao-CRG25
+<Operation Insert: pkg:2.2.2>,autores,otimizacao-CRG25
+<Operation Insert: pkg:2.2>,autores,otimizacao-CRG25
+<Operation Insert: pkg:2>,autores,otimizacao-CRG25
+<Operation Update: pkg:1 to otimizacao-CRG25>,autores,otimizacao-CRG25
+<Operation Remove: autores>,autores,otimizacao-CRG25

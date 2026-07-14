@@ -1,0 +1,1601 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="moquette-0.19">
+    <container name="/home/leo/github/moquette/distribution/target/lib/moquette-broker-0.19-SNAPSHOT.jar" classification="osgi-bundle">
+      <namespace name="io.moquette">
+        <type name="io.moquette.BrokerConstants" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.config.IConfig" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="io.moquette.broker">
+        <type name="io.moquette.broker.AbstractSessionMessageQueue" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.SessionMessageQueue" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.Authorizator" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="io.moquette.broker.security.IAuthorizatorPolicy" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils$Couple" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.SharedSubscriptionUtils" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.AutoFlushHandler$WriterIdleTimeoutTask" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.AutoFlushHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.AutoFlushHandler" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.NettyUtils" classification="uses" />
+            <depends-on name="io.moquette.broker.AutoFlushHandler$WriterIdleTimeoutTask" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.BrokerConfiguration" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.config.IConfig" classification="uses" />
+            <depends-on name="io.moquette.BrokerConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.ClientDescriptor" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.DebugUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.DefaultMoquetteSslContextCreator$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.DefaultMoquetteSslContextCreator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.DefaultMoquetteSslContextCreator" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="io.moquette.broker.ISslContextCreator" classification="implements" />
+            <depends-on name="io.moquette.broker.config.IConfig" classification="uses" />
+            <depends-on name="io.moquette.BrokerConstants" classification="uses" />
+            <depends-on name="io.moquette.broker.DefaultMoquetteSslContextCreator$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.IQueueRepository" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.SessionMessageQueue" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$EnqueuedMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.IRetainedRepository" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.RetainedMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.ISessionsRepository$SessionData" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.scheduler.Expirable" classification="implements" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$Will" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.ISessionsRepository$Will" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.scheduler.Expirable" classification="implements" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$WillOptions" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.ISessionsRepository$WillOptions" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.ISessionsRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.ISessionsRepository" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.ISessionsRepository$SessionData" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$Will" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$WillOptions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.ISslContextCreator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.ISubscriptionsRepository" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.ShareName" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SubscriptionIdentifier" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SharedSubscription" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.InMemoryQueue" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="io.moquette.broker.AbstractSessionMessageQueue" classification="extends" />
+            <depends-on name="io.moquette.broker.MemoryQueueRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$EnqueuedMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.InflightResender$ResendNotAckedPublishes" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.InflightResender" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.InflightResender$WriterIdleTimeoutTask" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.InflightResender" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.InflightResender" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.InflightResender$WriterIdleTimeoutTask" classification="uses" />
+            <depends-on name="io.moquette.broker.NettyUtils" classification="uses" />
+            <depends-on name="io.moquette.broker.InflightResender$ResendNotAckedPublishes" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.LimitedQuota" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.Quota" classification="implements" />
+            <depends-on name="io.moquette.BrokerConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.MQTTConnection$1" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="io.moquette.broker.SessionRegistry$SessionCreationResult" classification="uses" />
+            <depends-on name="io.moquette.broker.MQTTConnection" classification="uses" />
+            <depends-on name="io.moquette.broker.Session" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$CreationModeEnum" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice$RouteResult" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.MQTTConnection$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.MQTTConnection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.MQTTConnection$ErrorCodeException" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.MQTTConnection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.MQTTConnection" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="23">
+            <depends-on name="io.moquette.broker.BrokerConfiguration" classification="uses" />
+            <depends-on name="io.moquette.broker.security.IAuthenticator" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice" classification="uses" />
+            <depends-on name="io.moquette.broker.Session" classification="uses" />
+            <depends-on name="io.moquette.broker.Quota" classification="uses" />
+            <depends-on name="io.moquette.broker.TopicAliasMapping" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice$RouteResult" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$SessionCreationResult" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionCorruptedException" classification="uses" />
+            <depends-on name="io.moquette.broker.MQTTConnection$ErrorCodeException" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.MQTTConnection$2" classification="uses" />
+            <depends-on name="io.moquette.broker.LimitedQuota" classification="uses" />
+            <depends-on name="io.moquette.BrokerConstants" classification="uses" />
+            <depends-on name="io.moquette.broker.NettyUtils" classification="uses" />
+            <depends-on name="io.moquette.broker.MQTTConnection$1" classification="uses" />
+            <depends-on name="io.moquette.broker.InflightResender" classification="uses" />
+            <depends-on name="io.moquette.broker.security.PemUtils" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Token" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+            <depends-on name="io.moquette.broker.DebugUtils" classification="uses" />
+            <depends-on name="io.moquette.broker.RoutingResults" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.MQTTConnectionFactory" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="io.moquette.broker.BrokerConfiguration" classification="uses" />
+            <depends-on name="io.moquette.broker.security.IAuthenticator" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice" classification="uses" />
+            <depends-on name="io.moquette.broker.MQTTConnection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.MemoryQueueRepository" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="io.moquette.broker.IQueueRepository" classification="implements" />
+            <depends-on name="io.moquette.broker.SessionMessageQueue" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$EnqueuedMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.InMemoryQueue" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.MemoryRetainedRepository" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.IRetainedRepository" classification="implements" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.RetainedMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.MoquetteIdleTimeoutHandler" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.NettyUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.NettyUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.NewNettyAcceptor$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$PipelineInitializer" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.NewNettyAcceptor$2" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$PipelineInitializer" classification="extends" />
+            <depends-on name="io.moquette.broker.MoquetteIdleTimeoutHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyMQTTHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$1" classification="uses" />
+            <depends-on name="io.moquette.broker.config.IConfig" classification="uses" />
+            <depends-on name="io.moquette.broker.BrokerConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.NewNettyAcceptor$3" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$PipelineInitializer" classification="extends" />
+            <depends-on name="io.moquette.broker.MoquetteIdleTimeoutHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyMQTTHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$1" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$WebSocketFrameToByteBufDecoder" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$ByteBufToWebSocketFrameEncoder" classification="uses" />
+            <depends-on name="io.moquette.broker.config.IConfig" classification="uses" />
+            <depends-on name="io.moquette.broker.BrokerConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.NewNettyAcceptor$4" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$PipelineInitializer" classification="extends" />
+            <depends-on name="io.moquette.broker.MoquetteIdleTimeoutHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyMQTTHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$1" classification="uses" />
+            <depends-on name="io.moquette.broker.config.IConfig" classification="uses" />
+            <depends-on name="io.moquette.broker.BrokerConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.NewNettyAcceptor$5" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$PipelineInitializer" classification="extends" />
+            <depends-on name="io.moquette.broker.MoquetteIdleTimeoutHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyMQTTHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$1" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$WebSocketFrameToByteBufDecoder" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$ByteBufToWebSocketFrameEncoder" classification="uses" />
+            <depends-on name="io.moquette.broker.config.IConfig" classification="uses" />
+            <depends-on name="io.moquette.broker.BrokerConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.NewNettyAcceptor$ByteBufToWebSocketFrameEncoder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.NewNettyAcceptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.NewNettyAcceptor$LocalPortReaderFutureListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.NewNettyAcceptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.NewNettyAcceptor$PipelineInitializer" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$1" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.NewNettyAcceptor$WebSocketFrameToByteBufDecoder" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.NewNettyAcceptor" classification="class" visibility="default">
+          <dependencies count="23">
+            <depends-on name="io.moquette.broker.metrics.BytesMetricsCollector" classification="uses" />
+            <depends-on name="io.moquette.broker.metrics.MessageMetricsCollector" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyMQTTHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.config.IConfig" classification="uses" />
+            <depends-on name="io.moquette.broker.ISslContextCreator" classification="uses" />
+            <depends-on name="io.moquette.broker.BrokerConfiguration" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$PipelineInitializer" classification="uses" />
+            <depends-on name="io.moquette.broker.MoquetteIdleTimeoutHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.metrics.MessageMetrics" classification="uses" />
+            <depends-on name="io.moquette.broker.metrics.BytesMetrics" classification="uses" />
+            <depends-on name="io.moquette.BrokerConstants" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$1" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$LocalPortReaderFutureListener" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$2" classification="uses" />
+            <depends-on name="io.moquette.broker.metrics.BytesMetricsHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.AutoFlushHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.metrics.MessageMetricsHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.metrics.MQTTMessageLogger" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$3" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$4" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$5" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$ByteBufToWebSocketFrameEncoder" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyAcceptor$WebSocketFrameToByteBufDecoder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.NewNettyMQTTHandler$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.NewNettyMQTTHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.NewNettyMQTTHandler" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="io.moquette.broker.MQTTConnectionFactory" classification="uses" />
+            <depends-on name="io.moquette.broker.MQTTConnection" classification="uses" />
+            <depends-on name="io.moquette.broker.NettyUtils" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyMQTTHandler$1" classification="uses" />
+            <depends-on name="io.moquette.broker.InflightResender$ResendNotAckedPublishes" classification="uses" />
+            <depends-on name="io.moquette.broker.InflightResender" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.PostOffice$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.PostOffice" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.PostOffice$BatchingPublishesCollector" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionEventLoopGroup" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice$RouteResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.PostOffice$ExpirableTopic" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.scheduler.Expirable" classification="implements" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.PostOffice$FailedPublishCollection$PacketId" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.PostOffice$FailedPublishCollection" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.PostOffice$FailedPublishCollection" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.PostOffice$FailedPublishCollection$PacketId" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice$1" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.PostOffice$RouteResult$Status" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.PostOffice$RouteResult" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.PostOffice$RouteResult" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.PostOffice$RouteResult$Status" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.PostOffice$SharedSubscriptionData" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="io.moquette.broker.subscriptions.ShareName" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.SharedSubscriptionUtils" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.PostOffice" classification="class" visibility="default">
+          <dependencies count="32">
+            <depends-on name="io.moquette.broker.Authorizator" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.ISubscriptionsDirectory" classification="uses" />
+            <depends-on name="io.moquette.broker.IRetainedRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+            <depends-on name="io.moquette.interception.BrokerInterceptor" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice$FailedPublishCollection" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionEventLoopGroup" classification="uses" />
+            <depends-on name="io.moquette.broker.scheduler.ScheduledExpirationService" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$Will" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice$ExpirableTopic" classification="uses" />
+            <depends-on name="io.moquette.broker.RetainedMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.Session" classification="uses" />
+            <depends-on name="io.moquette.broker.MQTTConnection" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice$SharedSubscriptionData" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SubscriptionIdentifier" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils$Couple" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.ShareName" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.RoutingResults" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice$RouteResult" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice$BatchingPublishesCollector" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$PublishedMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice$1" classification="uses" />
+            <depends-on name="io.moquette.broker.scheduler.Expirable" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$SessionData" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$WillOptions" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+            <depends-on name="io.moquette.broker.SharedSubscriptionUtils" classification="uses" />
+            <depends-on name="io.moquette.broker.NettyUtils" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice$RouteResult$Status" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.Quota" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.RetainedMessage" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.RoutingResults" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.Server" classification="class" visibility="public">
+          <dependencies count="45">
+            <depends-on name="io.moquette.broker.NewNettyAcceptor" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice" classification="uses" />
+            <depends-on name="io.moquette.interception.BrokerInterceptor" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2Builder" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+            <depends-on name="io.moquette.broker.config.IResourceLoader" classification="uses" />
+            <depends-on name="io.moquette.broker.config.IConfig" classification="uses" />
+            <depends-on name="io.moquette.interception.InterceptHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.ISslContextCreator" classification="uses" />
+            <depends-on name="io.moquette.broker.security.IAuthenticator" classification="uses" />
+            <depends-on name="io.moquette.broker.security.IAuthorizatorPolicy" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.ISubscriptionsRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.IQueueRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.IRetainedRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.ISubscriptionsDirectory" classification="uses" />
+            <depends-on name="io.moquette.broker.Authorizator" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionEventLoopGroup" classification="uses" />
+            <depends-on name="io.moquette.broker.BrokerConfiguration" classification="uses" />
+            <depends-on name="io.moquette.broker.MQTTConnectionFactory" classification="uses" />
+            <depends-on name="io.moquette.broker.NewNettyMQTTHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueueException" classification="uses" />
+            <depends-on name="io.moquette.broker.RoutingResults" classification="uses" />
+            <depends-on name="io.moquette.broker.ClientDescriptor" classification="uses" />
+            <depends-on name="io.moquette.broker.config.FluentConfig" classification="uses" />
+            <depends-on name="io.moquette.broker.Session" classification="uses" />
+            <depends-on name="io.moquette.broker.config.FileResourceLoader" classification="uses" />
+            <depends-on name="io.moquette.broker.config.ResourceLoaderConfig" classification="uses" />
+            <depends-on name="io.moquette.broker.config.MemoryConfig" classification="uses" />
+            <depends-on name="io.moquette.logging.LoggingUtils" classification="uses" />
+            <depends-on name="io.moquette.BrokerConstants" classification="uses" />
+            <depends-on name="io.moquette.broker.DefaultMoquetteSslContextCreator" classification="uses" />
+            <depends-on name="io.moquette.persistence.MemorySubscriptionsRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.MemoryQueueRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.MemoryRetainedRepository" classification="uses" />
+            <depends-on name="io.moquette.persistence.MemorySessionsRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrieSubscriptionDirectory" classification="uses" />
+            <depends-on name="io.moquette.persistence.SegmentQueueRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.security.DenyAllAuthorizatorPolicy" classification="uses" />
+            <depends-on name="io.moquette.broker.security.ACLFileParser" classification="uses" />
+            <depends-on name="io.moquette.broker.security.AuthorizationsCollector" classification="uses" />
+            <depends-on name="io.moquette.broker.security.PermitAllAuthorizatorPolicy" classification="uses" />
+            <depends-on name="io.moquette.broker.security.AcceptAllAuthenticator" classification="uses" />
+            <depends-on name="io.moquette.broker.security.ResourceAuthenticator" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.Session$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.Session" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.Session$InFlightPacket" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.Session" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.Session$SessionStatus" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.Session" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.Session" classification="class" visibility="default">
+          <dependencies count="17">
+            <depends-on name="io.moquette.broker.SessionMessageQueue" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$EnqueuedMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.Session$SessionStatus" classification="uses" />
+            <depends-on name="io.moquette.broker.MQTTConnection" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.broker.Session$InFlightPacket" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$SessionData" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$Will" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$PublishedMessage" classification="uses" />
+            <depends-on name="io.moquette.BrokerConstants" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$PubRelMarker" classification="uses" />
+            <depends-on name="io.moquette.broker.Quota" classification="uses" />
+            <depends-on name="io.moquette.broker.Session$1" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.SessionCommand" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.SessionCorruptedException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.SessionEventLoop" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.SessionEventLoopGroup" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="io.moquette.broker.SessionEventLoop" classification="uses" />
+            <depends-on name="io.moquette.interception.BrokerInterceptor" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice$RouteResult" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionCommand" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptExceptionMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.SessionMessageQueue" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.SessionRegistry$CreationModeEnum" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.SessionRegistry$EnqueuedMessage" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.SessionRegistry$PubRelMarker" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.SessionRegistry$EnqueuedMessage" classification="extends" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.SessionRegistry$PublishedMessage" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.SessionRegistry$EnqueuedMessage" classification="extends" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.SessionRegistry$SessionCreationResult" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.Session" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$CreationModeEnum" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.SessionRegistry" classification="class" visibility="public">
+          <dependencies count="27">
+            <depends-on name="io.moquette.broker.SessionEventLoopGroup" classification="uses" />
+            <depends-on name="io.moquette.broker.scheduler.ScheduledExpirationService" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$SessionData" classification="uses" />
+            <depends-on name="io.moquette.broker.Session" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.ISubscriptionsDirectory" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.IQueueRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.Authorizator" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionMessageQueue" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$EnqueuedMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$SessionCreationResult" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$Will" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$WillOptions" classification="uses" />
+            <depends-on name="io.moquette.broker.ClientDescriptor" classification="uses" />
+            <depends-on name="io.moquette.broker.scheduler.Expirable" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$CreationModeEnum" classification="uses" />
+            <depends-on name="io.moquette.broker.Session$SessionStatus" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionCorruptedException" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.InMemoryQueue" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+            <depends-on name="io.moquette.broker.MQTTConnection" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice$RouteResult" classification="uses" />
+            <depends-on name="io.moquette.broker.PostOffice" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$PubRelMarker" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$PublishedMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.SharedSubscriptionUtils" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.TopicAliasMapping" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.Utils$Couple" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.Utils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.SessionRegistry$PublishedMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils$Couple" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="io.moquette.broker.config">
+        <type name="io.moquette.broker.config.ClasspathResourceLoader" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.config.IResourceLoader" classification="implements" />
+            <depends-on name="io.moquette.broker.config.IConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.config.ConfigurationParser" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.config.FileResourceLoader" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.config.IResourceLoader" classification="implements" />
+            <depends-on name="io.moquette.broker.config.IResourceLoader$ResourceIsDirectoryException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.config.FluentConfig$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.config.FluentConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.config.FluentConfig$BufferFlushKind" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.config.FluentConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.config.FluentConfig$CreationKind" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.config.FluentConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.config.FluentConfig$KeyStoreType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.config.FluentConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.config.FluentConfig$PersistentQueueType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.config.FluentConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.config.FluentConfig$SSLProvider" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.config.FluentConfig" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.config.FluentConfig$TLSConfig" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="io.moquette.broker.config.FluentConfig$SSLProvider" classification="uses" />
+            <depends-on name="io.moquette.broker.config.FluentConfig$KeyStoreType" classification="uses" />
+            <depends-on name="io.moquette.broker.config.FluentConfig" classification="uses" />
+            <depends-on name="io.moquette.broker.config.FluentConfig$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.config.FluentConfig" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="io.moquette.broker.Server" classification="uses" />
+            <depends-on name="io.moquette.broker.config.FluentConfig$TLSConfig" classification="uses" />
+            <depends-on name="io.moquette.broker.config.FluentConfig$CreationKind" classification="uses" />
+            <depends-on name="io.moquette.broker.config.FluentConfig$PersistentQueueType" classification="uses" />
+            <depends-on name="io.moquette.broker.config.FluentConfig$BufferFlushKind" classification="uses" />
+            <depends-on name="io.moquette.broker.config.IConfig" classification="uses" />
+            <depends-on name="io.moquette.BrokerConstants" classification="uses" />
+            <depends-on name="io.moquette.broker.config.FluentConfig$1" classification="uses" />
+            <depends-on name="io.moquette.broker.config.MemoryConfig" classification="uses" />
+            <depends-on name="io.moquette.broker.config.FluentConfig$KeyStoreType" classification="uses" />
+            <depends-on name="io.moquette.broker.config.FluentConfig$SSLProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.config.IConfig" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.config.IResourceLoader" classification="uses" />
+            <depends-on name="io.moquette.BrokerConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.config.IResourceLoader$ResourceIsDirectoryException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.config.IResourceLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.config.IResourceLoader" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.config.IResourceLoader$ResourceIsDirectoryException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.config.MemoryConfig" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.config.IConfig" classification="extends" />
+            <depends-on name="io.moquette.broker.config.IResourceLoader" classification="uses" />
+            <depends-on name="io.moquette.broker.config.FileResourceLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.config.ResourceLoaderConfig" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.config.IConfig" classification="extends" />
+            <depends-on name="io.moquette.broker.config.IResourceLoader" classification="uses" />
+            <depends-on name="io.moquette.broker.config.ConfigurationParser" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="io.moquette.broker.metrics">
+        <type name="io.moquette.broker.metrics.BytesMetrics" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.metrics.BytesMetricsCollector" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.metrics.BytesMetrics" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.metrics.BytesMetricsHandler" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.metrics.BytesMetrics" classification="uses" />
+            <depends-on name="io.moquette.broker.metrics.BytesMetricsCollector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.metrics.MQTTMessageLogger$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.metrics.MQTTMessageLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.metrics.MQTTMessageLogger" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.NettyUtils" classification="uses" />
+            <depends-on name="io.moquette.broker.metrics.MQTTMessageLogger$1" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.metrics.MessageMetrics" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.metrics.MessageMetricsCollector" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.metrics.MessageMetrics" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.metrics.MessageMetricsHandler" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.metrics.MessageMetrics" classification="uses" />
+            <depends-on name="io.moquette.broker.metrics.MessageMetricsCollector" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="io.moquette.broker.scheduler">
+        <type name="io.moquette.broker.scheduler.Expirable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.scheduler.ExpirableTracker" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.scheduler.Expirable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.scheduler.ScheduledExpirationService" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.scheduler.ExpirableTracker" classification="uses" />
+            <depends-on name="io.moquette.broker.scheduler.Expirable" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="io.moquette.broker.security">
+        <type name="io.moquette.broker.security.ACLFileParser" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.security.AuthorizationsCollector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.AcceptAllAuthenticator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.security.IAuthenticator" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.Authorization$Permission" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.security.Authorization" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.Authorization" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.security.Authorization$Permission" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.AuthorizationsCollector" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="io.moquette.broker.security.IAuthorizatorPolicy" classification="implements" />
+            <depends-on name="io.moquette.broker.security.Authorization" classification="uses" />
+            <depends-on name="io.moquette.broker.security.Authorization$Permission" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.DBAuthenticator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.security.IAuthenticator" classification="implements" />
+            <depends-on name="io.moquette.broker.config.IConfig" classification="uses" />
+            <depends-on name="io.moquette.BrokerConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.DeclarativeAuthorizatorPolicy$Builder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.security.DeclarativeAuthorizatorPolicy" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.security.IAuthorizatorPolicy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.DeclarativeAuthorizatorPolicy$TopicUserClient" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.security.DeclarativeAuthorizatorPolicy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.DeclarativeAuthorizatorPolicy" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="io.moquette.broker.security.IAuthorizatorPolicy" classification="implements" />
+            <depends-on name="io.moquette.broker.security.DeclarativeAuthorizatorPolicy$TopicUserClient" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.security.DeclarativeAuthorizatorPolicy$Builder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.DenyAllAuthorizatorPolicy" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.security.IAuthorizatorPolicy" classification="implements" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.FileAuthenticator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.security.ResourceAuthenticator" classification="extends" />
+            <depends-on name="io.moquette.broker.config.FileResourceLoader" classification="uses" />
+            <depends-on name="io.moquette.broker.config.IResourceLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.IAuthenticator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.IAuthorizatorPolicy" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.PemUtils$PemWriter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.security.PemUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.PemUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.security.PemUtils$PemWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.PermitAllAuthorizatorPolicy" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.security.IAuthorizatorPolicy" classification="implements" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.security.ResourceAuthenticator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.security.IAuthenticator" classification="implements" />
+            <depends-on name="io.moquette.broker.config.IResourceLoader" classification="uses" />
+            <depends-on name="io.moquette.broker.config.IResourceLoader$ResourceIsDirectoryException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="io.moquette.broker.subscriptions">
+        <type name="io.moquette.broker.subscriptions.CNode" classification="class" visibility="default">
+          <dependencies count="10">
+            <depends-on name="io.moquette.broker.subscriptions.Token" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.INode" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.ShareName" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SharedSubscription" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie$SubscriptionRequest" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie$UnsubscribeRequest" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SubscriptionIdentifier" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.CTrie$Action" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.subscriptions.CTrie" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.CTrie$IVisitor" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.subscriptions.CNode" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.CTrie$NavigationAction" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.subscriptions.CTrie" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.CTrie$SubscriptionRequest" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.ShareName" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SubscriptionIdentifier" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SharedSubscription" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Token" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.CTrie$UnsubscribeRequest" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.ShareName" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Token" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.CTrie" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="io.moquette.broker.subscriptions.Token" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.INode" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CNode" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie$NavigationAction" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie$SubscriptionRequest" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie$Action" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie$UnsubscribeRequest" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.TNode" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SubscriptionCounterVisitor" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.DumpTreeVisitor" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie$IVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.CTrieSubscriptionDirectory" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="io.moquette.broker.subscriptions.ISubscriptionsDirectory" classification="implements" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie" classification="uses" />
+            <depends-on name="io.moquette.broker.ISubscriptionsRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SharedSubscription" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie$SubscriptionRequest" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SubscriptionIdentifier" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.ShareName" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie$UnsubscribeRequest" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.DumpTreeVisitor" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="io.moquette.broker.subscriptions.CTrie$IVisitor" classification="implements" />
+            <depends-on name="io.moquette.broker.subscriptions.CNode" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Token" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.TNode" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.INode" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.subscriptions.CNode" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.TNode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.ISubscriptionsDirectory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="io.moquette.broker.ISubscriptionsRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SubscriptionIdentifier" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.ShareName" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.ShareName" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.SharedSubscription" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="io.moquette.broker.subscriptions.ShareName" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SubscriptionIdentifier" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.Subscription" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SubscriptionIdentifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.SubscriptionCounterVisitor" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.subscriptions.CTrie$IVisitor" classification="implements" />
+            <depends-on name="io.moquette.broker.subscriptions.CNode" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.SubscriptionIdentifier" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.TNode" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="io.moquette.broker.subscriptions.CNode" classification="extends" />
+            <depends-on name="io.moquette.broker.subscriptions.Token" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.INode" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie$SubscriptionRequest" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie$UnsubscribeRequest" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.CTrie" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.Token" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.subscriptions.Topic" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.subscriptions.Token" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="io.moquette.broker.unsafequeues">
+        <type name="io.moquette.broker.unsafequeues.PagedFilesAllocator$AllocationListener" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.unsafequeues.Segment" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.PagedFilesAllocator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.unsafequeues.PagedFilesAllocator" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="io.moquette.broker.unsafequeues.SegmentAllocator" classification="implements" />
+            <depends-on name="io.moquette.broker.unsafequeues.Segment" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.SegmentPointer" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueueException" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueuePool" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.PagedFilesAllocator$AllocationListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.unsafequeues.Queue$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.unsafequeues.Queue" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.unsafequeues.Queue$CrossSegmentHeaderResult" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="io.moquette.broker.unsafequeues.Segment" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.VirtualPointer" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.Queue$1" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.Queue" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.unsafequeues.Queue" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="io.moquette.broker.unsafequeues.VirtualPointer" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.Segment" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueuePool" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.SegmentAllocator" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.PagedFilesAllocator$AllocationListener" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.SegmentPointer" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.Queue$CrossSegmentHeaderResult" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueueException" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.Queue$1" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.PagedFilesAllocator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.unsafequeues.QueueException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.unsafequeues.QueuePool$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.unsafequeues.QueuePool" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.unsafequeues.QueuePool$QueueName" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.unsafequeues.QueuePool$1" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueuePool" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.unsafequeues.QueuePool$SegmentAllocationCallback" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="io.moquette.broker.unsafequeues.PagedFilesAllocator$AllocationListener" classification="implements" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueuePool" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.Segment" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueuePool$1" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.PagedFilesAllocator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.unsafequeues.QueuePool$SegmentRef" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.unsafequeues.Segment" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.SegmentPointer" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueuePool" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.unsafequeues.QueuePool" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="io.moquette.broker.unsafequeues.QueuePool$SegmentAllocationCallback" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.SegmentAllocator" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueuePool$QueueName" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueuePool$SegmentRef" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.Queue" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.Segment" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.PagedFilesAllocator" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.SegmentPointer" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.VirtualPointer" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueuePool$1" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueueException" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.PagedFilesAllocator$AllocationListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.unsafequeues.Segment" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.unsafequeues.SegmentPointer" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.VirtualPointer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.unsafequeues.SegmentAllocator" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="io.moquette.broker.unsafequeues.Segment" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueueException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.unsafequeues.SegmentPointer" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.unsafequeues.Segment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.broker.unsafequeues.VirtualPointer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="io.moquette.interception">
+        <type name="io.moquette.interception.AbstractInterceptHandler" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="9">
+            <depends-on name="io.moquette.interception.InterceptHandler" classification="implements" />
+            <depends-on name="io.moquette.interception.messages.InterceptConnectMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptDisconnectMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptConnectionLostMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptPublishMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptSubscribeMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptUnsubscribeMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptAcknowledgedMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.interception.BrokerInterceptor" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="17">
+            <depends-on name="io.moquette.interception.Interceptor" classification="implements" />
+            <depends-on name="io.moquette.interception.InterceptHandler" classification="uses" />
+            <depends-on name="io.moquette.broker.config.IConfig" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptAcknowledgedMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptExceptionMessage" classification="uses" />
+            <depends-on name="io.moquette.logging.LoggingUtils" classification="uses" />
+            <depends-on name="io.moquette.BrokerConstants" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptConnectMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptDisconnectMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptConnectionLostMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptSubscribeMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptUnsubscribeMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptAcknowledgedMessage$StoredMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptPublishMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.interception.InterceptHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="io.moquette.interception.messages.InterceptConnectMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptDisconnectMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptConnectionLostMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptPublishMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptSubscribeMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptUnsubscribeMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptAcknowledgedMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptExceptionMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.interception.Interceptor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptAcknowledgedMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.messages.InterceptExceptionMessage" classification="uses" />
+            <depends-on name="io.moquette.interception.InterceptHandler" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="io.moquette.interception.messages">
+        <type name="io.moquette.interception.messages.InterceptAbstractMessage" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.interception.messages.InterceptMessage" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.interception.messages.InterceptAcknowledgedMessage$StoredMessage" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.interception.messages.InterceptAcknowledgedMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.interception.messages.InterceptAcknowledgedMessage" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="io.moquette.interception.messages.InterceptMessage" classification="implements" />
+            <depends-on name="io.moquette.interception.messages.InterceptAcknowledgedMessage$StoredMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.interception.messages.InterceptConnectMessage" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="io.moquette.interception.messages.InterceptAbstractMessage" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.interception.messages.InterceptConnectionLostMessage" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="io.moquette.interception.messages.InterceptMessage" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.interception.messages.InterceptDisconnectMessage" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="io.moquette.interception.messages.InterceptMessage" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.interception.messages.InterceptExceptionMessage" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="io.moquette.interception.messages.InterceptMessage" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.interception.messages.InterceptMessage" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="io.moquette.interception.messages.InterceptPublishMessage" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="io.moquette.interception.messages.InterceptAbstractMessage" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.interception.messages.InterceptSubscribeMessage" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="io.moquette.interception.messages.InterceptMessage" classification="implements" />
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.interception.messages.InterceptUnsubscribeMessage" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="io.moquette.interception.messages.InterceptMessage" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="io.moquette.logging">
+        <type name="io.moquette.logging.LoggingUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.interception.InterceptHandler" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="io.moquette.persistence">
+        <type name="io.moquette.persistence.ByteBufDataType" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.EnqueuedMessageValueType$MessageType" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.persistence.EnqueuedMessageValueType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.EnqueuedMessageValueType" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="9">
+            <depends-on name="io.moquette.persistence.ByteBufDataType" classification="uses" />
+            <depends-on name="io.moquette.persistence.PropertiesDataType" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$EnqueuedMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$PublishedMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$PubRelMarker" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.persistence.EnqueuedMessageValueType$MessageType" classification="uses" />
+            <depends-on name="io.moquette.persistence.SerdesUtils" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2Builder" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="io.moquette.broker.ISubscriptionsRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.IQueueRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.IRetainedRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2QueueRepository" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2RetainedRepository" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2PersistentQueue" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="io.moquette.broker.AbstractSessionMessageQueue" classification="extends" />
+            <depends-on name="io.moquette.broker.SessionRegistry$EnqueuedMessage" classification="uses" />
+            <depends-on name="io.moquette.persistence.EnqueuedMessageValueType" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2QueueRepository" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="io.moquette.broker.IQueueRepository" classification="implements" />
+            <depends-on name="io.moquette.broker.SessionMessageQueue" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$EnqueuedMessage" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2PersistentQueue" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2RetainedRepository$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.persistence.H2RetainedRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2RetainedRepository$RetainedMessageValueType" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="io.moquette.persistence.PropertiesDataType" classification="uses" />
+            <depends-on name="io.moquette.broker.RetainedMessage" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2RetainedRepository$1" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2RetainedRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2RetainedRepository" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="io.moquette.broker.IRetainedRepository" classification="implements" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.RetainedMessage" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2RetainedRepository$RetainedMessageValueType" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2RetainedRepository$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2SessionsRepository$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.persistence.H2SessionsRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2SessionsRepository$DurationDataValueType" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="io.moquette.persistence.H2SessionsRepository$1" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2SessionsRepository$SessionDataValueType" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="io.moquette.persistence.H2SessionsRepository$WillDataValueType" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$SessionData" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$Will" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository$1" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2SessionsRepository$UserPropertiesDataValueType" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="io.moquette.persistence.H2SessionsRepository$1" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2SessionsRepository$WillDataValueType" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="io.moquette.persistence.H2SessionsRepository$WillOptionsDataValueType" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$Will" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$WillOptions" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository$1" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2SessionsRepository$WillOptionsDataValueType" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="io.moquette.persistence.H2SessionsRepository$DurationDataValueType" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository$UserPropertiesDataValueType" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$WillOptions" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository$1" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2SessionsRepository" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="io.moquette.broker.ISessionsRepository" classification="implements" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$SessionData" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$Will" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository$SessionDataValueType" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository$1" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository$WillDataValueType" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository$UserPropertiesDataValueType" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository$DurationDataValueType" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SessionsRepository$WillOptionsDataValueType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2SubscriptionsRepository$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2SubscriptionsRepository$CoupleValueType" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="io.moquette.broker.Utils$Couple" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.ShareName" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2SubscriptionsRepository$SubscriptionOptionAndId" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2SubscriptionsRepository$SubscriptionOptionAndIdValueType" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository$SubscriptionOptionAndId" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository$1" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository$SubscriptionOptionValueType" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2SubscriptionsRepository$SubscriptionOptionValueType" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2SubscriptionsRepository$SubscriptionValueType" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SubscriptionIdentifier" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository$1" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository$SubscriptionOptionValueType" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.H2SubscriptionsRepository" classification="class" visibility="public">
+          <dependencies count="14">
+            <depends-on name="io.moquette.broker.ISubscriptionsRepository" classification="implements" />
+            <depends-on name="io.moquette.broker.Utils$Couple" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.ShareName" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository$SubscriptionOptionAndId" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SubscriptionIdentifier" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SharedSubscription" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository$SubscriptionValueType" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository$1" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository$CoupleValueType" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository$SubscriptionOptionAndIdValueType" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+            <depends-on name="io.moquette.persistence.H2SubscriptionsRepository$SubscriptionOptionValueType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.MemorySessionsRepository" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="io.moquette.broker.ISessionsRepository" classification="implements" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$SessionData" classification="uses" />
+            <depends-on name="io.moquette.broker.ISessionsRepository$Will" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.MemorySubscriptionsRepository" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="io.moquette.broker.ISubscriptionsRepository" classification="implements" />
+            <depends-on name="io.moquette.broker.subscriptions.Subscription" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils$Couple" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.ShareName" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SharedSubscription" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.SubscriptionIdentifier" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.PropertiesDataType" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="io.moquette.persistence.PropertyDataType" classification="uses" />
+            <depends-on name="io.moquette.persistence.SerdesUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.PropertyDataType$MqttPropertyEnum" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.persistence.PropertyDataType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.PropertyDataType" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="io.moquette.persistence.ByteBufDataType" classification="uses" />
+            <depends-on name="io.moquette.persistence.PropertyDataType$MqttPropertyEnum" classification="uses" />
+            <depends-on name="io.moquette.persistence.SerdesUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.SegmentPersistentQueue" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="io.moquette.broker.AbstractSessionMessageQueue" classification="extends" />
+            <depends-on name="io.moquette.broker.unsafequeues.Queue" classification="uses" />
+            <depends-on name="io.moquette.persistence.SegmentedPersistentQueueSerDes" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$EnqueuedMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueueException" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.SegmentQueueRepository" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="io.moquette.broker.IQueueRepository" classification="implements" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueuePool" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionMessageQueue" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$EnqueuedMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.Queue" classification="uses" />
+            <depends-on name="io.moquette.broker.unsafequeues.QueueException" classification="uses" />
+            <depends-on name="io.moquette.persistence.SegmentPersistentQueue" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.SegmentedPersistentQueueSerDes$MessageType" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="io.moquette.persistence.SegmentedPersistentQueueSerDes" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.SegmentedPersistentQueueSerDes" classification="class" visibility="default">
+          <dependencies count="11">
+            <depends-on name="io.moquette.broker.SessionRegistry$EnqueuedMessage" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$PublishedMessage" classification="uses" />
+            <depends-on name="io.moquette.persistence.PropertyDataType$MqttPropertyEnum" classification="uses" />
+            <depends-on name="io.moquette.broker.subscriptions.Topic" classification="uses" />
+            <depends-on name="io.moquette.persistence.SegmentedPersistentQueueSerDes$MessageType" classification="uses" />
+            <depends-on name="io.moquette.persistence.EnqueuedMessageValueType" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry$PubRelMarker" classification="uses" />
+            <depends-on name="io.moquette.broker.Utils" classification="uses" />
+            <depends-on name="io.moquette.persistence.SerdesUtils" classification="uses" />
+            <depends-on name="io.moquette.broker.SessionRegistry" classification="uses" />
+            <depends-on name="io.moquette.persistence.PropertyDataType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.SerdesUtils$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="io.moquette.persistence.PropertyDataType$MqttPropertyEnum" classification="uses" />
+            <depends-on name="io.moquette.persistence.SerdesUtils" classification="uses" />
+            <depends-on name="io.moquette.persistence.PropertyDataType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="io.moquette.persistence.SerdesUtils" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="io.moquette.persistence.PropertyDataType$MqttPropertyEnum" classification="uses" />
+            <depends-on name="io.moquette.persistence.SerdesUtils$1" classification="uses" />
+            <depends-on name="io.moquette.persistence.PropertyDataType" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

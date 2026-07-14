@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="lucene-nori-11.0.0">
+    <container name="/home/leo/github/lucene/lucene/luke/build/lucene-luke-11.0.0-SNAPSHOT/lucene-analysis-nori-11.0.0-SNAPSHOT.jar" classification="jar">
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanTokenizerFactory" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanNumberFilterFactory" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanPartOfSpeechStopFilterFactory" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanReadingFormFilterFactory" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.analysis.ko">
+        <type name="org.apache.lucene.analysis.ko.DecompoundToken" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.analysis.ko.Token" classification="extends" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Type" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData$Morpheme" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.DictionaryToken" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.analysis.ko.Token" classification="extends" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Type" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData$Morpheme" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.KoreanAnalyzer" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.UserDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanTokenizer$DecompoundMode" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanTokenizer" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanPartOfSpeechStopFilter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanReadingFormFilter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.KoreanNumberFilter$NumberBuffer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanNumberFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.KoreanNumberFilter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanNumberFilter$NumberBuffer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.KoreanNumberFilterFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanNumberFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.KoreanPartOfSpeechStopFilter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.tokenattributes.PartOfSpeechAttribute" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.KoreanPartOfSpeechStopFilterFactory" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanPartOfSpeechStopFilter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.KoreanReadingFormFilter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.tokenattributes.ReadingAttribute" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.KoreanReadingFormFilterFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanReadingFormFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.KoreanTokenizer$DecompoundMode" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanTokenizer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.KoreanTokenizer" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="12">
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanTokenizer$DecompoundMode" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.Viterbi" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.tokenattributes.PartOfSpeechAttribute" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.tokenattributes.ReadingAttribute" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.UserDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.UnknownDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.ConnectionCosts" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoFST" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.Token" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.CharacterDefinition" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.KoreanTokenizerFactory" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.UserDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanTokenizer$DecompoundMode" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanTokenizer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.POS$Tag" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.POS$Type" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.POS" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Type" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.Token" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Type" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData$Morpheme" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.Viterbi$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.Viterbi" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.Viterbi" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="16">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.UnknownDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.CharacterDefinition" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanTokenizer$DecompoundMode" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.UserDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.DictionaryToken" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.Token" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData$Morpheme" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.UnknownMorphData" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Type" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.DecompoundToken" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.Viterbi$1" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.KoreanTokenizer" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.analysis.ko.dict">
+        <type name="org.apache.lucene.analysis.ko.dict.CharacterDefinition$CharacterClass" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.CharacterDefinition" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.CharacterDefinition$SingletonHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.CharacterDefinition" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.CharacterDefinition" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.DictionaryConstants" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.CharacterDefinition$CharacterClass" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.CharacterDefinition$SingletonHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.ConnectionCosts$SingletonHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.ConnectionCosts" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.ConnectionCosts" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.DictionaryConstants" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.ConnectionCosts$SingletonHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.ConnectionCostsBuilder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.ConnectionCosts" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.DictionaryBuilder" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoDictionaryBuilder" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoDictionaryWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.UnknownDictionaryBuilder" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.UnknownDictionaryWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.ConnectionCostsBuilder" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.DictionaryConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.DictionaryConstants" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.KoMorphData$Morpheme" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.KoMorphData" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Type" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData$Morpheme" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.TokenInfoDictionary$SingletonHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.TokenInfoDictionary" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoFST" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoMorphData" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.DictionaryConstants" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoDictionary$SingletonHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.TokenInfoDictionaryBuilder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoDictionaryWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.TokenInfoDictionaryEntryWriter" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData$Morpheme" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Type" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoMorphData" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.TokenInfoDictionaryWriter" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoDictionaryEntryWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.DictionaryConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.TokenInfoFST" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.TokenInfoMorphData" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData" classification="implements" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Type" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData$Morpheme" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.DictionaryConstants" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.UnknownDictionary$SingletonHolder" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.UnknownDictionary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.UnknownDictionary" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.CharacterDefinition" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.UnknownMorphData" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.DictionaryConstants" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.UnknownDictionary$SingletonHolder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.UnknownDictionaryBuilder" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.UnknownDictionaryWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.CharacterDefinition" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.UnknownDictionaryWriter" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.CharacterDefinition" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.UnknownDictionary" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoDictionaryEntryWriter" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.DictionaryConstants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.UnknownMorphData" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoMorphData" classification="extends" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData$Morpheme" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.UserDictionary" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.TokenInfoFST" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.UserMorphData" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.CharacterDefinition" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.dict.UserMorphData" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData" classification="implements" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Type" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData$Morpheme" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.lucene.analysis.ko.tokenattributes">
+        <type name="org.apache.lucene.analysis.ko.tokenattributes.PartOfSpeechAttribute" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Type" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData$Morpheme" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.Token" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.tokenattributes.PartOfSpeechAttributeImpl" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.lucene.analysis.ko.tokenattributes.PartOfSpeechAttribute" classification="implements" />
+            <depends-on name="org.apache.lucene.analysis.ko.Token" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Type" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS$Tag" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData$Morpheme" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.POS" classification="uses" />
+            <depends-on name="org.apache.lucene.analysis.ko.dict.KoMorphData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.tokenattributes.ReadingAttribute" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.lucene.analysis.ko.Token" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.lucene.analysis.ko.tokenattributes.ReadingAttributeImpl" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.lucene.analysis.ko.tokenattributes.ReadingAttribute" classification="implements" />
+            <depends-on name="org.apache.lucene.analysis.ko.Token" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

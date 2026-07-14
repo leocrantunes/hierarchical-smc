@@ -1,0 +1,9 @@
+contain Mbr.unirio.edu.hmdgenapi.controllers.GraphController$1 br.unirio.edu.hmdgenapi.controllers.GraphController$1
+contain Mbr.unirio.edu.hmdgenapi.controllers.GraphController$1 br.unirio.edu.hmdgenapi.models.GraphRequest
+contain Mbr.unirio.edu.hmdgenapi.controllers.GraphController$1 br.unirio.edu.hmdgenapi.controllers.GraphController
+contain Mbr.unirio.edu.hmdgenapi.controllers.GraphController$1 br.unirio.edu.hmdgenapi.models.GraphMetrics
+contain Mbr.unirio.edu.hmdgenapi.controllers.GraphController$1 br.unirio.edu.hmdgenapi.models.Element
+contain Mbr.unirio.edu.hmdgenapi.controllers.GraphController$1 br.unirio.edu.hmdgenapi.models.ElementData
+contain Mbr.unirio.edu.hmdgenapi.controllers.GraphController$1 br.unirio.edu.hmdgenapi.models.Graph
+contain Mbr.unirio.edu.hmdgenapi.controllers.GraphController$1 br.unirio.edu.hmdgenapi.repositories.GraphRepository
+contain Mbr.unirio.edu.hmdgenapi.controllers.GraphController$1 br.unirio.edu.hmdgenapi.HmdGenApiApplication

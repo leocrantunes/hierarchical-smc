@@ -1,0 +1,1668 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="log4j-1.2-api-2.21.1">
+    <container name="/home/leo/repos/logging-log4j2-rel-2.21.1/log4j-1.2-api/target/log4j-1.2-api-2.21.1.jar" classification="osgi-bundle">
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j">
+        <type name="org.apache.log4j.Appender" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ErrorHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.AppenderSkeleton$NoOpErrorHandler" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.log4j.spi.ErrorHandler" classification="implements" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.AppenderSkeleton" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.AppenderSkeleton" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="org.apache.log4j.Appender" classification="implements" />
+            <depends-on name="org.apache.log4j.spi.OptionHandler" classification="implements" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.Priority" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ErrorHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.AppenderSkeleton$NoOpErrorHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.BasicConfigurator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.LogManager" classification="uses" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.Category$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.Category" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.Category" classification="class" visibility="public">
+          <dependencies count="20">
+            <depends-on name="org.apache.log4j.spi.AppenderAttachable" classification="implements" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.or.RendererMap" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggerRepository" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.AppenderAttachableImpl" classification="uses" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.Priority" classification="uses" />
+            <depends-on name="org.apache.log4j.or.ObjectRenderer" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LogEventWrapper" classification="uses" />
+            <depends-on name="org.apache.log4j.Hierarchy" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.HierarchyEventListener" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderAdapter$Adapter" classification="uses" />
+            <depends-on name="org.apache.log4j.Category$1" classification="uses" />
+            <depends-on name="org.apache.log4j.LogManager" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.legacy.core.CategoryUtil" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.NullEnumeration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.CategoryKey" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.ConsoleAppender" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.log4j.WriterAppender" classification="extends" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.DefaultCategoryFactory" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.spi.LoggerFactory" classification="implements" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.DefaultThrowableRenderer" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.spi.ThrowableRenderer" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.FileAppender" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.log4j.WriterAppender" classification="extends" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ErrorCode" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.QuietWriter" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ErrorHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.LogLog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.Hierarchy$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.Hierarchy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.Hierarchy$PrivateLogManager" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.Hierarchy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.Hierarchy$PrivateLoggerAdapter" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.Hierarchy$1" classification="uses" />
+            <depends-on name="org.apache.log4j.Hierarchy$PrivateLogManager" classification="uses" />
+            <depends-on name="org.apache.log4j.Hierarchy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.Hierarchy" classification="class" visibility="public">
+          <dependencies count="20">
+            <depends-on name="org.apache.log4j.spi.LoggerRepository" classification="implements" />
+            <depends-on name="org.apache.log4j.spi.RendererSupport" classification="implements" />
+            <depends-on name="org.apache.log4j.spi.ThrowableRendererSupport" classification="implements" />
+            <depends-on name="org.apache.log4j.Hierarchy$PrivateLoggerAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.log4j.or.RendererMap" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ThrowableRenderer" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.HierarchyEventListener" classification="uses" />
+            <depends-on name="org.apache.log4j.or.ObjectRenderer" classification="uses" />
+            <depends-on name="org.apache.log4j.Category" classification="uses" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.DefaultCategoryFactory" classification="uses" />
+            <depends-on name="org.apache.log4j.Hierarchy$1" classification="uses" />
+            <depends-on name="org.apache.log4j.Hierarchy$PrivateLogManager" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.LogLog" classification="uses" />
+            <depends-on name="org.apache.log4j.LogManager" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.legacy.core.ContextUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.Layout" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.Level" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.Priority" classification="extends" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.LogManager" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="10">
+            <depends-on name="org.apache.log4j.spi.RepositorySelector" classification="uses" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.Hierarchy" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggerRepository" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.DefaultRepositorySelector" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.NOPLoggerRepository" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.RootLogger" classification="uses" />
+            <depends-on name="org.apache.log4j.legacy.core.ContextUtil" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.Logger" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.log4j.Category" classification="extends" />
+            <depends-on name="org.apache.log4j.spi.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.log4j.LogManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.MDC$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.MDC" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.MDC" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.MDC$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.NDC" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.PatternLayout" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.Layout" classification="extends" />
+            <depends-on name="org.apache.log4j.helpers.PatternConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.Priority" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.PropertyConfigurator$NameValue" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.PropertyConfigurator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.PropertyConfigurator$PropertyWatchdog" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.helpers.FileWatchdog" classification="extends" />
+            <depends-on name="org.apache.log4j.PropertyConfigurator" classification="uses" />
+            <depends-on name="org.apache.log4j.LogManager" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggerRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.PropertyConfigurator$SortedKeyEnumeration" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.PropertyConfigurator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.PropertyConfigurator" classification="class" visibility="public">
+          <dependencies count="26">
+            <depends-on name="org.apache.log4j.spi.Configurator" classification="implements" />
+            <depends-on name="org.apache.log4j.spi.LoggerRepository" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.log4j.PropertyConfigurator$PropertyWatchdog" classification="uses" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ErrorHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.PropertyConfigurator$NameValue" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertySetter" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ThrowableRenderer" classification="uses" />
+            <depends-on name="org.apache.log4j.DefaultCategoryFactory" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.FileWatchdog" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.OptionHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.PropertyConfigurator$SortedKeyEnumeration" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.RendererSupport" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ThrowableRendererSupport" classification="uses" />
+            <depends-on name="org.apache.log4j.LogManager" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.LogLog" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.FilterAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="uses" />
+            <depends-on name="org.apache.log4j.or.RendererMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.ProvisionNode" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.RenderedMessage" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.or.ObjectRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.RollingFileAppender" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.log4j.FileAppender" classification="extends" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.CountingQuietWriter" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.QuietWriter" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.LogLog" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ErrorHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.SimpleLayout" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.Layout" classification="extends" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.VectorAppender" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.AppenderSkeleton" classification="extends" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.WriterAppender" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.log4j.AppenderSkeleton" classification="extends" />
+            <depends-on name="org.apache.log4j.helpers.QuietWriter" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ErrorHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.osgi.annotation.bundle.Export" classification="uses" />
+            <depends-on name="org.osgi.annotation.versioning.Version" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.bridge">
+        <type name="org.apache.log4j.bridge.AppenderAdapter$Adapter" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.bridge.AppenderAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LogEventAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.bridge.AppenderAdapter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderAdapter$Adapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderWrapper" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.FilterAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.bridge.AppenderWrapper" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.apache.log4j.Appender" classification="implements" />
+            <depends-on name="org.apache.log4j.bridge.AppenderAdapter$Adapter" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ErrorHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LogEventAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.ErrorHandlerAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutWrapper" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.FilterAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.bridge.ErrorHandlerAdapter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.log4j.spi.ErrorHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LogEventAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.bridge.FilterAdapter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.FilterWrapper" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LogEventAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.bridge.FilterWrapper" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.log4j.spi.Filter" classification="extends" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.FilterAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.bridge.LayoutAdapter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutWrapper" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LogEventAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.bridge.LayoutWrapper" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.Layout" classification="extends" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LogEventAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.bridge.LogEventAdapter" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="extends" />
+            <depends-on name="org.apache.log4j.spi.LocationInfo" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.Category" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ThrowableInformation" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.bridge.LogEventWrapper$ContextDataMap" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.bridge.LogEventWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.bridge.LogEventWrapper" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LogEventWrapper$ContextDataMap" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LocationInfo" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ThrowableInformation" classification="uses" />
+            <depends-on name="org.apache.log4j.NDC" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.Priority" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.bridge.RewritePolicyAdapter" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.rewrite.RewritePolicy" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LogEventAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LogEventWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.bridge.RewritePolicyWrapper" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.rewrite.RewritePolicy" classification="implements" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LogEventAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LogEventWrapper" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.builders">
+        <type name="org.apache.log4j.builders.AbstractBuilder" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.log4j.builders.Builder" classification="implements" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.FilterWrapper" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.FilterAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.BooleanHolder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.builders.Holder" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.Builder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.BuilderManager" classification="class" visibility="public">
+          <dependencies count="18">
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.rewrite.RewritePolicy" classification="uses" />
+            <depends-on name="org.apache.log4j.builders.Builder" classification="uses" />
+            <depends-on name="org.apache.log4j.builders.Parser" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.builders.appender.AppenderBuilder" classification="uses" />
+            <depends-on name="org.apache.log4j.builders.rolling.TriggeringPolicyBuilder" classification="uses" />
+            <depends-on name="org.apache.log4j.builders.rewrite.RewritePolicyBuilder" classification="uses" />
+            <depends-on name="org.apache.log4j.builders.layout.LayoutBuilder" classification="uses" />
+            <depends-on name="org.apache.log4j.builders.filter.FilterBuilder" classification="uses" />
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderWrapper" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.FilterWrapper" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutWrapper" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.RewritePolicyWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.Holder" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.Parser" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.log4j.builders.Builder" classification="extends" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="aQute.bnd.annotation.jpms.ExportTo" classification="uses" />
+            <depends-on name="aQute.bnd.annotation.jpms.Open" classification="uses" />
+            <depends-on name="org.osgi.annotation.versioning.Version" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.builders.appender">
+        <type name="org.apache.log4j.builders.appender.AppenderBuilder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.builders.Builder" classification="extends" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.appender.AsyncAppenderBuilder" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.appender.AppenderBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.FilterAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.appender.ConsoleAppenderBuilder" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.appender.AppenderBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.appender.DailyRollingFileAppenderBuilder" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.appender.AppenderBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.appender.EnhancedRollingFileAppenderBuilder" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.appender.AppenderBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.appender.FileAppenderBuilder" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.appender.AppenderBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.appender.NullAppenderBuilder" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.log4j.builders.appender.AppenderBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.appender.RewriteAppenderBuilder" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.appender.AppenderBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.rewrite.RewritePolicy" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.RewritePolicyWrapper" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.RewritePolicyAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.builders.BuilderManager" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.appender.RollingFileAppenderBuilder" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.appender.AppenderBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.appender.SocketAppenderBuilder" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.appender.AppenderBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.appender.SyslogAppenderBuilder" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.appender.AppenderBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="uses" />
+            <depends-on name="org.apache.log4j.layout.Log4j1SyslogLayout" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.layout.Log4j1SyslogLayout$Builder" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.appender.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="aQute.bnd.annotation.jpms.Open" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.builders.filter">
+        <type name="org.apache.log4j.builders.filter.DenyAllFilterBuilder" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.log4j.builders.filter.FilterBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.FilterWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.filter.FilterBuilder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.builders.Parser" classification="extends" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.filter.LevelMatchFilterBuilder" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.filter.FilterBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.FilterWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.filter.LevelRangeFilterBuilder" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.filter.FilterBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.FilterWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.filter.StringMatchFilterBuilder" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.filter.FilterBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.FilterWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.filter.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="aQute.bnd.annotation.jpms.Open" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.builders.layout">
+        <type name="org.apache.log4j.builders.layout.HtmlLayoutBuilder" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.layout.LayoutBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.layout.LayoutBuilder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.builders.Parser" classification="extends" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.layout.PatternLayoutBuilder" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.layout.LayoutBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.layout.SimpleLayoutBuilder" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.log4j.builders.layout.LayoutBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.layout.TTCCLayoutBuilder" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.layout.LayoutBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.layout.XmlLayoutBuilder" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.layout.LayoutBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.layout.Log4j1XmlLayout" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LayoutWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.layout.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="aQute.bnd.annotation.jpms.Open" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.builders.rewrite">
+        <type name="org.apache.log4j.builders.rewrite.RewritePolicyBuilder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.builders.Parser" classification="extends" />
+            <depends-on name="org.apache.log4j.rewrite.RewritePolicy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.rewrite.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="aQute.bnd.annotation.jpms.Open" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.builders.rolling">
+        <type name="org.apache.log4j.builders.rolling.CompositeTriggeringPolicyBuilder" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.rolling.TriggeringPolicyBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.rolling.SizeBasedTriggeringPolicyBuilder" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.rolling.TriggeringPolicyBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.rolling.TimeBasedRollingPolicyBuilder" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.builders.AbstractBuilder" classification="extends" />
+            <depends-on name="org.apache.log4j.builders.rolling.TriggeringPolicyBuilder" classification="implements" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.rolling.TriggeringPolicyBuilder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.builders.Parser" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.builders.rolling.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="aQute.bnd.annotation.jpms.Open" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.component.helpers">
+        <type name="org.apache.log4j.component.helpers.Constants" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.config">
+        <type name="org.apache.log4j.config.InputStreamWrapper" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.config.Log4j1Configuration" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.builders.BuilderManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.config.Log4j1ConfigurationConverter$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.log4j.config.Log4j1ConfigurationConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.config.InputStreamWrapper" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1ConfigurationConverter$CommandLineArguments" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.config.Log4j1ConfigurationConverter$CommandLineArguments" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.config.Log4j1ConfigurationConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1ConfigurationConverter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.config.Log4j1ConfigurationConverter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.config.Log4j1ConfigurationConverter$CommandLineArguments" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1ConfigurationConverter$1" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1ConfigurationParser" classification="uses" />
+            <depends-on name="org.apache.log4j.config.InputStreamWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.config.Log4j1ConfigurationFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.config.Log4j1ConfigurationParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.config.Log4j1ConfigurationParser" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.config.PropertiesConfiguration$NameValue" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.config.PropertiesConfiguration" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="extends" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ErrorHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration$NameValue" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertySetter" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfigurationFactory" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.LogManager" classification="uses" />
+            <depends-on name="org.apache.log4j.builders.BuilderManager" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.FilterAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.config.PropertiesConfigurationFactory" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertiesConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.config.PropertySetter" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.log4j.spi.OptionHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertySetterException" classification="uses" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.Priority" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ErrorHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.config.PropertySetterException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.config.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.osgi.annotation.bundle.Export" classification="uses" />
+            <depends-on name="org.osgi.annotation.versioning.Version" classification="uses" />
+            <depends-on name="aQute.bnd.annotation.jpms.Open" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.helpers">
+        <type name="org.apache.log4j.helpers.AbsoluteTimeDateFormat" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.AppenderAttachableImpl" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.log4j.spi.AppenderAttachable" classification="implements" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.BoundedFIFO" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.CountingQuietWriter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.log4j.helpers.QuietWriter" classification="extends" />
+            <depends-on name="org.apache.log4j.spi.ErrorHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ErrorCode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.CyclicBuffer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.DateLayout" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.log4j.Layout" classification="extends" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.RelativeTimeDateFormat" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.AbsoluteTimeDateFormat" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.DateTimeDateFormat" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.ISO8601DateFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.DateTimeDateFormat" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.helpers.AbsoluteTimeDateFormat" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.FileWatchdog" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.helpers.LogLog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.FormattingInfo" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.helpers.LogLog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.ISO8601DateFormat" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.helpers.AbsoluteTimeDateFormat" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.Loader" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.helpers.LogLog" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.LogLog" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.NullEnumeration" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.OptionConverter$CharMap" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.OptionConverter$LevelWrapper" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.Level" classification="extends" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.OptionConverter" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter$CharMap" classification="uses" />
+            <depends-on name="org.apache.log4j.Priority" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggerRepository" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Configurator" classification="uses" />
+            <depends-on name="org.apache.log4j.PropertyConfigurator" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter$LevelWrapper" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.LogLog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.PatternConverter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.helpers.FormattingInfo" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.PatternParser$BasicPatternConverter" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.log4j.helpers.PatternConverter" classification="extends" />
+            <depends-on name="org.apache.log4j.helpers.FormattingInfo" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.PatternParser$CategoryPatternConverter" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.helpers.PatternParser$NamedPatternConverter" classification="extends" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.FormattingInfo" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.PatternParser$ClassNamePatternConverter" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.log4j.helpers.PatternParser$NamedPatternConverter" classification="extends" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.FormattingInfo" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LocationInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.PatternParser$DatePatternConverter" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.log4j.helpers.PatternConverter" classification="extends" />
+            <depends-on name="org.apache.log4j.helpers.FormattingInfo" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.LogLog" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.PatternParser$LiteralPatternConverter" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.log4j.helpers.PatternConverter" classification="extends" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.PatternParser$LocationPatternConverter" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.log4j.helpers.PatternConverter" classification="extends" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.FormattingInfo" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LocationInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.PatternParser$MDCPatternConverter" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.helpers.PatternConverter" classification="extends" />
+            <depends-on name="org.apache.log4j.helpers.FormattingInfo" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.PatternParser$NamedPatternConverter" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.helpers.PatternConverter" classification="extends" />
+            <depends-on name="org.apache.log4j.helpers.FormattingInfo" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.PatternParser" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="org.apache.log4j.helpers.PatternConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.FormattingInfo" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser$LiteralPatternConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser$CategoryPatternConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser$ClassNamePatternConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.AbsoluteTimeDateFormat" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.ISO8601DateFormat" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.DateTimeDateFormat" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser$DatePatternConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser$LocationPatternConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser$BasicPatternConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser$MDCPatternConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.PatternParser$NamedPatternConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.LogLog" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.QuietWriter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.spi.ErrorHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ErrorCode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.RelativeTimeDateFormat" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.UtilLoggingLevel" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.Level" classification="extends" />
+            <depends-on name="org.apache.log4j.Priority" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.helpers.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.osgi.annotation.bundle.Export" classification="uses" />
+            <depends-on name="org.osgi.annotation.versioning.Version" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.jmx">
+        <type name="org.apache.log4j.jmx.AbstractDynamicMBean" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.jmx.Agent" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.jmx.HierarchyDynamicMBean" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.jmx.AppenderDynamicMBean" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.log4j.jmx.AbstractDynamicMBean" classification="extends" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.jmx.MethodUnion" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.OptionHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.jmx.LayoutDynamicMBean" classification="uses" />
+            <depends-on name="org.apache.log4j.Priority" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.jmx.HierarchyDynamicMBean" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.log4j.jmx.AbstractDynamicMBean" classification="extends" />
+            <depends-on name="org.apache.log4j.spi.HierarchyEventListener" classification="implements" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggerRepository" classification="uses" />
+            <depends-on name="org.apache.log4j.Category" classification="uses" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.jmx.LoggerDynamicMBean" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.LogManager" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.jmx.LayoutDynamicMBean" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.log4j.jmx.AbstractDynamicMBean" classification="extends" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.jmx.MethodUnion" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.OptionHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.Priority" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.jmx.LoggerDynamicMBean" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.log4j.jmx.AbstractDynamicMBean" classification="extends" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.jmx.AppenderDynamicMBean" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.jmx.MethodUnion" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.jmx.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.osgi.annotation.bundle.Export" classification="uses" />
+            <depends-on name="org.osgi.annotation.versioning.Version" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.layout">
+        <type name="org.apache.log4j.layout.Log4j1SyslogLayout$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.layout.Log4j1SyslogLayout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.layout.Log4j1SyslogLayout$Builder" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.layout.Log4j1SyslogLayout" classification="uses" />
+            <depends-on name="org.apache.log4j.layout.Log4j1SyslogLayout$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.layout.Log4j1SyslogLayout" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.layout.Log4j1SyslogLayout$Builder" classification="uses" />
+            <depends-on name="org.apache.log4j.layout.Log4j1SyslogLayout$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.layout.Log4j1XmlLayout" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.legacy.core">
+        <type name="org.apache.log4j.legacy.core.CategoryUtil" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.bridge.AppenderAdapter$Adapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.legacy.core.ContextUtil" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.or">
+        <type name="org.apache.log4j.or.DefaultRenderer" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.or.ObjectRenderer" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.or.ObjectRenderer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.or.RendererMap" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.or.ObjectRenderer" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.RendererSupport" classification="uses" />
+            <depends-on name="org.apache.log4j.or.DefaultRenderer" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.or.ThreadGroupRenderer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.or.ObjectRenderer" classification="implements" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.or.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.osgi.annotation.bundle.Export" classification="uses" />
+            <depends-on name="org.osgi.annotation.versioning.Version" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.or.jms">
+        <type name="org.apache.log4j.or.jms.MessageRenderer" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.or.ObjectRenderer" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.or.jms.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.osgi.annotation.bundle.Export" classification="uses" />
+            <depends-on name="org.osgi.annotation.versioning.Version" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.pattern">
+        <type name="org.apache.log4j.pattern.FormattingInfo" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.pattern.Log4j1LevelPatternConverter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.pattern.Log4j1MdcPatternConverter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.pattern.Log4j1NdcPatternConverter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.pattern.NameAbbreviator$DropElementAbbreviator" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.pattern.NameAbbreviator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.pattern.NameAbbreviator$MaxElementAbbreviator" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.pattern.NameAbbreviator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.pattern.NameAbbreviator$NOPAbbreviator" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.pattern.NameAbbreviator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.pattern.NameAbbreviator$PatternAbbreviator" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.pattern.NameAbbreviator" classification="extends" />
+            <depends-on name="org.apache.log4j.pattern.NameAbbreviator$PatternAbbreviatorFragment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.pattern.NameAbbreviator$PatternAbbreviatorFragment" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.pattern.NameAbbreviator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.pattern.NameAbbreviator" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.log4j.pattern.NameAbbreviator$MaxElementAbbreviator" classification="uses" />
+            <depends-on name="org.apache.log4j.pattern.NameAbbreviator$DropElementAbbreviator" classification="uses" />
+            <depends-on name="org.apache.log4j.pattern.NameAbbreviator$PatternAbbreviatorFragment" classification="uses" />
+            <depends-on name="org.apache.log4j.pattern.NameAbbreviator$PatternAbbreviator" classification="uses" />
+            <depends-on name="org.apache.log4j.pattern.NameAbbreviator$NOPAbbreviator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.pattern.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.osgi.annotation.bundle.Export" classification="uses" />
+            <depends-on name="org.osgi.annotation.versioning.Version" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.rewrite">
+        <type name="org.apache.log4j.rewrite.MapRewritePolicy" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.log4j.rewrite.RewritePolicy" classification="implements" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LocationInfo" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LogEventAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.Priority" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ThrowableInformation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.rewrite.PropertyRewritePolicy" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.log4j.rewrite.RewritePolicy" classification="implements" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LocationInfo" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LogEventAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.Priority" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ThrowableInformation" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.rewrite.RewritePolicy" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.rewrite.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.osgi.annotation.bundle.Export" classification="uses" />
+            <depends-on name="org.osgi.annotation.versioning.Version" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.spi">
+        <type name="org.apache.log4j.spi.AppenderAttachable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.Configurator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.spi.LoggerRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.DefaultRepositorySelector" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.spi.RepositorySelector" classification="implements" />
+            <depends-on name="org.apache.log4j.spi.LoggerRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.ErrorCode" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.ErrorHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.Filter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.HierarchyEventListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.Category" classification="uses" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.LocationInfo" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.LoggerFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.LoggerRepository" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.log4j.spi.HierarchyEventListener" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.Category" classification="uses" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.LoggingEvent" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.log4j.Category" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ThrowableInformation" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LocationInfo" classification="uses" />
+            <depends-on name="org.apache.log4j.Priority" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.LogEventAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.NOPLogger" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.apache.log4j.Logger" classification="extends" />
+            <depends-on name="org.apache.log4j.spi.NOPLoggerRepository" classification="uses" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.Priority" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggerRepository" classification="uses" />
+            <depends-on name="org.apache.log4j.Category" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.NOPLoggerRepository" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.apache.log4j.spi.LoggerRepository" classification="implements" />
+            <depends-on name="org.apache.log4j.spi.HierarchyEventListener" classification="uses" />
+            <depends-on name="org.apache.log4j.Category" classification="uses" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggerFactory" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.NOPLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.OptionHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.RendererSupport" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.or.RendererMap" classification="uses" />
+            <depends-on name="org.apache.log4j.or.ObjectRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.RepositorySelector" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.spi.LoggerRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.RootLogger" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.log4j.Logger" classification="extends" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.LogLog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.ThrowableInformation" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.Category" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.ThrowableRenderer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.ThrowableRendererSupport" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.spi.ThrowableRenderer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.TriggeringEventEvaluator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.spi.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.osgi.annotation.bundle.Export" classification="uses" />
+            <depends-on name="org.osgi.annotation.versioning.Version" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.varia">
+        <type name="org.apache.log4j.varia.DenyAllFilter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.spi.Filter" classification="extends" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.varia.FallbackErrorHandler" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.log4j.spi.ErrorHandler" classification="implements" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.LogLog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.varia.LevelMatchFilter" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.spi.Filter" classification="extends" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.varia.LevelRangeFilter" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.spi.Filter" classification="extends" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.Priority" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.varia.NullAppender" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.AppenderSkeleton" classification="extends" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.varia.ReloadingPropertyConfigurator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.log4j.spi.Configurator" classification="implements" />
+            <depends-on name="org.apache.log4j.PropertyConfigurator" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggerRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.varia.StringMatchFilter" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.log4j.spi.Filter" classification="extends" />
+            <depends-on name="org.apache.log4j.spi.LoggingEvent" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.varia.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.osgi.annotation.bundle.Export" classification="uses" />
+            <depends-on name="org.osgi.annotation.versioning.Version" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.log4j.xml">
+        <type name="org.apache.log4j.xml.DOMConfigurator" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.log4j.xml.XMLWatchdog" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertySetter" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggerRepository" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfigurationFactory" classification="uses" />
+            <depends-on name="org.apache.log4j.LogManager" classification="uses" />
+            <depends-on name="org.apache.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.xml.Log4jEntityResolver" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.xml.UnrecognizedElementHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.xml.XMLWatchdog" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.apache.log4j.helpers.FileWatchdog" classification="extends" />
+            <depends-on name="org.apache.log4j.xml.DOMConfigurator" classification="uses" />
+            <depends-on name="org.apache.log4j.LogManager" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.LoggerRepository" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.xml.XmlConfiguration$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration$ParseAction" classification="implements" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.xml.XmlConfiguration$ConsumerException" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.xml.XmlConfiguration$ParseAction" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.xml.XmlConfiguration$SAXErrorHandler" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration$1" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.xml.XmlConfiguration" classification="class" visibility="public">
+          <dependencies count="20">
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="extends" />
+            <depends-on name="org.apache.log4j.Appender" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration$ParseAction" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfigurationFactory" classification="uses" />
+            <depends-on name="org.apache.log4j.config.PropertySetter" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.Filter" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration$ConsumerException" classification="uses" />
+            <depends-on name="org.apache.log4j.rewrite.RewritePolicy" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.ErrorHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.Layout" classification="uses" />
+            <depends-on name="org.apache.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.log4j.spi.AppenderAttachable" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration$1" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration$SAXErrorHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.Log4jEntityResolver" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.UnrecognizedElementHandler" classification="uses" />
+            <depends-on name="org.apache.log4j.helpers.OptionConverter" classification="uses" />
+            <depends-on name="org.apache.log4j.builders.BuilderManager" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.AppenderAdapter" classification="uses" />
+            <depends-on name="org.apache.log4j.bridge.FilterAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.xml.XmlConfigurationFactory" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.log4j.config.Log4j1Configuration" classification="uses" />
+            <depends-on name="org.apache.log4j.xml.XmlConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.log4j.xml.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.osgi.annotation.bundle.Export" classification="uses" />
+            <depends-on name="org.osgi.annotation.versioning.Version" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

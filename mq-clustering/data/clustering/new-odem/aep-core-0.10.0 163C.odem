@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="aep-core-0.10.0">
+    <container name="/home/leo/repos/appengine-plugins-core-0.10.0/target/appengine-plugins-core-0.10.0.jar" classification="osgi-bundle">
+      <namespace name="com.google.cloud.tools.appengine">
+        <type name="com.google.cloud.tools.appengine.AppEngineException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.AppEngineDescriptor" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.appengine.operations">
+        <type name="com.google.cloud.tools.appengine.operations.Gcloud$Builder" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.GcloudRunner$Factory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.Gcloud" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.Gcloud$1" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.GcloudRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.AppYamlProjectStaging" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.AppYamlProjectStaging$CopyService" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.project.AppYaml" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.GcloudRunner$Factory" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.ProcessBuilderFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.GcloudRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.AppYamlProjectStaging$CopyService" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.io.FileUtil" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.AppYamlProjectStaging" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.DevAppServerRunner" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.ProcessBuilderFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.AppEngineJavaComponentsNotInstalledException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.InvalidJavaSdkException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.DevAppServerRunner$Factory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.GenRepoInfoFile" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.google.cloud.tools.appengine.operations.GcloudRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.GcloudArgs" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.CloudSdk$Builder" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkResolver" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk$1" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkNotFoundException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.PathResolver" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk$ResolverComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.Gcloud$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.Gcloud" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.DevServers$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.DevServers" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.CloudSdk$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.GcloudRunner" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.ProcessBuilderFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.GcloudArgs" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkNotFoundException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkOutOfDateException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.GcloudRunner$Factory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.Deployment" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.google.cloud.tools.appengine.operations.GcloudRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.DeployConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.GcloudArgs" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.Gcloud" classification="class" visibility="public">
+          <dependencies count="23">
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.GcloudRunner$Factory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.Deployment" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.Versions" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.Auth" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.GenRepoInfoFile" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkConfig" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.StringBuilderProcessOutputLineListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.ExitCodeRecorderProcessExitListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.GcloudRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.Gcloud$Builder" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.Gcloud$1" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.GcloudArgs" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$Builder" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessOutputLineListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessExitListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkNotFoundException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkOutOfDateException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.DevServers$Builder" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.DevAppServerRunner$Factory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.DevServers" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.DevServers$1" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.DevAppServerRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersion" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileParseException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileNotFoundException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk$1" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkOutOfDateException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkNotFoundException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.InvalidJavaSdkException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.AppEngineJavaComponentsNotInstalledException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk$ResolverComparator" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk$Builder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.AppCfg" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.AppCfgRunner$Factory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.AppEngineWebXmlProjectStaging" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.AppCfgRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.AppCfg$Builder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.CloudSdk$ResolverComparator" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkResolver" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk$1" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.DevAppServerRunner$Factory" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.ProcessBuilderFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.DevAppServerRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.DevServers" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.DevAppServerRunner$Factory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.DevServer" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.DevAppServerRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.DevServers$Builder" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.DevServers$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.Auth" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.google.cloud.tools.appengine.operations.GcloudRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.GcloudArgs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.AppCfg$Builder" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.AppCfgRunner$Factory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.AppCfg" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.AppCfgRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.AppCfgRunner" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.ProcessBuilderFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.AppEngineJavaComponentsNotInstalledException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.InvalidJavaSdkException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.AppCfgRunner$Factory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.AppEngineWebXmlProjectStaging" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.google.cloud.tools.appengine.operations.AppCfgRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.AppCfgArgs" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.DevServer" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.DevAppServerRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.RunConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.StopConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineDescriptor" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.DevAppServerArgs" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.Versions" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.google.cloud.tools.appengine.operations.GcloudRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.VersionsListConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.GcloudArgs" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.AppCfgRunner$Factory" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.ProcessBuilderFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.AppCfgRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.CloudSdk" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandler" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.appengine.operations.cloudsdk">
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.AppEngineJavaComponentsNotInstalledException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkResolver" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileNotFoundException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.JsonParseException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkNotFoundException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileParseException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.PathResolver" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkResolver" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.InvalidJavaSdkException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkOutOfDateException" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="extends" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersion" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization">
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.AppEngineDeployResult" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.AppEngineDeployResult$Version" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.JsonParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersion" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersionPreRelease" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent$State" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.GcloudStructuredLog" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.GcloudStructuredLog$GcloudError" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.JsonParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.GcloudStructuredLog$GcloudError" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.GcloudStructuredLog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.AppEngineDeployResult$Version" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.AppEngineDeployResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersionPreRelease" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersionPreRelease$PreReleaseSegment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersionPreRelease$PreReleaseSegment" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersionPreRelease" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkConfig" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkConfig$Core" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent$State" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkConfig$Core" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkConfig" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args">
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.DevAppServerArgs" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.Args" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.GcloudArgs" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.Args" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.AppCfgArgs" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.Args" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.Args" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.process">
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.WaitingProcessOutputLineListener" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessOutputLineListener" classification="implements" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessExitListener" classification="implements" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.ProcessBuilderFactory" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.ExitCodeRecorderProcessExitListener" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessExitListener" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.appengine.operations.cloudsdk.process">
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessExitListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$4" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.process.StringBuilderProcessOutputLineListener" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessOutputLineListener" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessStartListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessOutputLineListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandler" classification="implements" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessOutputLineListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessExitListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessStartListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.WaitingProcessOutputLineListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$Builder" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$1" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$2" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$3" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessOutputLineListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessOutputLineListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$Builder" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessOutputLineListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessExitListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessStartListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$Builder$DevAppServerAsyncOutputWatcherFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.WaitingProcessOutputLineListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$Builder$DevAppServerAsyncOutputWatcherFactory" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.WaitingProcessOutputLineListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$Builder" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.operations.cloudsdk.process.NonZeroExceptionExitListener" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessExitListener" classification="implements" />
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.appengine.configuration">
+        <type name="com.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration$Builder" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration$Builder" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration$Builder" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration$Builder" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.StopConfiguration$Builder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.StopConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration$Builder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration$Builder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.RunConfiguration" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.RunConfiguration$Builder" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.RunConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.VersionsListConfiguration$Builder" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.VersionsListConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.VersionsListConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration$Builder" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.StopConfiguration" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.StopConfiguration$Builder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration$Builder" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.VersionsListConfiguration$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.VersionsListConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.RunConfiguration$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.RunConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.DeployConfiguration$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.DeployConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration$Builder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration$Builder" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.DeployConfiguration" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.DeployConfiguration$Builder" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.DeployConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.DeployConfiguration$Builder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.DeployConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.DeployConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.VersionsListConfiguration" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.VersionsListConfiguration$Builder" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.VersionsListConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.RunConfiguration$Builder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.RunConfiguration" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.configuration.RunConfiguration$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.io">
+        <type name="com.google.cloud.tools.io.FilePermissions" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.io.FileUtil" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.io.FileUtil$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.io.FileUtil$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.io.FileUtil" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.project">
+        <type name="com.google.cloud.tools.project.ServiceNameValidator" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.project.AppYaml" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.appengine.AppEngineException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.project.ProjectIdValidator" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.project.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.managedcloudsdk">
+        <type name="com.google.cloud.tools.managedcloudsdk.OsInfo" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo$Name" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo$Architecture" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.UnsupportedOsException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.UnsupportedOsException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.OsInfo$Architecture" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.OsInfo$Name" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.BadCloudSdkVersionException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.ChildProgressListener" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ProgressListener" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.ManagedCloudSdk$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo$Name" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ManagedCloudSdk" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.ManagedSdkVersionMismatchException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.ManagedSdkVerificationException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.ProgressListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.ManagedCloudSdk" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.Version" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.components.SdkComponent" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent" classification="uses" />
+            <depends-on name="com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent$State" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.SdkInstaller" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.components.SdkComponentInstaller" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.components.SdkUpdater" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo$Name" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ManagedSdkVersionMismatchException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ManagedSdkVerificationException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandCaller" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExecutionException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExitException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ManagedCloudSdk$1" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.UnsupportedOsException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.Version" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.BadCloudSdkVersionException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.ConsoleListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.managedcloudsdk.install">
+        <type name="com.google.cloud.tools.managedcloudsdk.install.SdkInstaller" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.FileResourceProviderFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.ExtractorFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.DownloaderFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.InstallerFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ProgressListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ConsoleListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.UnknownArchiveTypeException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.FileResourceProvider" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.Downloader" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.Version" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.SdkInstallerException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.Extractor" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.Installer" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExecutionException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExitException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.TarGzExtractorProvider" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.ExtractorProvider" classification="implements" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ProgressListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.PosixUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.UnknownArchiveTypeException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.ExtractorProvider" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ProgressListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.Installer" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.InstallScriptProvider" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ProgressListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ConsoleListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExitException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExecutionException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.ZipExtractorProvider" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.ExtractorProvider" classification="implements" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ProgressListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.PosixUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.WindowsInstallScriptProvider" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.InstallScriptProvider" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.FileResourceProviderFactory$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo$Name" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.FileResourceProviderFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.Downloader" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ProgressListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.UnixInstallScriptProvider" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.InstallScriptProvider" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.InstallScriptProvider" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.Extractor" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.ExtractorProvider" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ProgressListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.DownloaderFactory" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.Downloader" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ProgressListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.FileResourceProviderFactory" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.Version" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.FileResourceProvider" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.FileResourceProviderFactory$1" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo$Name" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo$Architecture" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.InstallerFactory$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo$Name" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.InstallerFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.PosixUtil" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.ExtractorFactory" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.Extractor" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ProgressListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.TarGzExtractorProvider" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.ExtractorProvider" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.ZipExtractorProvider" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.UnknownArchiveTypeException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.FileResourceProvider" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.InstallerFactory" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="10">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.Installer" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ProgressListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ConsoleListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.InstallScriptProvider" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.InstallerFactory$1" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo$Name" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.WindowsInstallScriptProvider" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.install.UnixInstallScriptProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.install.SdkInstallerException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.managedcloudsdk.command">
+        <type name="com.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaver" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.process.AsyncStreamHandler" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.command.CommandExecutionException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaverFactory$CollectingByteHandler" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.ByteHandler" classification="implements" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaverFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.command.AsyncStreamHandlerFactory$ConsoleListenerForwardingByteHandler" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.ByteHandler" classification="implements" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ConsoleListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.AsyncStreamHandlerFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.command.AsyncByteConsumer" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaver" classification="implements" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.ByteHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.command.ByteHandler" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.command.CommandRunner" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.process.ProcessExecutor" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.AsyncStreamHandlerFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ConsoleListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.process.AsyncStreamHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExitException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExecutionException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.command.AsyncStreamHandlerFactory" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.process.AsyncStreamHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ConsoleListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.AsyncByteConsumer" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.AsyncStreamHandlerFactory$ConsoleListenerForwardingByteHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.ByteHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaverFactory" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaver" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.AsyncByteConsumer" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaverFactory$CollectingByteHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.ByteHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.command.CommandCaller" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.process.ProcessExecutor" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaverFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaver" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.process.AsyncStreamHandler" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExitException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExecutionException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.command.CommandExitException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.managedcloudsdk.components">
+        <type name="com.google.cloud.tools.managedcloudsdk.components.SdkComponentInstaller" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.components.BundledPythonCopier" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.components.SdkComponent" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ProgressListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ConsoleListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo$Name" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.components.SdkComponentInstaller$1" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.components.WindowsBundledPythonCopier" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandCaller" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExitException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExecutionException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.components.SdkUpdater" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandRunner" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.components.BundledPythonCopier" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ProgressListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.ConsoleListener" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo$Name" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.components.SdkUpdater$1" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.components.WindowsBundledPythonCopier" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandCaller" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExitException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExecutionException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.components.BundledPythonCopier" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExitException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExecutionException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.components.SdkUpdater$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo$Name" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.components.SdkUpdater" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.components.SdkComponentInstaller$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo$Name" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.components.SdkComponentInstaller" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.OsInfo" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.components.WindowsBundledPythonCopier" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.components.BundledPythonCopier" classification="implements" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandCaller" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExitException" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.command.CommandExecutionException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.components.SdkComponent" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.managedcloudsdk.process">
+        <type name="com.google.cloud.tools.managedcloudsdk.process.ProcessExecutor$ProcessBuilderFactory" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.process.ProcessExecutor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.process.ProcessExecutor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.process.ProcessExecutor$ProcessBuilderFactory" classification="uses" />
+            <depends-on name="com.google.cloud.tools.managedcloudsdk.process.AsyncStreamHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.managedcloudsdk.process.AsyncStreamHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.libraries">
+        <type name="com.google.cloud.tools.libraries.CloudLibraries$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.libraries.CloudLibraries" classification="uses" />
+            <depends-on name="com.google.cloud.tools.libraries.json.CloudLibrary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.libraries.CloudLibraries" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.cloud.tools.libraries.json.CloudLibrary" classification="uses" />
+            <depends-on name="com.google.cloud.tools.libraries.CloudLibraries$1" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.cloud.tools.libraries.json">
+        <type name="com.google.cloud.tools.libraries.json.CloudLibraryClientMavenCoordinates" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.libraries.json.CloudLibrary" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.libraries.json.CloudLibraryClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.cloud.tools.libraries.json.CloudLibraryClient" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.cloud.tools.libraries.json.CloudLibraryClientMavenCoordinates" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

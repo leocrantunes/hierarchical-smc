@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jgit-ssh-6.8.0">
+    <container name="/home/leo/repos/jgit-6.8.0/org.eclipse.jgit.ssh.apache/target/org.eclipse.jgit.ssh.apache-6.8.0.202310031045-m1.jar" classification="osgi-bundle">
+      <namespace name="org.eclipse.jgit.transport.sshd">
+        <type name="org.eclipse.jgit.transport.sshd.SshdSessionFactory$Tuple" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSessionFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.KeyCache" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.IdentityPasswordProvider" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyPasswordProvider" classification="implements" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.IdentityPasswordProvider$State" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.AuthenticationCanceledException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.SessionCloseListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.SshdSessionFactoryBuilder$State$SessionFactory" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSessionFactory" classification="extends" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSessionFactoryBuilder$State" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyCache" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ProxyDataFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyPasswordProvider" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.agent.ConnectorFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSessionFactoryBuilder$ConfigStoreFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSessionFactoryBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.IdentityPasswordProvider$State" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.transport.sshd.IdentityPasswordProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase$Configuration" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase$Configuration$StrictHostKeyChecking" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.SshdSession$SshdFtpChannel$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSession$SshdFtpChannel" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.SshdSessionFactory" classification="class" visibility="public">
+          <dependencies count="21">
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSession" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSessionFactory$Tuple" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyCache" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ProxyDataFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.agent.ConnectorFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyPasswordProvider" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.DefaultProxyDataFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SessionCloseListener" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.IdentityPasswordProvider" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.PasswordProviderWrapper" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.GssApiWithMicAuthFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitServerKeyVerifier" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitUserInteraction" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.agent.JGitSshAgentFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitSshConfig" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.CachingKeyPairProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.SshdSessionFactoryBuilder$ConfigStoreFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSessionFactoryBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase$Configuration$StrictHostKeyChecking" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase$Configuration" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.SshdSession" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.eclipse.jgit.transport.sshd.SessionCloseListener" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.AuthenticationLogger" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.AuthenticationCanceledException" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSession$SshdExecProcess" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSession$SshdFtpChannel" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSession$SshdFtpChannel$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.ProxyData" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.DefaultProxyDataFactory" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.transport.sshd.ProxyDataFactory" classification="implements" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ProxyData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.ProxyDataFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.transport.sshd.ProxyData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase$Configuration" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase$Configuration$StrictHostKeyChecking" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.SshdSession$SshdExecProcess" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.SshdSession$SshdFtpChannel" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSession" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSession$SshdFtpChannel$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.KeyPasswordProvider" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.SshdSessionFactoryBuilder$State" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="org.eclipse.jgit.transport.sshd.ProxyDataFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSessionFactoryBuilder$ConfigStoreFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyPasswordProvider" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.agent.ConnectorFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSessionFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyCache" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSessionFactoryBuilder$State$SessionFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSessionFactoryBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.JGitKeyCache" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyCache" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.SshdSessionFactoryBuilder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="9">
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSessionFactoryBuilder$State" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ProxyDataFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSessionFactoryBuilder$ConfigStoreFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyPasswordProvider" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.agent.ConnectorFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSessionFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyCache" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.SshdSessionFactoryBuilder$State$SessionFactory" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.eclipse.jgit.transport.sshd.agent">
+        <type name="org.eclipse.jgit.transport.sshd.agent.ConnectorFactory$ConnectorDescriptor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.transport.sshd.agent.ConnectorFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.agent.Connector" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.agent.AbstractConnector" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.transport.sshd.agent.Connector" classification="implements" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.agent.ConnectorFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.transport.sshd.agent.Connector" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.agent.ConnectorFactory$ConnectorDescriptor" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.agent.ConnectorFactoryProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.transport.sshd.agent.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.eclipse.jgit.internal.transport.sshd">
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession$ChainingAttributes" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient$JGitSessionFactory" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase$AskUser" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase$Configuration" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase$AskUser$Check" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase$AskUser$ModifiedKeyHandling" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase$Configuration$StrictHostKeyChecking" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitUserInteraction" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.AuthenticationCanceledException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession$SessionAttributes" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession$ChainingAttributes" classification="extends" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.ServerKeyLookup" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication$KeyIterator" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.pkcs11.Pkcs11Provider" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.AuthenticationCanceledException" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication$KeyIterator$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication$KeyIterator$2" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication$KeyIterator$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient$CombinedKeyIdentityProvider$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient$CombinedKeyIdentityProvider" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitUserInteraction" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitUserInteraction$SessionAuthMarker" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.AuthenticationCanceledException" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.KnownHostEntryReader" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication$KeyIterator$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication$KeyIterator" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.GssApiWithMicAuthFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.GssApiWithMicAuthentication" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.AuthenticationLogger$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.GssApiWithMicAuthenticationReporter" classification="implements" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.AuthenticationLogger" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitServerKeyVerifier" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.ServerKeyLookup" classification="implements" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitServerKeyVerifier$SessionConfig" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase$Configuration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient$CombinedKeyIdentityProvider" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient$CombinedKeyIdentityProvider$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyPasswordProvider" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.StatefulProxyConnector" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.ServerKeyLookup" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession$ChainingAttributes" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession$SessionAttributes" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase$AskUser$Check" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase$AskUser" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase$RevokedKeyException" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase$HostKeyFile" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.KnownHostEntryReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication$KeyIterator$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication$KeyIterator" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.AuthenticationLogger" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.GssApiWithMicAuthenticationReporter" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.AuthenticationLogger$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.AuthenticationLogger$2" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.AuthenticationLogger$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.PasswordProviderWrapper$PerSessionState" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyPasswordProvider" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.PasswordProviderWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.PasswordProviderWrapper" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.PasswordProviderWrapper$PerSessionState" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyPasswordProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitUserInteraction$SessionAuthMarker" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitUserInteraction" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitHostConfigEntry" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.AuthenticationLogger$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.AuthenticationLogger" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.CachingKeyPairProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.GssApiWithMicAuthentication" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.GssApiWithMicAuthentication$ProtocolState" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.GssApiWithMicAuthenticationReporter" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.GssApiMechanisms" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase" classification="implements" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase$HostKeyFile" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase$Configuration" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase$AskUser" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase$RevokedKeyException" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase$AskUser$ModifiedKeyHandling" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase$AskUser$Check" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase$AskUser$ModifiedKeyHandling" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase$AskUser" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.OpenSshServerKeyDatabase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitServerKeyVerifier$SessionConfig" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase$Configuration" classification="implements" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase$Configuration$StrictHostKeyChecking" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitHostConfigEntry" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitServerKeyVerifier" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ServerKeyDatabase" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyCache" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyPasswordProvider" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ProxyDataFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.ProxyData" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.CachingKeyPairProvider" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient$JGitSessionFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession$ChainingAttributes" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession$SessionAttributes" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpClientConnector" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient$CombinedKeyIdentityProvider" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient$CombinedKeyIdentityProvider$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthFactory" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.CachingKeyPairProvider" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyCache" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.CachingKeyPairProvider$CancellingKeyPairIterator" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitSshClient" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.CachingKeyPairProvider$CancellingKeyPairIterator" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.CachingKeyPairProvider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.GssApiMechanisms" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.GssApiWithMicAuthenticationReporter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication$KeyIterator" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication$KeyIterator$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication$KeyIterator$2" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication$KeyIterator$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication$KeyIterator$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication$KeyIterator" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.AuthenticationLogger$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.AuthenticationLogger" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.GssApiWithMicAuthentication$ProtocolState" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.GssApiWithMicAuthentication" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.JGitSshConfig" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitHostConfigEntry" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.eclipse.jgit.internal.transport.sshd.agent">
+        <type name="org.eclipse.jgit.internal.transport.sshd.agent.ConnectorFactoryProvider" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.transport.sshd.agent.ConnectorFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.agent.JGitSshAgentFactory" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.transport.sshd.agent.ConnectorFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.agent.SshAgentClient" classification="uses" />
+            <depends-on name="org.eclipse.jgit.transport.sshd.agent.Connector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.agent.SshAgentClient" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.transport.sshd.agent.Connector" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.eclipse.jgit.internal.transport.sshd.auth">
+        <type name="org.eclipse.jgit.internal.transport.sshd.auth.BasicAuthentication" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.auth.AbstractAuthenticationHandler" classification="extends" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.auth.AbstractAuthenticationHandler" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.auth.AuthenticationHandler" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.auth.AuthenticationHandler" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.auth.GssApiAuthentication" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.auth.AbstractAuthenticationHandler" classification="extends" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.GssApiMechanisms" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.eclipse.jgit.internal.transport.sshd.pkcs11">
+        <type name="org.eclipse.jgit.internal.transport.sshd.pkcs11.Pkcs11Provider" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.pkcs11.SecurityCallback" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.pkcs11.Pkcs11Provider$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.pkcs11.Pkcs11Provider$Pkcs11Identity" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.pkcs11.Pkcs11Provider$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.pkcs11.Pkcs11Provider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.pkcs11.Pkcs11Provider$Pkcs11Identity" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.pkcs11.Pkcs11Provider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.pkcs11.SecurityCallback" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.transport.sshd.KeyPasswordProvider" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.AuthenticationCanceledException" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.eclipse.jgit.internal.transport.sshd.proxy">
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$ProtocolState$2" classification="enum" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$ProtocolState" classification="extends" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$ProtocolState$1" classification="enum" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$ProtocolState" classification="extends" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$SocksAuthenticationMethod" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpClientConnector$NegotiateAuthentication" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.auth.GssApiAuthentication" classification="extends" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpClientConnector$HttpAuthenticationHandler" classification="implements" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpClientConnector" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.AuthenticationChallenge" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.GssApiMechanisms" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.StatusLine" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpParser$ParseException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$SocksGssApiAuthentication" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.auth.GssApiAuthentication" classification="extends" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$SocksBasicAuthentication" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.auth.BasicAuthentication" classification="extends" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpClientConnector$HttpBasicAuthentication" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.auth.BasicAuthentication" classification="extends" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpClientConnector$HttpAuthenticationHandler" classification="implements" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpClientConnector" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.AuthenticationChallenge" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.AbstractClientProxyConnector" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.StatefulProxyConnector" classification="implements" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.JGitClientSession" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$SocksAuthenticationMethod" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.AbstractClientProxyConnector" classification="extends" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$ProtocolState" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.auth.AuthenticationHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$SocksAuthenticationMethod" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.GssApiMechanisms" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$SocksBasicAuthentication" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$SocksGssApiAuthentication" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$ProtocolState$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$ProtocolState$2" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$ProtocolState$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$ProtocolState" classification="enum" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$ProtocolState$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$ProtocolState$2" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$ProtocolState$3" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.StatefulProxyConnector" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpClientConnector$HttpAuthenticationHandler" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.auth.AuthenticationHandler" classification="extends" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.AuthenticationChallenge" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpClientConnector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpParser" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.StatusLine" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.AuthenticationChallenge" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpParser$ParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.AuthenticationChallenge" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpClientConnector" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.AbstractClientProxyConnector" classification="extends" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpClientConnector$HttpAuthenticationHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.StatusLine" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpParser$ParseException" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.AuthenticationChallenge" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpClientConnector$HttpBasicAuthentication" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpClientConnector$NegotiateAuthentication" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.SshdText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.HttpParser" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$ProtocolState$3" classification="enum" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector$ProtocolState" classification="extends" />
+            <depends-on name="org.eclipse.jgit.internal.transport.sshd.proxy.Socks5ClientConnector" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

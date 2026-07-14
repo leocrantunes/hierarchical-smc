@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="elasticsearch-geo-9.1.0">
+    <container name="/home/leo/github/elasticsearch/build/distribution/local/elasticsearch-9.1.0-SNAPSHOT/lib/elasticsearch-geo-9.1.0-SNAPSHOT.jar" classification="jar">
+      <namespace name="org.elasticsearch.geometry">
+        <type name="org.elasticsearch.geometry.MultiLine" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.geometry.GeometryCollection" classification="extends" />
+            <depends-on name="org.elasticsearch.geometry.Line" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.ShapeType" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.Point" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.ShapeType" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.WellKnownText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.MultiPoint" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.geometry.GeometryCollection" classification="extends" />
+            <depends-on name="org.elasticsearch.geometry.Point" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.ShapeType" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.Rectangle" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.ShapeType" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.WellKnownText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.LinearRing" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.geometry.Line" classification="extends" />
+            <depends-on name="org.elasticsearch.geometry.ShapeType" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.Circle" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.ShapeType" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.WellKnownText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.ShapeType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.Geometry" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.geometry.ShapeType" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.Line" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.ShapeType" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.WellKnownText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.GeometryCollection" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.ShapeType" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.WellKnownText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.Polygon" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.ShapeType" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.GeometryVisitor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="10">
+            <depends-on name="org.elasticsearch.geometry.Circle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryCollection" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Line" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiLine" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPoint" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPolygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Point" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Rectangle" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.MultiPolygon" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.geometry.GeometryCollection" classification="extends" />
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.ShapeType" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.elasticsearch.geometry.simplify">
+        <type name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$TriangleHeightCalculator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$PointLike" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SloppyMath" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$PolygonSimplifier" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="extends" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$Monitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$LinearRingSimplifier" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="extends" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$Monitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$Monitor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$PointLike" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$LineSimplifier" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="extends" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$Monitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Line" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$PointError" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.GeometrySimplifier$PolygonSimplifier" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier" classification="extends" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$Monitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier$LinearRingSimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$PolygonSimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$PointResetter" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$CartesianTriangleAreaCalculator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$PointLike" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.GeometrySimplifier" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="22">
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$Monitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$PointLike" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Line" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPolygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryCollection" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$PointError" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Point" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Circle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Rectangle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPoint" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier$Identity" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.ShapeType" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier$GeometryCollections" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier$MultiPolygonSimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier$PolygonSimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier$LinearRingSimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier$LineSimplifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$Point3D" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$PointLike" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$RotationMatrix" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SloppyMath" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$PointResetter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$PointError" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$PointConstructor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$PointError" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.SloppyMath" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$RotationMatrix" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$Point3D" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SloppyMath" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$CartesianHeightAndBackpathDistanceCalculator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$PointLike" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.GeometrySimplifier$MultiPolygonSimplifier" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier" classification="extends" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$Monitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPolygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier$PolygonSimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.GeometrySimplifier$LinearRingSimplifier" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier" classification="extends" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$Monitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$LinearRingSimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="13">
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$PointError" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$Monitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$PointConstructor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$PointResetter" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$PointLike" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$1" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$2" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$PolygonSimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$LinearRingSimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$LineSimplifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.GeometrySimplifier$Identity" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier" classification="extends" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$Monitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$PointConstructor" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$PointLike" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$PointLike" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$CartesianTriangleAreaCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$TriangleAreaCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$TriangleHeightCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$CartesianHeightAndBackpathDistanceCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$SphericalHeightAndBackpathDistanceCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$RotationMatrix" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$Point3D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$PointError" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$PointLike" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$TriangleAreaCalculator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$PointLike" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SloppyMath" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.GeometrySimplifier$GeometryCollections" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier" classification="extends" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$Monitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryCollection" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier$Identity" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Point" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier$LineSimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Line" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier$PolygonSimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier$MultiPolygonSimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPolygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.ShapeType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.GeometrySimplifier$LineSimplifier" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.elasticsearch.geometry.simplify.GeometrySimplifier" classification="extends" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$Monitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Line" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier$LineSimplifier" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.StreamingGeometrySimplifier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$SphericalHeightAndBackpathDistanceCalculator" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$PointLike" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.simplify.SimplificationErrorCalculator$Point3D" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.elasticsearch.geometry.utils">
+        <type name="org.elasticsearch.geometry.utils.GeometryValidator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor$GeoPointVisitor" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor$PointVisitor" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor$WrapLongitude" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Rectangle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor$WrapLongitude" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor$PointVisitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Rectangle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor$WrapLongitude" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Circle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryCollection" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Line" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiLine" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPoint" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPolygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Point" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor$CartesianPointVisitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor$GeoPointVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.WellKnownBinary" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.GeometryValidator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Point" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Line" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPoint" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiLine" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPolygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryCollection" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Rectangle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Circle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.WellKnownBinary$1" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.ShapeType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.CircleUtils" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Circle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.WellKnownText$2" classification="class" visibility="default">
+          <dependencies count="13">
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.Circle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryCollection" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Line" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiLine" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPoint" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPolygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Point" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Rectangle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.WellKnownText" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.GeographyValidator$1" classification="class" visibility="default">
+          <dependencies count="13">
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.utils.GeographyValidator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Circle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryCollection" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Line" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiLine" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPoint" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPolygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Point" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Rectangle" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.WellKnownText$1" classification="class" visibility="default">
+          <dependencies count="13">
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.Circle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryCollection" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Line" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiLine" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPoint" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Point" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPolygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Rectangle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.WellKnownText" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.GeographyValidator" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.geometry.utils.GeometryValidator" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.GeographyValidator$1" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.WellKnownText" classification="class" visibility="public">
+          <dependencies count="15">
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.GeometryValidator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryCollection" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Point" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPoint" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Line" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiLine" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPolygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Rectangle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Circle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.WellKnownText$1" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.WellKnownText$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor$CartesianPointVisitor" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor$PointVisitor" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.Rectangle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor$PointVisitor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.elasticsearch.geometry.Rectangle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.SpatialEnvelopeVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.WellKnownBinary$1" classification="class" visibility="default">
+          <dependencies count="14">
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.Point" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Line" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPoint" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiLine" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPolygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryCollection" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Circle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Rectangle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.ShapeType" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.WellKnownBinary" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.StandardValidator$1" classification="class" visibility="default">
+          <dependencies count="13">
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.utils.StandardValidator" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Circle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryCollection" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Line" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.LinearRing" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiLine" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPoint" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.MultiPolygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Point" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Polygon" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Rectangle" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.BitUtil" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.StandardValidator" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.elasticsearch.geometry.utils.GeometryValidator" classification="implements" />
+            <depends-on name="org.elasticsearch.geometry.Geometry" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.StandardValidator$1" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.GeometryVisitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.elasticsearch.geometry.utils.Geohash" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.elasticsearch.geometry.Point" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.Rectangle" classification="uses" />
+            <depends-on name="org.elasticsearch.geometry.utils.BitUtil" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

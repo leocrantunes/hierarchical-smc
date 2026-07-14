@@ -1,0 +1,1422 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jMetal-problem-6.2.2">
+    <container name="/home/leo/repos/jMetal-6.2.2/jmetal-problem/target/jmetal-problem-6.2.2.jar" classification="jar">
+      <namespace name="org.uma.jmetal.problem">
+        <type name="org.uma.jmetal.problem.ProblemFactory" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.singleobjective">
+        <type name="org.uma.jmetal.problem.singleobjective.Griewank" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.OneMax" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.Sphere" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.CEC2005Problem" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.Rosenbrock" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.TSP" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.StringMatching" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.Rastrigin" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.NIntegerMin" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode">
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F05SchwefelGlobalOptBound" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F22RotatedHybridComposition3HighCondNumMatrix" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F22RotatedHybridComposition3HighCondNumMatrix$MyHCJob" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F23NoncontinuousRotatedHybridComposition3" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F23NoncontinuousRotatedHybridComposition3$MyHCJob" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F15HybridComposition1$MyHCJob" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F15HybridComposition1" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F13ShiftedExpandedGriewankRosenbrock" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F10ShiftedRotatedRastrigin" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F12Schwefel" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F09ShiftedRastrigin" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F21RotatedHybridComposition3$MyHCJob" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F21RotatedHybridComposition3" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F14ShiftedRotatedExpandedScaffer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F21RotatedHybridComposition3" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F21RotatedHybridComposition3$MyHCJob" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F11ShiftedRotatedWeierstrass" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F16RotatedHybridComposition1$MyHCJob" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F16RotatedHybridComposition1" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F15HybridComposition1" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F15HybridComposition1$MyHCJob" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F23NoncontinuousRotatedHybridComposition3$MyHCJob" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F23NoncontinuousRotatedHybridComposition3" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F18RotatedHybridComposition2" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F18RotatedHybridComposition2$MyHCJob" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F22RotatedHybridComposition3HighCondNumMatrix$MyHCJob" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F22RotatedHybridComposition3HighCondNumMatrix" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F07ShiftedRotatedGriewank" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F01ShiftedSphere" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F24RotatedHybridComposition4" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F24RotatedHybridComposition4$MyHCJob" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F04ShiftedSchwefelNoise" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F19RotatedHybridComposition2NarrowBasinGlobalOpt$MyHCJob" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F19RotatedHybridComposition2NarrowBasinGlobalOpt" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F02ShiftedSchwefel" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F16RotatedHybridComposition1" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F16RotatedHybridComposition1$MyHCJob" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F25RotatedHybridComposition4Bound" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F25RotatedHybridComposition4Bound$MyHCJob" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F03ShiftedRotatedHighCondElliptic" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F06ShiftedRosenbrock" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F17RotatedHybridComposition1Noise" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F17RotatedHybridComposition1Noise$MyHCJob" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F19RotatedHybridComposition2NarrowBasinGlobalOpt" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F19RotatedHybridComposition2NarrowBasinGlobalOpt$MyHCJob" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F20RotatedHybridComposition2GlobalOptBound$MyHCJob" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F20RotatedHybridComposition2GlobalOptBound" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F18RotatedHybridComposition2$MyHCJob" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F18RotatedHybridComposition2" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F20RotatedHybridComposition2GlobalOptBound" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F20RotatedHybridComposition2GlobalOptBound$MyHCJob" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F08ShiftedRotatedAckleyGlobalOptBound" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.TestFunc" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F25RotatedHybridComposition4Bound$MyHCJob" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F25RotatedHybridComposition4Bound" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F24RotatedHybridComposition4$MyHCJob" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F24RotatedHybridComposition4" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F17RotatedHybridComposition1Noise$MyHCJob" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.HCJob" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.F17RotatedHybridComposition1Noise" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.singleobjective.cec2005competitioncode.Benchmark" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective">
+        <type name="org.uma.jmetal.problem.multiobjective.Binh2" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.Fonseca" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.MixedIntegerDoubleProblem" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.Viennet2" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.Kursawe" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.ConstrEx" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.OneZeroMax" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.Osyczka2" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.MultiobjectiveTSP" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.FourBarTruss" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.Tanaka" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.Viennet3" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.Golinski" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.Srinivas" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.Schaffer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.Water" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.Viennet4" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.NMMin" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.fda">
+        <type name="org.uma.jmetal.problem.multiobjective.fda.FDA1" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.fda.FDA" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.fda.FDA3" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.fda.FDA" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.fda.FDA5" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.fda.FDA" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.fda.FDA4" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.fda.FDA" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.fda.FDA2" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.fda.FDA" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.fda.FDA" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.zcat.util">
+        <type name="org.uma.jmetal.problem.multiobjective.zcat.util.ZCatZFunctions" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.zcat.util.ZCatGFunctions" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.zcat.util.ZcatConfigData" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.zcat.util.ZcatFFunctions" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.zcat.util.ZCatUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.zcat.util.ZCatUtils" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.zcat">
+        <type name="org.uma.jmetal.problem.multiobjective.zcat.ZCAT" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.zcat.util.ZCatZFunctions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.zcat.ZCAT1" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.zcat.ZCAT" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.zcat.ffunction.F1" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.zcat.gfunction.G0" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.zcat.gfunction">
+        <type name="org.uma.jmetal.problem.multiobjective.zcat.gfunction.G0" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.zcat.ffunction">
+        <type name="org.uma.jmetal.problem.multiobjective.zcat.ffunction.F1" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.zcat.util.ZCatUtils" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.cec2015OptBigDataCompetition">
+        <type name="org.uma.jmetal.problem.multiobjective.cec2015OptBigDataCompetition.BigOpt2015" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.zdt">
+        <type name="org.uma.jmetal.problem.multiobjective.zdt.ZDT4" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.zdt.ZDT1" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.zdt.ZDT3" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.zdt.ZDT1" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.zdt.ZDT2" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.zdt.ZDT1" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.zdt.ZDT5" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.zdt.ZDT1" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.zdt.ZDT110F2" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.zdt.ZDT6" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.zdt.ZDT1" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.cf">
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF9" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF16" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF4" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF8" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF14" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF10" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF2" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF7" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF15" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF13" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF1" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF3" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF6" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF12" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF11" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cf.CF5" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.cre">
+        <type name="org.uma.jmetal.problem.multiobjective.cre.CRE22" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cre.CRE23" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cre.CRE51" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cre.CRE25" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cre.CRE24" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cre.CRE31" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cre.CRE21" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cre.CRE32" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.maf">
+        <type name="org.uma.jmetal.problem.multiobjective.maf.MaF12" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.maf.MaF14" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.maf.MaF05" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.maf.MaF01" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.maf.MaF06" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.maf.MaF10" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.maf.MaF09" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.maf.MaF13" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.maf.MaF11" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.maf.MaF15" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.maf.MaF08" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.maf.MaF02" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.maf.MaF04" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.maf.MaF03" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.maf.MaF07" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.dtlz">
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ1Minus" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ1" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ4_2D" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ4" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ6" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ5" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ2Minus" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ2" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ1" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ5_2D" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ5" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ7_2D" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ7" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ3Minus" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ3" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ2" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ7" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ2_2D" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ2" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ6_2D" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ6" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.GenerateReferenceFrontForProblemDTLZ2Minus" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ2Minus" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ3" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ1_2D" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ1" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ4" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ3_2D" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ3" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ4Minus" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ4" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.cec2021">
+        <type name="org.uma.jmetal.problem.multiobjective.cec2021.RCM02VibratingPlatformProblem" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cec2021.RCM01PressureVesselProblem" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cec2021.RCM03TwoBarTrussDesignProblem" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.lircmop">
+        <type name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP13" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP1" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP10" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP8" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP12" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP9" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP6" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP5" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP3" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP1" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP9" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP8" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP5" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP11" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP10" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP2" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP1" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP14" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP13" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP7" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP5" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP8" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP6" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP4" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lircmop.LIRCMOP2" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.lsmop">
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP1" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.AbstractLSMOP1_4" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Sphere" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP2" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.AbstractLSMOP1_4" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Griewank" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Schwefel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.AbstractLSMOP" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP1_2_100" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP1" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP2_2_20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP2" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP9_2_20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP9" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.AbstractLSMOP1_4" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.AbstractLSMOP" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP8" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.AbstractLSMOP5_8" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Griewank" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Sphere" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP2_2_100" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP2" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP7" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.AbstractLSMOP5_8" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Ackley" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Rosenbrock" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP1_2_20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP1" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP5" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.AbstractLSMOP5_8" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Sphere" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP8_2_20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP8" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP2_2_200" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP2" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP4" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.AbstractLSMOP1_4" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Ackley" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Griewank" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP1_2_200" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP1" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP5_2_20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP5" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP4_2_20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP4" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP3" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.AbstractLSMOP1_4" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Rastrigin" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Rosenbrock" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP7_2_20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP7" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP9" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.AbstractLSMOP" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Sphere" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Ackley" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP6_2_20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP6" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP6" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.AbstractLSMOP5_8" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Rosenbrock" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Schwefel" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP3_2_20" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.LSMOP3" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.AbstractLSMOP5_8" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.AbstractLSMOP" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.lsmop.functions">
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Griewank" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Sphere" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Ackley" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Rosenbrock" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Schwefel" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Rastrigin" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lsmop.functions.Function" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.cdtlz">
+        <type name="org.uma.jmetal.problem.multiobjective.cdtlz.C1_DTLZ3" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ3" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cdtlz.C1_DTLZ1" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ1" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cdtlz.ConvexC2_DTLZ2" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ2" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cdtlz.C2_DTLZ2" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ2" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cdtlz.C3_DTLZ1" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ1" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.cdtlz.C3_DTLZ4" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.dtlz.DTLZ4" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.uf">
+        <type name="org.uma.jmetal.problem.multiobjective.uf.UF4" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.uf.UF6" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.uf.UF10" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.uf.UF2" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.uf.UF3" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.uf.UF7" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.uf.UF5" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.uf.UF8" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.uf.UF1" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.uf.UF9" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.ebes">
+        <type name="org.uma.jmetal.problem.multiobjective.ebes.Ebes" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.glt">
+        <type name="org.uma.jmetal.problem.multiobjective.glt.GLT5" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.glt.GLT4" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.glt.GLT2" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.glt.GLT6" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.glt.GLT1" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.glt.GLT3" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.re">
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE25" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.re.Util" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE23" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE32" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE41" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE91" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE21" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE35" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE24" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE61" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE33" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE36" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE31" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE37" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE42" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE34" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.Util" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.re.RE22" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.re.Util" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.mop">
+        <type name="org.uma.jmetal.problem.multiobjective.mop.MOP1" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.mop.MOP2" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.mop.MOP6" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.mop.MOP5" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.mop.MOP3" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.mop.MOP7" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.mop.MOP4" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.lz09">
+        <type name="org.uma.jmetal.problem.multiobjective.lz09.LZ09F2" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lz09.LZ09" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lz09.LZ09F9" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lz09.LZ09" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lz09.LZ09F8" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lz09.LZ09" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lz09.LZ09F6" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lz09.LZ09" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lz09.LZ09" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lz09.LZ09F7" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lz09.LZ09" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lz09.LZ09F3" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lz09.LZ09" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lz09.LZ09F4" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lz09.LZ09" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lz09.LZ09F1" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lz09.LZ09" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.lz09.LZ09F5" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.lz09.LZ09" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.rwa">
+        <type name="org.uma.jmetal.problem.multiobjective.rwa.Ahmad2017" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.rwa.Padhi2016" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.rwa.Ganesan2013" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.rwa.Xu2020" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.rwa.Gao2020" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.rwa.Chen2015" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.rwa.Subasi2016" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.rwa.Liao2008" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.rwa.Goel2007" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.rwa.Vaidyanathan2004" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.problem.multiobjective.wfg">
+        <type name="org.uma.jmetal.problem.multiobjective.wfg.WFG8" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.WFG" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Shapes" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Transformations" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.wfg.Transformations" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.wfg.WFG2" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.WFG" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Shapes" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Transformations" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.wfg.WFG1" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.WFG" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Shapes" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Transformations" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.wfg.WFG4" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.WFG" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Shapes" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Transformations" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.wfg.WFG5" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.WFG" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Shapes" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Transformations" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.wfg.WFG6" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.WFG" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Shapes" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Transformations" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.wfg.WFG7" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.WFG" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Shapes" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Transformations" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.wfg.WFG3" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.WFG" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Shapes" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Transformations" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.wfg.Shapes" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.wfg.WFG" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.problem.multiobjective.wfg.WFG9" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.WFG" classification="extends" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Shapes" classification="uses" />
+            <depends-on name="org.uma.jmetal.problem.multiobjective.wfg.Transformations" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

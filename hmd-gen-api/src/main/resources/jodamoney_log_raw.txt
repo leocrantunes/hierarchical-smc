@@ -1,0 +1,4693 @@
+commit 6906683379d17ceea50a4c596331144c76e4ad73
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Mon Mar 17 22:02:39 2025 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+M	pom.xml
+
+commit 3fa52f2e6b60583abc0a62331a6c5bdf99e3b221
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Mon Mar 17 22:02:38 2025 +0000
+
+    [maven-release-plugin] prepare release v2.0.2
+
+M	pom.xml
+
+commit aef78b0a59163c17db44d9af29e13b58495291db
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Mar 17 21:51:08 2025 +0000
+
+    Prepare for v2.0.2
+
+M	src/changes/changes.xml
+M	src/site/markdown/index.md
+
+commit d7b3ec1d80d6dc70117b82a716376e3515316baf
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Mar 17 21:47:59 2025 +0000
+
+    Fix proguard rule (#157)
+
+M	pom.xml
+M	src/changes/changes.xml
+M	src/main/resources/META-INF/proguard/jodamoney.pro
+
+commit 1490aff3073b2ea8836ac836e0ca3bcccfe1890e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Mar 9 23:54:03 2025 +0000
+
+    Separate yaml for website
+
+M	.github/workflows/build.yml
+M	.github/workflows/release.yml
+A	.github/workflows/website.yml
+M	pom.xml
+
+commit 3e501f319583cd346bcac261ce44c5c4e5f864b1
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Sun Mar 9 23:44:10 2025 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+M	pom.xml
+
+commit f09b26efa65fb541827c648138e6ecd13416c3c6
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Sun Mar 9 23:44:09 2025 +0000
+
+    [maven-release-plugin] prepare release v2.0.1
+
+M	pom.xml
+
+commit 4bb768251f48721fb1020a6ab261f42741e204ee
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Mar 9 18:40:49 2025 +0000
+
+    Use personal token for releasing
+
+D	.github/website.sh
+M	.github/workflows/build.yml
+M	.github/workflows/release.yml
+
+commit 08a3f1375211071839cc6bbdf8776385a2b1dad0
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Mar 9 18:34:32 2025 +0000
+
+    Prepare for v2.0.1
+
+M	README.md
+M	src/changes/changes.xml
+M	src/site/markdown/index.md
+
+commit 4dc40e233a329381cea8d4aaaa7b724b12e6dd40
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Mar 9 18:31:31 2025 +0000
+
+    Release direct from GitHub Actions (#155)
+    
+    * Add `release` tag to trigger a release
+
+M	.github/maven-settings.xml
+M	.github/website.sh
+M	.github/workflows/build.yml
+A	.github/workflows/release.yml
+M	README.md
+M	pom.xml
+
+commit 0c28c59d9dde6645f386319585d3096da021d786
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Mar 9 17:43:27 2025 +0000
+
+    Add release notes for v1.0.6 (#154)
+
+M	src/changes/changes.xml
+M	src/site/markdown/index.md
+
+commit d07b2a3e884157390c9f0ab6ffb9c1d62ef3ea27
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Mar 8 16:35:54 2025 +0000
+
+    Change ANG to XCG for CW and SX (#153)
+    
+    Fixes #150
+    https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/amendments/dl-currency-iso-amendment-176.pdf
+
+M	src/changes/changes.xml
+M	src/main/resources/org/joda/money/CountryData.csv
+M	src/main/resources/org/joda/money/CurrencyData.csv
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit d0497f0980873343192930946a121eaf254f9a7c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Mar 8 10:48:10 2025 +0000
+
+    Add proguard rule (#152)
+    
+    Fixes #147
+
+M	src/changes/changes.xml
+A	src/main/resources/META-INF/proguard/jodamoney.pro
+
+commit bae934d65dc693e4f2a8ec3696f399e2c60ebfca
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Mar 8 10:24:15 2025 +0000
+
+    Fix build, Update versions and changes (#151)
+
+M	.github/workflows/build.yml
+M	.gitignore
+M	pom.xml
+M	src/changes/changes.xml
+
+commit 7fdd8a38aace473bf655004500773da893bcd378
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Oct 12 21:09:08 2024 +0100
+
+    Fix build
+
+M	.github/website.sh
+M	.github/workflows/build.yml
+
+commit 0811cbd54e7ee20951e75420b55d64b43a95703d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Oct 6 22:35:23 2024 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+M	pom.xml
+
+commit 8cd28242222d27900108313ae65228ad62915745
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Oct 6 22:35:19 2024 +0100
+
+    [maven-release-plugin] prepare release v2.0.0
+
+M	pom.xml
+
+commit 1675b319c87d2db1b6da6e7119d92ed78bac9fb9
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Oct 6 22:24:38 2024 +0100
+
+    Prepare for v2.0.0 (#145)
+    
+    * Update Joda-Convert to fully modular v3.0.1
+    * Rework various doc files
+
+M	.github/SECURITY.md
+M	README.md
+M	RELEASE-NOTES.txt
+M	pom.xml
+M	src/changes/changes.xml
+M	src/site/markdown/index.md
+
+commit 831e62b7f823cbbe74d3ae54112c1c43d735582b
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Oct 6 11:06:15 2024 +0100
+
+    Move whitebox testing to a profile (#146)
+    
+    * Use release instead of source/target in pom.xml
+    * Split install and site in CI
+
+M	.github/website.sh
+M	.github/workflows/build.yml
+M	pom.xml
+M	src/site/site.xml
+
+commit 1ea4ef339d76fd05e700fa49a732264ca0edd466
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Oct 1 22:23:24 2024 +0100
+
+    Perform testing using module-path (#143)
+    
+    * Upgrade testing
+    * Test as classpath-only, module-classpath and module-whitebox
+    * Use Maven workarounds to achieve module-whitebox
+    * Tested on Maven 3.8.8 and 3.9.9
+
+M	.github/workflows/build.yml
+M	.gitignore
+M	pom.xml
+A	src/test-whitebox/module-info.java
+A	src/test/java/org/joda/money/TestModulepath.java
+
+commit 9807e372b36a42c0c92624c64cf423c84eb713a9
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Aug 19 23:22:50 2024 +0100
+
+    Remove deprecations (#141)
+
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit ef1d3af4a7195f47892fa549c7451da57722c9e7
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Aug 19 22:52:08 2024 +0100
+
+    Use modern Java language features (#140)
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/BigMoneyProvider.java
+M	src/main/java/org/joda/money/CurrencyMismatchException.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/CurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/IllegalCurrencyException.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/MoneyUtils.java
+M	src/main/java/org/joda/money/Ser.java
+M	src/main/java/org/joda/money/format/AmountPrinterParser.java
+M	src/main/java/org/joda/money/format/LiteralPrinterParser.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatException.java
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/main/java/org/joda/money/format/MoneyParseContext.java
+M	src/main/java/org/joda/money/format/MoneyParser.java
+M	src/main/java/org/joda/money/format/MoneyPrintContext.java
+M	src/main/java/org/joda/money/format/MoneyPrinter.java
+M	src/main/java/org/joda/money/format/MultiPrinterParser.java
+M	src/main/java/org/joda/money/format/SignedPrinterParser.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestCurrencyMismatchException.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnitExtension.java
+M	src/test/java/org/joda/money/TestIllegalCurrencyException.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_BigMoney.java
+M	src/test/java/org/joda/money/TestStringConvert.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterException.java
+M	src/test/java/org/joda/money/format/TestMoneyParseContext.java
+
+commit f0adbd6b181190d2a3976e7c0ddc51ddc4b49cef
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Aug 19 21:36:47 2024 +0100
+
+    Basic setup for Java 21 (#139)
+    
+    * Adjust code so the symbol for currency XXX remains as XXX
+
+M	.github/workflows/build.yml
+M	README.md
+M	pom.xml
+M	src/changes/changes.xml
+M	src/site/markdown/index.md
+
+commit 607356cf6e7100aa1715b71133fcca97bda079b8
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Aug 25 10:26:37 2024 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+M	pom.xml
+
+commit 799ed3282b38ca75738dc02a10b724ed000716f5
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Aug 25 10:26:32 2024 +0100
+
+    [maven-release-plugin] prepare release v1.0.5
+
+M	pom.xml
+
+commit b27ed7de2f69d9f68d86c4f4cf86eea1cff740df
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Aug 25 10:05:05 2024 +0100
+
+    Prepare for v1.0.5
+
+M	README.md
+M	src/changes/changes.xml
+M	src/site/markdown/index.md
+
+commit f901134e83fe087737066188ced5cd6a38334f76
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 24 11:17:51 2024 +0100
+
+    Change currency for ZW to ZWG (#142)
+
+M	src/changes/changes.xml
+M	src/main/resources/org/joda/money/CountryData.csv
+M	src/main/resources/org/joda/money/CurrencyData.csv
+
+commit cdca28ddbc00ab2bdf25dd10ee59f0c9ff5aaf64
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Aug 19 21:23:13 2024 +0100
+
+    Handle currency data on Java 21 (#138)
+    
+    * Adjust code so the symbol for currency XXX remains as XXX
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit 2e9de47b4f614447d1b1f55403f09e51698a7bff
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Aug 19 12:47:49 2024 +0100
+
+    Update GitHub Actions (#137)
+
+M	.github/workflows/build.yml
+
+commit 0ae24d56ea7d3f6ad640f72a971fd5d6ec0ad504
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Aug 18 10:14:50 2024 +0100
+
+    Migrate to AssertJ (#136)
+    
+    * Migrate to AssertJ
+    
+    * Migrate to AssertJ
+
+M	pom.xml
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestCurrencyMismatchException.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnitExtension.java
+M	src/test/java/org/joda/money/TestIllegalCurrencyException.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_BigMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_Money.java
+M	src/test/java/org/joda/money/TestStringConvert.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterException.java
+M	src/test/java/org/joda/money/format/TestMoneyParseContext.java
+
+commit 983b382972efa5209adfa56feac67df23bd309e2
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 17 22:48:37 2024 +0100
+
+    Migrate to JUnit 5 (#135)
+
+M	pom.xml
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestCurrencyMismatchException.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnitExtension.java
+M	src/test/java/org/joda/money/TestIllegalCurrencyException.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_BigMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_Money.java
+M	src/test/java/org/joda/money/TestStringConvert.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterException.java
+M	src/test/java/org/joda/money/format/TestMoneyParseContext.java
+
+commit 3e182226959f49c787af4f5af56e66488964a567
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 17 22:04:13 2024 +0100
+
+    Update dependencies (#134)
+
+M	pom.xml
+
+commit 8e64601bde4cd8925ad32abe10f4f1bb3fadb1f6
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 2 11:54:38 2023 +0000
+
+    Update FUNDING.yml
+
+M	.github/FUNDING.yml
+
+commit 773f2c939808ebf6bc5f939ff850cdc23f539548
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Oct 29 22:35:59 2023 +0000
+
+    Update release instructions
+
+M	README.md
+
+commit 1b6e03a0003e0b8dc0aec760806297e8770f3140
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Oct 29 22:23:24 2023 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+M	pom.xml
+
+commit d47efe0d6ac699f5d976147cef62748d34914444
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Oct 29 22:23:19 2023 +0000
+
+    [maven-release-plugin] prepare release v1.0.4
+
+M	pom.xml
+
+commit 4cb944350cba0e339f586fbac51dc5941475f8e8
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Oct 29 21:57:49 2023 +0000
+
+    Prepare for v1.0.4
+
+M	README.md
+M	src/changes/changes.xml
+M	src/site/markdown/index.md
+
+commit fbc699abd74c31ff524936fb14020a4508f12fa1
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Oct 29 21:57:42 2023 +0000
+
+    Update Joda-Convert to 2.2.3
+
+M	pom.xml
+
+commit d4d254d27ecd12b67472518392162436b827b32c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Oct 29 21:45:02 2023 +0000
+
+    Add or-equal methods (#131)
+    
+    * Add isGreaterThanOrEqual()
+    * Add isLessThanOrEqual()
+    
+    Fixes #98
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/Money.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+
+commit ac9b77e09aebd1817b45a7ae38112fc01081c662
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Oct 29 21:15:57 2023 +0000
+
+    Fix stripTrailingZeros() on early Android versions (#130)
+    
+    Provide a simple workaround
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+
+commit 63549923396dbe93e0913af71e7ef8a967ded871
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Dec 6 08:29:37 2022 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+M	pom.xml
+
+commit 5fab00920168cc57b126646b2c20e65d7ed64f38
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Dec 6 08:29:32 2022 +0000
+
+    [maven-release-plugin] prepare release v1.0.3
+
+M	pom.xml
+
+commit 084a4a3b7fa3792f7dc8d74d0c54d1ea04a54076
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Dec 6 08:26:41 2022 +0000
+
+    Prepare for v1.0.3
+
+M	README.md
+M	src/changes/changes.xml
+M	src/site/markdown/index.md
+
+commit 99013659e067bfc4c41219c4d1e1d2130200f346
+Author: Siyavash Habashi <ghashange@live.com>
+Date:   Tue Dec 6 09:15:17 2022 +0100
+
+    Update croatia (HR) currency to EUR (was HRK). (#127)
+    
+    HR will use the EUR instead of HRK as the country currency from 1 January 2023.
+
+M	src/main/resources/org/joda/money/CountryData.csv
+M	src/main/resources/org/joda/money/CurrencyData.csv
+
+commit da376fbf828dc5d7dcb4a1acb5309775eeb2a4fb
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Nov 23 21:25:33 2022 +0000
+
+    Add CodeQL to replace LGTM (#34) (#125)
+    
+    Switch back to auto-latest tag in build, as I trust GitHub tags/code
+
+M	.github/workflows/build.yml
+M	src/changes/changes.xml
+
+commit 786545a206d71af71c5bed2181bc697c4f3de9b8
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Sep 23 12:38:58 2022 +0100
+
+    Reformat source code (#122)
+
+A	src/eclipse/JodaMoneyFormatter.xml
+M	src/main/checkstyle/checkstyle.xml
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/format/AmountPrinterParser.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_BigMoney.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 536487d5df9143e79ec7c4e508dbc647f645dd29
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Sep 23 10:53:53 2022 +0100
+
+    Update checkstyle to 8.45.1 (#121)
+
+M	pom.xml
+M	src/main/checkstyle/checkstyle.xml
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/format/AmountPrinterParser.java
+
+commit 7237e690bfbd99fefc8b5250ec79c55178568a58
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Sep 22 23:15:11 2022 +0100
+
+    Fix CI build (#120)
+
+M	.github/workflows/build.yml
+
+commit 44cb106f6aee476443927e084fd94f43dfec75b9
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Sep 22 22:49:20 2022 +0100
+
+    Remove parent pom, update pom (#118)
+    
+    Having a parent pom seems to create work, not reduce it
+    Change build to be Java 11+
+
+M	.github/workflows/build.yml
+M	pom.xml
+
+commit c5b21b07132db1aec529bdc51d4fbf08f0af679c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 25 12:14:32 2022 +0100
+
+    Fix permission (#115)
+
+M	.github/workflows/build.yml
+
+commit 7fef23c4480ee1ad4cd95b6e4e94950555b53942
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 24 21:00:03 2022 +0100
+
+    Update build (#114)
+
+M	.github/website.sh
+M	.github/workflows/build.yml
+M	pom.xml
+M	src/changes/changes.xml
+
+commit eba03131892eb1448c558ed2f1fe3e6851c1a2bf
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Aug 14 22:12:07 2022 +0100
+
+    Minor Javadoc fix (#113)
+
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+
+commit 500be52984fbfe55ce42bcf1c699eb834fcec349
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Aug 14 14:32:07 2022 +0100
+
+    Adjust code for SpotBugs (#112)
+    
+    Original code was not really wrong
+
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+
+commit 4f30201bad7cdc792ab4f09ebbdbb3867bafa1d1
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Aug 14 14:19:13 2022 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+M	pom.xml
+
+commit e1f6ec21c6b5f5a76d3b960f0828116c43b81296
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Aug 14 14:19:09 2022 +0100
+
+    [maven-release-plugin] prepare release v1.0.2
+
+M	pom.xml
+
+commit c44be42bb097ea3e886dab18d64ecc0f3c9c1618
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Aug 14 14:18:00 2022 +0100
+
+    Prepare for v1.0.2
+
+M	README.md
+M	src/changes/changes.xml
+M	src/site/markdown/index.md
+
+commit 7bf22d60819ed7d4aa285fa4cf6e96cc1f8489af
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Aug 14 14:14:25 2022 +0100
+
+    Update dependencies and build scripts (#111)
+
+M	.github/workflows/build.yml
+M	README.md
+M	pom.xml
+
+commit 9bceeacbeb701f3099be8ad7c6fed34b2c931b2d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Mar 16 23:43:21 2022 +0000
+
+    Change currency SLL to SLE (#107)
+
+M	src/changes/changes.xml
+M	src/main/resources/org/joda/money/CountryData.csv
+M	src/main/resources/org/joda/money/CurrencyData.csv
+
+commit 7965e69c4b7586322be96790442fe3b749374684
+Author: jodastephen <scolebourne@joda.org>
+Date:   Sat Nov 6 10:20:00 2021 +0000
+
+    Enhance null checks
+
+M	pom.xml
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+
+commit ce2c664b643fc2a5b02f0354d16bdecd93484602
+Merge: 4b82c38 5e5d4d9
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Nov 6 10:03:43 2021 +0000
+
+    Merge pull request #105 from sgbasaraner/patch-1
+    
+    Check for non-null Locale in MoneyPrintContext constructor
+
+commit 5e5d4d97608751a2b3bb0996b84b0905163c1a64
+Author: Sarp Güney Başaraner <sarpbasaraner@gmail.com>
+Date:   Sat Oct 30 12:43:54 2021 +0300
+
+    Check for non-null Locale in MoneyPrintContext constructor
+
+M	src/main/java/org/joda/money/format/MoneyPrintContext.java
+
+commit 4b82c383ddd9de1aa138a07397b7e7bf951de861
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Apr 20 12:28:15 2021 +0100
+
+    Remove codecov
+
+M	.github/workflows/build.yml
+
+commit a090dd9b80b7b3cc610c77df26934976b064c697
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Mon Oct 12 19:55:48 2020 +0100
+
+    Bump junit from 4.12 to 4.13.1 (#104)
+    
+    Bumps [junit](https://github.com/junit-team/junit4) from 4.12 to 4.13.1.
+    - [Release notes](https://github.com/junit-team/junit4/releases)
+    - [Changelog](https://github.com/junit-team/junit4/blob/main/doc/ReleaseNotes4.12.md)
+    - [Commits](https://github.com/junit-team/junit4/compare/r4.12...r4.13.1)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+    
+    Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+M	pom.xml
+
+commit 221027327915ff3f56648976793adb8c800b1cc7
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Mon Mar 9 22:59:53 2020 +0000
+
+    Add CodeCov upload to build
+
+M	.github/workflows/build.yml
+
+commit 2bf608b578335e207977c12329056cb7974f98b3
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Mon Mar 9 22:20:13 2020 +0000
+
+    Update GitHub actions build
+
+M	.github/workflows/build.yml
+
+commit d86ab3ea6a38ec5c2a36d4ce33418c1bdf359405
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Feb 26 12:35:39 2020 +0000
+
+    Fix build and update docs
+
+M	README.md
+M	pom.xml
+
+commit 4ed9d9fd07b2e6cc45184f2d9c7face5e969ff50
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Sun Feb 16 16:38:28 2020 +0000
+
+    Add GitHub actions, remove Travis
+
+M	.github/website.sh
+A	.github/workflows/build.yml
+D	.travis.yml
+
+commit 213a8dfe51713e28caad84fc95cebdc6e5099182
+Author: Ahmed Hegazy <ahmed.hegazy1192@gmail.com>
+Date:   Mon Feb 3 18:10:43 2020 +0100
+
+    Minor javadocs mistake (#103)
+    
+    If the formatter cannot print, an UnsupportedOperationException will be thrown from the parse, not the print methods
+
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+
+commit 892ab01c7f63cfff267ba1fbc5ef097a7c01ce45
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Thu Oct 24 14:11:50 2019 +0100
+
+    Update enterprise website
+
+M	README.md
+
+commit ffa17c5e77405c8212f8ca5fdccf8079d3d46289
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Sat Oct 12 14:40:12 2019 +0100
+
+    Add OpenCollective link
+
+M	src/site/markdown/index.md
+
+commit 53edec2ef9517ea296572ca344358f8f058a8aba
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Sat Oct 12 14:26:00 2019 +0100
+
+    Fix Travis
+
+M	.travis.yml
+
+commit f8155d0ce26584677af31fb51dc5c1034da35131
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Sat Oct 12 14:15:30 2019 +0100
+
+    Add enterprise landing page
+
+A	src/site/markdown/enterprise.md
+M	src/site/markdown/index.md
+M	src/site/resources/css/site.css
+M	src/site/site.xml
+
+commit 5b493fabda2f38b2d97fe4b235cb583b64985638
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri May 24 13:16:47 2019 +0100
+
+    Add security policy
+
+A	.github/SECURITY.md
+
+commit 8caf35eec864af30b0c93e357a6e4aeaa0748678
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri May 24 09:57:03 2019 +0100
+
+    Add sponsorship information
+
+A	.github/FUNDING.yml
+
+commit e1f2de75aa36610a695358696c8a88a18ca66cde
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jan 20 22:09:24 2019 +0000
+
+    Better error messages (#97)
+    
+    When currency not found for locale/country
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit d83372155ad7a6f5daf693959bff941db7d68e4c
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Sun Jan 20 21:47:48 2019 +0000
+
+    Enable codedov.io
+
+M	.travis.yml
+
+commit ba072d5c1fffab24f14de866a4136d7c7b78d02c
+Merge: 894ea27 805e162
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Sun Jan 20 21:37:52 2019 +0000
+
+    Merge branch 'fix-typos'
+
+commit 805e1627f13bdb077009b8dfcbc332ae1e5e9fbb
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Sun Jan 20 21:37:41 2019 +0000
+
+    Use if instead of iff
+    
+    Update contributors
+
+M	pom.xml
+M	src/main/java/org/joda/money/BigMoney.java
+
+commit 894ea277f38198dc7dd6c42b4b8e548c4df0d99d
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Sun Jan 20 20:41:45 2019 +0000
+
+    Fix website links to Javadoc
+
+M	src/site/markdown/index.md
+
+commit 89dbf781d2539e9e66c56178d6204a153d0f50ce
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Sun Jan 20 12:09:50 2019 +0000
+
+    Enhance release notes link
+
+M	pom.xml
+
+commit 5525a484a797ec26878e6ac2392bc9742b0a3c4e
+Author: Michael Weiss <code@mweiss.ch>
+Date:   Wed Jan 2 15:56:14 2019 +0100
+
+    Fixed Copy Paste Error in Javadoc
+
+M	src/main/java/org/joda/money/BigMoney.java
+
+commit be18827f38fd449cf2a5e0e8be8534c152922be2
+Author: Michael Weiss <code@mweiss.ch>
+Date:   Wed Jan 2 15:52:06 2019 +0100
+
+    Fixed some minor typos in javadoc
+
+M	src/main/java/org/joda/money/BigMoney.java
+
+commit 797709a935736ea8c9e0dc95b05537c7f109c8ca
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Sat Dec 15 17:10:57 2018 +0000
+
+    Tidelift commercial support and security policy
+
+M	README.md
+M	src/changes/changes.xml
+M	src/site/markdown/index.md
+
+commit 697a18396810511324615753a34f553f447a929c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Oct 25 14:54:59 2018 +0100
+
+    Update for Java 11
+
+M	.travis.yml
+M	pom.xml
+
+commit 41f4258498d094a3a0052a3dd49c7cc104064b7b
+Author: Stephen Colebourne (CI) <scolebourne@joda.org>
+Date:   Sat Sep 29 09:03:27 2018 +0100
+
+    Switch to HTTPS
+
+M	.travis.yml
+M	NOTICE.txt
+M	Notes.txt
+M	README.md
+M	RELEASE-NOTES.txt
+M	pom.xml
+M	src/site/markdown/index.md
+M	src/site/site.xml
+M	src/site/xdoc/userguide.xml
+
+commit 1042d1cd13a3220147bd22be2468d634c27cfa99
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Aug 20 09:58:40 2018 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+M	pom.xml
+
+commit 9d4eaf09828c8845ab9af24a34ddfa1de4ab40b9
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Aug 20 09:58:31 2018 +0100
+
+    [maven-release-plugin] prepare release v1.0.1
+
+M	pom.xml
+
+commit 8450e5c1f443b84b89c22b06e91ec6cd4c3b3686
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Aug 20 09:56:31 2018 +0100
+
+    Prepare for v1.0.1
+
+M	README.md
+M	src/changes/changes.xml
+M	src/site/markdown/index.md
+
+commit 1db51086506b9f089450dd2b0320a088a1587677
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 18 13:08:16 2018 +0100
+
+    Update currency VEF to VES
+
+M	src/changes/changes.xml
+M	src/main/resources/org/joda/money/CountryData.csv
+M	src/main/resources/org/joda/money/CurrencyData.csv
+
+commit d437d762b7c60ea36cd1405af729a7480390933d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 18 20:58:25 2018 +0100
+
+    Update parent pom
+
+M	pom.xml
+
+commit 2700c85e184fdc1454350ab560a8aca95428e981
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 18 17:40:46 2018 +0100
+
+    Update parent pom
+
+M	.github/maven-settings.xml
+M	.travis.yml
+M	pom.xml
+
+commit 551eae1652571fb35d6fc62e88245c433d7c21e1
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 18 17:09:51 2018 +0100
+
+    Fix Javadoc
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+
+commit 5d14a88ef21891f3123fd3c6dbd1538d78db7935
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 18 14:07:05 2018 +0100
+
+    Handle no grouping in JDK data
+    
+    Ensure that localized format handles no grouping in JDK data
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+
+commit 01db1296eec2ab8a60bc7b7c70742d4f81aff10c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 18 13:39:59 2018 +0100
+
+    Clearer tests
+
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+
+commit b6dbe97c3cc20a41e6ea4c19a0237ad5f8226181
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 18 13:37:06 2018 +0100
+
+    Fix Javadoc
+
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+
+commit 56aa80069808f1f1f93fa8ea22c65b9a76529c94
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Aug 17 16:52:50 2018 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+M	pom.xml
+
+commit d76bc2a00af545fe213c7cb898cdce2c331fe92a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Aug 17 16:52:40 2018 +0100
+
+    [maven-release-plugin] prepare release v1.0
+
+M	pom.xml
+
+commit 5759cc99c737c767da0babbeedce9565e30f9ae6
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Aug 17 15:10:54 2018 +0100
+
+    Prepare for v1.0
+    
+    Update release process
+
+M	README.md
+M	RELEASE-NOTES.txt
+M	src/changes/changes.xml
+
+commit 4c01fea706af765ed417897e7de82103c8db394c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Aug 17 14:47:27 2018 +0100
+
+    Disable production of the classic jar
+    
+    Use v0.90 if you have a problem
+
+M	pom.xml
+
+commit c4e93bb3c8dfc6882629a7a647b0a37a85085b52
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 16 12:28:12 2018 +0100
+
+    Remove deprecated methods
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/Money.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestMoney.java
+
+commit f46e933a900c1b8758acc5a33052ec01f6ee53f4
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 16 17:31:01 2018 +0100
+
+    Add module info
+    
+    Fixes #81
+
+M	pom.xml
+M	src/changes/changes.xml
+A	src/main/java/module-info.java
+M	src/site/markdown/index.md
+
+commit 12f1d98310eaf6e880eaf43eb3d4149424335945
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 16 12:15:07 2018 +0100
+
+    Move to Java 8
+
+M	README.md
+M	pom.xml
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/site/markdown/index.md
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+
+commit f0b850d8ad2fcce6a9d7323a8f5e5f388018cf45
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 16 12:14:54 2018 +0100
+
+    Update website build commit message
+
+M	.github/website.sh
+
+commit 01fa4c6cec87cbd3138de6b1c193c60b8b40cce1
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 15 20:40:31 2018 +0100
+
+    Fix release date of v0.90
+
+M	src/changes/changes.xml
+
+commit 6b70485851da8c722ad2b18b416adf384e2ee347
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 15 20:32:37 2018 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+M	pom.xml
+
+commit 763aa3d686556bd1fbcd8f6d1eebe6a3ec85bc29
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 15 20:32:28 2018 +0100
+
+    [maven-release-plugin] prepare release v0.90
+
+M	pom.xml
+
+commit ece4d47786d17415bcc278db78a59f4062d62f2b
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 15 19:15:34 2018 +0100
+
+    Release site directly via git
+    
+    mvn site-deploy not working and is very slow
+
+A	.github/website.sh
+M	.travis.yml
+M	pom.xml
+
+commit f67b70ccba0a432e3962e87ccc64d48a21ba7d2f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 15 15:53:00 2018 +0100
+
+    Prepare for v0.90
+
+M	README.md
+M	pom.xml
+M	src/changes/changes.xml
+M	src/site/markdown/index.md
+
+commit 2f30995ed2b10a24a29799a8afff4e8ce28cbbde
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 15 15:33:36 2018 +0100
+
+    Update parent pom
+    
+    Fix build as it now needs sonatype password
+    Build site on Java 10
+
+M	.github/maven-settings.xml
+M	.travis.yml
+M	pom.xml
+M	src/site/site.xml
+
+commit 749fbc306c2df56913753da2afcba2b2b819c7f4
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Aug 14 22:09:59 2018 +0100
+
+    Fix currency data
+    
+    Add JUnit test annotations
+
+M	src/main/resources/org/joda/money/CurrencyData.csv
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit 1d601dd3523daeb3865a58a807a0e2c6c88bd9cf
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Aug 14 20:58:16 2018 +0100
+
+    Revert module-info
+
+M	src/changes/changes.xml
+D	src/main/java/module-info.java
+
+commit 364df735bab7e42a8b5da388666ac70e60e6331d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Aug 14 20:57:06 2018 +0100
+
+    Revert "Move to Java 8"
+    
+    This reverts commit 6fbd1ed14c5a17b898b82089290cdb1bf8fc12c2.
+
+M	README.md
+M	pom.xml
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/site/markdown/index.md
+
+commit d68b39e57d396e5386f2ceb2e761b5e232ae4c67
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Jul 31 20:46:00 2018 +0100
+
+    Deprecate some less-than-ideal methods
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/Ser.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 6fbd1ed14c5a17b898b82089290cdb1bf8fc12c2
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Jul 31 20:34:51 2018 +0100
+
+    Move to Java 8
+
+M	README.md
+M	pom.xml
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/site/markdown/index.md
+
+commit 01ff9597af8f3c696e3c9295c2067cc9b16340dc
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jul 30 22:23:03 2018 +0100
+
+    Further adjustments to data files
+    
+    Rename MoneyData.csv to CurrencyData.csv
+    Load multiple extension files
+    Document changes
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/CurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+R100	src/main/resources/org/joda/money/MoneyData.csv	src/main/resources/org/joda/money/CurrencyData.csv
+M	src/site/xdoc/userguide.xml
+A	src/test/resources/META-INF/org/joda/money/CountryDataExtension.csv
+A	src/test/resources/META-INF/org/joda/money/CurrencyDataExtension.csv
+D	src/test/resources/org/joda/money/MoneyDataExtension.csv
+
+commit 39f661950d051c7d29552f8fce5237df9b593b10
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jul 29 14:22:58 2018 +0100
+
+    Update to use Joda parent pom.xml
+    
+    Additional Travis builds
+
+M	.travis.yml
+M	README.md
+M	pom.xml
+M	src/main/checkstyle/checkstyle.xml
+M	src/site/site.xml
+
+commit f54a9379f50eb9a62cc4909fcdc41e9ed90d7610
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Jul 12 00:54:08 2018 +0100
+
+    Add country data csv
+    
+    List of currency by ISO-3166 country
+    Easier to manage data this way
+    Add historic EUR currencies
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/CurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+A	src/main/resources/org/joda/money/CountryData.csv
+M	src/main/resources/org/joda/money/MoneyData.csv
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnitExtension.java
+M	src/test/resources/org/joda/money/MoneyDataExtension.csv
+
+commit bbe6c90221f4c41930f7d870daa3b26217afceb1
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Jul 12 00:53:07 2018 +0100
+
+    Update after PR
+
+M	pom.xml
+M	src/changes/changes.xml
+M	src/main/resources/org/joda/money/MoneyData.csv
+
+commit fb4313fec3263736291cde8e793ec6eddaf3350e
+Merge: 02df35d 08ceb97
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jul 11 22:43:08 2018 +0100
+
+    Merge pull request #89 from lukedirtwalker/patch-1
+    
+    Add MRU and STN
+
+commit 08ceb97731fbe2fb048595a22a415e8c85261e32
+Author: Lukas Vogel <lukedirtwalker@gmail.com>
+Date:   Thu Jun 14 08:25:26 2018 +0200
+
+    Add MRU and STN
+    
+    Two new currencies since January 2018.
+    
+    New Mauritanian ouguiya (MRO -> MRU)
+    New São Tomé and Príncipe dobra (STD -> STN)
+    
+    I explicitly did not delete the old currencies, I assume they might still be around.
+
+M	src/main/resources/org/joda/money/MoneyData.csv
+
+commit 02df35d254d812fdc13ed8e37c8dbc95d59aa888
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Dec 13 17:26:12 2017 +0000
+
+    Fix typo
+
+M	pom.xml
+
+commit db078abd007518d554c67b6d95dc8de26d989265
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Dec 13 14:32:06 2017 +0000
+
+    Fix Javadoc
+
+M	src/main/java/module-info.java
+
+commit 95d57c8d1d89c15d5cd476828590fc87c798c645
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Oct 30 15:33:22 2017 +0000
+
+    Add module-info.java for Java 9
+    
+    Fix JUnit scope
+    Fixes #81
+
+M	pom.xml
+M	src/changes/changes.xml
+A	src/main/java/module-info.java
+
+commit 8d7539b56e97361c1759cdc89fc1ba255b895159
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Nov 14 22:45:00 2017 +0000
+
+    Fix deprecation
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+
+commit df97ee23de2ce08726813eb963281b853674931d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Nov 14 20:58:36 2017 +0000
+
+    Update and redesign build to support Java 9
+    
+    Standard build includes SpotBugs, JaCoCo, PMD
+    Needs Maven 3.5.0
+    Release needs Java 9
+
+M	.travis.yml
+M	README.md
+M	pom.xml
+M	src/changes/changes.xml
+
+commit 9c8988bed051a6cd056ab0b78203374c319398a8
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Nov 1 19:27:54 2017 +0000
+
+    Document pom.xml
+    
+    Use doclint property for Javadoc
+
+M	pom.xml
+
+commit c4a882b7a15a697f04464fa9ee05b14382d2cff9
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Nov 1 19:22:41 2017 +0000
+
+    Remove TestNG remnants from pom.xml
+
+M	pom.xml
+
+commit 04a26c6bd49e58d510834cd7d960be8b8680ac22
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Nov 1 19:21:19 2017 +0000
+
+    Test site build in Travis
+    
+    Avoid unpleasant surprises when releasing
+
+M	.travis.yml
+
+commit b660845d462ce78350f8ab1b7fdfe7ff3cd81da4
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Nov 1 18:57:54 2017 +0000
+
+    Bump next release version to v1.0
+
+M	README.md
+M	pom.xml
+M	src/changes/changes.xml
+M	src/site/markdown/index.md
+M	src/site/resources/download.html
+
+commit 23543dae9141151a7056f5db15656017b4bdf3a7
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Oct 30 14:41:08 2017 +0000
+
+    Remove checkstyle rule
+    
+    Rule wasn't proving useful
+
+M	src/main/checkstyle/checkstyle.xml
+
+commit 2b0dc006a9ecff6398f85ae9a9340279b5a4eb09
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Oct 30 11:55:46 2017 +0000
+
+    Better coding style for if statement
+
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+
+commit 069be11d6f2f7de91a4730ccf0741ff83f6c9060
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Oct 27 19:00:14 2017 +0100
+
+    Prepare for Java 9
+    
+    Replace Cobertura with JaCoCo
+    Update plugin versions
+    Test on Java 9 in Travis
+
+M	.travis.yml
+M	pom.xml
+M	src/site/site.xml
+
+commit 0545563c11934d1b5ca297941299d0483db7bd5f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Oct 30 10:49:50 2017 +0000
+
+    Fix Javadoc
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/Money.java
+
+commit b7faa0593a2cae36e3a4d0267140d5b65caa3877
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Oct 27 16:28:21 2017 +0100
+
+    Move to JUnit 4
+    
+    TestNG requires Java 7 now
+
+M	pom.xml
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestCurrencyMismatchException.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnitExtension.java
+M	src/test/java/org/joda/money/TestIllegalCurrencyException.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_BigMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_Money.java
+M	src/test/java/org/joda/money/TestStringConvert.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterException.java
+M	src/test/java/org/joda/money/format/TestMoneyParseContext.java
+
+commit 91eec97b391a60b77f9cd12999416d5261be9b46
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Oct 27 15:48:11 2017 +0100
+
+    Update following PR
+    
+    Enhance Ethereum test
+
+M	pom.xml
+M	src/changes/changes.xml
+M	src/test/java/org/joda/money/TestCurrencyUnitExtension.java
+
+commit 68eaccdae186ca6a0a0997ce8681d12697ce0b90
+Merge: 03fdd3e 7c45f21
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Oct 27 15:57:08 2017 +0100
+
+    Merge pull request #78 from coderjoe/larger.decimal.allowance
+    
+    Add support for up to 30 decimal places
+
+commit 7c45f21bec19903a77f3c8581c5d60d3ad972800
+Author: Joe Bauser <coderjoe@coderjoe.net>
+Date:   Tue Oct 3 19:58:14 2017 -0400
+
+    Add support for up to 30 decimal places
+    
+    Fixes #77
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnitExtension.java
+M	src/test/resources/org/joda/money/MoneyDataExtension.csv
+
+commit 03fdd3e5886bc362123a343b432b1b9c63ec1298
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Oct 4 12:01:45 2017 +0100
+
+    Update Travis for releases
+
+A	.github/maven-settings.xml
+M	.travis.yml
+M	NOTICE.txt
+M	RELEASE-NOTES.txt
+M	pom.xml
+
+commit 88508ddc4b73fc608227f9e2d239e49ab4fcdeca
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Oct 4 12:01:37 2017 +0100
+
+    Add Automatic-Module-Name for Java SE 9
+
+M	pom.xml
+M	src/changes/changes.xml
+
+commit a3105ab29112d68e5af76c905c1194590299765b
+Merge: 210e368 389e77a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Nov 29 15:42:36 2016 +0000
+
+    Merge pull request #73 from an-tex/master
+    
+    Removed duplicated Malta (MT) entry from CSV
+
+commit 389e77a96493695dcee81a59ce0e2e671cde0ada
+Author: Andreas Gabor <andreas@teichrib.de>
+Date:   Tue Nov 29 16:32:59 2016 +0100
+
+    removed duplicated Malta (MT) entry. EUR is correct
+
+M	src/main/resources/org/joda/money/MoneyData.csv
+
+commit 210e36858428910a41ba146ca38cef1ff5a5a330
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 10 20:54:39 2016 +0000
+
+    Release v0.12
+
+M	README.md
+M	pom.xml
+M	src/changes/changes.xml
+M	src/site/markdown/index.md
+
+commit 11decf5ffb3802d9c9d6232960e86fbc79da9eda
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Apr 7 04:48:12 2016 +0100
+
+    Update currency data to latest ISO-4217
+    
+    Fixes #64
+
+M	src/changes/changes.xml
+M	src/main/resources/org/joda/money/MoneyData.csv
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit f0fc41e89f45308b0595b5cb8b0b494836d80aab
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 10 20:39:09 2016 +0000
+
+    Update release notes
+
+M	src/changes/changes.xml
+
+commit 0b6273781739d7d4a666318dd04927949f129c5c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 10 20:37:43 2016 +0000
+
+    Add currency BYN
+    
+    Fixes #68
+
+M	src/main/resources/org/joda/money/MoneyData.csv
+
+commit 8f9d7716aa9ac28f1cac7e6ecec468683b5ffdab
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 10 20:32:56 2016 +0000
+
+    Add currency SSP
+    
+    Fixes #70
+
+M	src/main/resources/org/joda/money/MoneyData.csv
+
+commit ed18db29e43795a600efa0c98804c66fbaab3278
+Merge: d7f3511 1988932
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 10 20:29:12 2016 +0000
+
+    Merge pull request #72 from an-tex/master
+    
+    LTL and LVL have been replaced by EUR
+
+commit 1988932d217d6f08f47e0b5f2d65e58edc00c825
+Author: Andreas Gabor <andreas@teichrib.de>
+Date:   Wed Nov 9 11:09:32 2016 +0100
+
+    LTL and LVL have been replaced by EUR
+
+M	src/main/resources/org/joda/money/MoneyData.csv
+
+commit d7f3511856247f64c4d08862bbffb80b425de220
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Apr 7 04:46:21 2016 +0100
+
+    Fix code in README
+
+M	README.md
+
+commit 53cb3dd00de7cb48e7f4d6a1178271ac4b02a080
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Mar 28 11:43:07 2016 +0100
+
+    Fix home page docs
+    
+    Fixes #65
+
+M	src/site/markdown/index.md
+
+commit a84c7f9ef01f1e1b78ac2e855e76f0ca74db1db4
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Feb 21 20:44:01 2016 +0000
+
+    Release v0.11
+
+M	README.md
+M	pom.xml
+M	src/changes/changes.xml
+M	src/site/markdown/index.md
+
+commit e48074d0da9414e338416f6a2995fbcb716f21c7
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Feb 21 18:10:42 2016 +0000
+
+    Currency conversion to the same currency
+    
+    Allow if the conversion factor is one
+    Fixes #63
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+
+commit 250ef88e5f1ba84b0f724c29eb3a7bf861ad9337
+Merge: 2a922f1 ec130ed
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jan 31 09:34:53 2016 +0000
+
+    Merge pull request #61 from wahanda/embeddable_money
+    
+    Add private no-args constructor to Money/BigMoney for use as JPA embeddable (#23)
+
+commit ec130ed587e422c0a6af4c3424344b7d9db1a4e9
+Author: Dominic Bevacqua <dominic@wahanda.com>
+Date:   Wed Jan 13 11:46:12 2016 +0000
+
+    Add private no-args constructor to Money/BigMoney for use as JPA embeddable (#23)
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/Money.java
+
+commit 2a922f165839b542265b61e3fc779108ec911848
+Merge: e8c8394 d5c1a13
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Dec 7 23:13:34 2015 +0000
+
+    Merge pull request #60 from aianus/aianus/fix_idr_exponent
+    
+    Fix IDR exponent to match ISO4217
+
+commit d5c1a13992806a7c43ba6cace484f94bd602c314
+Author: Alex Ianus <hire@alexianus.com>
+Date:   Fri Nov 20 13:54:47 2015 +0700
+
+    Fix IDR exponent to match ISO4217
+
+M	src/main/resources/org/joda/money/MoneyData.csv
+
+commit e8c83944f5d6407007d41de2fa89d79ab68f18af
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 29 17:36:27 2015 +0100
+
+    Add extended grouping size
+    
+    This allows Indian number grouping to be supported
+    Fixes #58
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/format/AmountPrinterParser.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 4288411b416d16c88131c8bee73492b3d5d4986f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 29 14:27:45 2015 +0100
+
+    Remove unimplemented pattern formatting
+
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+
+commit 0abb268cc4c8b9603e86b52439a5f69dde9b24f1
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 29 13:39:46 2015 +0100
+
+    Change advice for using BigMoneyProvider
+
+M	src/main/java/org/joda/money/BigMoneyProvider.java
+M	src/site/xdoc/userguide.xml
+
+commit 42d746e8234fe235694c572999482daae919f05f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 12 12:46:46 2015 +0100
+
+    Add appendSigned()
+    
+    Different formats for positive/zero/negative
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/main/java/org/joda/money/format/MoneyParseContext.java
+A	src/main/java/org/joda/money/format/SignedPrinterParser.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 216f820d0366f5d001f3761322800519d9dbbc89
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Aug 21 17:19:12 2015 +0100
+
+    Add support for absolute values
+    
+    Additional option on MoneyAmountStyle
+    Avoids more methods on the builder or other hacks
+
+M	src/main/java/org/joda/money/format/AmountPrinterParser.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 20899f7f813964b4f5dc5c0ca6f6fb5a2c5c1aaf
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Aug 21 16:13:51 2015 +0100
+
+    Enhance formatter builder tests
+
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 8b0eb5eaaa7a9fbb0785a34b550959b1459c1fe0
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 12 12:10:04 2015 +0100
+
+    Add MultiPrinterParser
+    
+    Extracts logic out of MoneyFormatter
+
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+A	src/main/java/org/joda/money/format/MultiPrinterParser.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+
+commit 2a6a84e18d42738ea9f87a5c820a466cb1fbe484
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 12 11:18:36 2015 +0100
+
+    Remove deprecated methods
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+
+commit d2967d1bcb6bd5eeff57d21fdf72682e45b4645a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 12 10:59:48 2015 +0100
+
+    Update travis config
+
+M	.travis.yml
+
+commit 3a933f4fd740a375d39798fa56f0df5cc4e30355
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 12 10:59:48 2015 +0100
+
+    Update pom.xml
+
+M	pom.xml
+
+commit c5f3c6dcaaf7eab52a33fdfa9534cc109504ca2f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 12 10:53:33 2015 +0100
+
+    Update pom.xml
+
+M	pom.xml
+
+commit cd36079637d8ac80b9d39b9caa26e93623a15dc0
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 12 10:53:24 2015 +0100
+
+    Change ZMW to 2 decimal places
+    
+    Fixes #57
+
+M	src/changes/changes.xml
+M	src/main/resources/org/joda/money/MoneyData.csv
+
+commit 696b185785fcf6d0e35c097bb1d0aac1212665e2
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Apr 17 13:35:08 2015 +0100
+
+    Clarify parsing documentation
+    
+    See #53
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/Money.java
+
+commit 02ae57144335cc7db151cc1499486997dc488041
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Apr 17 13:35:08 2015 +0100
+
+    Constructor parameter names
+    
+    Fixup after PR merge
+
+M	pom.xml
+M	src/changes/changes.xml
+
+commit 399e056f7aa6cb5729248ce8eca5ae2f8ebcaf8c
+Merge: 04ce82a b60f756
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Apr 17 13:27:55 2015 +0100
+
+    Merge pull request #55 from ashish12/issue_54
+    
+    Fixing the constructor parameter to match the field name
+
+commit b60f7566df9baaf9416c2f806977642b4304558c
+Author: Ashish Kumar <akumar@thoughtworks.com>
+Date:   Thu Apr 16 21:01:58 2015 +0530
+
+    Fixing the constructor parameter to match the field name to help
+    with serialization/deserialization based on field name.
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+
+commit 04ce82a0852f1fed5f1ba6364760df3ce9b5e37e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Dec 2 12:18:33 2014 +0000
+
+    Update website
+
+M	pom.xml
+A	src/site/markdown/index.md
+M	src/site/resources/css/site.css
+M	src/site/site.xml
+D	src/site/xdoc/index.xml
+D	src/site/xdoc/licensecover.xml
+D	src/site/xdoc/privacy.xml
+
+commit f18716bef5c94e2a8d7118705526e6b4dd69c976
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Nov 7 18:12:47 2014 +0000
+
+    Bump version
+
+M	pom.xml
+
+commit 10edc4b43edf3395848e0de9902ca126c4d5ce73
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Nov 7 18:01:41 2014 +0000
+
+    Release v0.10.0
+
+M	README.md
+M	pom.xml
+M	src/changes/changes.xml
+M	src/site/xdoc/index.xml
+
+commit d23d90d0eda1f7099a3ac3bf2272b3a61cd112e0
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Nov 7 17:58:33 2014 +0000
+
+    Update pom
+    
+    Update to working site plugin
+    Fix lengthy TestNG time
+    Handle JDK 8
+
+M	pom.xml
+
+commit 611eb9298bb71e193f2e3f2c63fe18afc12cfd84
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Nov 7 17:58:06 2014 +0000
+
+    Change BigMoney to normalize negative scales
+    
+    Fix docs
+    See #52
+
+M	src/site/xdoc/userguide.xml
+
+commit a6a7ec95e931094ed2a6781103dbedfb9fd1f141
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Nov 7 17:14:32 2014 +0000
+
+    Add test case for formatting JPY
+    
+    See #49
+    See #43
+
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 093489b367edf7109f564ea2dc1b13e1726d85e2
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Nov 7 17:03:34 2014 +0000
+
+    Change BigMoney to normalize negative scales
+    
+    Ensure that a negative scale is not visible in BigMoney
+    This should have no impact on most users, but does change semantics
+    The rationale is to ensure that the toString() matches equals()
+    and the internal state as per VALJO rules
+    
+    Previously,
+     BigMoney.ofScale(GBP, 100, 0)
+     BigMoney.ofScale(GBP, 1, -2)
+    were equal but had the same toString()
+    Now, they are both normalized to the first form - no negative scale
+    Fixes #52
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+
+commit 4bb7b32c241b524c9c0b1e712d6ef894b2a660bc
+Merge: 6ec504c e145396
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Nov 2 23:20:31 2014 +0000
+
+    Merge pull request #50 from folkengine/master
+    
+    Added test-output directory created when you run testng tests from within Eclipse.
+
+commit e14539608a03bba1cbd378fe15cf84c491c9955c
+Author: Chris Baker <ignatz@gmail.com>
+Date:   Sun Nov 2 12:51:10 2014 -0500
+
+    Added test-output directory created when you run testng tests from
+    within Eclipse.
+
+M	.gitignore
+
+commit 6ec504cc104ee16f3d87a0f368cc26b3e83bbb09
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Oct 23 22:59:06 2014 +0100
+
+    Change COP to 2 decimal places
+    
+    Fixes #48
+
+M	src/changes/changes.xml
+M	src/main/resources/org/joda/money/MoneyData.csv
+
+commit 7fb7832354eb6719310b9d966e7bf00ea0ca6ee3
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Oct 3 17:00:18 2014 +0100
+
+    Fix Javadoc
+    
+    Fixes #47
+
+M	src/main/java/org/joda/money/BigMoney.java
+
+commit 542abc66e10065a134ae724ff468c84a17fc40ca
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Oct 3 16:59:19 2014 +0100
+
+    Fix Javadoc
+    
+    Fixes #47
+
+M	src/main/java/org/joda/money/Money.java
+
+commit 34ea460a924e5cf056b73ec04a092109130733cc
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Jul 27 21:51:26 2014 +0100
+
+    Add missing override annotations
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/Ser.java
+M	src/main/java/org/joda/money/format/AmountPrinterParser.java
+M	src/main/java/org/joda/money/format/LiteralPrinterParser.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 1c7920a861a5c55c2fa9bc892b24f4873b593746
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Apr 28 22:56:11 2014 +0100
+
+    Fix bugs in formatting with MoneyAmountStyle
+    
+    Handle 3dp currencies
+    Handle 0dp values with before dp grouping
+    Handle other than group size 3
+    Better tests
+    Fixes #43
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/format/AmountPrinterParser.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 462abffc9fe51b09b16a1286ce6a22caa52b3e20
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Apr 22 11:29:08 2014 +0100
+
+    Update from pull request
+
+M	pom.xml
+
+commit 4f93b954cf0d48782205e01c52d969ff79610050
+Merge: 3a18e8e 0ced86e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Apr 22 11:28:06 2014 +0100
+
+    Merge pull request #42 from ianferguson/master
+    
+    Add missing checkNotNull for amount parameter on Money.of method
+
+commit 0ced86e501935f322c8c76b343d5a910c5cbe036
+Author: ian <ian@tremblingfire.com>
+Date:   Thu Apr 17 19:26:00 2014 -0400
+
+    Add missing checkNotNull for amount parameter
+
+M	src/main/java/org/joda/money/Money.java
+
+commit 3a18e8ec79d68fb0d2aa4117c34cd4e9b2a2aeca
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Apr 17 11:46:40 2014 +0100
+
+    Change ZMK currency to ZMW
+    
+    Fixes #41
+
+M	src/changes/changes.xml
+M	src/main/resources/org/joda/money/MoneyData.csv
+
+commit 47d872a13d698b971d6afcaa03c16dcfd0db59c6
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Apr 8 11:25:50 2014 +0100
+
+    Change CNY to 2 decimal places
+    
+    Fixes #40
+
+M	src/changes/changes.xml
+
+commit e571025294aacd5d9c1183df75729e17fb7c453d
+Merge: 103a43c 569f413
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Apr 8 11:24:31 2014 +0100
+
+    Merge pull request #40 from digitalsonic/master
+    
+    modify the DecPlaces of CNY to 2
+
+commit 569f413ae4c7e4757abd1c77105874e99656e02c
+Author: DigitalSonic <digitalsonic.dxf@gmail.com>
+Date:   Tue Apr 8 17:50:47 2014 +0800
+
+    modify the DecPlaces of CNY to 2
+
+M	src/main/resources/org/joda/money/MoneyData.csv
+
+commit 103a43c264e20fe512cae5c89ae5a647afb44318
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Apr 2 11:04:30 2014 +0100
+
+    Close resources after loading
+    
+    Fixes #39
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+
+commit 0592e590c581e9837096f8bea5c25065f9b02ecd
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Apr 2 11:04:30 2014 +0100
+
+    Bump version
+
+M	pom.xml
+
+commit e7c2557c5fd12104bf61a1d6c7e121e8936e782f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Mar 7 15:10:46 2014 +0000
+
+    Release v0.9.1
+
+M	README.md
+M	pom.xml
+M	src/changes/changes.xml
+M	src/site/xdoc/index.xml
+
+commit eb8fb3eec01e57a5ba29d1dd31d1f6368d2bac39
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Mar 7 15:01:01 2014 +0000
+
+    Simplify copyright dates
+
+M	NOTICE.txt
+M	src/main/checkstyle/checkstyle.xml
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/BigMoneyProvider.java
+M	src/main/java/org/joda/money/CurrencyMismatchException.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/CurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/IllegalCurrencyException.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/MoneyUtils.java
+M	src/main/java/org/joda/money/Ser.java
+M	src/main/java/org/joda/money/format/AmountPrinterParser.java
+M	src/main/java/org/joda/money/format/GroupingStyle.java
+M	src/main/java/org/joda/money/format/LiteralPrinterParser.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatException.java
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/main/java/org/joda/money/format/MoneyParseContext.java
+M	src/main/java/org/joda/money/format/MoneyParser.java
+M	src/main/java/org/joda/money/format/MoneyPrintContext.java
+M	src/main/java/org/joda/money/format/MoneyPrinter.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestCurrencyMismatchException.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnitExtension.java
+M	src/test/java/org/joda/money/TestIllegalCurrencyException.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_BigMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_Money.java
+M	src/test/java/org/joda/money/TestStringConvert.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterException.java
+M	src/test/java/org/joda/money/format/TestMoneyParseContext.java
+
+commit 9bb9ec780a3bdd8e925cbd9990778b4cba2b6b8f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Mar 7 14:49:46 2014 +0000
+
+    Allow zero to many spaces when using standard parse method
+    
+    Fixes #35
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/Money.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+
+commit 0286a111f7a501a97150103fdc52db6ac7026298
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Mar 7 14:16:33 2014 +0000
+
+    Restrict currency codes to three letters
+    
+    Fixes #36
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit 3ec6e2ba6a8faa269261a52de66b0c6b6144bb65
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Mar 4 15:21:59 2014 +0000
+
+    Remove mailing list from pom
+
+M	pom.xml
+
+commit c9f9b9ec7a23dc64181b5769b7c13486c148fc56
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Mar 4 12:41:26 2014 +0000
+
+    Update website and pom
+
+M	README.md
+M	pom.xml
+M	src/changes/changes.xml
+D	src/conf/MANIFEST.MF
+M	src/site/resources/css/site.css
+M	src/site/resources/download.html
+M	src/site/site.xml
+M	src/site/xdoc/index.xml
+
+commit f341e74fff9e0967d80908b711805207fcfa7ee1
+Merge: b090d83 40f8d7e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Feb 24 13:37:31 2014 +0000
+
+    Merge pull request #34 from orlandocr/patch-1
+    
+    convertedTo() example was missing a parameter
+
+commit 40f8d7e5e009eb8fba30da9674c1425ab08e320c
+Author: orlandocr <osm120@gmail.com>
+Date:   Mon Feb 24 00:53:57 2014 -0600
+
+    Removed unnecessary line I accidentally pasted
+    
+    Example code can now be copied and pasted and it compiles (besides the BigDecimal conversionRate = ...;)
+
+M	README.md
+
+commit e6450d0ba600894c17bd2a3b4ed8b3a7a4227bc1
+Author: orlandocr <osm120@gmail.com>
+Date:   Mon Feb 24 00:15:56 2014 -0600
+
+    convertedTo() example was missing a parameter
+
+M	README.md
+
+commit b090d8319005307436b4d31ff24c4d4b1541d65e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jan 27 18:53:42 2014 +0000
+
+    Upgrade to site-maven-plugin v0.9
+
+M	pom.xml
+
+commit 92ffa21a26df24f1f3b419bb4dc6bf87b4bc4177
+Merge: 8a2feba f53cbe8
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Dec 19 16:42:22 2013 -0800
+
+    Merge pull request #32 from hupfis/patch-1
+    
+    Fixed typo in argument check message
+
+commit f53cbe8cce39938e3ed858570e4d400860c18a9a
+Author: hupfis <dominik.hurnaus@gmail.com>
+Date:   Thu Dec 19 10:03:58 2013 +0100
+
+    Fixed typo in argument check message
+
+M	src/main/java/org/joda/money/BigMoney.java
+
+commit 8a2feba47ffc66cba175707a1dc153e35e7f9773
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Dec 2 18:25:01 2013 +0000
+
+    Fix Javadoc of BigMoney.withScale
+    
+    Fixes #31
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/BigMoney.java
+
+commit 6351c75588bfdff52e436377b870dd4d0b6ea227
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Dec 2 18:20:51 2013 +0000
+
+    Ensure validation of string currency code
+    
+    Fixes #31
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit f522e8cd42232d2ebaa0ec0dd660b06d31587d29
+Merge: d70a696 e026b53
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Oct 29 07:07:23 2013 -0700
+
+    Merge pull request #29 from stokito/patch-1
+    
+    Update Notes.txt
+
+commit e026b535216c1e00ee254fcb141e61c20e10aedf
+Author: Sergey Ponomarev <stokito@gmail.com>
+Date:   Tue Oct 29 02:34:19 2013 +0200
+
+    Update Notes.txt
+    
+    grails-currencies swiched from float to BigDecimal about two years ago
+
+M	Notes.txt
+
+commit d70a6968433c3f30d7516357f353ddb37d120fc2
+Merge: 4a82d50 8be75e4
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Oct 27 15:23:15 2013 -0700
+
+    Merge pull request #28 from gliptak/patch-1
+    
+    Updated link to OpenGamma CurrencyAmount
+
+commit 8be75e4e9f8a0c4a46317c06bfabe5c57d89b06a
+Author: gliptak <gliptak@gmail.com>
+Date:   Fri Oct 25 16:07:56 2013 -0400
+
+    Updated link to OpenGamma CurrencyAmount
+
+M	Notes.txt
+
+commit 4a82d50a869f8d5ad5f3045050f80e5d6c99a422
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Sep 24 07:58:01 2013 -0700
+
+    Add reference to Roguewave
+
+M	Notes.txt
+
+commit 7f912c40c6a6c15e2dc79787dd2be8235a5cf4c2
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 15 14:25:27 2013 +0100
+
+    Avoid timestamp in Javadoc
+
+M	pom.xml
+
+commit c93336d1fa410905f7e335ac9a86b0f4bd631ee9
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 15 14:12:27 2013 +0100
+
+    Add redirecting download page
+
+M	README.md
+A	src/site/resources/download.html
+M	src/site/site.xml
+M	src/site/xdoc/index.xml
+
+commit b0b0ff28e35765367d31bbbf9e67804fe3851a2f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 15 14:12:27 2013 +0100
+
+    Update website and docs
+
+M	README.md
+M	src/site/site.xml
+
+commit fa2fc46973c0f9baeda19569f217b2a0a515584e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 15 14:12:27 2013 +0100
+
+    Create www.joda.org
+
+M	README.md
+M	RELEASE-NOTES.txt
+M	pom.xml
+M	src/conf/MANIFEST.MF
+M	src/site/site.xml
+
+commit d705bfcb4a0e6df8e681b712fd3afb08f1e6e408
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 15 13:20:25 2013 +0100
+
+    Updtae website and docs
+
+M	README.md
+M	RELEASE-NOTES.txt
+M	src/conf/MANIFEST.MF
+M	src/site/site.xml
+M	src/site/xdoc/index.xml
+
+commit b18d5e884953f368b059fa1560d69f5ea50b3a7b
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 15 13:20:25 2013 +0100
+
+    Use GitHub pages for home page
+
+M	pom.xml
+M	src/changes/changes.xml
+
+commit 58e131905d6adef374e7976ee130e0118adf4dbc
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Aug 12 12:07:20 2013 +0100
+
+    Fix Javadoc
+
+M	src/main/java/org/joda/money/Money.java
+
+commit 08d6dfd1b3ee6caf0deaaf0986ec4770dcb71d82
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Aug 12 11:50:59 2013 +0100
+
+    Fix Javadoc
+
+M	src/main/java/org/joda/money/Money.java
+
+commit 508f958ceb2471e19cb21012eaf065d252dc7a0e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jul 29 14:45:14 2013 +0100
+
+    Remove tabs
+
+M	pom.xml
+
+commit 96bc39a7f44c97b58c65126a72a8cefb90aa24bb
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Jul 29 14:45:14 2013 +0100
+
+    Bump version
+
+M	pom.xml
+
+commit 9f1f54ebd1ef4b10eb256c8766c377737f93581e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Jun 28 14:26:57 2013 +0100
+
+    Release v0.9
+
+M	README.md
+M	RELEASE-NOTES.txt
+M	pom.xml
+M	src/changes/changes.xml
+M	src/conf/MANIFEST.MF
+M	src/site/site.xml
+M	src/site/xdoc/index.xml
+
+commit 20d91e5549c9ebb19117b1096ce5c0abfedeae59
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Jun 28 14:08:39 2013 +0100
+
+    New option for grouping only before the decimal point
+    
+    Fixes #16
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/format/AmountPrinterParser.java
+A	src/main/java/org/joda/money/format/GroupingStyle.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+
+commit b0704f07a140e4de191f70fd4dcd7eeb10d8c1df
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Jun 28 13:08:19 2013 +0100
+
+    Bump version to 0.9-SNAPSHOT
+
+M	pom.xml
+M	src/changes/changes.xml
+
+commit 908d2ae8ee8449f8f897d78c7d46cf82a9e7c7fe
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Jun 28 13:07:55 2013 +0100
+
+    Allow registration of currencies to replace existing
+    
+    Fixes #24
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/CurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnitExtension.java
+M	src/test/resources/org/joda/money/MoneyDataExtension.csv
+
+commit ae2d4a75f21bff8826c5211ebcbf834fbab62ab0
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Jun 28 11:41:16 2013 +0100
+
+    Fix checkstyle issues
+
+M	src/main/java/org/joda/money/CurrencyMismatchException.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/MoneyUtils.java
+
+commit 95c5c780bf7ce25730ed16ff3ca727d4e2b233c1
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Jun 28 11:41:16 2013 +0100
+
+    Move to using m2e Maven Eclipse plugin
+
+D	.checkstyle
+D	.classpath
+M	.gitignore
+D	.project
+D	checkstyle-suppressions.xml
+M	pom.xml
+M	src/changes/changes.xml
+R071	checkstyle.xml	src/main/checkstyle/checkstyle.xml
+
+commit 3ca1fc7918688fe05d447ab18517bf39ba114941
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Apr 29 12:38:24 2013 +0200
+
+    Add version to maven pom
+
+M	pom.xml
+
+commit 331fd826e81e1c99d2f452f5b0733598bcc67df8
+Merge: b506862 9aa6bf5
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Apr 29 03:25:24 2013 -0700
+
+    Merge pull request #20 from gabrielbauman/enable-travis
+    
+    Enable the Travis continuous integration system
+
+commit b506862b9898edef1aeb63bbbbf93ba78a9e3629
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Apr 24 11:33:26 2013 +0100
+
+    Complete recent pull requests to match house style
+
+M	pom.xml
+M	src/changes/changes.xml
+
+commit 0c7cda7ef23da030a69c050174fef633151aa41d
+Merge: b36f743 050a1d4
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Apr 23 16:57:24 2013 -0700
+
+    Merge pull request #21 from gabrielbauman/add-me
+    
+    Add Gabriel Bauman to contributors
+
+commit 050a1d4554508b8b2557e6f3a54b412cac5baacb
+Author: Gabriel Bauman <gabe@codehaus.org>
+Date:   Tue Apr 23 13:05:02 2013 -0700
+
+    Add Gabriel Bauman to contributors
+
+M	pom.xml
+
+commit 9aa6bf5c575b2fe23f0f87410406dd70cd3f9efa
+Author: Gabriel Bauman <gabe@codehaus.org>
+Date:   Tue Apr 23 12:53:07 2013 -0700
+
+    Enable the Travis continuous integration system on GitHub. See https://travis-ci.org
+
+A	.travis.yml
+
+commit b36f74352784c59b226a6d95e82b22ab97857bcb
+Merge: 6be9b4e 8519341
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Apr 23 09:08:29 2013 -0700
+
+    Merge pull request #19 from gabrielbauman/allow-9-decimal-places
+    
+    Allow up to 9 decimal places to be defined in CSV file.
+
+commit 8519341d0f944ba6de9902528c43750b283a6bde
+Author: Gabriel Bauman <gabe@codehaus.org>
+Date:   Tue Apr 23 08:47:50 2013 -0700
+
+    Allow up to 9 decimal places to be defined in CSV file.
+
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+
+commit 6be9b4e947d4e849e12d553ded18c0b8d868e211
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Apr 19 16:34:31 2013 +0100
+
+    Allow registration of currencies by application code
+    
+    Fixes #17
+
+M	RELEASE-NOTES.txt
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/CurrencyUnit.java
+
+commit 20fc0cdf9b2f148eeca84b409249f4d62b5a5479
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Apr 19 16:29:17 2013 +0100
+
+    Update to consistent JDK reference across Joda projects
+
+M	RELEASE-NOTES.txt
+
+commit 95c572c16cef01bcad7d3d28360894f3b7c50d04
+Merge: 6adc0b0 3906928
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Feb 6 13:05:34 2013 -0800
+
+    Merge pull request #14 from ming13/readme-file-code-indentation
+    
+    Fix code indentation in the readme file
+
+commit 3906928623cccbb942960a335cac118a6283480e
+Author: Artur Dryomov <artur.dryomov@gmail.com>
+Date:   Wed Feb 6 23:41:42 2013 +0300
+
+    Fix code indentation in the readme file.
+
+M	README.md
+
+commit 6adc0b0dfc3aff16759cce66f177f23ff8eab957
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jan 30 11:53:15 2013 +0000
+
+    Bump version number
+
+M	pom.xml
+
+commit 817f4ac5117a070ee09f899af396e50cfe269886
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jan 30 11:08:21 2013 +0000
+
+    Prepare for v0.8
+
+M	README.md
+M	RELEASE-NOTES.txt
+M	pom.xml
+M	src/conf/MANIFEST.MF
+M	src/site/site.xml
+M	src/site/xdoc/index.xml
+
+commit c80da3306b3adf15a38ce5e83846bbe82407abf8
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jan 30 11:35:01 2013 +0000
+
+    Adjust pom and classpath to work with resources
+
+M	.classpath
+M	pom.xml
+
+commit 6c8349376dd208b7aec4688820f5b0a6e1e8f7a4
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jan 30 11:33:03 2013 +0000
+
+    Move currency file to Maven default location
+
+R093	src/main/java/org/joda/money/MoneyData.csv	src/main/resources/org/joda/money/MoneyData.csv
+
+commit cceadde868c34f199a311f8832da960583acffef
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jan 30 11:18:36 2013 +0000
+
+    Fix money extension change to work in Maven build
+
+M	src/test/java/org/joda/money/TestCurrencyUnitExtension.java
+R096	src/test/java/org/joda/money/MoneyDataExtension.csv	src/test/resources/org/joda/money/MoneyDataExtension.csv
+
+commit 9549db7153993c78fd9c471689425d682a12e2b5
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jan 30 11:07:10 2013 +0000
+
+    Update to JDK 1.6
+
+M	.classpath
+M	pom.xml
+M	src/changes/changes.xml
+M	src/site/xdoc/index.xml
+
+commit e3a5c50eea151c7cf8fdecc33d6865ba522003ed
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jan 30 10:59:34 2013 +0000
+
+    Ignore Eclipse file
+
+M	.gitignore
+
+commit 812494ab7a0f86bf9591c66bbe8fcaa7ba4aaed6
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jan 30 10:59:24 2013 +0000
+
+    Delete Eclipse file
+
+D	.settings/org.eclipse.jdt.core.prefs
+
+commit 778e9328a6c9eadb5b3749af84a1cfa37b305126
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jan 30 09:42:00 2013 +0000
+
+    Update project files
+
+M	RELEASE-NOTES.txt
+M	pom.xml
+M	src/site/site.xml
+M	src/site/xdoc/index.xml
+
+commit 62059b61b7294adb237ce3d916f2e62e6a5db5a1
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jan 30 09:37:56 2013 +0000
+
+    Fix README
+
+M	README.md
+
+commit 7cf37728e3a3c1fe326a6ba057d53d0195ef35e2
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jan 30 09:33:26 2013 +0000
+
+    Change to README.md
+
+A	README.md
+D	README.txt
+
+commit 225190ff0745d903ca1df61d23e0086da2b8e2c5
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jan 30 09:26:32 2013 +0000
+
+    Complete change to allow second currency file
+
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+M	src/site/xdoc/userguide.xml
+
+commit 6e3d1546e23959fa83265cbb9a9c03264d1f488a
+Merge: 031d66f fd3e956
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jan 30 01:08:55 2013 -0800
+
+    Merge pull request #13 from timmolter/master
+    
+    Allow adding a currency extension file for addition non-default currencies
+
+commit fd3e956b9f7eba933aeaec5bd90a4f2141a9b738
+Author: Tim Molter <tim.molter@gmail.com>
+Date:   Wed Jan 30 10:02:23 2013 +0100
+
+    fixed method name removed tim molter copyright
+
+M	pom.xml
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+M	src/test/java/org/joda/money/TestCurrencyUnitExtension.java
+
+commit 3dfda692146ecb00bf11fe3b4f174daaef7d08c9
+Author: Tim Molter <tim.molter@gmail.com>
+Date:   Tue Jan 29 21:47:47 2013 +0100
+
+    allow adding a currency extension file for addition non-default currencies
+
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+A	src/test/java/org/joda/money/MoneyDataExtension.csv
+A	src/test/java/org/joda/money/TestCurrencyUnitExtension.java
+
+commit 031d66fb53931c2c9622c7ebce86cd935bbf7d24
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Jan 5 11:46:19 2013 +0000
+
+    Add reference to Tom Gibara library
+
+M	Notes.txt
+
+commit 05f7085a5f3f9bd6e4d1b719ca85008ebeb3ccd9
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Jan 3 15:36:36 2013 +0000
+
+    Bump version number
+
+M	pom.xml
+
+commit ae281e4ea15a250078fac2c35a3144d941c88e3d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Jan 3 15:12:28 2013 +0000
+
+    Release v0.7
+
+M	pom.xml
+M	src/changes/changes.xml
+M	src/site/site.xml
+M	src/site/xdoc/index.xml
+
+commit 93fce1198f922f1adb7ff190d4f337eb7e306712
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Jan 3 15:08:12 2013 +0000
+
+    Update copyright date
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/BigMoneyProvider.java
+M	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/Ser.java
+M	src/main/java/org/joda/money/format/AmountPrinterParser.java
+M	src/main/java/org/joda/money/format/LiteralPrinterParser.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/main/java/org/joda/money/format/MoneyParseContext.java
+M	src/main/java/org/joda/money/format/MoneyParser.java
+M	src/main/java/org/joda/money/format/MoneyPrintContext.java
+M	src/main/java/org/joda/money/format/MoneyPrinter.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestCurrencyMismatchException.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestIllegalCurrencyException.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_BigMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_Money.java
+M	src/test/java/org/joda/money/TestStringConvert.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterException.java
+M	src/test/java/org/joda/money/format/TestMoneyParseContext.java
+
+commit 57de6151c57c0cc50c6dc7d41528e027e7b1000c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Jan 3 15:08:02 2013 +0000
+
+    Remove all @author tags
+
+M	src/main/java/org/joda/money/CurrencyMismatchException.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/CurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/IllegalCurrencyException.java
+M	src/main/java/org/joda/money/MoneyUtils.java
+M	src/main/java/org/joda/money/format/MoneyFormatException.java
+
+commit e96e8d7e90f86bf3ee5aa1108d6a8e6747358bb3
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Jan 3 15:03:41 2013 +0000
+
+    Update changes.xml
+
+M	src/changes/changes.xml
+
+commit 8d9edf426e1989f4c046999fda1dba2cafc9e509
+Merge: 1ec3d9a 976b887
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Jan 3 06:59:59 2013 -0800
+
+    Merge pull request #11 from tkeinone/hotfix-amountprinterparser-negative-sign
+    
+    Suggested fix of https://github.com/JodaOrg/joda-money/issues/10.
+
+commit 976b88762538befbba80196e5fbcfdf071693dad
+Author: tkeinone <tomi.keinonen@ainoactive.com>
+Date:   Thu Jan 3 13:48:26 2013 +0200
+
+    Suggested fix for https://github.com/JodaOrg/joda-money/issues/10.
+
+M	src/main/java/org/joda/money/format/AmountPrinterParser.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 1ec3d9a1eb44f6e69a705e06c1d3e48507ad4242
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Jan 3 10:21:11 2013 +0000
+
+    add ExchangeRate and (Big)Money conversion mechanisms (reverse-merged from commit e3d81c8ab1035f0cb8afc7d0c3f87e866be6ae8d)
+    
+    Undo this commit which should have been on a branch, not master
+
+D	src/main/java/org/joda/money/DefaultExchangeRateOperations.java
+D	src/main/java/org/joda/money/ExchangeRate.java
+D	src/main/java/org/joda/money/ExchangeRateOperations.java
+D	src/main/java/org/joda/money/NoCommonCurrencyException.java
+D	src/main/java/org/joda/money/NotExchangeableException.java
+M	src/main/java/org/joda/money/Ser.java
+D	src/main/java/org/joda/money/Utils.java
+D	src/test/java/org/joda/money/TestExchangeRate.java
+
+commit 7c61b6133e58d3ebe1bfe470d9612113b1a20233
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Jan 3 09:34:11 2013 +0000
+
+    Change LBP to have 2dp
+    
+    Fixes #7
+
+M	RELEASE-NOTES.txt
+M	src/changes/changes.xml
+M	src/main/java/org/joda/money/MoneyData.csv
+
+commit c4f5a38bc2445216ecc3e09b823bf86779065953
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Dec 10 19:49:44 2012 +0000
+
+    Add privacy page
+
+M	src/site/site.xml
+A	src/site/xdoc/privacy.xml
+
+commit 2c07c8b01b3c9e53bc0d47b20e077e9862451461
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Dec 10 19:37:51 2012 +0000
+
+    Update website and move issue to GitHub
+
+M	README.txt
+M	pom.xml
+M	src/site/site.xml
+M	src/site/xdoc/index.xml
+D	src/site/xdoc/tasks.xml
+
+commit 9bdec80961e6ddb0ccb0cfdfd30980d7c94cb4c9
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 16 23:59:38 2012 +0100
+
+    Fix OSGi manifest [3558610]
+
+M	src/conf/MANIFEST.MF
+
+commit e3d81c8ab1035f0cb8afc7d0c3f87e866be6ae8d
+Author: Tom Pasierb <tomasz.pasierb@gmail.com>
+Date:   Sun Jul 8 10:45:49 2012 +0200
+
+    add ExchangeRate and (Big)Money conversion mechanisms
+
+A	src/main/java/org/joda/money/DefaultExchangeRateOperations.java
+A	src/main/java/org/joda/money/ExchangeRate.java
+A	src/main/java/org/joda/money/ExchangeRateOperations.java
+A	src/main/java/org/joda/money/NoCommonCurrencyException.java
+A	src/main/java/org/joda/money/NotExchangeableException.java
+M	src/main/java/org/joda/money/Ser.java
+A	src/main/java/org/joda/money/Utils.java
+A	src/test/java/org/joda/money/TestExchangeRate.java
+
+commit 2f3d0b4d3bc45157cd93c3e46596831c8a64d797
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 24 15:41:51 2011 +0000
+
+    Update versions for 0.7
+
+M	pom.xml
+M	src/changes/changes.xml
+M	src/conf/MANIFEST.MF
+
+commit 3f9fb869a648b1112237ff648629605ffe536c4e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 24 15:41:36 2011 +0000
+
+    Relax checking for decimal places [3317398]
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit c4fe09ef554365d2119c42b9ff6ab0788a058fde
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 24 15:18:21 2011 +0000
+
+    Remove Estonia line altogether, as with FRF, DEM, etc
+    
+    Really, the API needs a way to manage currency changes over time, or at least an "old" flag
+
+M	src/main/java/org/joda/money/MoneyData.csv
+
+commit 50f2f409bd55802ce3ad79071c9fd7b0be107b93
+Merge: 1378650 08960e2
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 24 15:17:25 2011 +0000
+
+    Merge commit '08960e2dedcd7da440bed99c25232f27ebf5e6d6'
+    
+    Conflicts:
+            pom.xml
+
+commit 1378650c8be96b08295b2d4dd6b132c251ae6989
+Author: Alik Kurdyukov <alik@kurdyukov.com>
+Date:   Fri Nov 11 16:16:57 2011 +0200
+
+    country fixed
+
+M	src/main/java/org/joda/money/MoneyData.csv
+
+commit 6b4db000f4048b5b009e494da695bc6b27c61cf0
+Author: Alik Kurdyukov <alik@kurdyukov.com>
+Date:   Fri Nov 11 16:12:07 2011 +0200
+
+    old RUR added, version bumped
+
+M	pom.xml
+M	src/main/java/org/joda/money/MoneyData.csv
+
+commit 08960e2dedcd7da440bed99c25232f27ebf5e6d6
+Author: barend <bgarvelink@xebia.com>
+Date:   Tue Nov 1 12:04:11 2011 +0100
+
+    Adds Estonia to the Eurozone.
+    
+    This resolves an issue submitted to the project tracker at
+    http://sourceforge.net/tracker/?func=detail&aid=3427878&group_id=274452&atid=1166262
+
+M	src/main/java/org/joda/money/MoneyData.csv
+
+commit 697bb78e9a512c1ea12b1d54ff2024da5fe9d4a6
+Author: barend <bgarvelink@xebia.com>
+Date:   Tue Nov 1 19:21:21 2011 +0100
+
+    Bump version number to next snapshot.
+
+M	pom.xml
+
+commit 25fb975914aec68ac3cb75584715827c3fe014e3
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Aug 1 01:43:43 2011 +0100
+
+    Prepare v0.6
+
+M	pom.xml
+M	src/changes/changes.xml
+M	src/site/xdoc/index.xml
+
+commit 06c18c10658c4e04b04694117f1a795fc2ad8b7d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Jul 30 17:59:07 2011 +0100
+
+    Minor fix to manifest
+
+M	src/conf/MANIFEST.MF
+
+commit 6995f9b88df1382c028798cdab5d9de509d97fa0
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Jun 3 16:34:49 2011 +0100
+
+    Fix Javadoc
+    
+    Pointed out by Reto Hoehener
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+
+commit ab5ee426a4b773fe13b601942cf3fc14ea9b78e5
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed May 25 14:14:58 2011 +0100
+
+    Readme
+
+M	README.txt
+
+commit d91ff26a9dac993e24874ebc7b055ff4d6bb7107
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed May 25 13:23:10 2011 +0100
+
+    Update with another money class
+
+M	Notes.txt
+
+commit c5a02381c266ad22032383541fb09f00c27ef1cb
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed May 25 13:13:14 2011 +0100
+
+    Remove properties files from CheckStyle
+
+M	.checkstyle
+
+commit d427547d881d516aa345164a4a6aa752a45f6f92
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed May 25 13:10:04 2011 +0100
+
+    Add readme
+
+A	README.txt
+
+commit 0ffa870bc3fd85fbeec51b0f87110583cf40e4e3
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed May 25 13:08:21 2011 +0100
+
+    Bring Checktyle up to date and change style of variable names
+
+M	.checkstyle
+A	checkstyle-suppressions.xml
+M	checkstyle.xml
+M	src/main/assembly/dist.xml
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/CurrencyMismatchException.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/Ser.java
+M	src/main/java/org/joda/money/format/AmountPrinterParser.java
+M	src/main/java/org/joda/money/format/LiteralPrinterParser.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/main/java/org/joda/money/format/MoneyParseContext.java
+M	src/main/java/org/joda/money/format/MoneyPrintContext.java
+
+commit b4ed578583322eb1449b63689c29a1e00458ddc5
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed May 25 12:27:06 2011 +0100
+
+    Block malicious data streams using readObject()
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/Money.java
+
+commit 7ecf6cc81094114873a57dcafccab29b7a9bfaa6
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon May 16 16:49:56 2011 +0100
+
+    Change svn repo to github repo
+
+M	src/site/xdoc/index.xml
+
+commit 90dd33e5dbd5752db6af6eb2a6304b4d304cd4ea
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon May 16 16:11:24 2011 +0100
+
+    Remove svn authors file
+
+D	authors.txt
+
+commit 15b1e9037857ac31e1721ab6b631cb31fd3d6bf2
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu May 12 16:23:09 2011 +0100
+
+    Reset website files to allow a website rebuild
+
+M	src/changes/changes.xml
+M	src/site/site.xml
+M	src/site/xdoc/index.xml
+
+commit 5bc55321b942fcd183ae5e6e3eb338229adb456e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu May 12 15:53:28 2011 +0100
+
+    Remove old mail archive from pom
+
+M	pom.xml
+
+commit fb516b97dab8980f10d078a8903a1fd16e521634
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu May 12 15:36:35 2011 +0100
+
+    Fix sourceforge website url
+
+M	pom.xml
+
+commit 0d30691120a546a1a26ae30cf80124f97c43e26e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu May 12 15:08:15 2011 +0100
+
+    Move to git in maven pom
+
+M	pom.xml
+
+commit c5a47dac3de1812ba674e4df9d0ddd41584a155d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu May 12 14:39:39 2011 +0100
+
+    Add gitignore
+
+A	.gitignore
+
+commit 80e89b5677a376a393ab7162b63bcf5600d53301
+Merge: 6da69cd c101139
+Author: Stephen Colebourne <stephen@opengamma.com>
+Date:   Tue May 10 17:17:34 2011 +0100
+
+    Merge branch 'master' of github.com:JodaOrg/joda-money
+
+commit 6da69cd5c1b7f48bb617d5dd90f3862c4be196ee
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue May 10 16:15:37 2011 +0000
+
+    Add git-svn authors.txt file
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@128 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+A	authors.txt
+
+commit c101139492586077e360217a67711c85415236ee
+Author: Stephen Colebourne <stephen@opengamma.com>
+Date:   Tue May 10 16:53:53 2011 +0100
+
+    Add git-svn authors.txt file
+
+A	authors.txt
+
+commit 2c5df17b571abb9762b9724353a8df585b9e6ae7
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Mar 9 23:47:27 2011 +0000
+
+    Make contexts more mutable
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@127 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/MoneyParseContext.java
+M	src/main/java/org/joda/money/format/MoneyPrintContext.java
+
+commit 3cc00009c5e72899ad8c86c2aee0b577ba57ee22
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Mar 9 23:46:24 2011 +0000
+
+    Javadoc
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@126 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/AmountPrinterParser.java
+M	src/main/java/org/joda/money/format/LiteralPrinterParser.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatException.java
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/main/java/org/joda/money/format/MoneyParser.java
+M	src/main/java/org/joda/money/format/MoneyPrinter.java
+
+commit 3025ca15bf4d386f5b0947e295ff1cf114fe90da
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Mar 9 23:44:42 2011 +0000
+
+    Javadoc
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@125 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/BigMoneyProvider.java
+M	src/main/java/org/joda/money/CurrencyMismatchException.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/IllegalCurrencyException.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/MoneyUtils.java
+M	src/main/java/org/joda/money/Ser.java
+
+commit 26a6c50d66e1a87889ab6d53ed8d35c4abe730eb
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Feb 16 14:23:42 2011 +0000
+
+    Enhance home page
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@124 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/site/xdoc/index.xml
+
+commit 39bfb02e1a36c2a68973518e013e7756d4ca5cb4
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Feb 16 13:52:42 2011 +0000
+
+    Move default currency provider to top level
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@123 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/CurrencyUnitDataProvider.java
+A	src/main/java/org/joda/money/DefaultCurrencyUnitDataProvider.java
+
+commit 747d82fde8d54e04701b4810e29012b775633552
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Feb 16 11:18:03 2011 +0000
+
+    Add Joda-Convert
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@122 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	.classpath
+M	RELEASE-NOTES.txt
+M	pom.xml
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/Money.java
+M	src/site/xdoc/index.xml
+A	src/test/java/org/joda/money/TestStringConvert.java
+
+commit 4e7f2c1d228e9f694725a640ad973d13c1c9f41e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Feb 16 11:02:25 2011 +0000
+
+    Test coverage and minor fixes
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@121 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/AmountPrinterParser.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+A	src/test/java/org/joda/money/format/TestMoneyFormatterException.java
+A	src/test/java/org/joda/money/format/TestMoneyParseContext.java
+
+commit 3033fb17f099e3e7823db25bf96315572119e866
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Feb 15 19:00:14 2011 +0000
+
+    Code coverage
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@120 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 7b677f410be0137f83d480cf1eff32ec69d2ba97
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Feb 15 18:44:09 2011 +0000
+
+    Enhance website
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@119 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	pom.xml
+M	src/site/resources/css/site.css
+D	src/site/resources/images/joda.png
+D	src/site/resources/images/jodamoney.png
+M	src/site/site.xml
+M	src/site/xdoc/index.xml
+
+commit 22c967cc0f72bec114fd201ae3efc9f99d066658
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Feb 15 18:43:46 2011 +0000
+
+    Use getCode() instead of getCurrencyCode()
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@118 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/CurrencyMismatchException.java
+M	src/main/java/org/joda/money/Ser.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+
+commit 27184063779322e20b35ec4b8567730f9b1a19ad
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Feb 15 18:43:03 2011 +0000
+
+    Add constants for common stable currencies
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@117 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit 95c76819f707c689f102ccc18171a8bd66786ed0
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Feb 15 17:36:00 2011 +0000
+
+    Enhance serialization
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@116 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/Ser.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestMoney.java
+
+commit 38b53a86a504a0e56b29d3f6b58cc28b2180e889
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Feb 15 17:30:53 2011 +0000
+
+    Remove FixedMoney
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@115 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+
+commit 1a67cee5a2c3dfd9a5611efeddb56c380a8663bb
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Feb 15 17:30:25 2011 +0000
+
+    Remove FixedMoney
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@114 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+D	src/main/java/org/joda/money/FixedMoney.java
+D	src/test/java/org/joda/money/TestFixedMoney.java
+
+commit 7fa0b3120882aa59e11f0ae20ea264203244f54d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Feb 15 17:21:45 2011 +0000
+
+    Tidy BigMoney and Money
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@113 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/Money.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+
+commit 983b3defc5a2a615e5352e96dbaf14397d8a44d8
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Feb 15 16:46:08 2011 +0000
+
+    Enhancements
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@112 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/BigMoneyProvider.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/FixedMoney.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/Ser.java
+M	src/main/java/org/joda/money/format/MoneyFormatException.java
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestFixedMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 42ef4537e7f6aac12bda82db016ba86c899d5b27
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Feb 15 15:27:14 2011 +0000
+
+    Add equals/hashCode to CurrencyUnit to works across serialization
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@111 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+
+commit d718c7c4f1c4f3096d97b928529d7b02908cf9e7
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Feb 15 15:13:41 2011 +0000
+
+    Update copyright
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@110 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/BigMoneyProvider.java
+M	src/main/java/org/joda/money/CurrencyMismatchException.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/CurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/FixedMoney.java
+M	src/main/java/org/joda/money/IllegalCurrencyException.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/MoneyUtils.java
+M	src/main/java/org/joda/money/Ser.java
+M	src/main/java/org/joda/money/format/AmountPrinterParser.java
+M	src/main/java/org/joda/money/format/LiteralPrinterParser.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatException.java
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/main/java/org/joda/money/format/MoneyParseContext.java
+M	src/main/java/org/joda/money/format/MoneyParser.java
+M	src/main/java/org/joda/money/format/MoneyPrintContext.java
+M	src/main/java/org/joda/money/format/MoneyPrinter.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestCurrencyMismatchException.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestFixedMoney.java
+M	src/test/java/org/joda/money/TestIllegalCurrencyException.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_BigMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_Money.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 736a99348135046c67b3c53c0417e388a7300c50
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Feb 15 15:13:02 2011 +0000
+
+    Modernise build in line with other Joda projects
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@109 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	RELEASE-NOTES.txt
+M	src/conf/MANIFEST.MF
+
+commit b4f25b61b22b930a35d29b68241791cbed5d8684
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Feb 15 15:03:51 2011 +0000
+
+    Modernise build in line with other Joda projects
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@108 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	.classpath
+M	pom.xml
+R080	src/main/assembly/bin.xml	src/main/assembly/dist.xml
+D	src/main/assembly/src.xml
+
+commit f579547a0cbb9135389bdb6d94ec04d10283b9ce
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Aug 20 00:01:56 2010 +0000
+
+    Add Joda-Convert
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@107 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/site/site.xml
+
+commit bb06465cd2b18591bdc3af615dadb75e700a113f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Jun 30 13:54:00 2010 +0000
+
+    Fix Joda-Time to Joda-Money
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@106 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/site/xdoc/licensecover.xml
+
+commit bbf9d7d692fff8b8d89af2582614829907636bd0
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Mar 15 01:49:33 2010 +0000
+
+    Move static nested classes to top level package scoped
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@105 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+A	src/main/java/org/joda/money/format/AmountPrinterParser.java
+A	src/main/java/org/joda/money/format/LiteralPrinterParser.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+
+commit 7935bcd8299f5b97fa01e22a4b38b5de3958942a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Mar 5 21:35:20 2010 +0000
+
+    Add amount parsing and tests
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@104 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/main/java/org/joda/money/format/MoneyParseContext.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+
+commit d1ebd88f711a1d1859374b7db51cfce63ae62990
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Fri Mar 5 21:32:32 2010 +0000
+
+    Add additional MoneyUtils comparison methods
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@103 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/MoneyUtils.java
+M	src/test/java/org/joda/money/TestMoneyUtils_BigMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_Money.java
+
+commit c8abbef6018d3fd43da8e27e9d87c0bcded57bdb
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Feb 25 01:48:58 2010 +0000
+
+    Prepare for v0.6
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@102 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	pom.xml
+M	src/site/site.xml
+M	src/site/xdoc/index.xml
+A	src/site/xdoc/userguide.xml
+
+commit de189991936cc91069e2395d0e13753e75ff2b7f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Feb 25 01:36:53 2010 +0000
+
+    Fix Javadoc
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@101 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyParseContext.java
+
+commit 1eb357b92e10f7be51087a5e6bd102a9993ca0c3
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Feb 25 01:04:22 2010 +0000
+
+    Javadoc
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@100 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+
+commit 1a835f67efa19681096919965af40e3131d31f12
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Feb 25 00:59:34 2010 +0000
+
+    Remove defaultToZero() now classes have nonNull()
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@99 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/MoneyUtils.java
+M	src/test/java/org/joda/money/TestMoneyUtils_BigMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_Money.java
+
+commit 78a8e140379438e99b3de26b0dad691ab7a1c78e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Feb 25 00:07:27 2010 +0000
+
+    Enhance exceptions
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@98 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/BigMoneyProvider.java
+A	src/main/java/org/joda/money/CurrencyMismatchException.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/FixedMoney.java
+R060	src/main/java/org/joda/money/MoneyException.java	src/main/java/org/joda/money/IllegalCurrencyException.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/MoneyUtils.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+A	src/test/java/org/joda/money/TestCurrencyMismatchException.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestFixedMoney.java
+A	src/test/java/org/joda/money/TestIllegalCurrencyException.java
+M	src/test/java/org/joda/money/TestMoney.java
+D	src/test/java/org/joda/money/TestMoneyException.java
+M	src/test/java/org/joda/money/TestMoneyUtils_BigMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_Money.java
+
+commit 4c0c3b11accebde1b6df83718b4498ce9bc988b1
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Feb 24 23:16:11 2010 +0000
+
+    Add warning of possible class removal
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@97 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/FixedMoney.java
+
+commit b7689c3debf5dffadc418b07c5b41f9e35ef2faa
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Feb 24 23:09:47 2010 +0000
+
+    Add total(varargs) and plus(Iterable) methods
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@96 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/Money.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+
+commit b84c51a60dd1cccd34f0940e46662a28ae2d8fff
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Feb 21 14:50:49 2010 +0000
+
+    Ensure that shared BigMoney objects are shared
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@95 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/Ser.java
+
+commit 33ded51937b8d7a785fc20c907b237ddd8fce477
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Feb 21 12:00:43 2010 +0000
+
+    Remove toFixedMoney()
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@94 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/Money.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+
+commit 40a1095ae77f39e27fcb25821c97087bcdb9665d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Feb 21 01:28:10 2010 +0000
+
+    Add dedicated serialization class
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@93 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/Money.java
+A	src/main/java/org/joda/money/Ser.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+
+commit 02641d187136f181ab370efe6e5279b812a1e14d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Feb 21 00:32:46 2010 +0000
+
+    Tighten parsing
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@92 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/FixedMoney.java
+M	src/main/java/org/joda/money/Money.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+
+commit 1e83806fbd0d83d295c4c296b5568d97858edd36
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 21:56:43 2010 +0000
+
+    Add scale constructors
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@91 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+
+commit c38fea888a01c1af105ebcaeb52ff3bcf74436d8
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 21:56:19 2010 +0000
+
+    Rename ofScaled() to ofScale()
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@90 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/FixedMoney.java
+M	src/test/java/org/joda/money/TestFixedMoney.java
+
+commit 07657514b72034d3d19dc40298e11e9ef39571d0
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 21:09:46 2010 +0000
+
+    Rename back to BigMoney/Money
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@89 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+R050	src/main/java/org/joda/money/StandardMoney.java	src/main/java/org/joda/money/BigMoney.java
+R057	src/main/java/org/joda/money/MoneyProvider.java	src/main/java/org/joda/money/BigMoneyProvider.java
+M	src/main/java/org/joda/money/FixedMoney.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/MoneyUtils.java
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/main/java/org/joda/money/format/MoneyParseContext.java
+M	src/main/java/org/joda/money/format/MoneyPrinter.java
+R053	src/test/java/org/joda/money/TestStandardMoney.java	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestFixedMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+R068	src/test/java/org/joda/money/TestMoneyUtils_StandardMoney.java	src/test/java/org/joda/money/TestMoneyUtils_BigMoney.java
+M	src/test/java/org/joda/money/TestMoneyUtils_Money.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 0ebbd11b204ad1ea1997f929b55602d63c1a6bf9
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 20:35:40 2010 +0000
+
+    Add total() factory methods
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@88 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/StandardMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/TestStandardMoney.java
+
+commit 91c5bb7e656a341c269f5b0e6400fa39dffef52c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 19:48:23 2010 +0000
+
+    Add nonNull() defaulting method
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@87 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/FixedMoney.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/StandardMoney.java
+M	src/test/java/org/joda/money/TestFixedMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/TestStandardMoney.java
+
+commit 2589c9bbf1434527668e2e98383a558b7f4261cd
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 19:47:10 2010 +0000
+
+    Change isZero() to take MoneyProvider
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@86 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/MoneyUtils.java
+
+commit 425db5dd4ac4102c44987b03d652ea7bf93f552f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 17:09:25 2010 +0000
+
+    Add FixedMoney, tweak Money/StandardMoney
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@85 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+A	src/main/java/org/joda/money/FixedMoney.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/StandardMoney.java
+A	src/test/java/org/joda/money/TestFixedMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/TestStandardMoney.java
+
+commit 1a63cc93f933484ffc05b353e6cb9e25f468006d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 17:08:48 2010 +0000
+
+    Increase test coverage
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@84 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+A	src/test/java/org/joda/money/TestMoneyException.java
+M	src/test/java/org/joda/money/TestMoneyUtils_Money.java
+
+commit 2b25b98d81b98300ca50323260598a0d66e13361
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 15:46:48 2010 +0000
+
+    Copyright date
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@83 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+M	src/test/java/org/joda/money/TestMoneyUtils_Money.java
+M	src/test/java/org/joda/money/TestMoneyUtils_StandardMoney.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit cbf52b058cc7934626039129663853d6655689cd
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 14:00:39 2010 +0000
+
+    Enhance factory methods
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@82 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/StandardMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/TestStandardMoney.java
+
+commit d82b8aa0efc1582f232cdd8c8670415031dc4af1
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 13:59:51 2010 +0000
+
+    Enhance error messages to easily spot leading/trailing spaces
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@81 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit 39daf563cbd660e8ece71367f3b92f1733a4ced3
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 12:36:01 2010 +0000
+
+    Remove String currency factory methods
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@80 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/StandardMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+M	src/test/java/org/joda/money/TestStandardMoney.java
+
+commit 5acf7140c134080f76407c2696afb7ad6aeed1da
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 12:34:23 2010 +0000
+
+    Add changes report
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@79 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/changes/changes.xml
+
+commit 7f8eb88c0508af7fef1bcb774708b2d5148d48cc
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 10:10:51 2010 +0000
+
+    Enhance output style
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@78 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+
+commit 06a94e0c8e1db67fb6fa5d8a088ab99b091f1485
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 00:55:37 2010 +0000
+
+    Add @Override
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@77 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnitDataProvider.java
+
+commit 1054911b6826901e2fbf5bfd9c2a8c3952957081
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Feb 20 00:54:58 2010 +0000
+
+    Add autoboxing to settings
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@76 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	.settings/org.eclipse.jdt.core.prefs
+
+commit 233f2d2242bccb45b5cca798571c68f4e04b5b45
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Feb 18 02:42:25 2010 +0000
+
+    Some notes on other APIs
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@75 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+A	Notes.txt
+
+commit 554f33e53a0fc5cbea428d10a0bbd015a00f2d03
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Feb 18 02:42:00 2010 +0000
+
+    Rename Money to StandardMoney and BigMoney to Money
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@74 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+D	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/Money.java
+R057	src/main/java/org/joda/money/BigMoneyProvider.java	src/main/java/org/joda/money/MoneyProvider.java
+M	src/main/java/org/joda/money/MoneyUtils.java
+A	src/main/java/org/joda/money/StandardMoney.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/main/java/org/joda/money/format/MoneyParseContext.java
+M	src/main/java/org/joda/money/format/MoneyPrinter.java
+M	src/test/java/org/joda/money/TestMoney.java
+R069	src/test/java/org/joda/money/TestMoneyUtils_BigMoney.java	src/test/java/org/joda/money/TestMoneyUtils_StandardMoney.java
+R050	src/test/java/org/joda/money/TestBigMoney.java	src/test/java/org/joda/money/TestStandardMoney.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit ab91bf9b6d194db24e489fae8741eb7cbd71ef8c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Feb 18 00:12:59 2010 +0000
+
+    Javadoc
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@73 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+
+commit 88d9db9636ec356f3561641d6b62bdb7d276a95e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Feb 18 00:09:59 2010 +0000
+
+    Javadoc
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@72 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/BigMoneyProvider.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/CurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/MoneyException.java
+M	src/main/java/org/joda/money/MoneyUtils.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatException.java
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/main/java/org/joda/money/format/MoneyParseContext.java
+M	src/main/java/org/joda/money/format/MoneyParser.java
+M	src/main/java/org/joda/money/format/MoneyPrintContext.java
+M	src/main/java/org/joda/money/format/MoneyPrinter.java
+
+commit c78c92042bcd08f2c4bc85b708bf25753f528885
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Feb 17 23:54:14 2010 +0000
+
+    Javadoc
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@71 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+
+commit 1c8b06c494ef763e763625a53253737c226366cc
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Feb 17 23:46:05 2010 +0000
+
+    Avoid having jdk hard coded in pom
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@70 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	pom.xml
+
+commit e8d51fdf9aeae9130546d76f9a8c76a2d87fcb70
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Feb 17 23:45:20 2010 +0000
+
+    Fix menu title
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@69 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/site/site.xml
+
+commit 318ba981a2f4b4d85b7a86d67d3ba9b0aaddd43f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Nov 24 00:51:26 2009 +0000
+
+    Make compile on JDK 1.6 [2902028], from gid79
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@68 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit c60245cc36fbcdc7f0dcf12d4a59894921885e3e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Nov 24 00:45:37 2009 +0000
+
+    Initial support for parsing
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@67 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+A	src/main/java/org/joda/money/format/MoneyParseContext.java
+A	src/main/java/org/joda/money/format/MoneyParser.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 3151ef9bb906712774473bbb9156c1fb133e200c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Nov 24 00:44:57 2009 +0000
+
+    Javadoc
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@66 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/MoneyPrintContext.java
+M	src/main/java/org/joda/money/format/MoneyPrinter.java
+
+commit af0d9291eaad32f6f1017da931b91e8d15c13d14
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Nov 24 00:41:17 2009 +0000
+
+    Add methods to obtain currency by numeric code
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@65 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit ba3268174aa48d6dcf57e19a026884545e803bba
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Nov 22 23:31:46 2009 +0000
+
+    Fix release date
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@64 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/site/xdoc/index.xml
+
+commit 1f494b853cc834957b9c2bdcab955aab32ea44fe
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Nov 17 10:55:00 2009 +0000
+
+    Update for v0.6
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@63 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	pom.xml
+M	src/conf/MANIFEST.MF
+
+commit 08681a54e88df5a9cb06284148740032347c88b4
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Nov 17 10:53:39 2009 +0000
+
+    Update docs for v0.5 website
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@62 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/site/xdoc/index.xml
+
+commit 8dafe9a8fdcae6c35b17cfd51dcc5d4825ff689d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Nov 17 00:54:15 2009 +0000
+
+    Test coverage
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@60 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+
+commit 27cc22f425da329cc8126e91c52f612a4459954f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Nov 17 00:45:31 2009 +0000
+
+    Optimize storage of localized style
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@59 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+
+commit 60573f8ca8a1be2a0b711cc1dc596f0097910252
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Nov 17 00:00:52 2009 +0000
+
+    Add grouping to decimal place printing
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@58 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 7de2d1b7279fe1564bd1ab9db8d0f95d10b2c1c6
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Nov 16 23:51:12 2009 +0000
+
+    Clarify error message
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@57 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/Money.java
+
+commit 5ac580d958e64d61627a1ab37687f0d287fe48b0
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Nov 16 23:39:51 2009 +0000
+
+    Add zero character printing
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@56 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 5022815b2dbaf27cc93cf2a2d7dda040b3ba54f9
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Nov 16 22:40:49 2009 +0000
+
+    Make formatters serializable
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@55 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit c4d5314c9464803321168cbbda8a2484c006ae70
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Nov 16 22:10:49 2009 +0000
+
+    Update maven 2 files
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@54 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	RELEASE-NOTES.txt
+M	pom.xml
+M	src/changes/changes.xml
+A	src/conf/MANIFEST.MF
+A	src/main/assembly/bin.xml
+A	src/main/assembly/src.xml
+M	src/site/site.xml
+M	src/site/xdoc/index.xml
+
+commit c825eda76f42189abda68f6183823ecb70b400fb
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Nov 16 22:09:28 2009 +0000
+
+    Javadoc
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@53 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/CurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyPrinter.java
+
+commit 63ad25f7b8e5c5efddcc276f8f6b4354a459d125
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 12 21:20:30 2009 +0000
+
+    Enable printing of BigMoney
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@52 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+M	src/main/java/org/joda/money/format/MoneyPrinter.java
+
+commit 35712491a5cc2c56f322034122fe816b88d660f7
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 12 21:18:05 2009 +0000
+
+    Javadoc
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@51 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/MoneyPrintContext.java
+
+commit 623dd06b5aa54f125d333e62af3d59c8d79c8501
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 12 01:02:41 2009 +0000
+
+    Add MoneyUtils for BigMoney
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@50 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/MoneyUtils.java
+A	src/test/java/org/joda/money/TestMoneyUtils_BigMoney.java
+
+commit c84289020817af19c765b6126cd8ec3ff7e22070
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 12 01:00:41 2009 +0000
+
+    Rename TestMoneyUtils
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@49 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+R096	src/test/java/org/joda/money/TestMoneyUtils.java	src/test/java/org/joda/money/TestMoneyUtils_Money.java
+
+commit 8a398e0f2b52f701724c4cdba7c01775ed597082
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 12 00:57:45 2009 +0000
+
+    Add null casts
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@48 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/test/java/org/joda/money/TestMoneyUtils.java
+
+commit 97eb2f698335a3f52d740b9c7b309515c36d92ae
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Nov 12 00:47:45 2009 +0000
+
+    Javadoc
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@47 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+
+commit 0c6c3752172c1b37d8c8aada400832a00ff9da90
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Nov 11 23:50:43 2009 +0000
+
+    Add ofCountry() factory method
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@46 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit 65b5b05e9899378cd32206e6d18899fee874918e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Nov 11 23:29:54 2009 +0000
+
+    Add assertions for state of key classes in constructor
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@45 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/Money.java
+
+commit a2f57a2b1c503985560a6362633055219f51f4d0
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Nov 11 23:12:10 2009 +0000
+
+    Money/BigMoney API enhancements
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@44 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/BigMoneyProvider.java
+M	src/main/java/org/joda/money/Money.java
+M	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+
+commit f4e26aee4a2b10c89e2f942ddf2fcd44ac762118
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Nov 11 23:10:37 2009 +0000
+
+    Add defaultIfZero() and adjust null handling
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@43 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/MoneyUtils.java
+M	src/test/java/org/joda/money/TestMoneyUtils.java
+
+commit 1ff2c100eabcffdc1fca5ad9e1962789a46d385e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Nov 2 00:03:59 2009 +0000
+
+    Test BigMoney and Tidy API
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@42 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+M	src/main/java/org/joda/money/Money.java
+A	src/test/java/org/joda/money/TestBigMoney.java
+M	src/test/java/org/joda/money/TestMoney.java
+
+commit 88c64823ac6cb2356d8245e09c1f867386d3bd09
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Tue Oct 6 00:16:42 2009 +0000
+
+    Complete main BigMoney/Money API with BigMoneyProvider
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@41 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+A	src/main/java/org/joda/money/BigMoneyProvider.java
+M	src/main/java/org/joda/money/Money.java
+M	src/test/java/org/joda/money/TestMoney.java
+
+commit fb64b39d416fbecdba538151ac22ecb124bc6424
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Oct 3 13:57:05 2009 +0000
+
+    Minor update
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@40 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/BigMoney.java
+
+commit b9ea05fd1912321f1f5401b4dcf7b3fcd1b0f77a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Sep 24 23:35:22 2009 +0000
+
+    Initial checkin
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@39 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+A	src/main/java/org/joda/money/BigMoney.java
+
+commit de7f04949240c65dbdc8660f6df03b5bdc300c7c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Sep 24 23:35:06 2009 +0000
+
+    Javadoc
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@38 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/Money.java
+
+commit f350c84187bb9c73bf47426419e6663909f5a789
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Sep 12 10:57:14 2009 +0000
+
+    Fix Javadoc to better describe null behaviour
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@37 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/MoneyUtils.java
+
+commit 45c94b36d0cacba7d979d98a6e673b26a15bd025
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Sep 2 23:08:30 2009 +0000
+
+    Remove unused code
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@36 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+
+commit cef88863568840c44b17703c353c7d3062d80d02
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Aug 30 17:01:40 2009 +0000
+
+    Enhance formatting
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@35 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+A	src/main/java/org/joda/money/format/MoneyAmountStyle.java
+M	src/main/java/org/joda/money/format/MoneyFormatter.java
+M	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+A	src/test/java/org/joda/money/format/TestMoneyAmountStyle.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+M	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 2e661824dfaeb05a781cf9b6167049ed1782d6cf
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sun Aug 30 09:38:33 2009 +0000
+
+    Enhance deserialization to protect against data clashes
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@34 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit f40054ba616c8f6b3009ec93ed78ce536a5c303a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 26 22:42:20 2009 +0000
+
+    Javadoc
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@33 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+
+commit 2151bc0842f1bdc1d1f7ffb15867b035f44c4b3e
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 26 11:19:37 2009 +0000
+
+    Enhance formatting
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@32 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+D	src/main/java/org/joda/money/MoneyFormatter.java
+A	src/main/java/org/joda/money/format/MoneyFormatException.java
+A	src/main/java/org/joda/money/format/MoneyFormatter.java
+A	src/main/java/org/joda/money/format/MoneyFormatterBuilder.java
+A	src/main/java/org/joda/money/format/MoneyPrintContext.java
+A	src/main/java/org/joda/money/format/MoneyPrinter.java
+R051	src/test/java/org/joda/money/TestMoneyFormatter.java	src/test/java/org/joda/money/format/TestMoneyFormatter.java
+A	src/test/java/org/joda/money/format/TestMoneyFormatterBuilder.java
+
+commit 56c7562a72cbdf6a1b8d1cbee2f6a459d9e98400
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 26 11:18:41 2009 +0000
+
+    Javadoc
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@31 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/MoneyUtils.java
+
+commit 8719e589b36c2da7afa4bad5dc723a4dd5753263
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 26 11:18:28 2009 +0000
+
+    Add getNumeric3Code
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@30 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit ff0c33188afc132ee3bea89fb4b489cdac8cbc7c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Aug 24 22:22:05 2009 +0000
+
+    More work on formatter
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@29 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/MoneyFormatter.java
+
+commit 4faefed530c36b9666365a483f2f82d72f81db5a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Aug 24 22:21:46 2009 +0000
+
+    Better money file format
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@28 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnitDataProvider.java
+D	src/main/java/org/joda/money/MoneyData-JDK.csv
+M	src/main/java/org/joda/money/MoneyData.csv
+
+commit a796451f830822096370367fc800b3a55d3c0c3d
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Mon Aug 24 22:21:25 2009 +0000
+
+    No release yet
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@27 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/site/xdoc/index.xml
+
+commit 4b0f6f76fdab5d52703e4503043ae3135bad2d1f
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 22 23:40:57 2009 +0000
+
+    Initial money formatter
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@26 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+A	src/main/java/org/joda/money/MoneyFormatter.java
+A	src/test/java/org/joda/money/TestMoneyFormatter.java
+
+commit 86e3987b770bb801647c4591bad99da8578e9f01
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 22 22:59:55 2009 +0000
+
+    Add Locale lookup to CurrencyUnit
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@25 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/CurrencyUnitDataProvider.java
+M	src/main/java/org/joda/money/Money.java
+M	src/main/java/org/joda/money/MoneyData.csv
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit 044f32b2426de170e6a3dc5a3d1444a13b455ab4
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 22 21:58:55 2009 +0000
+
+    Better integrate CurrencyUnit and Currency API
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@24 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/Money.java
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit 2f291c037726aa73705902fa1c50e6b3798b4ce5
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 22 21:35:38 2009 +0000
+
+    Integrate CurrencyUnit
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@23 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/Money.java
+M	src/test/java/org/joda/money/TestMoney.java
+
+commit b9b164a454acc97288c197b6df66a19451a06b7a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 22 21:34:59 2009 +0000
+
+    Javadoc
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@22 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+
+commit ac6a4d373e48f5f6d03e317ecfd56c5beccf6204
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 22 20:45:09 2009 +0000
+
+    Prepare for 0.1
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@21 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/changes/changes.xml
+M	src/site/xdoc/index.xml
+
+commit e106e21d9e57d9ff4aa346afe892464b98fff882
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 22 20:43:50 2009 +0000
+
+    Add data provider for CurrencyUnit
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@20 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+A	src/main/java/org/joda/money/CurrencyUnitDataProvider.java
+A	src/main/java/org/joda/money/MoneyData-JDK.csv
+A	src/main/java/org/joda/money/MoneyData.csv
+M	src/test/java/org/joda/money/TestCurrencyUnit.java
+
+commit dda6469799baf62734a76990e1dd48c8ec25428a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 22 15:36:54 2009 +0000
+
+    svn ignore
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@19 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+commit 3989da7014a6962aa5eb437f3454e160715ce121
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 22 15:34:37 2009 +0000
+
+    Fix pom
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@18 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	pom.xml
+
+commit 6abc9e61492b07fa11dd154eefff41c38bf9e457
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 22 14:42:09 2009 +0000
+
+    Enhance site
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@17 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+A	src/site/resources/images/jodamoney.png
+M	src/site/site.xml
+
+commit e63b5607a130eb53802eaf8794116f41b14fa38a
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 22 14:39:10 2009 +0000
+
+    Javadoc fixes
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@16 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/CurrencyUnit.java
+M	src/main/java/org/joda/money/Money.java
+
+commit 0a403cdab7cdc4343b1c6de98c1e6f002c595339
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 22 14:15:37 2009 +0000
+
+    Add methods to Money
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@15 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/main/java/org/joda/money/Money.java
+M	src/test/java/org/joda/money/TestMoney.java
+
+commit 6f36887fea48b681b32194791a10fd200d2e5685
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Sat Aug 22 14:10:00 2009 +0000
+
+    Enhance site
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@14 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	src/site/site.xml
+M	src/site/xdoc/index.xml
+
+commit b70321acb6f6b8ed23046d2f5ca969f7545f2490
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 20 00:38:25 2009 +0000
+
+    Initial checkin
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@13 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	pom.xml
+M	src/site/site.xml
+
+commit 0b579ec3b167a8949fbe699cbf39e2f440afadc3
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 20 00:22:12 2009 +0000
+
+    Initial checkin
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@12 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+A	src/site/xdoc/index.xml
+A	src/site/xdoc/licensecover.xml
+A	src/site/xdoc/tasks.xml
+
+commit ccb6f9c85d55411a77c97b97da1355f4e05da2e1
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 20 00:20:21 2009 +0000
+
+    Initial checkin
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@11 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+A	src/site/resources/css/site.css
+A	src/site/resources/images/joda.png
+
+commit 86d197e08e13e925f8c8c45b33798199c3e99843
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 20 00:19:55 2009 +0000
+
+    Initial checkin
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@10 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+A	src/site/site.xml
+
+commit f3933efad13fdd06f2c9d7f156ab469104eb796c
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 20 00:18:59 2009 +0000
+
+    Initial checkin
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@9 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+M	pom.xml
+
+commit 474f4715f98a7ab3dd1118a999e992847bd438dd
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Thu Aug 20 00:18:33 2009 +0000
+
+    Initial checkin
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@8 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+A	src/changes/changes.xml
+
+commit b9d0adf44b879a9c639272b14d7d31b0bb228767
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 19 23:39:24 2009 +0000
+
+    Initial checkin
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@7 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+commit ceb79a34f3ebe37e7ff0a9149ea8b958f1915d89
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 19 23:06:05 2009 +0000
+
+    Ignore target
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@6 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+commit ec5db7277203f01541db12973eec7b358a3e3538
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 19 23:02:38 2009 +0000
+
+    Initial checkin
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@5 2c5f9ba7-4085-48b6-80d1-8d266ab48176
+
+A	.checkstyle
+A	.classpath
+A	.project
+A	.settings/org.eclipse.jdt.core.prefs
+A	LICENSE.txt
+A	NOTICE.txt
+A	RELEASE-NOTES.txt
+A	checkstyle.xml
+A	pom.xml
+A	src/main/java/org/joda/money/CurrencyUnit.java
+A	src/main/java/org/joda/money/Money.java
+A	src/main/java/org/joda/money/MoneyException.java
+A	src/main/java/org/joda/money/MoneyUtils.java
+A	src/test/java/org/joda/money/TestCurrencyUnit.java
+A	src/test/java/org/joda/money/TestMoney.java
+A	src/test/java/org/joda/money/TestMoneyUtils.java
+
+commit c01e9660248ad049bbdd9cb7f82b80bc2e05c126
+Author: Stephen Colebourne <scolebourne@joda.org>
+Date:   Wed Aug 19 22:55:35 2009 +0000
+
+    Create trunk
+    
+    git-svn-id: http://joda-money.svn.sourceforge.net/svnroot/joda-money/JodaMoney/trunk@2 2c5f9ba7-4085-48b6-80d1-8d266ab48176

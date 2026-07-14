@@ -1,0 +1,1881 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="gson-2.10.1">
+    <container name="/home/leo/repos/gson-gson-parent-2.10.1/gson/target/gson-2.10.1.jar" classification="osgi-bundle">
+      <namespace name="com.google.gson">
+        <type name="com.google.gson.GsonBuilder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="20">
+            <depends-on name="com.google.gson.internal.Excluder" classification="uses" />
+            <depends-on name="com.google.gson.LongSerializationPolicy" classification="uses" />
+            <depends-on name="com.google.gson.FieldNamingStrategy" classification="uses" />
+            <depends-on name="com.google.gson.InstanceCreator" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.ToNumberStrategy" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.FieldNamingPolicy" classification="uses" />
+            <depends-on name="com.google.gson.ExclusionStrategy" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.JsonSerializer" classification="uses" />
+            <depends-on name="com.google.gson.JsonDeserializer" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.$Gson$Preconditions" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TreeTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.internal.sql.SqlTypesSupport" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter$DateType" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.ToNumberPolicy" classification="enum" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.ToNumberStrategy" classification="implements" />
+            <depends-on name="com.google.gson.ToNumberPolicy$1" classification="uses" />
+            <depends-on name="com.google.gson.ToNumberPolicy$2" classification="uses" />
+            <depends-on name="com.google.gson.ToNumberPolicy$3" classification="uses" />
+            <depends-on name="com.google.gson.ToNumberPolicy$4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.FieldAttributes" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.JsonSerializer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.JsonSerializationContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.FieldNamingPolicy$1" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.FieldNamingPolicy" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.LongSerializationPolicy$1" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.LongSerializationPolicy" classification="extends" />
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.JsonPrimitive" classification="uses" />
+            <depends-on name="com.google.gson.JsonNull" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.ToNumberPolicy$3" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.ToNumberPolicy" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.MalformedJsonException" classification="uses" />
+            <depends-on name="com.google.gson.JsonParseException" classification="uses" />
+            <depends-on name="com.google.gson.ToNumberPolicy$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.JsonIOException" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.JsonParseException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.Gson$4" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.JsonSyntaxException" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.JsonParseException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.FieldNamingPolicy$4" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.FieldNamingPolicy" classification="extends" />
+            <depends-on name="com.google.gson.FieldNamingPolicy$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.Gson$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.JsonArray" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.JsonElement" classification="extends" />
+            <depends-on name="com.google.gson.JsonPrimitive" classification="uses" />
+            <depends-on name="com.google.gson.internal.NonNullElementWrapperList" classification="uses" />
+            <depends-on name="com.google.gson.JsonNull" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.LongSerializationPolicy" classification="enum" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.LongSerializationPolicy$1" classification="uses" />
+            <depends-on name="com.google.gson.LongSerializationPolicy$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.ReflectionAccessFilter$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.ReflectionAccessFilter" classification="implements" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter$FilterResult" classification="uses" />
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.Gson" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="43">
+            <depends-on name="com.google.gson.FieldNamingStrategy" classification="uses" />
+            <depends-on name="com.google.gson.ToNumberStrategy" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.internal.Excluder" classification="uses" />
+            <depends-on name="com.google.gson.InstanceCreator" classification="uses" />
+            <depends-on name="com.google.gson.LongSerializationPolicy" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter" classification="uses" />
+            <depends-on name="com.google.gson.GsonBuilder" classification="uses" />
+            <depends-on name="com.google.gson.Gson$FutureTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.JsonTreeWriter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.MalformedJsonException" classification="uses" />
+            <depends-on name="com.google.gson.internal.LazilyParsedNumber" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.CollectionTypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.MapTypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.Gson$1" classification="uses" />
+            <depends-on name="com.google.gson.Gson$2" classification="uses" />
+            <depends-on name="com.google.gson.Gson$3" classification="uses" />
+            <depends-on name="com.google.gson.Gson$4" classification="uses" />
+            <depends-on name="com.google.gson.Gson$5" classification="uses" />
+            <depends-on name="com.google.gson.internal.GsonBuildConfig" classification="uses" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.JsonTreeReader" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ObjectTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.NumberTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.DateTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.sql.SqlTypesSupport" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ArrayTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.JsonNull" classification="uses" />
+            <depends-on name="com.google.gson.internal.Streams" classification="uses" />
+            <depends-on name="com.google.gson.internal.Primitives" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.FieldNamingPolicy" classification="uses" />
+            <depends-on name="com.google.gson.ToNumberPolicy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.JsonElement" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.JsonObject" classification="uses" />
+            <depends-on name="com.google.gson.JsonArray" classification="uses" />
+            <depends-on name="com.google.gson.JsonPrimitive" classification="uses" />
+            <depends-on name="com.google.gson.JsonNull" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.Streams" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.ToNumberPolicy$1" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.ToNumberPolicy" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.FieldNamingPolicy$3" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.FieldNamingPolicy" classification="extends" />
+            <depends-on name="com.google.gson.FieldNamingPolicy$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.ToNumberPolicy$2" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.ToNumberPolicy" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.internal.LazilyParsedNumber" classification="uses" />
+            <depends-on name="com.google.gson.ToNumberPolicy$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.Gson$5" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.TypeAdapter$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.JsonParseException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.ToNumberStrategy" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.TypeAdapterFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.ReflectionAccessFilter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.ReflectionAccessFilter$FilterResult" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter$1" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter$2" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter$3" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter$4" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.JsonDeserializationContext" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.JsonParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.Gson$FutureTypeAdapter" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.internal.bind.SerializationDelegatingTypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.InstanceCreator" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.Gson$3" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.LongSerializationPolicy" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.ToNumberPolicy$4" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.ToNumberPolicy" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.JsonParseException" classification="uses" />
+            <depends-on name="com.google.gson.ToNumberPolicy$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.JsonPrimitive" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.JsonElement" classification="extends" />
+            <depends-on name="com.google.gson.internal.LazilyParsedNumber" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.JsonObject" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.JsonElement" classification="extends" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap" classification="uses" />
+            <depends-on name="com.google.gson.JsonPrimitive" classification="uses" />
+            <depends-on name="com.google.gson.JsonArray" classification="uses" />
+            <depends-on name="com.google.gson.JsonNull" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.FieldNamingPolicy$2" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.FieldNamingPolicy" classification="extends" />
+            <depends-on name="com.google.gson.FieldNamingPolicy$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.JsonNull" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.JsonElement" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.ReflectionAccessFilter$FilterResult" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.ReflectionAccessFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.ReflectionAccessFilter$3" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.ReflectionAccessFilter" classification="implements" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter$FilterResult" classification="uses" />
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.Gson$2" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.FieldNamingPolicy$7" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.FieldNamingPolicy" classification="extends" />
+            <depends-on name="com.google.gson.FieldNamingPolicy$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.JsonParser" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.MalformedJsonException" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+            <depends-on name="com.google.gson.JsonParseException" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.Streams" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.FieldNamingStrategy" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.FieldNamingPolicy$5" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.FieldNamingPolicy" classification="extends" />
+            <depends-on name="com.google.gson.FieldNamingPolicy$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.ExclusionStrategy" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.FieldAttributes" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.ReflectionAccessFilter$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.ReflectionAccessFilter" classification="implements" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter$FilterResult" classification="uses" />
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.JsonDeserializer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.JsonDeserializationContext" classification="uses" />
+            <depends-on name="com.google.gson.JsonParseException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.JsonSerializationContext" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.FieldNamingPolicy$6" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.FieldNamingPolicy" classification="extends" />
+            <depends-on name="com.google.gson.FieldNamingPolicy$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.FieldNamingPolicy" classification="enum" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="com.google.gson.FieldNamingStrategy" classification="implements" />
+            <depends-on name="com.google.gson.FieldNamingPolicy$1" classification="uses" />
+            <depends-on name="com.google.gson.FieldNamingPolicy$2" classification="uses" />
+            <depends-on name="com.google.gson.FieldNamingPolicy$3" classification="uses" />
+            <depends-on name="com.google.gson.FieldNamingPolicy$4" classification="uses" />
+            <depends-on name="com.google.gson.FieldNamingPolicy$5" classification="uses" />
+            <depends-on name="com.google.gson.FieldNamingPolicy$6" classification="uses" />
+            <depends-on name="com.google.gson.FieldNamingPolicy$7" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.LongSerializationPolicy$2" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.LongSerializationPolicy" classification="extends" />
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.JsonPrimitive" classification="uses" />
+            <depends-on name="com.google.gson.LongSerializationPolicy$1" classification="uses" />
+            <depends-on name="com.google.gson.JsonNull" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.TypeAdapter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.JsonTreeWriter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapter$1" classification="uses" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.JsonTreeReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.ReflectionAccessFilter$4" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.ReflectionAccessFilter" classification="implements" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter$FilterResult" classification="uses" />
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.JsonStreamParser" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.stream.MalformedJsonException" classification="uses" />
+            <depends-on name="com.google.gson.JsonParseException" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+            <depends-on name="com.google.gson.internal.Streams" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.gson.annotations">
+        <type name="com.google.gson.annotations.Expose" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.annotations.Since" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.annotations.SerializedName" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.annotations.JsonAdapter" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.annotations.Until" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.annotations.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.gson.stream">
+        <type name="com.google.gson.stream.JsonReader" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonScope" classification="uses" />
+            <depends-on name="com.google.gson.stream.MalformedJsonException" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.JsonReaderInternalAccess" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.stream.JsonWriter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.stream.JsonScope" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.stream.JsonScope" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.stream.JsonReader$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.internal.JsonReaderInternalAccess" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.JsonTreeReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.stream.JsonToken" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.stream.MalformedJsonException" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.stream.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.gson.internal">
+        <type name="com.google.gson.internal.ConstructorConstructor$2" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.InstanceCreator" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$14" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.Excluder$1" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.Excluder" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$7" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter$FilterResult" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$4" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$16" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.UnsafeAllocator$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.internal.UnsafeAllocator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$15" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$5" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.$Gson$Types$ParameterizedTypeImpl" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.$Gson$Preconditions" classification="uses" />
+            <depends-on name="com.google.gson.internal.$Gson$Types" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ReflectionAccessFilterHelper$AccessChecker" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper$AccessChecker$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper$AccessChecker$2" classification="uses" />
+            <depends-on name="com.google.gson.internal.JavaVersion" classification="uses" />
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.InstanceCreator" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$19" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+            <depends-on name="com.google.gson.internal.UnsafeAllocator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$18" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ReflectionAccessFilterHelper$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.LinkedTreeMap" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$Node" classification="uses" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$EntrySet" classification="uses" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$KeySet" classification="uses" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$LinkedTreeMapIterator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$12" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ObjectConstructor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.UnsafeAllocator$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.internal.UnsafeAllocator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.Excluder" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="10">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.ExclusionStrategy" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.annotations.Expose" classification="uses" />
+            <depends-on name="com.google.gson.FieldAttributes" classification="uses" />
+            <depends-on name="com.google.gson.annotations.Since" classification="uses" />
+            <depends-on name="com.google.gson.annotations.Until" classification="uses" />
+            <depends-on name="com.google.gson.internal.Excluder$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.Primitives" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.Streams$AppendableWriter$CurrentWrite" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.internal.Streams$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.Streams$AppendableWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.Streams" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.Streams$AppendableWriter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.internal.Streams$AppendableWriter$CurrentWrite" classification="uses" />
+            <depends-on name="com.google.gson.internal.Streams$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.Streams" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.LinkedTreeMap$Node" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.internal.LinkedTreeMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.$Gson$Preconditions" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$3" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$6" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.JsonReaderInternalAccess" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$11" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.GsonBuildConfig" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.UnsafeAllocator" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="sun.misc.Unsafe" classification="uses" />
+            <depends-on name="com.google.gson.internal.UnsafeAllocator$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.UnsafeAllocator$2" classification="uses" />
+            <depends-on name="com.google.gson.internal.UnsafeAllocator$3" classification="uses" />
+            <depends-on name="com.google.gson.internal.UnsafeAllocator$4" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.JavaVersion" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.LinkedTreeMap$KeySet" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.internal.LinkedTreeMap" classification="uses" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$KeySet$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.Streams$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.internal.Streams" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ReflectionAccessFilterHelper$AccessChecker$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper$AccessChecker" classification="extends" />
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$10" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ReflectionAccessFilterHelper" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.ReflectionAccessFilter$FilterResult" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter" classification="uses" />
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper$AccessChecker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.LinkedTreeMap$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.internal.LinkedTreeMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$17" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.$Gson$Types$WildcardTypeImpl" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.$Gson$Preconditions" classification="uses" />
+            <depends-on name="com.google.gson.internal.$Gson$Types" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.Streams" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="13">
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.MalformedJsonException" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+            <depends-on name="com.google.gson.internal.Streams$AppendableWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.Streams$1" classification="uses" />
+            <depends-on name="com.google.gson.JsonParseException" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.JsonNull" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.$Gson$Types" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.internal.$Gson$Types$ParameterizedTypeImpl" classification="uses" />
+            <depends-on name="com.google.gson.internal.$Gson$Types$GenericArrayTypeImpl" classification="uses" />
+            <depends-on name="com.google.gson.internal.$Gson$Types$WildcardTypeImpl" classification="uses" />
+            <depends-on name="com.google.gson.internal.$Gson$Preconditions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$8" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter$FilterResult" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.UnsafeAllocator$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.internal.UnsafeAllocator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.LinkedTreeMap$KeySet$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$LinkedTreeMapIterator" classification="extends" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$KeySet" classification="uses" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap" classification="uses" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.UnsafeAllocator$4" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.internal.UnsafeAllocator" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.$Gson$Types$GenericArrayTypeImpl" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.internal.$Gson$Types" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.LinkedTreeMap$LinkedTreeMapIterator" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$Node" classification="uses" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="27">
+            <depends-on name="com.google.gson.InstanceCreator" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter" classification="uses" />
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter$FilterResult" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$2" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$3" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$4" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$5" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$6" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$7" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$8" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$9" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$10" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$11" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$12" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$13" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$14" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$15" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$16" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$17" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$18" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$19" classification="uses" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor$20" classification="uses" />
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper" classification="uses" />
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$9" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter$FilterResult" classification="uses" />
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$20" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.LinkedTreeMap$EntrySet$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$LinkedTreeMapIterator" classification="extends" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$EntrySet" classification="uses" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap" classification="uses" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.PreJava9DateFormatProvider" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.LinkedTreeMap$EntrySet" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.internal.LinkedTreeMap" classification="uses" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$Node" classification="uses" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap$EntrySet$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ConstructorConstructor$13" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.NonNullElementWrapperList" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.LazilyParsedNumber" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.ReflectionAccessFilterHelper$AccessChecker$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper$AccessChecker" classification="extends" />
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.gson.internal.sql">
+        <type name="com.google.gson.internal.sql.SqlTimestampTypeAdapter$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.sql.SqlTimestampTypeAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.sql.SqlTimestampTypeAdapter" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.sql.SqlTimestampTypeAdapter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.sql.SqlTypesSupport" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter$DateType" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.internal.sql.SqlTypesSupport$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.sql.SqlTypesSupport$2" classification="uses" />
+            <depends-on name="com.google.gson.internal.sql.SqlDateTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.sql.SqlTimeTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.sql.SqlTimestampTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.sql.SqlDateTypeAdapter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.sql.SqlDateTypeAdapter$1" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.sql.SqlTypesSupport$2" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter$DateType" classification="extends" />
+            <depends-on name="com.google.gson.internal.sql.SqlTypesSupport" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.sql.SqlTimeTypeAdapter$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.sql.SqlTimeTypeAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.sql.SqlDateTypeAdapter$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.sql.SqlDateTypeAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.sql.SqlTypesSupport$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter$DateType" classification="extends" />
+            <depends-on name="com.google.gson.internal.sql.SqlTypesSupport" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.sql.SqlTimeTypeAdapter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.sql.SqlTimeTypeAdapter$1" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.gson.internal.bind">
+        <type name="com.google.gson.internal.bind.TypeAdapters$28" classification="class" visibility="default">
+          <dependencies count="13">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonPrimitive" classification="uses" />
+            <depends-on name="com.google.gson.JsonArray" classification="uses" />
+            <depends-on name="com.google.gson.JsonObject" classification="uses" />
+            <depends-on name="com.google.gson.internal.LazilyParsedNumber" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.JsonTreeReader" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$35" classification="uses" />
+            <depends-on name="com.google.gson.JsonNull" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$9" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.NumberTypeAdapter$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.bind.NumberTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$14" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$20" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.ArrayTypeAdapter$1" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ArrayTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.$Gson$Types" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.JsonParseException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$34$1" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$34" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.MapTypeAdapterFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="9">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.$Gson$Types" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.SerializationDelegatingTypeAdapter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.ObjectTypeAdapter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="11">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.ToNumberStrategy" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ObjectTypeAdapter$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.LinkedTreeMap" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ObjectTypeAdapter$2" classification="uses" />
+            <depends-on name="com.google.gson.ToNumberPolicy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$34" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$34$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter" classification="extends" />
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.JsonTreeReader$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.internal.bind.JsonTreeReader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.CollectionTypeAdapterFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.$Gson$Types" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$24" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.annotations.SerializedName" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter$1" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$25" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$12" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.DefaultDateTypeAdapter$DateType" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter$DateType$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.ObjectTypeAdapter$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.bind.ObjectTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$30" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$16" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$31" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$18" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.internal.LazilyParsedNumber" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$7" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$8" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$29" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$21" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.SerializationDelegatingTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.DefaultDateTypeAdapter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="10">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter$DateType" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter$1" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.JavaVersion" classification="uses" />
+            <depends-on name="com.google.gson.internal.PreJava9DateFormatProvider" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.util.ISO8601Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$26" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$27" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.JsonTreeReader" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="10">
+            <depends-on name="com.google.gson.stream.JsonReader" classification="extends" />
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.JsonArray" classification="uses" />
+            <depends-on name="com.google.gson.JsonObject" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.JsonPrimitive" classification="uses" />
+            <depends-on name="com.google.gson.JsonNull" classification="uses" />
+            <depends-on name="com.google.gson.stream.MalformedJsonException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.JsonTreeReader$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.JsonTreeReader$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$17" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="41">
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.internal.LazilyParsedNumber" classification="uses" />
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$30" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$31" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$32" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$33" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$34" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$2" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$3" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$4" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$5" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$6" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$7" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$8" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$9" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$10" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$11" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$12" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$13" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$14" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$15" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$16" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$17" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$18" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$19" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$20" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$21" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$22" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$23" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$24" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$25" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$26" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$27" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$28" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$29" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$35" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.JsonTreeWriter$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.internal.bind.JsonTreeWriter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$15" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$10" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="13">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.MapTypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.JsonPrimitive" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.JsonReaderInternalAccess" classification="uses" />
+            <depends-on name="com.google.gson.internal.Streams" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.CollectionTypeAdapterFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.ArrayTypeAdapter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ArrayTypeAdapter$1" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="com.google.gson.JsonSerializationContext" classification="implements" />
+            <depends-on name="com.google.gson.JsonDeserializationContext" classification="implements" />
+            <depends-on name="com.google.gson.internal.bind.TreeTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TreeTypeAdapter$1" classification="uses" />
+            <depends-on name="com.google.gson.JsonParseException" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$22" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$3" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TreeTypeAdapter$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.internal.bind.TreeTypeAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$23" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.ObjectTypeAdapter$1" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.ToNumberStrategy" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ObjectTypeAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$33" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$32" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.NumberTypeAdapter$1" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.internal.bind.NumberTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.ToNumberStrategy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.JsonTreeWriter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="extends" />
+            <depends-on name="com.google.gson.JsonPrimitive" classification="uses" />
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.JsonObject" classification="uses" />
+            <depends-on name="com.google.gson.JsonArray" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.JsonTreeWriter$1" classification="uses" />
+            <depends-on name="com.google.gson.JsonNull" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1" classification="class" visibility="default">
+          <dependencies count="11">
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField" classification="extends" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper" classification="uses" />
+            <depends-on name="com.google.gson.JsonParseException" classification="uses" />
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$RecordAdapter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter" classification="extends" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.NumberTypeAdapter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="10">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.ToNumberStrategy" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.NumberTypeAdapter$1" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.NumberTypeAdapter$2" classification="uses" />
+            <depends-on name="com.google.gson.ToNumberPolicy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.DateTypeAdapter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="10">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.DateTypeAdapter$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.JavaVersion" classification="uses" />
+            <depends-on name="com.google.gson.internal.PreJava9DateFormatProvider" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.util.ISO8601Utils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$35" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$6" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$11" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TreeTypeAdapter$SingleTypeFactory" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.JsonSerializer" classification="uses" />
+            <depends-on name="com.google.gson.JsonDeserializer" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TreeTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.$Gson$Preconditions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TreeTypeAdapter" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="16">
+            <depends-on name="com.google.gson.internal.bind.SerializationDelegatingTypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.JsonSerializer" classification="uses" />
+            <depends-on name="com.google.gson.JsonDeserializer" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.JsonElement" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TreeTypeAdapter$SingleTypeFactory" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TreeTypeAdapter$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.Streams" classification="uses" />
+            <depends-on name="com.google.gson.JsonDeserializationContext" classification="uses" />
+            <depends-on name="com.google.gson.JsonSerializationContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.DefaultDateTypeAdapter$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.DefaultDateTypeAdapter$DateType$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter$DateType" classification="extends" />
+            <depends-on name="com.google.gson.internal.bind.DefaultDateTypeAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$19" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$5" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.JsonTreeReader$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.bind.JsonTreeReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="23">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+            <depends-on name="com.google.gson.FieldNamingStrategy" classification="uses" />
+            <depends-on name="com.google.gson.internal.Excluder" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter" classification="uses" />
+            <depends-on name="com.google.gson.annotations.SerializedName" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.ReflectionAccessFilter$FilterResult" classification="uses" />
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField" classification="uses" />
+            <depends-on name="com.google.gson.annotations.JsonAdapter" classification="uses" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$RecordAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.ReflectionAccessFilterHelper" classification="uses" />
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper" classification="uses" />
+            <depends-on name="com.google.gson.internal.Primitives" classification="uses" />
+            <depends-on name="com.google.gson.internal.$Gson$Types" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.DateTypeAdapter$1" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.DateTypeAdapter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$13" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$4" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.TypeAdapters$2" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="com.google.gson.TypeAdapter" classification="extends" />
+            <depends-on name="com.google.gson.stream.JsonReader" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonToken" classification="uses" />
+            <depends-on name="com.google.gson.stream.JsonWriter" classification="uses" />
+            <depends-on name="com.google.gson.JsonSyntaxException" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TypeAdapters$35" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="10">
+            <depends-on name="com.google.gson.TypeAdapterFactory" classification="implements" />
+            <depends-on name="com.google.gson.internal.ConstructorConstructor" classification="uses" />
+            <depends-on name="com.google.gson.TypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.Gson" classification="uses" />
+            <depends-on name="com.google.gson.reflect.TypeToken" classification="uses" />
+            <depends-on name="com.google.gson.annotations.JsonAdapter" classification="uses" />
+            <depends-on name="com.google.gson.JsonSerializer" classification="uses" />
+            <depends-on name="com.google.gson.JsonDeserializer" classification="uses" />
+            <depends-on name="com.google.gson.internal.bind.TreeTypeAdapter" classification="uses" />
+            <depends-on name="com.google.gson.internal.ObjectConstructor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.gson.internal.bind.util">
+        <type name="com.google.gson.internal.bind.util.ISO8601Utils" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.gson.internal.reflect">
+        <type name="com.google.gson.internal.reflect.ReflectionHelper$RecordSupportedHelper" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper$RecordHelper" classification="extends" />
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.reflect.ReflectionHelper" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper$RecordHelper" classification="uses" />
+            <depends-on name="com.google.gson.JsonIOException" classification="uses" />
+            <depends-on name="com.google.gson.internal.GsonBuildConfig" classification="uses" />
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper$RecordSupportedHelper" classification="uses" />
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper$RecordNotSupportedHelper" classification="uses" />
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.reflect.ReflectionHelper$RecordHelper" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.reflect.ReflectionHelper$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.internal.reflect.ReflectionHelper$RecordNotSupportedHelper" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper$RecordHelper" classification="extends" />
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper$1" classification="uses" />
+            <depends-on name="com.google.gson.internal.reflect.ReflectionHelper" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="com.google.gson.reflect">
+        <type name="com.google.gson.reflect.TypeToken" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="com.google.gson.internal.$Gson$Types" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="com.google.gson.reflect.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

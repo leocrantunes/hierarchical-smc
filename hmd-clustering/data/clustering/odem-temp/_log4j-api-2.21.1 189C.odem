@@ -1,0 +1,1407 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="log4j-api-2.21.1">
+    <container name="/home/leo/repos/logging-log4j2-rel-2.21.1/log4j-api/target/log4j-api-2.21.1.jar" classification="osgi-bundle">
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.message.ThreadDumpMessage$ThreadInfoFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.Provider" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertySource" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.EnvironmentPropertySource" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.SystemPropertiesPropertySource" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.logging.log4j">
+        <type name="org.apache.logging.log4j.BridgeAware" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.CloseableThreadContext$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.CloseableThreadContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.CloseableThreadContext$Instance" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.CloseableThreadContext$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.CloseableThreadContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.CloseableThreadContext" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.CloseableThreadContext$Instance" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.CloseableThreadContext$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.EventLogger" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.apache.logging.log4j.Marker" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.ExtendedLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.StructuredDataMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.MarkerManager" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.LogManager" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.Level" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.spi.StandardLevel" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Strings" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.LogBuilder$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.LogBuilder" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.LogBuilder" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.Marker" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Supplier" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.LogBuilder$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.LogManager" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="org.apache.logging.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerContextFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.Provider" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Strings" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.Terminable" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.simple.SimpleLoggerContextFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StackLocatorUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.StringFormatterMessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.ExtendedLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.ProviderUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.internal.LogManagerStatus" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.Logger" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="9">
+            <depends-on name="org.apache.logging.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Marker" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.MessageSupplier" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Supplier" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.FlowMessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.EntryMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.LogBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.LoggingException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.Marker" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.MarkerManager$Log4jMarker" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.Marker" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.PerformanceSensitive" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.MarkerManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.MarkerManager" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.Marker" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.MarkerManager$Log4jMarker" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.ThreadContext$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.ThreadContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.ThreadContext$ContextStack" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.ThreadContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.ThreadContext$EmptyIterator" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.ThreadContext$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.ThreadContext$EmptyThreadContextStack" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.spi.ThreadContextStack" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext$ContextStack" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext$EmptyIterator" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.ThreadContext" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="15">
+            <depends-on name="org.apache.logging.log4j.spi.ThreadContextStack" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.ThreadContextMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.ReadOnlyThreadContextMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext$ContextStack" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.DefaultThreadContextStack" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.NoOpThreadContextMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.ThreadContextMap2" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.DefaultThreadContextMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.CleanableThreadContextMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext$EmptyThreadContextStack" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext$EmptyIterator" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.ThreadContextMapFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterizedMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.logging.log4j.internal">
+        <type name="org.apache.logging.log4j.internal.DefaultLogBuilder" classification="class" visibility="public">
+          <dependencies count="13">
+            <depends-on name="org.apache.logging.log4j.BridgeAware" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.LogBuilder" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.ExtendedLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Marker" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Supplier" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.SimpleMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StackLocatorUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LambdaUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.internal.LogManagerStatus" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.internal.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.logging.log4j.message">
+        <type name="org.apache.logging.log4j.message.AbstractMessageFactory" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory2" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.SimpleMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ObjectMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.AsynchronouslyFormattable" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.BasicThreadInformation" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.message.ThreadInformation" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.Chars" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilders" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.Clearable" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.DefaultFlowMessageFactory$AbstractFlowMessage" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.message.FlowMessage" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilders" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.DefaultFlowMessageFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.DefaultFlowMessageFactory$SimpleEntryMessage" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.message.DefaultFlowMessageFactory$AbstractFlowMessage" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.message.EntryMessage" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.DefaultFlowMessageFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.DefaultFlowMessageFactory$SimpleExitMessage" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.message.DefaultFlowMessageFactory$AbstractFlowMessage" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.message.ExitMessage" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.EntryMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.DefaultFlowMessageFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.DefaultFlowMessageFactory" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.apache.logging.log4j.message.FlowMessageFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.EntryMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ExitMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.DefaultFlowMessageFactory$SimpleEntryMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ReusableMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.DefaultFlowMessageFactory$SimpleExitMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.DefaultFlowMessageFactory$AbstractFlowMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.AbstractLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Strings" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.EntryMessage" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.message.FlowMessage" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ExitMessage" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.message.FlowMessage" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.FlowMessage" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.FlowMessageFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.message.EntryMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ExitMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.FormattedMessage" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFormatMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.StringFormattedMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterizedMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.FormattedMessageFactory" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.message.AbstractMessageFactory" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.FormattedMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.LocalizedMessage" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.LoggerNameAwareMessage" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.FormattedMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.LocalizedMessageFactory" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.message.AbstractMessageFactory" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.LocalizedMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.LoggerNameAwareMessage" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.MapMessage$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.message.MapMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MapMessage$MapFormat" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.MapMessage$MapFormat" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.message.MapMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.MapMessage" classification="class" visibility="public">
+          <dependencies count="16">
+            <depends-on name="org.apache.logging.log4j.util.MultiFormatStringBuilderFormattable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.IndexedStringMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.IndexedReadOnlyStringMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.BiConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.TriConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MapMessage$MapFormat" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.AsynchronouslyFormattable" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PerformanceSensitive" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.SortedArrayStringMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Strings" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Chars" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MapMessage$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterFormatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.EnglishEnums" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilders" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MapMessageJsonFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.MapMessageJsonFormatter" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.util.IndexedStringMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilders" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.Message" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.MessageCollectionMessage" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.MessageFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.MessageFactory2" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.MessageFormatMessage" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.MessageFormatMessageFactory" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.message.AbstractMessageFactory" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFormatMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.MultiformatMessage" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ObjectArrayMessage" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.Constants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ObjectMessage" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilders" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ParameterConsumer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ParameterFormatter$MessagePatternAnalysis" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.message.ParameterFormatter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ParameterFormatter" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.message.ParameterFormatter$MessagePatternAnalysis" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilders" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ParameterVisitable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.message.ParameterConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PerformanceSensitive" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ParameterizedMessage" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterFormatter$MessagePatternAnalysis" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterFormatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Constants" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilders" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ParameterizedMessageFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.message.AbstractMessageFactory" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterizedMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ParameterizedNoReferenceMessageFactory$StatusMessage" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterizedNoReferenceMessageFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ParameterizedNoReferenceMessageFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.message.AbstractMessageFactory" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterizedMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.SimpleMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterizedNoReferenceMessageFactory$StatusMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ReusableMessage" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.util.PerformanceSensitive" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ReusableMessageFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory2" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.ReusableParameterizedMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ReusableSimpleMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ReusableObjectMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PerformanceSensitive" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Clearable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ReusableObjectMessage" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.logging.log4j.message.ReusableMessage" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterVisitable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.Clearable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PerformanceSensitive" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ObjectMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilders" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ReusableParameterizedMessage" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.apache.logging.log4j.message.ReusableMessage" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterVisitable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.Clearable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterFormatter$MessagePatternAnalysis" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PerformanceSensitive" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterizedMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterFormatter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Constants" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilders" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ReusableSimpleMessage" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.logging.log4j.message.ReusableMessage" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterVisitable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.Clearable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PerformanceSensitive" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.SimpleMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Constants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.SimpleMessage" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.SimpleMessageFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.message.AbstractMessageFactory" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.SimpleMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.StringFormattedMessage" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.StringFormatterMessageFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.message.AbstractMessageFactory" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.StringFormattedMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.StringMapMessage" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.message.MapMessage" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.message.AsynchronouslyFormattable" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PerformanceSensitive" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.StructuredDataCollectionMessage" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.MessageCollectionMessage" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.StructuredDataMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.StructuredDataId" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.Strings" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.StructuredDataMessage$Format" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.message.StructuredDataMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.StructuredDataMessage" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.message.MapMessage" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.message.StructuredDataId" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.StructuredDataMessage$Format" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.AsynchronouslyFormattable" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.EnglishEnums" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilders" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ThreadDumpMessage$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.message.ThreadDumpMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ThreadDumpMessage$BasicThreadInfoFactory" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.message.ThreadDumpMessage$ThreadInfoFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.ThreadInformation" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ThreadDumpMessage$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.BasicThreadInformation" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ThreadDumpMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ThreadDumpMessage$ThreadDumpMessageProxy" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.message.ThreadDumpMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ThreadDumpMessage$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ThreadDumpMessage$ThreadInfoFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.message.ThreadInformation" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ThreadDumpMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ThreadDumpMessage" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.ThreadDumpMessage$ThreadInfoFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ThreadInformation" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ThreadDumpMessage$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.AsynchronouslyFormattable" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Chars" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Strings" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ThreadDumpMessage$ThreadDumpMessageProxy" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ThreadDumpMessage$BasicThreadInfoFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.ServiceLoaderUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.ThreadInformation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.TimestampMessage" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.message.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.logging.log4j.simple">
+        <type name="org.apache.logging.log4j.simple.SimpleLogger" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.apache.logging.log4j.spi.AbstractLogger" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Marker" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.simple.SimpleLoggerContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Strings" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.simple.SimpleLoggerContext" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.logging.log4j.spi.LoggerContext" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerRegistry" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.ExtendedLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.simple.SimpleLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.AbstractLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.simple.SimpleLoggerContextFactory" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.spi.LoggerContextFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.simple.SimpleLoggerContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.simple.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.logging.log4j.spi">
+        <type name="org.apache.logging.log4j.spi.AbstractLogger" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="28">
+            <depends-on name="org.apache.logging.log4j.spi.ExtendedLogger" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.spi.LocationAwareLogger" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.Marker" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.FlowMessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory2" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.internal.DefaultLogBuilder" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ReusableMessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterizedMessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.DefaultFlowMessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Supplier" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.MessageSupplier" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.EntryMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PerformanceSensitive" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.LogBuilder" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.MessageFactory2Adapter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.StringFormattedMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.LoggingException" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Constants" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LambdaUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ExitMessage" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StackLocatorUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.MarkerManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.AbstractLoggerAdapter" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.spi.LoggerAdapter" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerContextShutdownAware" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerContextShutdownEnabled" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.LogManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.CleanableThreadContextMap" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.spi.ThreadContextMap2" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.CopyOnWrite" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.CopyOnWriteSortedArrayThreadContextMap$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.spi.CopyOnWriteSortedArrayThreadContextMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StringMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.ReadOnlyStringMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.CopyOnWriteSortedArrayThreadContextMap" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="org.apache.logging.log4j.spi.ReadOnlyThreadContextMap" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.spi.ObjectThreadContextMap" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.spi.CopyOnWrite" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.StringMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.ReadOnlyStringMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.ThreadContextMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.CopyOnWriteSortedArrayThreadContextMap$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.SortedArrayStringMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.DefaultThreadContextMap$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.spi.DefaultThreadContextMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.DefaultThreadContextMap" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.spi.ThreadContextMap" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.ReadOnlyStringMap" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.BiConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.TriConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.DefaultThreadContextMap$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.DefaultThreadContextStack" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.apache.logging.log4j.spi.ThreadContextStack" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.spi.MutableThreadContextStack" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext$ContextStack" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Strings" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilders" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.ExtendedLogger" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.Logger" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Marker" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.MessageSupplier" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Supplier" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.ExtendedLoggerWrapper" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.logging.log4j.spi.AbstractLogger" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.spi.ExtendedLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Marker" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.LocationAwareLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StackLocatorUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.GarbageFreeSortedArrayThreadContextMap$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.spi.GarbageFreeSortedArrayThreadContextMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StringMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.ReadOnlyStringMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.GarbageFreeSortedArrayThreadContextMap" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.apache.logging.log4j.spi.ReadOnlyThreadContextMap" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.spi.ObjectThreadContextMap" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.StringMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.ReadOnlyStringMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.ThreadContextMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.GarbageFreeSortedArrayThreadContextMap$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.SortedArrayStringMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.LocationAwareLogger" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Marker" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.LoggerAdapter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.LoggerContext" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.spi.ExtendedLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerRegistry" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Logger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.LoggerContextFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.spi.LoggerContext" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.Terminable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.LoggerContextKey" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.AbstractLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.LoggerContextShutdownAware" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.spi.LoggerContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.LoggerContextShutdownEnabled" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.spi.LoggerContextShutdownAware" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.LoggerRegistry$ConcurrentMapFactory" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.spi.LoggerRegistry$MapFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.spi.ExtendedLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.LoggerRegistry$MapFactory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.spi.ExtendedLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.LoggerRegistry$WeakMapFactory" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.spi.LoggerRegistry$MapFactory" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.spi.ExtendedLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerRegistry" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.LoggerRegistry" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.spi.LoggerRegistry$MapFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.ExtendedLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerRegistry$ConcurrentMapFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerRegistry$WeakMapFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.AbstractLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.MessageFactory2Adapter" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory2" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.SimpleMessage" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.MutableThreadContextStack" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.spi.ThreadContextStack" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext$ContextStack" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.NoOpThreadContextMap" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.spi.ThreadContextMap" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.ObjectThreadContextMap" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.spi.CleanableThreadContextMap" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.Provider" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerContextFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.ThreadContextMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.ReadOnlyThreadContextMap" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.util.StringMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.StandardLevel" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.Terminable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.ThreadContextMap" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.ThreadContextMap2" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.spi.ThreadContextMap" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.util.StringMap" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.ThreadContextMapFactory" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="12">
+            <depends-on name="org.apache.logging.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.ThreadContextMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.Provider" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.GarbageFreeSortedArrayThreadContextMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.CopyOnWriteSortedArrayThreadContextMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.DefaultThreadContextMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.ProviderUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.LogManager" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerContextFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Constants" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.ThreadContextStack" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.ThreadContext$ContextStack" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.ThreadContext" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.spi.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.logging.log4j.status">
+        <type name="org.apache.logging.log4j.status.SimpleLoggerFactory" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="6">
+            <depends-on name="org.apache.logging.log4j.simple.SimpleLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Strings" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.status.StatusConsoleListener" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.apache.logging.log4j.status.StatusListener" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.SimpleLoggerFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusData" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterizedNoReferenceMessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.simple.SimpleLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.LogBuilder" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.status.StatusData" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Chars" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.status.StatusListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.status.StatusData" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Level" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.status.StatusLogger$BoundedQueue" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.status.StatusLogger" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="13">
+            <depends-on name="org.apache.logging.log4j.spi.AbstractLogger" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.simple.SimpleLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusListener" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusData" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.SimpleLoggerFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Level" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Marker" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger$BoundedQueue" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Constants" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.ParameterizedNoReferenceMessageFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.status.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.logging.log4j.util">
+        <type name="org.apache.logging.log4j.util.Activator" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.Provider" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.spi.LoggerContextFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.ProviderUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.Base64Util" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.LoggingException" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LowLevelLogUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.BiConsumer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.Chars" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.Constants" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.EnglishEnums" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.util.Strings" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.EnvironmentPropertySource" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.util.PropertySource" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.BiConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LowLevelLogUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.FilteredObjectInputStream" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.IndexedReadOnlyStringMap" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.util.ReadOnlyStringMap" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.IndexedStringMap" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.util.IndexedReadOnlyStringMap" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.util.StringMap" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.LambdaUtil" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.util.Supplier" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.MessageSupplier" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.message.MessageFactory" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.LoaderUtil$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.LoaderUtil$ThreadContextClassLoaderGetter" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.LoaderUtil$UrlResource" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.LoaderUtil" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil$UrlResource" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil$ThreadContextClassLoaderGetter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LowLevelLogUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.LowLevelLogUtil" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.MessageSupplier" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.message.Message" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.MultiFormatStringBuilderFormattable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.message.MultiformatMessage" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.OsgiServiceLocator" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.util.LowLevelLogUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.PerformanceSensitive" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.PrivateSecurityManagerStackTraceUtil$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.util.PrivateSecurityManagerStackTraceUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.PrivateSecurityManagerStackTraceUtil$PrivateSecurityManager" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.util.PrivateSecurityManagerStackTraceUtil$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PrivateSecurityManagerStackTraceUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.PrivateSecurityManagerStackTraceUtil" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.util.PrivateSecurityManagerStackTraceUtil$PrivateSecurityManager" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PrivateSecurityManagerStackTraceUtil$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.ProcessIdUtil" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.PropertiesPropertySource" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.util.PropertySource" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.BiConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertySource$Util" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.PropertiesUtil$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.PropertiesUtil$Environment" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.apache.logging.log4j.util.PropertySource" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertyFilePropertySource" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertySource$Comparator" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.BiConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.ServiceLoaderUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertySource$Util" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.PropertiesUtil$TimeUnit" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.PropertiesUtil" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="8">
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil$Environment" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertySource" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Supplier" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesPropertySource" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertyFilePropertySource" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil$TimeUnit" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LowLevelLogUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.PropertyFilePropertySource" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.util.PropertiesPropertySource" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LowLevelLogUtil" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.PropertySource$Comparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.util.PropertySource" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.PropertySource$Util" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.util.Strings" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertySource" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.PropertySource" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.util.BiConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertySource$Util" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertySource$Comparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.ProviderActivator" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.spi.Provider" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.ProviderUtil" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="7">
+            <depends-on name="org.apache.logging.log4j.spi.Provider" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil$UrlResource" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.ServiceLoaderUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.ReadOnlyStringMap" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.util.BiConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.TriConsumer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.ServiceLoaderUtil$ServiceLoaderSpliterator" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.ServiceLoaderUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.ServiceLoaderUtil" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.util.ServiceLoaderUtil$ServiceLoaderSpliterator" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.OsgiServiceLocator" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.SortedArrayStringMap" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.logging.log4j.util.IndexedStringMap" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.TriConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StringMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.ReadOnlyStringMap" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.BiConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.FilteredObjectInputStream" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Strings" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.StackLocator" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.util.PerformanceSensitive" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PrivateSecurityManagerStackTraceUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LoaderUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.LowLevelLogUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Constants" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.StackLocatorUtil" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.util.StackLocator" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PerformanceSensitive" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Strings" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.StringBuilders" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.util.Chars" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.StringMap" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.util.ReadOnlyStringMap" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.Strings" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.util.Chars" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.SystemPropertiesPropertySource" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.Supplier" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.SystemPropertiesPropertySource" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.util.PropertySource" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.BiConsumer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertySource$Util" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.Timer$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.util.Timer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.Timer$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.util.Timer" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Timer$Status" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.Timer$Status" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.util.Timer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.Timer" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.apache.logging.log4j.util.StringBuilderFormattable" classification="implements" />
+            <depends-on name="org.apache.logging.log4j.util.Timer$Status" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Timer$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Strings" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Timer$2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.TriConsumer" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.Unbox$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.util.Unbox" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.Unbox$State" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.util.Unbox" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.Unbox$WebSafeState" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.util.Unbox$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Unbox" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.Unbox" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.apache.logging.log4j.Logger" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Unbox$State" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Unbox$WebSafeState" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PerformanceSensitive" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Unbox$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.PropertiesUtil" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.util.Constants" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.status.StatusLogger" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.util.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

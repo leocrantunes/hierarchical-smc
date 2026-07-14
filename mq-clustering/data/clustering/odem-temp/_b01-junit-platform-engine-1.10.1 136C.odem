@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="junit-platform-engine">
+    <container name="/home/leo/repos/junit5-r5.10.1/junit-platform-engine/build/libs/junit-platform-engine-1.10.1.jar" classification="osgi-bundle">
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.platform.engine">
+        <type name="org.junit.platform.engine.CompositeFilter$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.engine.Filter" classification="implements" />
+            <depends-on name="org.junit.platform.engine.FilterResult" classification="uses" />
+            <depends-on name="org.junit.platform.engine.CompositeFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.CompositeFilter" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.engine.Filter" classification="implements" />
+            <depends-on name="org.junit.platform.engine.FilterResult" classification="uses" />
+            <depends-on name="org.junit.platform.engine.CompositeFilter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.ConfigurationParameters" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.DiscoveryFilter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.Filter" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.DiscoverySelector" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.EngineDiscoveryListener$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.EngineDiscoveryListener" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.EngineDiscoveryListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.engine.UniqueId" classification="uses" />
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.SelectorResolutionResult" classification="uses" />
+            <depends-on name="org.junit.platform.engine.EngineDiscoveryListener$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.EngineDiscoveryRequest" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.DiscoveryFilter" classification="uses" />
+            <depends-on name="org.junit.platform.engine.ConfigurationParameters" classification="uses" />
+            <depends-on name="org.junit.platform.engine.EngineDiscoveryListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.EngineExecutionListener$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.EngineExecutionListener" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.EngineExecutionListener" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestExecutionResult" classification="uses" />
+            <depends-on name="org.junit.platform.engine.reporting.ReportEntry" classification="uses" />
+            <depends-on name="org.junit.platform.engine.EngineExecutionListener$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.ExecutionRequest" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.EngineExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.engine.ConfigurationParameters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.Filter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.FilterResult" classification="uses" />
+            <depends-on name="org.junit.platform.engine.CompositeFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.FilterResult" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.SelectorResolutionResult$Status" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.SelectorResolutionResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.SelectorResolutionResult" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.SelectorResolutionResult$Status" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.TestDescriptor$Type" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.TestDescriptor$Visitor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.TestDescriptor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.engine.UniqueId" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestTag" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestSource" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor$Type" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor$Visitor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.TestEngine" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.EngineDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.engine.UniqueId" classification="uses" />
+            <depends-on name="org.junit.platform.engine.ExecutionRequest" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.TestExecutionResult$Status" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.TestExecutionResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.TestExecutionResult" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.TestExecutionResult$Status" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.TestSource" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.TestTag" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.UniqueId$Segment" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.UniqueId" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.UniqueId" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.UniqueIdFormat" classification="uses" />
+            <depends-on name="org.junit.platform.engine.UniqueId$Segment" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.UniqueIdFormat" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.UniqueId" classification="uses" />
+            <depends-on name="org.junit.platform.engine.UniqueId$Segment" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.platform.engine.discovery">
+        <type name="org.junit.platform.engine.discovery.AbstractClassNameFilter" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.discovery.ClassNameFilter" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.ClassNameFilter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.engine.DiscoveryFilter" classification="extends" />
+            <depends-on name="org.junit.platform.engine.discovery.IncludeClassNameFilter" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ExcludeClassNameFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.ClassSelector" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.ClasspathResourceSelector" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="implements" />
+            <depends-on name="org.junit.platform.engine.discovery.FilePosition" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.ClasspathRootSelector" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.DirectorySelector" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.DiscoverySelectors" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="16">
+            <depends-on name="org.junit.platform.engine.discovery.UriSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.FileSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.FilePosition" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.DirectorySelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ClasspathRootSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ClasspathResourceSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ModuleSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.PackageSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ClassSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.MethodSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.NestedClassSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.NestedMethodSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.UniqueIdSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.UniqueId" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.IterationSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.ExcludeClassNameFilter" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.discovery.AbstractClassNameFilter" classification="extends" />
+            <depends-on name="org.junit.platform.engine.FilterResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.ExcludePackageNameFilter" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.discovery.PackageNameFilter" classification="implements" />
+            <depends-on name="org.junit.platform.engine.FilterResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.FilePosition" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.FileSelector" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="implements" />
+            <depends-on name="org.junit.platform.engine.discovery.FilePosition" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.IncludeClassNameFilter" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.discovery.AbstractClassNameFilter" classification="extends" />
+            <depends-on name="org.junit.platform.engine.FilterResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.IncludePackageNameFilter" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.discovery.PackageNameFilter" classification="implements" />
+            <depends-on name="org.junit.platform.engine.FilterResult" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.IterationSelector" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.MethodSelector" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.ModuleSelector" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.NestedClassSelector" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="implements" />
+            <depends-on name="org.junit.platform.engine.discovery.ClassSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.NestedMethodSelector" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="implements" />
+            <depends-on name="org.junit.platform.engine.discovery.NestedClassSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.MethodSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.PackageNameFilter" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.engine.DiscoveryFilter" classification="extends" />
+            <depends-on name="org.junit.platform.engine.discovery.IncludePackageNameFilter" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ExcludePackageNameFilter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.PackageSelector" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.UniqueIdSelector" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="implements" />
+            <depends-on name="org.junit.platform.engine.UniqueId" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.discovery.UriSelector" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.platform.engine.reporting">
+        <type name="org.junit.platform.engine.reporting.ReportEntry" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.platform.engine.support.config">
+        <type name="org.junit.platform.engine.support.config.PrefixedConfigurationParameters" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.ConfigurationParameters" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.platform.engine.support.descriptor">
+        <type name="org.junit.platform.engine.support.descriptor.AbstractTestDescriptor" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="implements" />
+            <depends-on name="org.junit.platform.engine.UniqueId" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestSource" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestTag" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.descriptor.ClassSource" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.TestSource" classification="implements" />
+            <depends-on name="org.junit.platform.engine.support.descriptor.FilePosition" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.descriptor.ClasspathResourceSource" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.engine.TestSource" classification="implements" />
+            <depends-on name="org.junit.platform.engine.support.descriptor.FilePosition" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.descriptor.ResourceUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.descriptor.CompositeTestSource" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.TestSource" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.descriptor.DefaultUriSource" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.descriptor.UriSource" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.descriptor.DirectorySource" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.descriptor.FileSystemSource" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.descriptor.EngineDescriptor" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.engine.support.descriptor.AbstractTestDescriptor" classification="extends" />
+            <depends-on name="org.junit.platform.engine.UniqueId" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor$Type" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.descriptor.FilePosition" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.descriptor.FileSource" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.support.descriptor.FileSystemSource" classification="implements" />
+            <depends-on name="org.junit.platform.engine.support.descriptor.FilePosition" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.descriptor.FileSystemSource" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.descriptor.UriSource" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.descriptor.MethodSource" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.TestSource" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.descriptor.PackageSource" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.TestSource" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.descriptor.ResourceUtils" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.descriptor.UriSource" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="6">
+            <depends-on name="org.junit.platform.engine.TestSource" classification="extends" />
+            <depends-on name="org.junit.platform.engine.support.descriptor.ResourceUtils" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.descriptor.FilePosition" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.descriptor.FileSource" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.descriptor.DirectorySource" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.descriptor.DefaultUriSource" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.platform.engine.support.discovery">
+        <type name="org.junit.platform.engine.support.discovery.ClassContainerSelectorResolver" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver" classification="implements" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver$Resolution" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ClasspathRootSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver$Context" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ModuleSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.PackageSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.DiscoverySelectors" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ClassSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution$DefaultContext" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver$Context" classification="implements" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution" classification="uses" />
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.UniqueId" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver$Match" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver$Resolution" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution" classification="class" visibility="default">
+          <dependencies count="25">
+            <depends-on name="org.junit.platform.engine.EngineDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver$Context" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor$Visitor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver$Resolution" classification="uses" />
+            <depends-on name="org.junit.platform.engine.UniqueId" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver$Match" classification="uses" />
+            <depends-on name="org.junit.platform.engine.EngineDiscoveryListener" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.UniqueIdSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution$DefaultContext" classification="uses" />
+            <depends-on name="org.junit.platform.engine.SelectorResolutionResult" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ClasspathResourceSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ClasspathRootSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ClassSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.IterationSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.NestedClassSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.DirectorySelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.FileSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.MethodSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.NestedMethodSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ModuleSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.PackageSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.UriSelector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver$Builder" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver$InitializationContext" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor$Visitor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver$1" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.ClassContainerSelectorResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver$DefaultInitializationContext" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver$InitializationContext" classification="implements" />
+            <depends-on name="org.junit.platform.engine.EngineDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.engine.DiscoveryFilter" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ClassNameFilter" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.PackageNameFilter" classification="uses" />
+            <depends-on name="org.junit.platform.engine.Filter" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver$InitializationContext" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.engine.EngineDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver$InitializationContext" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor$Visitor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.EngineDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver$Builder" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver$1" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolver$DefaultInitializationContext" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.EngineDiscoveryRequestResolution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.discovery.SelectorResolver$Context" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.discovery.SelectorResolver$Match$Type" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver$Match" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.discovery.SelectorResolver$Match" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver$Match$Type" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.discovery.SelectorResolver$Resolution" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver$Match" classification="uses" />
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.discovery.SelectorResolver" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="17">
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver$Resolution" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ClasspathResourceSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver$Context" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ClasspathRootSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ClassSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.NestedClassSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.DirectorySelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.FileSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.MethodSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.NestedMethodSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ModuleSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.PackageSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.UniqueIdSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.UriSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.IterationSelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.DiscoverySelector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.discovery.SelectorResolver$Match" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.platform.engine.support.filter">
+        <type name="org.junit.platform.engine.support.filter.ClasspathScanningSupport" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.engine.EngineDiscoveryRequest" classification="uses" />
+            <depends-on name="org.junit.platform.engine.DiscoveryFilter" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.ClassNameFilter" classification="uses" />
+            <depends-on name="org.junit.platform.engine.discovery.PackageNameFilter" classification="uses" />
+            <depends-on name="org.junit.platform.engine.Filter" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.platform.engine.support.hierarchical">
+        <type name="org.junit.platform.engine.support.hierarchical.CompositeLock$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.CompositeLock" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.CompositeLock$CompositeLockManagedBlocker" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.CompositeLock" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.CompositeLock$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.CompositeLock" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ResourceLock" classification="implements" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.CompositeLock$CompositeLockManagedBlocker" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.CompositeLock$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfiguration" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ParallelExecutionConfiguration" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfigurationStrategy$1" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfigurationStrategy" classification="extends" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ParallelExecutionConfiguration" classification="uses" />
+            <depends-on name="org.junit.platform.engine.ConfigurationParameters" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfigurationStrategy$2" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfigurationStrategy" classification="extends" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ParallelExecutionConfiguration" classification="uses" />
+            <depends-on name="org.junit.platform.engine.ConfigurationParameters" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfigurationStrategy$1" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfiguration" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfigurationStrategy$3" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfigurationStrategy" classification="extends" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ParallelExecutionConfiguration" classification="uses" />
+            <depends-on name="org.junit.platform.engine.ConfigurationParameters" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ParallelExecutionConfigurationStrategy" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfigurationStrategy$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfigurationStrategy" classification="enum" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ParallelExecutionConfigurationStrategy" classification="implements" />
+            <depends-on name="org.junit.platform.engine.ConfigurationParameters" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfigurationStrategy$1" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfigurationStrategy$2" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfigurationStrategy$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.EngineExecutionContext" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.ExclusiveResource$LockMode" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ExclusiveResource" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.ExclusiveResource" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ExclusiveResource$LockMode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService$TestTask" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ResourceLock" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$WorkerThread" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$WorkerThreadFactory" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$WorkerThread" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService" classification="implements" />
+            <depends-on name="org.junit.platform.engine.ConfigurationParameters" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ParallelExecutionConfiguration" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ParallelExecutionConfigurationStrategy" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService$TestTask" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.DefaultParallelExecutionConfigurationStrategy" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$WorkerThreadFactory" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node$ExecutionMode" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$WorkerThread" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="9">
+            <depends-on name="org.junit.platform.engine.TestEngine" classification="implements" />
+            <depends-on name="org.junit.platform.engine.ExecutionRequest" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.EngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector$Factory" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.OpenTest4JAwareThrowableCollector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor" classification="class" visibility="default">
+          <dependencies count="12">
+            <depends-on name="org.junit.platform.engine.ExecutionRequest" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector$Factory" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.EngineExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeExecutionAdvisor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeTestTaskContext" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeTestTask" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.EngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeTreeWalker" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService$TestTask" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService$TestTask" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node$ExecutionMode" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ResourceLock" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService$TestTask" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.LockManager" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ExclusiveResource" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ResourceLock" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.SingleLock" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ExclusiveResource$LockMode" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NopLock" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.CompositeLock" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.Node$DynamicTestExecutor" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.EngineExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.Node$ExecutionMode" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.Node$Invocation" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.EngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.Node$SkipResult" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.Node" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="8">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.EngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node$SkipResult" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node$DynamicTestExecutor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node$Invocation" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestExecutionResult" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ExclusiveResource" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node$ExecutionMode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.NodeExecutionAdvisor" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node$ExecutionMode" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ResourceLock" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NopLock" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.NodeTestTask$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeTestTask" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor" classification="class" visibility="default">
+          <dependencies count="15">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node$DynamicTestExecutor" classification="implements" />
+            <depends-on name="org.junit.platform.engine.UniqueId" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeTestTask$DynamicTaskState" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeTestTask" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.EngineExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ExclusiveResource" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeTestTask$1" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeTestTaskContext" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeUtils" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestExecutionResult" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.EngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService$TestTask" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.NodeTestTask$DynamicTaskState" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeTestTask" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.NodeTestTask" classification="class" visibility="default">
+          <dependencies count="22">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService$TestTask" classification="implements" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeTestTaskContext" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node$SkipResult" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ResourceLock" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node$ExecutionMode" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.EngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node$DynamicTestExecutor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeUtils" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeExecutionAdvisor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector$Factory" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector$Executable" classification="uses" />
+            <depends-on name="org.junit.platform.engine.EngineExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestExecutionResult" classification="uses" />
+            <depends-on name="org.junit.platform.engine.UniqueId" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node$Invocation" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeTestTask$1" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeTestTask$DynamicTaskState" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.NodeTestTaskContext" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.junit.platform.engine.EngineExecutionListener" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector$Factory" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeExecutionAdvisor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.NodeTreeWalker" classification="class" visibility="default">
+          <dependencies count="9">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.LockManager" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ResourceLock" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeExecutionAdvisor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ExclusiveResource" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node$ExecutionMode" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeUtils" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ExclusiveResource$LockMode" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.NodeUtils$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node" classification="implements" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.NodeUtils" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.Node" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.EngineExecutionContext" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestDescriptor" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.NodeUtils$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.NopLock" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ResourceLock" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.OpenTest4JAwareThrowableCollector" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.ParallelExecutionConfiguration" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.ParallelExecutionConfigurationStrategy" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ParallelExecutionConfiguration" classification="uses" />
+            <depends-on name="org.junit.platform.engine.ConfigurationParameters" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.ResourceLock" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService" classification="implements" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutorService$TestTask" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.SingleLock$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.SingleLock" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.SingleLock$SingleLockManagedBlocker" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.SingleLock" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.SingleLock$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.SingleLock" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ResourceLock" classification="implements" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.SingleLock$SingleLockManagedBlocker" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.SingleLock$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.SingleTestExecutor$Executable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.SingleTestExecutor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.SingleTestExecutor" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.TestExecutionResult" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.SingleTestExecutor$Executable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.ThrowableCollector$Executable" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.ThrowableCollector$Factory" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.hierarchical.ThrowableCollector" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector$Executable" classification="uses" />
+            <depends-on name="org.junit.platform.engine.TestExecutionResult" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector$Factory" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.junit.platform.engine.support.store">
+        <type name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$CloseAction" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$CompositeKey" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$1" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$EvaluatedValue" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$CompositeKey" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$CloseAction" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$1" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$MemoizingSupplier$Failure" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$MemoizingSupplier" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$MemoizingSupplier" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$1" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$MemoizingSupplier$Failure" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$StoredValue" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$EvaluatedValue" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$CompositeKey" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$1" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="9">
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$CompositeKey" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$StoredValue" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$CloseAction" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$EvaluatedValue" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$1" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStoreException" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.store.NamespacedHierarchicalStore$MemoizingSupplier" classification="uses" />
+            <depends-on name="org.junit.platform.engine.support.hierarchical.ThrowableCollector$Executable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.junit.platform.engine.support.store.NamespacedHierarchicalStoreException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

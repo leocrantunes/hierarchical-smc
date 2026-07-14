@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jgit-pgm-6.8.0">
+    <container name="/home/leo/repos/jgit-6.8.0/org.eclipse.jgit.pgm/target/org.eclipse.jgit.pgm-6.8.0.202310031045-m1.jar" classification="osgi-bundle">
+      <namespace name="org.eclipse.jgit.console">
+        <type name="org.eclipse.jgit.console.ConsoleCredentialsProvider" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.console.ConsoleAuthenticator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.eclipse.jgit.pgm">
+        <type name="org.eclipse.jgit.pgm.IndexPack" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Rm" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.AbstractFetchCommand" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.DiffTool" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.PathTreeFilterHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.DiffTool$CountingPromptContinueHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Gc" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Daemon" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Repo" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.LsTree" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.DiffTree" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.PathTreeFilterHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Blame" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Diff" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.PathTreeFilterHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Config" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.ShowRef" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Show" classification="class" visibility="default">
+          <dependencies count="7">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.PathTreeFilterHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Diff" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.VerificationUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Remote" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Fetch" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.CmdLineParser" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Reset" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.RevParse" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.CmdLineParser" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText$Format" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.TextBuiltin" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.pgm.internal.SshDriver" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.CmdLineParser" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin$TerminatedByHelpException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Describe" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Log" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.eclipse.jgit.pgm.RevWalkTextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.VerificationUtils" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Diff" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Add" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Checkout" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Archive" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.MergeTool$MergeResult" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.MergeTool" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Commit" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.GpgSignHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.LsRemote" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Status" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.UntrackedFilesHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Init" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.LsFiles" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.AmazonS3Client" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Push" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.AbstractFetchCommand" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.DiffTool$CountingPromptContinueHandler" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.DiffTool" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Clean" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Reflog" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Command" classification="annotation" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.UploadPack" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Fetch" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.AbstractFetchCommand" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.CommandRef" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.CommandCatalog" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.CommandRef" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Main" classification="class" visibility="public">
+          <dependencies count="10">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.SubcommandHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.CmdLineParser" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.CommandRef" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Main$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Main$SubcommandLineParser" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.CommandCatalog" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Version" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Tag" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.VerificationUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.RevWalkTextBuiltin" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.PathTreeFilterHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Main$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.Main" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Merge" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.TextBuiltin$TerminatedByHelpException" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Glog$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.Glog" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Main$SubcommandLineParser" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.opt.CmdLineParser" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Main" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Die" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.ConvertRefStorage" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.ReceivePack" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Clone" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.AbstractFetchCommand" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Glog" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.pgm.RevWalkTextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Glog$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Branch" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.OptionWithValuesListHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.Version" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.MergeTool" classification="class" visibility="default">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.MergeTool$MergeResult" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.RevList" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.RevWalkTextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.MergeBase" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.eclipse.jgit.pgm.internal">
+        <type name="org.eclipse.jgit.pgm.internal.CLIText$Format" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.internal.CLIText" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText$Format" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.internal.VerificationUtils" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.internal.SshDriver" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.eclipse.jgit.pgm.debug">
+        <type name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$Algorithm" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.TextHashFunctions$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Hash" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.ShowCommands$Format" classification="enum" visibility="default" isAbstract="yes">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.pgm.CommandRef" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowCommands$Format$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowCommands$Format$2" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowCommands$Format$3" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowCommands" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.LfsStore$AppServer" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.debug.LfsStore" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.ShowDirCache" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.TextHashFunctions$5" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Fold" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.TextHashFunctions$4" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Hash" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.WriteDirCache" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.ShowCommands$Format$3" classification="enum" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowCommands$Format" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.CommandRef" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowCommands" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.ShowPackDelta" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowPackDelta$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.ShowCommands$Format$1" classification="enum" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowCommands$Format" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.CommandRef" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowCommands" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.WriteReftable" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.WriteReftable$LogEntry" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.LfsStore$StoreType" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.debug.LfsStore" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.TextHashFunctions$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Hash" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.LfsStore$StorageClass" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.debug.LfsStore" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.LfsStore" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.LfsStore$StoreType" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.LfsStore$StorageClass" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.LfsStore$AppServer" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.LfsStore$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Hash" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.RebuildCommitGraph$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.debug.RebuildCommitGraph" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$Algorithm" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.ReadChangedPathFilter" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.ReadReftable" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.ReadDirCache" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.BenchmarkReftable" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.BenchmarkReftable$Test" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.MakeCacheTree" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.ShowCacheTree" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.ShowPackDelta$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowPackDelta" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.LfsStore$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.debug.LfsStore" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.TextHashFunctions$3" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Hash" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.DiffAlgorithms" classification="class" visibility="default">
+          <dependencies count="10">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$Algorithm" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$Test" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$2" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$3" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$Run" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$Run" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$Test" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$Algorithm" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$Run" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.BenchmarkReftable$Test" classification="enum" visibility="default" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.debug.BenchmarkReftable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.RebuildCommitGraph$ToRewrite" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.debug.RebuildCommitGraph" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.VerifyReftable" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.WriteReftable" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.ShowCommands$Format$2" classification="enum" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowCommands$Format" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.CommandRef" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowCommands" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Function" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Hash" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Fold" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Line" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$Algorithm" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Fold" classification="class" visibility="default" isAbstract="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.WriteReftable$LogEntry" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.debug.WriteReftable" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.RebuildCommitGraph" classification="class" visibility="default">
+          <dependencies count="6">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.RebuildCommitGraph$ToRewrite" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.RebuildCommitGraph$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.TextHashFunctions$6" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Fold" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$2" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms$Algorithm" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.DiffAlgorithms" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.ShowCommands" classification="class" visibility="default">
+          <dependencies count="8">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowCommands$Format" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.CommandRef" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.CommandCatalog" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowCommands$Format$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowCommands$Format$2" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.ShowCommands$Format$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.debug.TextHashFunctions" classification="class" visibility="default">
+          <dependencies count="14">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="extends" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Hash" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Fold" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Function" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$Line" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Command" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$1" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$2" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$3" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$4" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$5" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.debug.TextHashFunctions$6" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.eclipse.jgit.pgm.opt">
+        <type name="org.eclipse.jgit.pgm.opt.RevCommitHandler" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.opt.CmdLineParser" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText$Format" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.opt.PathTreeFilterHandler" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.opt.OptionWithValuesListHandler" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.opt.RefSpecHandler" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.opt.CmdLineParser$MyOptionDef" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.opt.CmdLineParser" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.opt.GpgSignHandler" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.opt.CmdLineParser" classification="class" visibility="public">
+          <dependencies count="12">
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.Die" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.AbstractTreeIteratorHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.ObjectIdHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.RefSpecHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.RevCommitHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.RevTreeHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.OptionWithValuesListHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.InstantHandler" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.CmdLineParser$MyOptionDef" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.opt.PathTreeFilterHandler" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.opt.AbstractTreeIteratorHandler" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.opt.CmdLineParser" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText$Format" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.opt.ObjectIdHandler" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.opt.CmdLineParser" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText$Format" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.opt.SubcommandHandler" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.eclipse.jgit.pgm.opt.CmdLineParser" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.TextBuiltin" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.CommandRef" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.CommandCatalog" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText$Format" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.opt.UntrackedFilesHandler" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText$Format" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.opt.InstantHandler" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.pgm.opt.RevTreeHandler" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.pgm.opt.CmdLineParser" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.pgm.internal.CLIText$Format" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

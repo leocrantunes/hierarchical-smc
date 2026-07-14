@@ -1,0 +1,232 @@
+0,project,baseline_type,compare_type
+<Operation Update: com.google.cloud.tools.appengine.AppEngineException to com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessExitListener>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.AppEngineDescriptor to com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessStartListener>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.Gcloud$Builder to com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.CloudSdk to com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$4>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.GcloudRunner$Factory to com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.Gcloud to com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$2>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.Gcloud$1 to com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$1>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.GcloudRunner to com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessOutputLineListener>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.AppYamlProjectStaging to com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$3>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.AppYamlProjectStaging$CopyService to com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.WaitingProcessOutputLineListener>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.DevAppServerRunner to com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.ExitCodeRecorderProcessExitListener>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.DevAppServerRunner$Factory to com.google.cloud.tools.appengine.operations.cloudsdk.process.StringBuilderProcessOutputLineListener>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.GenRepoInfoFile to com.google.cloud.tools.io.FilePermissions>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.CloudSdk$Builder to com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$Builder$DevAppServerAsyncOutputWatcherFactory>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.CloudSdk$1 to com.google.cloud.tools.project.ServiceNameValidator>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$Builder$DevAppServerAsyncOutputWatcherFactory>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.CloudSdk$ResolverComparator to com.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.DevServers$1 to com.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.DevServers to com.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration$1>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.managedcloudsdk.install.UnixInstallScriptProvider>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.Deployment to com.google.cloud.tools.appengine.configuration.StopConfiguration>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.Versions to com.google.cloud.tools.appengine.configuration.StopConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.Auth to com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkConfig$Core>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.DevServers$Builder to com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkConfig>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkConfig$Core>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.configuration.StopConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.AppCfg to com.google.cloud.tools.managedcloudsdk.process.ProcessExecutor$ProcessBuilderFactory>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.AppCfgRunner$Factory to com.google.cloud.tools.managedcloudsdk.process.ProcessExecutor>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.AppEngineWebXmlProjectStaging to com.google.cloud.tools.managedcloudsdk.install.SdkInstaller>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.AppCfgRunner to com.google.cloud.tools.managedcloudsdk.install.UnknownArchiveTypeException>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.AppCfg$Builder to com.google.cloud.tools.managedcloudsdk.install.ExtractorFactory>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.DevServer to com.google.cloud.tools.managedcloudsdk.install.Extractor>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.AppEngineJavaComponentsNotInstalledException to com.google.cloud.tools.managedcloudsdk.ChildProgressListener>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.InvalidJavaSdkException to com.google.cloud.tools.managedcloudsdk.install.TarGzExtractorProvider>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkResolver to com.google.cloud.tools.managedcloudsdk.install.SdkInstallerException>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkNotFoundException to com.google.cloud.tools.managedcloudsdk.install.ExtractorProvider>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.PathResolver to com.google.cloud.tools.managedcloudsdk.ProgressListener>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkOutOfDateException to com.google.cloud.tools.managedcloudsdk.install.PosixUtil>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileException to com.google.cloud.tools.project.ProjectIdValidator>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileParseException to com.google.cloud.tools.managedcloudsdk.install.ZipExtractorProvider>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileNotFoundException to com.google.cloud.tools.managedcloudsdk.install.DownloaderFactory>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.JsonParseException to com.google.cloud.tools.managedcloudsdk.install.Downloader>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.managedcloudsdk.install.Downloader>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.managedcloudsdk.process.ProcessExecutor$ProcessBuilderFactory>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.managedcloudsdk.ChildProgressListener>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.ProcessBuilderFactory to com.google.cloud.tools.appengine.configuration.VersionsListConfiguration>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.ExitCodeRecorderProcessExitListener to com.google.cloud.tools.appengine.configuration.VersionsListConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.WaitingProcessOutputLineListener to com.google.cloud.tools.appengine.configuration.VersionsListConfiguration$1>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud.tools.appengine.operations.cloudsdk.internal.process>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.GcloudArgs to com.google.cloud.tools.managedcloudsdk.OsInfo$Name>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.AppCfgArgs to com.google.cloud.tools.managedcloudsdk.install.FileResourceProviderFactory>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.DevAppServerArgs to com.google.cloud.tools.managedcloudsdk.OsInfo$Architecture>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.Args to com.google.cloud.tools.managedcloudsdk.OsInfo>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud.tools.appengine.operations.cloudsdk.internal.args>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud.tools.appengine.operations.cloudsdk.internal>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandler to com.google.cloud.tools.managedcloudsdk.install.FileResourceProvider>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException to com.google.cloud.tools.managedcloudsdk.install.FileResourceProviderFactory$1>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.process.StringBuilderProcessOutputLineListener to com.google.cloud.tools.managedcloudsdk.components.WindowsBundledPythonCopier>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler to com.google.cloud.tools.managedcloudsdk.components.SdkUpdater>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$Builder to com.google.cloud.tools.managedcloudsdk.components.BundledPythonCopier>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessOutputLineListener to com.google.cloud.tools.managedcloudsdk.components.SdkComponentInstaller$1>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessExitListener to com.google.cloud.tools.managedcloudsdk.command.CommandExecutionException>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$4 to com.google.cloud.tools.managedcloudsdk.components.SdkComponentInstaller>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessStartListener to com.google.cloud.tools.managedcloudsdk.command.CommandCaller>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$2 to com.google.cloud.tools.managedcloudsdk.command.CommandExitException>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$1 to com.google.cloud.tools.managedcloudsdk.components.SdkUpdater$1>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.managedcloudsdk.components.WindowsBundledPythonCopier>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.managedcloudsdk.install.FileResourceProviderFactory$1>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$3 to com.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.process.LegacyProcessHandler$Builder$DevAppServerAsyncOutputWatcherFactory to com.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.process.NonZeroExceptionExitListener to com.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration$1>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud.tools.appengine.operations.cloudsdk.process>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent to com.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaverFactory>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkConfig to com.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaverFactory$CollectingByteHandler>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersion to com.google.cloud.tools.managedcloudsdk.command.ByteHandler>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.serialization.AppEngineDeployResult to com.google.cloud.tools.managedcloudsdk.command.AsyncByteConsumer>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.serialization.AppEngineDeployResult$Version to com.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaver>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaverFactory>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersionPreRelease to com.google.cloud.tools.appengine.operations.cloudsdk.serialization.GcloudStructuredLog$GcloudError>,aep-core-0.10.0,original,hmd
+<Operation Remove: com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent$State>,aep-core-0.10.0,original,hmd
+<Operation Match: com.google.cloud.tools.appengine.operations.cloudsdk.serialization.GcloudStructuredLog to com.google.cloud.tools.appengine.operations.cloudsdk.serialization.GcloudStructuredLog>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.serialization.GcloudStructuredLog$GcloudError to com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.AppCfgArgs>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersionPreRelease$PreReleaseSegment to com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.Args>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent$1 to com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.DevAppServerArgs>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.cloudsdk.internal.args.Args>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.cloudsdk.serialization.GcloudStructuredLog$GcloudError>,aep-core-0.10.0,original,hmd
+<Operation Remove: com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkConfig$Core>,aep-core-0.10.0,original,hmd
+<Operation Update: Mcom.google.cloud.tools.appengine.operations.cloudsdk.serialization to Mcom.google.cloud.tools.managedcloudsdk.BadCloudSdkVersionException>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud.tools.appengine.operations.cloudsdk>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud.tools.appengine.operations>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration to com.google.cloud.tools.appengine.operations.CloudSdk>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration to com.google.cloud.tools.appengine.operations.CloudSdk$ResolverComparator>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.DeployConfiguration to com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkResolver>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration to com.google.cloud.tools.appengine.operations.CloudSdk$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration to com.google.cloud.tools.appengine.operations.cloudsdk.PathResolver>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.RunConfiguration to com.google.cloud.tools.appengine.operations.CloudSdk$1>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.StopConfiguration to com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkNotFoundException>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.CloudSdk$Builder>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.managedcloudsdk.components.SdkUpdater>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration to com.google.cloud.tools.managedcloudsdk.BadCloudSdkVersionException>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.VersionsListConfiguration to com.google.cloud.tools.managedcloudsdk.Version>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.managedcloudsdk.Version>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration$Builder to com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersionPreRelease$PreReleaseSegment>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration$1 to com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersionPreRelease>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration$Builder to com.google.cloud.tools.io.FileUtil>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.VersionsSelectionConfiguration$1 to com.google.cloud.tools.io.FileUtil$1>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.io.FileUtil$1>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersionPreRelease$PreReleaseSegment>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.managedcloudsdk.install.TarGzExtractorProvider>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration$Builder to com.google.cloud.tools.libraries.json.CloudLibraryClient>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration$1 to com.google.cloud.tools.libraries.json.CloudLibraryClientMavenCoordinates>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.StopConfiguration$Builder to com.google.cloud.tools.managedcloudsdk.ManagedCloudSdk>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration$1 to com.google.cloud.tools.managedcloudsdk.ManagedCloudSdk$1>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration$Builder to com.google.cloud.tools.managedcloudsdk.ManagedSdkVersionMismatchException>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration$Builder to com.google.cloud.tools.managedcloudsdk.ManagedSdkVerificationException>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.DeployProjectConfigurationConfiguration$1 to com.google.cloud.tools.managedcloudsdk.UnsupportedOsException>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.RunConfiguration$Builder to com.google.cloud.tools.managedcloudsdk.components.SdkComponent>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.managedcloudsdk.ManagedCloudSdk>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.RunConfiguration$1 to com.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.VersionsListConfiguration$Builder to com.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.VersionsListConfiguration$1 to com.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration$1>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.libraries.json.CloudLibraryClient>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.DeployConfiguration$1 to com.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.appengine.configuration.DeployConfiguration$Builder to com.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Insert: com.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration$1>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.configuration.GenRepoInfoFileConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkOutOfDateException>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.configuration.VersionsListConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud.tools.appengine.configuration>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud.tools.appengine>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.project.AppYaml to com.google.cloud.tools.appengine.configuration.DeployConfiguration>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.project.ServiceNameValidator to com.google.cloud.tools.appengine.configuration.DeployConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.project.ProjectIdValidator to com.google.cloud.tools.appengine.configuration.DeployConfiguration$1>,aep-core-0.10.0,original,hmd
+<Operation Update: Mcom.google.cloud.tools.project to Mcom.google.cloud.tools.appengine.configuration.DeployConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.io.FileUtil to com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.io.FilePermissions to com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent$1>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.io.FileUtil$1 to com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent$State>,aep-core-0.10.0,original,hmd
+<Operation Update: Mcom.google.cloud.tools.io to Mcom.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkComponent$1>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileNotFoundException>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.OsInfo to com.google.cloud.tools.managedcloudsdk.command.AsyncStreamHandlerFactory>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.OsInfo$Name to com.google.cloud.tools.managedcloudsdk.command.CommandRunner>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.OsInfo$Architecture to com.google.cloud.tools.managedcloudsdk.install.Installer>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.UnsupportedOsException to com.google.cloud.tools.managedcloudsdk.ConsoleListener>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.BadCloudSdkVersionException to com.google.cloud.tools.managedcloudsdk.process.AsyncStreamHandler>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.ChildProgressListener to com.google.cloud.tools.managedcloudsdk.command.AsyncStreamHandlerFactory$ConsoleListenerForwardingByteHandler>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.managedcloudsdk.command.AsyncStreamHandlerFactory>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.ProgressListener to com.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.ManagedCloudSdk$1 to com.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.ManagedCloudSdk to com.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration$1>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.ManagedSdkVersionMismatchException to com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileException>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.ManagedSdkVerificationException to com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileParseException>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.Version to com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileNotFoundException>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkVersionFileParseException>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.configuration.AppYamlProjectStageConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.configuration.VersionsListConfiguration$1>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.ConsoleListener to com.google.cloud.tools.appengine.configuration.RunConfiguration>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.components.SdkComponent to com.google.cloud.tools.appengine.configuration.RunConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.components.SdkComponentInstaller to com.google.cloud.tools.appengine.configuration.RunConfiguration$1>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.components.SdkUpdater to com.google.cloud.tools.appengine.operations.DevServers>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.components.BundledPythonCopier to com.google.cloud.tools.appengine.operations.DevAppServerRunner>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.components.SdkComponentInstaller$1 to com.google.cloud.tools.appengine.operations.DevServers$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.components.WindowsBundledPythonCopier to com.google.cloud.tools.appengine.operations.DevServers$1>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.components.SdkUpdater$1 to com.google.cloud.tools.appengine.operations.DevAppServerRunner$Factory>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.DevServers$Builder>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud.tools.managedcloudsdk.components>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.SdkInstaller to com.google.cloud.tools.appengine.operations.cloudsdk.serialization.AppEngineDeployResult>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.FileResourceProviderFactory to com.google.cloud.tools.appengine.operations.cloudsdk.serialization.AppEngineDeployResult$Version>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.ExtractorFactory to com.google.cloud.tools.appengine.operations.cloudsdk.JsonParseException>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.cloudsdk.serialization.AppEngineDeployResult$Version>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.configuration.RunConfiguration$Builder>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.libraries.CloudLibraries$1>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.DownloaderFactory to com.google.cloud.tools.appengine.operations.GcloudRunner$Factory>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.InstallerFactory to com.google.cloud.tools.appengine.operations.Gcloud>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.UnknownArchiveTypeException to com.google.cloud.tools.appengine.operations.Auth>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.FileResourceProvider to com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandlerException>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.Downloader to com.google.cloud.tools.appengine.operations.GenRepoInfoFile>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.SdkInstallerException to com.google.cloud.tools.appengine.operations.Gcloud$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.Extractor to com.google.cloud.tools.appengine.operations.Gcloud$1>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.Installer to com.google.cloud.tools.appengine.operations.cloudsdk.internal.args.GcloudArgs>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.TarGzExtractorProvider to com.google.cloud.tools.appengine.operations.cloudsdk.process.ProcessHandler>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.ExtractorProvider to com.google.cloud.tools.appengine.operations.GcloudRunner>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.PosixUtil to com.google.cloud.tools.appengine.operations.Deployment>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.InstallScriptProvider to com.google.cloud.tools.appengine.operations.Versions>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.GcloudRunner>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.ZipExtractorProvider to com.google.cloud.tools.libraries.CloudLibraries$1>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.WindowsInstallScriptProvider to com.google.cloud.tools.libraries.CloudLibraries>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.FileResourceProviderFactory$1 to com.google.cloud.tools.libraries.json.CloudLibrary>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.UnixInstallScriptProvider to com.google.cloud.tools.appengine.operations.AppYamlProjectStaging$CopyService>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.install.InstallerFactory$1 to com.google.cloud.tools.appengine.operations.AppYamlProjectStaging>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud.tools.managedcloudsdk.install>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.command.CommandCaller to com.google.cloud.tools.project.AppYaml>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.AppYamlProjectStaging$CopyService>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.libraries.CloudLibraries>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.command.CommandExecutionException to com.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersion>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.command.CommandExitException to com.google.cloud.tools.appengine.operations.cloudsdk.CloudSdkOutOfDateException>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.command.CommandRunner to com.google.cloud.tools.appengine.operations.AppCfg>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaver to com.google.cloud.tools.appengine.operations.AppEngineWebXmlProjectStaging>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaverFactory$CollectingByteHandler to com.google.cloud.tools.appengine.operations.AppCfgRunner>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.command.ByteHandler to com.google.cloud.tools.appengine.operations.AppCfg$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.command.AsyncStreamSaverFactory to com.google.cloud.tools.appengine.operations.cloudsdk.internal.process.ProcessBuilderFactory>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.command.AsyncStreamHandlerFactory$ConsoleListenerForwardingByteHandler to com.google.cloud.tools.appengine.operations.AppCfgRunner$Factory>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.AppCfg$Builder>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.command.AsyncStreamHandlerFactory to com.google.cloud.tools.managedcloudsdk.install.InstallerFactory>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.command.AsyncByteConsumer to com.google.cloud.tools.managedcloudsdk.install.UnixInstallScriptProvider>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud.tools.managedcloudsdk.command>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.process.AsyncStreamHandler to com.google.cloud.tools.managedcloudsdk.install.InstallerFactory$1>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.process.ProcessExecutor to com.google.cloud.tools.managedcloudsdk.install.InstallScriptProvider>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.managedcloudsdk.process.ProcessExecutor$ProcessBuilderFactory to com.google.cloud.tools.managedcloudsdk.install.WindowsInstallScriptProvider>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.managedcloudsdk.install.InstallerFactory$1>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.cloudsdk.serialization.CloudSdkVersion>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.operations.cloudsdk.internal.process.ExitCodeRecorderProcessExitListener>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud.tools.managedcloudsdk.process>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud.tools.managedcloudsdk>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.libraries.CloudLibraries$1 to com.google.cloud.tools.appengine.operations.cloudsdk.process.NonZeroExceptionExitListener>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.libraries.CloudLibraries to com.google.cloud.tools.appengine.AppEngineException>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.libraries.json.CloudLibrary to com.google.cloud.tools.appengine.AppEngineDescriptor>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.libraries.json.CloudLibraryClientMavenCoordinates to com.google.cloud.tools.appengine.operations.DevServer>,aep-core-0.10.0,original,hmd
+<Operation Update: com.google.cloud.tools.libraries.json.CloudLibraryClient to com.google.cloud.tools.appengine.operations.cloudsdk.InvalidJavaSdkException>,aep-core-0.10.0,original,hmd
+<Operation Insert: com.google.cloud.tools.appengine.operations.cloudsdk.AppEngineJavaComponentsNotInstalledException>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud.tools.libraries.json>,aep-core-0.10.0,original,hmd
+<Operation Update: Mcom.google.cloud.tools.libraries to Mcom.google.cloud.tools.appengine.operations.DevServer>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.managedcloudsdk.ProgressListener>,aep-core-0.10.0,original,hmd
+<Operation Insert: Mcom.google.cloud.tools.appengine.configuration.AppEngineWebXmlProjectStageConfiguration$1>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud.tools>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google.cloud>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom.google>,aep-core-0.10.0,original,hmd
+<Operation Remove: Mcom>,aep-core-0.10.0,original,hmd
+<Operation Match: root to root>,aep-core-0.10.0,original,hmd

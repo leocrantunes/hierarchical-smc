@@ -1,0 +1,1863 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jMetal-algorithm-6.2.2">
+    <container name="/home/leo/repos/jMetal-6.2.2/jmetal-algorithm/target/jmetal-algorithm-6.2.2.jar" classification="jar">
+      <namespace name="org.uma.jmetal.algorithm.singleobjective.localsearch">
+        <type name="org.uma.jmetal.algorithm.singleobjective.localsearch.BasicLocalSearch" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.singleobjective.coralreefsoptimization">
+        <type name="org.uma.jmetal.algorithm.singleobjective.coralreefsoptimization.CoralReefsOptimization" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.singleobjective.coralreefsoptimization.CoralReefsOptimizationBuilder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.coralreefsoptimization.CoralReefsOptimization" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm">
+        <type name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.SteadyStateGeneticAlgorithm" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.GeneticAlgorithmBuilder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.GeneticAlgorithmBuilder$GeneticAlgorithmVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.GenerationalGeneticAlgorithm" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.SteadyStateGeneticAlgorithm" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.GeneticAlgorithmBuilder$GeneticAlgorithmVariant" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.GeneticAlgorithmBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.GenerationalGeneticAlgorithm" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.singleobjective.differentialevolution">
+        <type name="org.uma.jmetal.algorithm.singleobjective.differentialevolution.DifferentialEvolutionBuilder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.differentialevolution.DifferentialEvolution" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.singleobjective.differentialevolution.DifferentialEvolution" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy">
+        <type name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.EvolutionStrategyBuilder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.EvolutionStrategyBuilder$EvolutionStrategyVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.ElitistEvolutionStrategy" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.NonElitistEvolutionStrategy" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.ElitistEvolutionStrategy" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.EvolutionStrategyBuilder$EvolutionStrategyVariant" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.EvolutionStrategyBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.CovarianceMatrixAdaptationEvolutionStrategy" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.CovarianceMatrixAdaptationEvolutionStrategy$Builder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.util.CMAESUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.NonElitistEvolutionStrategy" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.CovarianceMatrixAdaptationEvolutionStrategy$Builder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.CovarianceMatrixAdaptationEvolutionStrategy" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.util">
+        <type name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.util.CMAESUtils" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.singleobjective.particleswarmoptimization">
+        <type name="org.uma.jmetal.algorithm.singleobjective.particleswarmoptimization.StandardPSO2007" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.singleobjective.particleswarmoptimization.StandardPSO2011" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples">
+        <type name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples.singleobjective">
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.StandardPSO2011Runner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.particleswarmoptimization.StandardPSO2011" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.SMPSORunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSO" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.LocalSearchContinuousProblemRunner" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.localsearch.BasicLocalSearch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.ElitistEvolutionStrategyRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.EvolutionStrategyBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.EvolutionStrategyBuilder$EvolutionStrategyVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.NonElitistEvolutionStrategyRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.EvolutionStrategyBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.EvolutionStrategyBuilder$EvolutionStrategyVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.CoralReefsOptimizationRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.coralreefsoptimization.CoralReefsOptimizationBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.coralreefsoptimization.CoralReefsOptimization" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.StandardPSO2007Runner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.particleswarmoptimization.StandardPSO2007" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.CovarianceMatrixAdaptationEvolutionStrategyRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.CovarianceMatrixAdaptationEvolutionStrategy$Builder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.evolutionstrategy.CovarianceMatrixAdaptationEvolutionStrategy" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.LocalSearchBinaryProblemRunner" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.localsearch.BasicLocalSearch" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.DifferentialEvolutionRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.differentialevolution.DifferentialEvolutionBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.differentialevolution.DifferentialEvolution" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.RandomSearchRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.randomsearch.RandomSearchBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.randomsearch.RandomSearch" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples.singleobjective.geneticalgorithm">
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.geneticalgorithm.GenerationalGeneticAlgorithmBinaryEncodingRunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.GeneticAlgorithmBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.geneticalgorithm.GenerationalGeneticAlgorithmDoubleEncodingRunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.GeneticAlgorithmBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.geneticalgorithm.SteadyStateGeneticAlgorithmRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.GeneticAlgorithmBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.GeneticAlgorithmBuilder$GeneticAlgorithmVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.geneticalgorithm.SteadyStateGeneticAlgorithmBinaryEncodingRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.GeneticAlgorithmBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.GeneticAlgorithmBuilder$GeneticAlgorithmVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.geneticalgorithm.GenerationalGeneticAlgorithmStringMatchingRunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.GeneticAlgorithmBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.geneticalgorithm.GenerationalGeneticAlgorithmTSPRunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.GeneticAlgorithmBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.singleobjective.geneticalgorithm.ParallelGenerationalGeneticAlgorithmRunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.singleobjective.geneticalgorithm.GeneticAlgorithmBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples.multiobjective.spea2">
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.spea2.SPEA2Runner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.spea2.SPEA2Builder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.spea2.SPEA2" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.spea2.SPEA2BinaryRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.spea2.SPEA2" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.spea2.SPEA2Builder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.spea2.ParallelSPEA2Runner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.spea2.SPEA2" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.spea2.SPEA2Builder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples.multiobjective">
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.MOMBIRunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.MOMBI" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.NSGAIIIRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.NSGAIII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.NSGAIIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.ParallelPESA2Runner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.pesa2.PESA2" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.pesa2.PESA2Builder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.CDGRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.cdg.CDGBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.DMOPSORunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.dmopso.DMOPSO" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.dmopso.DMOPSO$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.AGEMOEARunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoea.AGEMOEA" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoea.AGEMOEABuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.AGEMOEAIIRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoeaii.AGEMOEAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoeaii.AGEMOEAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.MOMBI2Runner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.MOMBI2" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.ABYSSRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.abyss.ABYSS" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.abyss.ABYSSBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.OMOPSORunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.omopso.OMOPSO" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.omopso.OMOPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.NSGAIIIntegerRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.IBEARunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.ibea.IBEA" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.ibea.IBEABuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.PESA2Runner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.pesa2.PESA2" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.pesa2.PESA2Builder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.MicroFAMERunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.microfame.util.HVTournamentSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.microfame.MicroFAME" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.FAMERunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.fame.FAME" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.RandomSearchRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.randomsearch.RandomSearch" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.randomsearch.RandomSearchBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.ESPEARunner" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.ESPEABuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.ESPEA" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.EnergyArchive$ReplacementStrategy" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.EnergyArchive" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples.multiobjective.smsemoa">
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smsemoa.SMSEMOARunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smsemoa.SMSEMOA" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smsemoa.SMSEMOABuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples.multiobjective.smpso">
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOMeasuresWithChartsRunner" classification="class" visibility="public">
+          <dependencies count="8">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSO" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOBuilder$SMPSOVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOMeasures" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOMeasuresWithChartsRunner$ChartListener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOMeasuresWithChartsRunner$IterationListener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSORunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSO" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOHvRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSO" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOMeasuresRunner$Listener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOMeasuresRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOBigDataRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSO" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOMeasuresRunner$Listener2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOMeasuresRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOMeasuresRunner" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSO" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOBuilder$SMPSOVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOMeasures" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOMeasuresRunner$Listener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOMeasuresRunner$Listener2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOMeasuresWithChartsRunner$ChartListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOMeasuresWithChartsRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.ParallelSMPSORunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSO" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOMeasuresWithChartsRunner$IterationListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOMeasuresWithChartsRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpso.SMPSOSSolvingConstrainedProblemRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSO" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp">
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPWithMultipleReferencePointsRunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSORP" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPWithMultipleReferencePointsAndChartsRunner$IterationListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPWithMultipleReferencePointsAndChartsRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunnerZDT1$ChangeReferencePoint" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSORP" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunnerZDT1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunner$ChartListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPWithOneReferencePointRunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSORP" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPWithMultipleReferencePointsAndChartsRunner" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSORP" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPWithMultipleReferencePointsAndChartsRunner$ChartListener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPWithMultipleReferencePointsAndChartsRunner$IterationListener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunnerZDT1$IterationListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunnerZDT1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunnerZDT1" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSORP" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunnerZDT1$ChangeReferencePoint" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunnerZDT1$ChartListener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunnerZDT1$IterationListener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunner$ChangeReferencePoint" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSORP" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunnerZDT1$ChartListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunnerZDT1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPWithMultipleReferencePointsAndChartsRunner$ChartListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPWithMultipleReferencePointsAndChartsRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunner$IterationListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSORP" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunner$ChangeReferencePoint" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunner$ChartListener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.smpsorp.SMPSORPChangingTheReferencePointsAndChartsRunner$IterationListener" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples.multiobjective.moead">
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.moead.MOEADDRARunner" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder$Variant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.moead.MOEADDRunner" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder$Variant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.moead.MOEADSTMRunner" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder$Variant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.moead.MOEADConstraintRunner" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder$Variant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.moead.MOEADRunner" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder$Variant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.moead.MOEADIEpsilonRunner" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder$Variant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.moead.MOEAD3DProblemRunner" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder$Variant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples.multiobjective.mocell">
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.mocell.MOCellChangingMutationAndCrossoverProbabilitiesRunner$1MOCellWithChangesInVariationOperator" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mocell.MOCell" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.mocell.MOCellChangingMutationAndCrossoverProbabilitiesRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.mocell.MOCellRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mocell.MOCellBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mocell.MOCell" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.mocell.MOCellHVRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mocell.MOCell" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mocell.MOCellBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.mocell.MOCellChangingMutationAndCrossoverProbabilitiesRunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.mocell.MOCellChangingMutationAndCrossoverProbabilitiesRunner$1MOCellWithChangesInVariationOperator" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.mocell.GMOCellRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mocell.MOCell" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mocell.MOCellBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples.multiobjective.gde3">
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.gde3.GDE3Runner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.gde3.GDE3" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.gde3.GDE3Builder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.gde3.GDE3BigDataRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.gde3.GDE3" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.gde3.GDE3Builder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.gde3.ParallelGDE3Runner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.gde3.GDE3" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.gde3.GDE3Builder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples.multiobjective.mochc">
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.mochc.MOCHC45Runner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mochc.MOCHC45" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.mochc.MOCHCRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mochc.MOCHCBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mochc.MOCHC" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii">
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.RNSGAIIConstraintRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.rnsgaii.RNSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.rnsgaii.RNSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIComposableSrinivasProblemRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIEbesRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresRunner" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder$NSGAIIVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIMeasures" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresRunner$Listener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresRunner$Listener2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.DynamicNSGAIIRunner" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.util.CoverageFront" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.DynamicNSGAII" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresRunner$Listener2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIBinaryRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithHypervolumeRunner$Listener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithHypervolumeRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithHypervolumeRunner" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder$NSGAIIVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIMeasures" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithHypervolumeRunner$Listener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIISolvingConstrainedProblemRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithChartsRunner$IndicatorListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithChartsRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIBigDataRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithChartsRunner$IterationListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithChartsRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithChartsRunner$ChartListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithChartsRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.RNSGAIIWithChartsRunner$IterationListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.RNSGAIIWithChartsRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.RNSGAIIWithChartsRunner" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.rnsgaii.RNSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.rnsgaii.RNSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.RNSGAIIWithChartsRunner$ChartListener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.RNSGAIIWithChartsRunner$IterationListener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAII45Runner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII45" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIComposableSchafferProblemRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresRunner$Listener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithQualityIndicatorRunner$Listener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithQualityIndicatorRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.RNSGAIIRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.rnsgaii.RNSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.rnsgaii.RNSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIStoppingByTimeRunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIStoppingByTime" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithQualityIndicatorRunner" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder$NSGAIIVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIMeasures" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithQualityIndicatorRunner$Listener" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithChartsRunner" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder$NSGAIIVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIMeasures" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithChartsRunner$ChartListener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithChartsRunner$IterationListener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIMeasuresWithChartsRunner$IndicatorListener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIIRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIITSPRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.RNSGAIIWithChartsRunner$ChartListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.RNSGAIIWithChartsRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.DNSGAIIRunner" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder$NSGAIIVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.DNSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.NSGAIISteadyStateRunner" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder$NSGAIIVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.nsgaii.ParallelNSGAIIRunner" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples.multiobjective.mosa">
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.mosa.MOSARunner" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mosa.MOSA" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mosa.cooling.impl.Exponential" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mosa.cooling.CoolingScheme" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga">
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGAMeasuresRunner3D$ChartListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGAMeasuresRunner3D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGAMeasuresRunner$IterationListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGAMeasuresRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGARunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.wasfga.WASFGA" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGAMeasuresRunner3D" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.wasfga.WASFGAMeasures" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGAMeasuresRunner3D$ChartListener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGAMeasuresRunner3D$IterationListener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGAMeasuresRunner$ChartListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGAMeasuresRunner" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.GWASGFARunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.gwasfga.GWASFGA" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGAMeasuresRunner3D$IterationListener" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGAMeasuresRunner3D" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGAMeasuresRunner" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.wasfga.WASFGAMeasures" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGAMeasuresRunner$ChartListener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGAMeasuresRunner$IterationListener" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.wasfga.WASFGABinaryRunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.wasfga.WASFGA" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.examples.multiobjective.paes">
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.paes.PAESRunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.paes.PAES" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.examples.multiobjective.paes.PAESWithCrowdingDistanceArchiveRunner" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.paes.PAES" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.examples.AlgorithmRunner$Executor" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.spea2.util">
+        <type name="org.uma.jmetal.algorithm.multiobjective.spea2.util.EnvironmentalSelection" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.spea2">
+        <type name="org.uma.jmetal.algorithm.multiobjective.spea2.SPEA2Builder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.spea2.SPEA2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.spea2.SPEA2" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.spea2.util.EnvironmentalSelection" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.smsemoa">
+        <type name="org.uma.jmetal.algorithm.multiobjective.smsemoa.SMSEMOA" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.smsemoa.SMSEMOABuilder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smsemoa.SMSEMOA" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.smpso">
+        <type name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOBuilder" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOBuilder$SMPSOVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSO" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOMeasures" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOMeasures" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSO" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSORP" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSO" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOBuilder$SMPSOVariant" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.smpso.SMPSOBuilder" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.mombi">
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.AbstractMOMBI" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.MOMBI2" classification="class" visibility="public">
+          <dependencies count="7">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.MOMBI" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.MOMBI2History" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.Normalizer" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.AbstractUtilityFunctionsSet" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.ASFUtilityFunctionSet" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2Ranking" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2RankingNormalized" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.MOMBI" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.AbstractMOMBI" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.AbstractUtilityFunctionsSet" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2Ranking" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.TchebycheffUtilityFunctionsSet" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.MOMBI$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.MOMBI$1" classification="class" visibility="default">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.MOMBI" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2RankingAttribute" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2SolutionData" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2Ranking" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.mombi.util">
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2RankingNormalized" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2Ranking" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.Normalizer" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.AbstractUtilityFunctionsSet" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2SolutionData" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2RankingNormalized$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.util.AbstractUtilityFunctionsSet" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.util.TchebycheffUtilityFunctionsSet" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.AbstractUtilityFunctionsSet" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.util.ASFWASFGA" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.AbstractUtilityFunctionsSet" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.util.MOMBI2History" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2Ranking$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2Ranking" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2RankingAttribute" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2SolutionData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2RankingNormalized$1" classification="class" visibility="default">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2RankingNormalized" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2RankingAttribute" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2SolutionData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2SolutionData" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2Ranking" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.AbstractUtilityFunctionsSet" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2RankingAttribute" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2SolutionData" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2Ranking$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2RankingAttribute" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.R2SolutionData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.util.Normalizer" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mombi.util.ASFUtilityFunctionSet" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.AbstractUtilityFunctionsSet" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.Normalizer" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.rnsgaii.util">
+        <type name="org.uma.jmetal.algorithm.multiobjective.rnsgaii.util.PreferenceNSGAII" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.rnsgaii">
+        <type name="org.uma.jmetal.algorithm.multiobjective.rnsgaii.RNSGAII" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.rnsgaii.RNSGAIIBuilder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.rnsgaii.RNSGAII" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.pesa2.util">
+        <type name="org.uma.jmetal.algorithm.multiobjective.pesa2.util.PESA2Selection" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.pesa2.util.AdaptiveGridArchive" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.pesa2.util.AdaptiveGridArchive" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.pesa2">
+        <type name="org.uma.jmetal.algorithm.multiobjective.pesa2.PESA2" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.pesa2.util.AdaptiveGridArchive" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.pesa2.util.PESA2Selection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.pesa2.PESA2Builder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.pesa2.PESA2" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.ibea">
+        <type name="org.uma.jmetal.algorithm.multiobjective.ibea.mIBEA" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.ibea.IBEA" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.ibea.IBEABuilder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.ibea.IBEA" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.ibea.IBEA" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.omopso">
+        <type name="org.uma.jmetal.algorithm.multiobjective.omopso.OMOPSOBuilder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.omopso.OMOPSO" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.omopso.OMOPSO" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.moead">
+        <type name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADDRA" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$NeighborType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$NeighborType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.util.MOEADUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADD" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.util.MOEADUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.moead.ConstraintMOEAD" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.util.ViolationThresholdComparator" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$NeighborType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.util.MOEADUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$NeighborType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder" classification="class" visibility="public">
+          <dependencies count="9">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder$Variant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.ConstraintMOEAD" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADDRA" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADSTM" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADD" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADIEpsilon" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.moead.MOEAD" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$NeighborType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.util.MOEADUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder$Variant" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADIEpsilon" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$NeighborType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.util.MOEADUtils" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.moead.MOEADSTM" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.AbstractMOEAD$NeighborType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.util.MOEADUtils" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.moead.util">
+        <type name="org.uma.jmetal.algorithm.multiobjective.moead.util.ViolationThresholdComparator" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.moead.util.MOEADUtils" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.mocell">
+        <type name="org.uma.jmetal.algorithm.multiobjective.mocell.MOCellBuilder$MOCellVariant" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mocell.MOCellBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mocell.MOCell" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mocell.MOCellBuilder" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mocell.MOCell" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mocell.MOCellBuilder$MOCellVariant" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.randomsearch">
+        <type name="org.uma.jmetal.algorithm.multiobjective.randomsearch.RandomSearch" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.randomsearch.RandomSearchBuilder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.randomsearch.RandomSearch" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.abyss">
+        <type name="org.uma.jmetal.algorithm.multiobjective.abyss.ABYSSBuilder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.abyss.ABYSS" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.abyss.ABYSS" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.gde3">
+        <type name="org.uma.jmetal.algorithm.multiobjective.gde3.GDE3Builder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.gde3.GDE3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.gde3.GDE3" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.agemoeaii">
+        <type name="org.uma.jmetal.algorithm.multiobjective.agemoeaii.AGEMOEAII" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoea.AGEMOEA" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoeaii.AGEMOEAIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoeaii.util.AGEMOEA2EnvironmentalSelection" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoea.AGEMOEABuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.agemoeaii.AGEMOEAIIBuilder" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoea.AGEMOEABuilder" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoeaii.AGEMOEAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoea.AGEMOEA" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoea.util.SurvivalScoreComparator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.agemoeaii.util">
+        <type name="org.uma.jmetal.algorithm.multiobjective.agemoeaii.util.AGEMOEA2EnvironmentalSelection" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoea.util.AGEMOEAEnvironmentalSelection" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.mochc">
+        <type name="org.uma.jmetal.algorithm.multiobjective.mochc.MOCHC45" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mochc.MOCHCBuilder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mochc.MOCHC" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mochc.MOCHC" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.nsgaii">
+        <type name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII45" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder$NSGAIIVariant" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.nsgaii.DNSGAII" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIBuilder$NSGAIIVariant" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.SteadyStateNSGAII" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIMeasures" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.DNSGAII" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.nsgaii.SteadyStateNSGAII" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIMeasures" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.nsgaii.DynamicNSGAII" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.util.CoverageFront" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAIIStoppingByTime" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.NSGAII" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.nsgaii.util">
+        <type name="org.uma.jmetal.algorithm.multiobjective.nsgaii.util.CoverageFront" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.dmopso">
+        <type name="org.uma.jmetal.algorithm.multiobjective.dmopso.DMOPSO$FunctionType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.dmopso.DMOPSO" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.dmopso.DMOPSO" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.dmopso.DMOPSO$FunctionType" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.dmopso.DMOPSOBuilder" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.dmopso.DMOPSO$FunctionType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.dmopso.DMOPSO" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.mosa">
+        <type name="org.uma.jmetal.algorithm.multiobjective.mosa.MOSA" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mosa.cooling.CoolingScheme" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.mosa.cooling.impl">
+        <type name="org.uma.jmetal.algorithm.multiobjective.mosa.cooling.impl.Logarithmic" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mosa.cooling.CoolingScheme" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mosa.cooling.impl.Linear" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mosa.cooling.CoolingScheme" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mosa.cooling.impl.Exponential" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mosa.cooling.CoolingScheme" classification="implements" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.mosa.cooling.impl.Geometric" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mosa.cooling.CoolingScheme" classification="implements" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.mosa.cooling">
+        <type name="org.uma.jmetal.algorithm.multiobjective.mosa.cooling.CoolingScheme" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.gwasfga.util">
+        <type name="org.uma.jmetal.algorithm.multiobjective.gwasfga.util.GWASFGARanking" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.AbstractUtilityFunctionsSet" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.gwasfga">
+        <type name="org.uma.jmetal.algorithm.multiobjective.gwasfga.GWASFGA" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.wasfga.WASFGA" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.AbstractUtilityFunctionsSet" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.ASFWASFGA" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.gwasfga.util.GWASFGARanking" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.cdg">
+        <type name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG$NeighborType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG$NeighborType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG$1" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG$2" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG$3" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG$2" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.cdg.CDGBuilder" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.cdg.CDG" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG$3" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.cdg.CDG" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.cdg.AbstractCDG$NeighborType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.moead.util.MOEADUtils" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.util">
+        <type name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.util.ReferencePoint" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.util.EnvironmentalSelection" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.util.ReferencePoint" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.util.EnvironmentalSelection$Builder" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.util.EnvironmentalSelection$Builder" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.util.ReferencePoint" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.util.EnvironmentalSelection" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.nsgaiii">
+        <type name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.NSGAIII" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.util.ReferencePoint" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.NSGAIIIBuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.util.EnvironmentalSelection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.NSGAIIIBuilder" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaiii.NSGAIII" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.espea.util">
+        <type name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper$Config" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper$ScalarizationType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.espea.util.EnergyArchive" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationValue" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.EnergyArchive$ReplacementStrategy" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper$ScalarizationType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.EnergyArchive$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.espea.util.AchievementScalarizationComparator" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.espea.util.EnergyArchive$ReplacementStrategy" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.EnergyArchive" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationValue" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationUtils" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationValue" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.AchievementScalarizationComparator" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper$ScalarizationType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.espea.util.EnergyArchive$1" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.EnergyArchive$ReplacementStrategy" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.EnergyArchive" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper$ScalarizationType" classification="enum" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper$Config" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper$ScalarizationType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper$1" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationUtils" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.espea">
+        <type name="org.uma.jmetal.algorithm.multiobjective.espea.ESPEABuilder" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.EnergyArchive$ReplacementStrategy" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.ESPEA" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper$ScalarizationType" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.EnergyArchive" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.espea.ESPEA" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.EnergyArchive" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.ScalarizationWrapper" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.espea.util.EnergyArchive$ReplacementStrategy" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.wasfga">
+        <type name="org.uma.jmetal.algorithm.multiobjective.wasfga.WASFGAMeasures" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.wasfga.WASFGA" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.wasfga.WASFGA" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.AbstractMOMBI" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.AbstractUtilityFunctionsSet" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.wasfga.util.WeightVectors" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.ASFWASFGA" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.wasfga.util.WASFGARanking" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.wasfga.util">
+        <type name="org.uma.jmetal.algorithm.multiobjective.wasfga.util.WeightVectors" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.wasfga.util.WASFGARanking" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.mombi.util.AbstractUtilityFunctionsSet" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.agemoea.util">
+        <type name="org.uma.jmetal.algorithm.multiobjective.agemoea.util.SurvivalScoreComparator" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoea.util.AGEMOEAEnvironmentalSelection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.agemoea.util.AGEMOEAEnvironmentalSelection" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoea.util.SurvivalScoreComparator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.agemoea">
+        <type name="org.uma.jmetal.algorithm.multiobjective.agemoea.AGEMOEA" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoea.AGEMOEABuilder" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoea.util.AGEMOEAEnvironmentalSelection" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.agemoea.AGEMOEABuilder" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoea.AGEMOEA" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.agemoea.util.SurvivalScoreComparator" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.microfame">
+        <type name="org.uma.jmetal.algorithm.multiobjective.microfame.MicroFAME" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.SteadyStateNSGAII" classification="extends" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.microfame.util.WFGHypervolumeV2" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.microfame.util">
+        <type name="org.uma.jmetal.algorithm.multiobjective.microfame.util.HVTournamentSelection" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.microfame.util.WFGHypervolumeV2$ComparadorGreater" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.microfame.util.WFGHypervolumeV2$POINT" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.microfame.util.WFGHypervolumeV2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.microfame.util.WFGHypervolumeV2$POINT" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.microfame.util.WFGHypervolumeV2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.microfame.util.WFGHypervolumeV2$FRONT" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.microfame.util.WFGHypervolumeV2$POINT" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.microfame.util.WFGHypervolumeV2" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.uma.jmetal.algorithm.multiobjective.microfame.util.WFGHypervolumeV2" classification="class" visibility="public">
+          <dependencies count="3">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.microfame.util.WFGHypervolumeV2$FRONT" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.microfame.util.WFGHypervolumeV2$POINT" classification="uses" />
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.microfame.util.WFGHypervolumeV2$ComparadorGreater" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.paes">
+        <type name="org.uma.jmetal.algorithm.multiobjective.paes.PAES" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.uma.jmetal.algorithm.multiobjective.fame">
+        <type name="org.uma.jmetal.algorithm.multiobjective.fame.FAME" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.uma.jmetal.algorithm.multiobjective.nsgaii.SteadyStateNSGAII" classification="extends" />
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

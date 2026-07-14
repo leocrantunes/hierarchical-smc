@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="jgit-lfs-6.8.0">
+    <container name="/home/leo/repos/jgit-6.8.0/org.eclipse.jgit.lfs/target/org.eclipse.jgit.lfs-6.8.0.202310031045-m1.jar" classification="osgi-bundle">
+      <namespace name="org.eclipse.jgit.lfs">
+        <type name="org.eclipse.jgit.lfs.LfsBlobFilter" classification="class" visibility="public">
+          <dependencies count="6">
+            <depends-on name="org.eclipse.jgit.lfs.LfsPointer" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Lfs" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.lib.AnyLongObjectId" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.CleanFilter" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.SmudgeFilter" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.LfsBlobLoader" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.BuiltinLFS" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.lfs.SmudgeFilter" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.CleanFilter" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.LfsBlobFilter" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.LfsPrePushHook" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.InstallBuiltinLfsCommand" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.Protocol$ObjectInfo" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$ObjectSpec" classification="extends" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Action" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Error" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.CleanFilter" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.lfs.internal.AtomicObjectOutputStream" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Lfs" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.lib.AnyLongObjectId" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.LfsPointer" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.errors.CorruptMediaFile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.Protocol$Request" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$ObjectSpec" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.InstallBuiltinLfsCommand" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.Protocol$Error" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.lfs.Protocol" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.LfsPrePushHook" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.eclipse.jgit.lfs.LfsPointer" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$ObjectInfo" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Action" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Lfs" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Response" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsConnectionFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.lib.AnyLongObjectId" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Request" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.errors.CorruptMediaFile" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.Protocol$Action" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.lfs.Protocol" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.Protocol" classification="interface" visibility="public" isAbstract="yes">
+          <dependencies count="7">
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Action" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Error" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$ExpiringAction" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$ObjectInfo" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$ObjectSpec" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Request" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Response" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.LfsBlobLoader" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.Lfs" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.lfs.lib.AnyLongObjectId" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.SmudgeFilter" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.eclipse.jgit.lfs.LfsPointer" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.lib.AnyLongObjectId" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Lfs" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Response" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$ObjectInfo" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Action" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsConnectionFactory" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Request" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Error" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.Protocol$ExpiringAction" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Action" classification="extends" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.Protocol$Response" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$ObjectInfo" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.LfsPointer" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.lfs.lib.AnyLongObjectId" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.lib.LongObjectId" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.Protocol$ObjectSpec" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.lfs.Protocol" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.eclipse.jgit.lfs.lib">
+        <type name="org.eclipse.jgit.lfs.lib.Constants" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.lib.AbbreviatedLongObjectId" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.lfs.lib.AnyLongObjectId" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.errors.InvalidLongObjectIdException" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.lib.LongObjectId" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.lib.LongObjectId" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.lfs.lib.AnyLongObjectId" classification="extends" />
+            <depends-on name="org.eclipse.jgit.lfs.errors.InvalidLongObjectIdException" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.lib.LfsPointerFilter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.lfs.LfsPointer" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.lib.MutableLongObjectId" classification="class" visibility="public">
+          <dependencies count="4">
+            <depends-on name="org.eclipse.jgit.lfs.lib.AnyLongObjectId" classification="extends" />
+            <depends-on name="org.eclipse.jgit.lfs.errors.InvalidLongObjectIdException" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.lib.LongObjectId" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.lib.AnyLongObjectId" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.lfs.lib.AbbreviatedLongObjectId" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.lib.LongObjectId" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.eclipse.jgit.lfs.internal">
+        <type name="org.eclipse.jgit.lfs.internal.LfsText" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.internal.LfsConnectionFactory" classification="class" visibility="public">
+          <dependencies count="11">
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsConnectionFactory$AuthCache" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsConfig" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$ExpiringAction" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Action" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$Request" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.LfsPointer" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$ObjectSpec" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.errors.LfsConfigInvalidException" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsText" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.lib.AnyLongObjectId" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.internal.AtomicObjectOutputStream" classification="class" visibility="public">
+          <dependencies count="5">
+            <depends-on name="org.eclipse.jgit.lfs.lib.AnyLongObjectId" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.lib.Constants" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.lib.LongObjectId" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.errors.CorruptLongObjectException" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.internal.LfsConfig" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.lfs.errors.LfsConfigInvalidException" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.internal.LfsConnectionFactory$AuthCache" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.eclipse.jgit.lfs.Protocol$ExpiringAction" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.Protocol" classification="uses" />
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsConnectionFactory" classification="uses" />
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.eclipse.jgit.lfs.errors">
+        <type name="org.eclipse.jgit.lfs.errors.CorruptLongObjectException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.lfs.lib.AnyLongObjectId" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.errors.LfsRateLimitExceeded" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.lfs.errors.LfsException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.errors.LfsInsufficientStorage" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.lfs.errors.LfsException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.errors.LfsUnauthorized" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.lfs.errors.LfsException" classification="extends" />
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.errors.LfsRepositoryNotFound" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.lfs.errors.LfsException" classification="extends" />
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.errors.LfsBandwidthLimitExceeded" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.lfs.errors.LfsException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.errors.LfsValidationError" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.lfs.errors.LfsException" classification="extends" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.errors.LfsUnavailable" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.lfs.errors.LfsException" classification="extends" />
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.errors.CorruptMediaFile" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.errors.InvalidLongObjectIdException" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.errors.LfsRepositoryReadOnly" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.eclipse.jgit.lfs.errors.LfsException" classification="extends" />
+            <depends-on name="org.eclipse.jgit.lfs.internal.LfsText" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.errors.LfsException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.eclipse.jgit.lfs.errors.LfsConfigInvalidException" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>

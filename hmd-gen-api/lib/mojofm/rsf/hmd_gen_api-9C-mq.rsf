@@ -1,0 +1,9 @@
+contain 1 br.unirio.edu.hmdgenapi.models.GraphMetrics
+contain 1 br.unirio.edu.hmdgenapi.models.GraphRequest
+contain 2 br.unirio.edu.hmdgenapi.models.ElementData
+contain 4 br.unirio.edu.hmdgenapi.models.Graph
+contain 4 br.unirio.edu.hmdgenapi.HmdGenApiApplication
+contain 5 br.unirio.edu.hmdgenapi.controllers.GraphController$1
+contain 6 br.unirio.edu.hmdgenapi.controllers.GraphController
+contain 8 br.unirio.edu.hmdgenapi.models.Element
+contain 8 br.unirio.edu.hmdgenapi.repositories.GraphRepository

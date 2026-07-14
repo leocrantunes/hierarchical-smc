@@ -1,0 +1,7 @@
+metric,statistic,parameter,p_value,method,data_name,significant_0_05
+number_of_packages,83.002,5,0,Kruskal-Wallis rank sum test,NumberOfPackages by Algorithm,TRUE
+number_of_edges,39.497,5,0,Kruskal-Wallis rank sum test,NumberOfEdges by Algorithm,TRUE
+avg_classes_per_package,81.262,5,0,Kruskal-Wallis rank sum test,AvgClassesPerPackage by Algorithm,TRUE
+single_package_commit_ratio,24.056,5,0,Kruskal-Wallis rank sum test,SinglePackageCommitRatio by Algorithm,TRUE
+avg_package_commit,59.861,5,0,Kruskal-Wallis rank sum test,AvgPackageCommit by Algorithm,TRUE
+distance_tree,6.08,4,0.193,Kruskal-Wallis rank sum test,Distance by Algorithm,FALSE

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODEM version="1">
+  <header>
+    <created-by>
+      <exporter version="1.4.0">org.pfsw.tools.cda.ext.export.xml.XmlFileODEMExporter</exporter>
+      <provider>Manfred Duchrow Consulting &amp; Software</provider>
+    </created-by>
+  </header>
+  <context name="log4j-jpa-2.21.1">
+    <container name="/home/leo/repos/logging-log4j2-rel-2.21.1/log4j-jpa/target/log4j-jpa-2.21.1.jar" classification="osgi-bundle">
+      <namespace name="">
+        <type name="module-info" classification="class" visibility="default">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.logging.log4j.core.appender.db.jpa">
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.AbstractLogEventWrapperEntity$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.AbstractLogEventWrapperEntity" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.AbstractLogEventWrapperEntity$NullLogEvent" classification="class" visibility="default">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.AbstractLogEventWrapperEntity$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.AbstractLogEventWrapperEntity" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.AbstractLogEventWrapperEntity" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.AbstractLogEventWrapperEntity$NullLogEvent" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.AbstractLogEventWrapperEntity$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.BasicLogEventEntity" classification="class" visibility="public" isAbstract="yes">
+          <dependencies count="9">
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.AbstractLogEventWrapperEntity" classification="extends" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.converter.LevelAttributeConverter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.converter.StackTraceElementAttributeConverter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.converter.MessageAttributeConverter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.converter.MarkerAttributeConverter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.converter.InstantAttributeConverter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.converter.ThrowableAttributeConverter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapAttributeConverter" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.converter.ContextStackAttributeConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.JpaAppender" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.AbstractLogEventWrapperEntity" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager$FactoryData" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.AbstractLogEventWrapperEntity" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager$JPADatabaseManagerFactory" classification="class" visibility="default" isFinal="yes">
+          <dependencies count="3">
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager$FactoryData" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager" classification="class" visibility="public" isFinal="yes">
+          <dependencies count="4">
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager$JPADatabaseManagerFactory" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.AbstractLogEventWrapperEntity" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.JpaDatabaseManager$FactoryData" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+      <namespace name="org.apache.logging.log4j.core.appender.db.jpa.converter">
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.converter.ContextDataAttributeConverter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.converter.ContextDataJsonAttributeConverter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapAttributeConverter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapJsonAttributeConverter$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapJsonAttributeConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapJsonAttributeConverter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapJsonAttributeConverter$1" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.converter.ContextStackAttributeConverter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.converter.ContextStackJsonAttributeConverter$1" classification="class" visibility="default">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.converter.ContextStackJsonAttributeConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.converter.ContextStackJsonAttributeConverter" classification="class" visibility="public">
+          <dependencies count="2">
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.converter.ContextStackJsonAttributeConverter$1" classification="uses" />
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapJsonAttributeConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.converter.InstantAttributeConverter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.converter.LevelAttributeConverter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.converter.MarkerAttributeConverter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.converter.MessageAttributeConverter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.converter.StackTraceElementAttributeConverter" classification="class" visibility="public">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.converter.ThrowableAttributeConverter" classification="class" visibility="public">
+          <dependencies count="1">
+            <depends-on name="org.apache.logging.log4j.core.appender.db.jpa.converter.StackTraceElementAttributeConverter" classification="uses" />
+          </dependencies>
+        </type>
+        <type name="org.apache.logging.log4j.core.appender.db.jpa.converter.package-info" classification="interface" visibility="default" isAbstract="yes">
+          <dependencies count="0">
+          </dependencies>
+        </type>
+      </namespace>
+    </container>
+  </context>
+</ODEM>
